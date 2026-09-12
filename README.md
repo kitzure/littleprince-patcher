@@ -13,19 +13,6 @@ deleting its activation data and closing. The fix is patched SWFs plus a local
 server that answers `e000` instead, while the hosts file points the official
 domains at `127.0.0.1`.
 
-## Contents
-
-```
-games/1-Starwish-Legend/    reg.swf  index.swf  start.swf
-games/2-Little-Prince/      reg.swf
-games/3-Prince-Adventure/   reg.swf  login.swf
-fake_server.py              local server (port 80) + hosts handling
-Start_Server.bat            Windows: start the server (elevates itself)
-Start_Server.sh             Linux: same thing
-Revert_Hosts.bat            manual hosts clean-up (usually not needed)
-play_3in1.sh                Linux / Wine: patch + start + restore
-```
-
 ## Windows
 
 1. Copy the files from `games/<your game>/` into the game folder (the one with
