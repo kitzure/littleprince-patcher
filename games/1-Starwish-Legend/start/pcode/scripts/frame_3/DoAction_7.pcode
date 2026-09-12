@@ -1,0 +1,119 @@
+ConstantPool "gemSpec", "Array", "name", "火之能量", "id", "木之能量", "金之能量", "土之能量", "水之能量", "鑽之能量", "黑之能量", "彩之能量", "月之能量", "寶之能量"
+DefineFunction2 "initGemSpec", 0, 4, false, false, true, false, true, false, true, false, false {
+Push "gemSpec", 0.0, "Array"
+NewObject
+SetVariable
+Push 0.0
+StoreRegister 1
+Pop
+Push "gemSpec"
+GetVariable
+Push register1, "name", "火之能量", "id", register1, 1
+Add2
+Push 2
+InitObject
+SetMember
+Push register1
+Increment
+StoreRegister 1
+Pop
+Push "gemSpec"
+GetVariable
+Push register1, "name", "木之能量", "id", register1, 1
+Add2
+Push 2
+InitObject
+SetMember
+Push register1
+Increment
+StoreRegister 1
+Pop
+Push "gemSpec"
+GetVariable
+Push register1, "name", "金之能量", "id", register1, 1
+Add2
+Push 2
+InitObject
+SetMember
+Push register1
+Increment
+StoreRegister 1
+Pop
+Push "gemSpec"
+GetVariable
+Push register1, "name", "土之能量", "id", register1, 1
+Add2
+Push 2
+InitObject
+SetMember
+Push register1
+Increment
+StoreRegister 1
+Pop
+Push "gemSpec"
+GetVariable
+Push register1, "name", "水之能量", "id", register1, 1
+Add2
+Push 2
+InitObject
+SetMember
+Push register1
+Increment
+StoreRegister 1
+Pop
+Push "gemSpec"
+GetVariable
+Push register1, "name", "鑽之能量", "id", register1, 1
+Add2
+Push 2
+InitObject
+SetMember
+Push register1
+Increment
+StoreRegister 1
+Pop
+Push "gemSpec"
+GetVariable
+Push register1, "name", "黑之能量", "id", register1, 1
+Add2
+Push 2
+InitObject
+SetMember
+Push register1
+Increment
+StoreRegister 1
+Pop
+Push "gemSpec"
+GetVariable
+Push register1, "name", "彩之能量", "id", register1, 1
+Add2
+Push 2
+InitObject
+SetMember
+Push register1
+Increment
+StoreRegister 1
+Pop
+Push "gemSpec"
+GetVariable
+Push register1, "name", "月之能量", "id", register1, 1
+Add2
+Push 2
+InitObject
+SetMember
+Push register1
+Increment
+StoreRegister 1
+Pop
+Push "gemSpec"
+GetVariable
+Push register1, "name", "寶之能量", "id", register1, 1
+Add2
+Push 2
+InitObject
+SetMember
+Push register1
+Increment
+StoreRegister 1
+Pop
+}

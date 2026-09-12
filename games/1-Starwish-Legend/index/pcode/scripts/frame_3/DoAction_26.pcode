@@ -1,0 +1,289 @@
+ConstantPool "mapEngine_Current", "A", "map", "mapName", "gotoAndPlay", "counter", "onEnterFrame", "fade", "user", "type", "admin", "header", "showPaneR", "normal", "firstTimeEnter", "core", "player", "_visible", "showSmallMap", "gotoAndStop", "enter", "transition", "hidePaneR", "killSmallMap", "mapEngine_From", "fadeOutMusic", "hideLogo", "leave", "playMusic", "bossStatus", "bossTransition", "fadeOutBossMusic", "playBossMusic", "gameBar", "startCount", "success", "bossDefeat", "bossStage", "hasDefeatedBoss", "stopAllTrader", "ani", "iCentre", "updateBoss", "resumeDefeatBoss", "resumeFromBoss", "file", "header.swf", "showNow", "loc", "switchFile", "resume", "resumeAllTrader", "showMapName"
+DefineFunction2 "showMapName", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "mapEngine_Current"
+GetVariable
+Push undefined
+Equals2
+Not
+If loc0244
+Push "mapEngine_Current", "A"
+SetVariable
+loc0244:Push "map", "mapEngine_Current"
+GetVariable
+Add2
+Push 1, "mapName"
+GetVariable
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push "mapName"
+GetVariable
+Push "counter", 0.0
+SetMember
+Push "mapName"
+GetVariable
+Push "onEnterFrame"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "counter", register1, "counter"
+GetMember
+Increment
+SetMember
+Push register1, "counter"
+GetMember
+Push 125
+Greater
+Not
+If loc02de
+Push "map", "mapEngine_Current"
+GetVariable
+Add2
+Push "fade"
+Add2
+Push 1, register1, "gotoAndPlay"
+CallMethod
+Pop
+Push register1, "counter"
+Delete
+Pop
+Push register1, "onEnterFrame"
+Delete
+Pop
+}
+loc02de:SetMember
+Push "user"
+GetVariable
+Push "type"
+GetMember
+Push 2
+Equals2
+Not
+If loc0313
+Push "admin", 1, "header"
+GetVariable
+Push "showPaneR"
+CallMethod
+Pop
+Jump loc0327
+loc0313:Push "normal", 1, "header"
+GetVariable
+Push "showPaneR"
+CallMethod
+Pop
+loc0327:Push "firstTimeEnter"
+GetVariable
+Push undefined
+Equals2
+Not
+If loc0357
+Push "map"
+GetVariable
+Push "core"
+GetMember
+Push "player"
+GetMember
+Push "_visible", false
+SetMember
+Jump loc036d
+loc0357:Push 0.0, "header"
+GetVariable
+Push "showSmallMap"
+CallMethod
+Pop
+}
+loc036d:DefineFunction "killMapName", 0 {
+Push "mapName"
+GetVariable
+Push "onEnterFrame"
+Delete
+Pop
+Push "mapName"
+GetVariable
+Push "counter"
+Delete
+Pop
+Push 1, 1, "mapName"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+}
+DefineFunction "showMapTransition", 0 {
+Push "enter", 1, "transition"
+GetVariable
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push 0.0, "header"
+GetVariable
+Push "hidePaneR"
+CallMethod
+Pop
+Push 0.0, "header"
+GetVariable
+Push "killSmallMap"
+CallMethod
+Pop
+Push 50, "map", "mapEngine_From"
+GetVariable
+Add2
+Push 2, "fadeOutMusic"
+CallFunction
+Pop
+Push "mapName"
+GetVariable
+Push "onEnterFrame"
+Delete
+Pop
+Push 0.0, "header"
+GetVariable
+Push "hideLogo"
+CallMethod
+Pop
+}
+DefineFunction "hideMapTransition", 0 {
+Push "leave", 1, "transition"
+GetVariable
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push 10000, "map", "mapEngine_Current"
+GetVariable
+Add2
+Push 2, "playMusic"
+CallFunction
+Pop
+}
+DefineFunction2 "showBossTransition", 1, 2, false, false, true, false, true, false, true, false, false, 1, "which" {
+Push "bossStatus", register1
+SetVariable
+Push "enter", 1, "bossTransition"
+GetVariable
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push 0.0, "fadeOutBossMusic"
+CallFunction
+Pop
+}
+DefineFunction "hideBossTransition", 0 {
+Push 0.0, "playBossMusic"
+CallFunction
+Pop
+Push "leave", 1, "bossTransition"
+GetVariable
+Push "gotoAndPlay"
+CallMethod
+Pop
+}
+DefineFunction "startBossBattle", 0 {
+Push 0.0, "gameBar"
+GetVariable
+Push "startCount"
+CallMethod
+Pop
+}
+DefineFunction "resumeMapFromBoss", 0 {
+Push 0.0, "fadeOutBossMusic"
+CallFunction
+Pop
+Push "bossStatus"
+GetVariable
+Push "success"
+Equals2
+Not
+Not
+If loc059f
+Push 10000, "map", "mapEngine_Current"
+GetVariable
+Add2
+Push 2, "playMusic"
+CallFunction
+Pop
+loc059f:Push "bossDefeat"
+GetVariable
+Push "success"
+Equals2
+Push "bossStage"
+GetVariable
+Push 1, "user"
+GetVariable
+Push "hasDefeatedBoss"
+CallMethod
+Push 1
+Equals2
+And
+Not
+If loc0625
+Push 0.0, "map"
+GetVariable
+Push "core"
+GetMember
+Push "stopAllTrader"
+CallMethod
+Pop
+Push "ani", 1, "map"
+GetVariable
+Push "core"
+GetMember
+Push "iCentre"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push "bossStage"
+GetVariable
+Push 1, "updateBoss"
+CallFunction
+Pop
+Jump loc0635
+loc0625:Push 0.0, "resumeDefeatBoss"
+CallFunction
+Pop
+loc0635:Push "resumeFromBoss", true
+SetVariable
+Push "bossStatus"
+Delete2
+Pop
+Push "bossDefeat"
+Delete2
+Pop
+}
+DefineFunction2 "resumeDefeatBoss", 0, 4, false, false, true, false, true, false, true, false, false {
+Push 0.0
+InitArray
+Push "file", "header.swf", "showNow", true, "loc", "header", 3
+InitObject
+Push 1
+InitArray
+Push 2, "switchFile"
+CallFunction
+Pop
+Push 0.0, "map"
+GetVariable
+Push "core"
+GetMember
+Push "resume"
+CallMethod
+Pop
+Push 0.0, "map"
+GetVariable
+Push "core"
+GetMember
+Push "resumeAllTrader"
+CallMethod
+Pop
+Push 0.0, "showMapName"
+CallFunction
+Pop
+Push 0.0, "header"
+GetVariable
+Push "showSmallMap"
+CallMethod
+Pop
+Push 10000, "map", "mapEngine_Current"
+GetVariable
+Add2
+Push 2, "playMusic"
+CallFunction
+Pop
+}

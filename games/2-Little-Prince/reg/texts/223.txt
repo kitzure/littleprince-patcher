@@ -1,0 +1,19 @@
+請填寫你的姓名及聯絡電話，然後傳真至
+--- RECORDSEPARATOR ---
+2557 9560
+--- RECORDSEPARATOR ---
+。收
+--- RECORDSEPARATOR ---
+到資料後我們會將啟動代號傳回給你。
+--- RECORDSEPARATOR ---
+姓名
+--- RECORDSEPARATOR ---
+:
+--- RECORDSEPARATOR ---
+聯絡電話
+--- RECORDSEPARATOR ---
+:
+--- RECORDSEPARATOR ---
+啟動代號
+--- RECORDSEPARATOR ---
+:

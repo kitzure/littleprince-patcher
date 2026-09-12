@@ -1,0 +1,102 @@
+ConstantPool "_global", "Prince3", "Object", "NumberAni", "start_num", "end_num", "step", "prototype", "numberChange", "aniFinish", "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "Prince3"
+GetMember
+Not
+Not
+If loc0098
+Push "_global"
+GetVariable
+Push "Prince3", 0.0, "Object"
+NewObject
+SetMember
+loc0098:Pop
+Push "_global"
+GetVariable
+Push "Prince3"
+GetMember
+Push "NumberAni"
+GetMember
+Not
+Not
+If loc01fd
+Push "Prince3"
+GetVariable
+Push "NumberAni"
+DefineFunction2 "", 3, 5, false, false, true, false, true, false, false, true, false, 2, "start_num", 3, "end_num", 4, "step" {
+Push register1, "start_num", register2
+SetMember
+Push register1, "end_num", register3
+SetMember
+Push register1, "step", register3, register2
+Subtract
+Push register4
+Divide
+SetMember
+}
+StoreRegister 1
+SetMember
+Push register1, "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2, "numberChange"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "start_num", register1, "start_num"
+GetMember
+Push register1, "step"
+GetMember
+Add2
+SetMember
+Push register1, "step"
+GetMember
+Push 0.0
+Greater
+Not
+If loc0187
+Push register1, "start_num"
+GetMember
+Push register1, "end_num"
+GetMember
+Greater
+Not
+If loc0182
+Push register1, "start_num", register1, "end_num"
+GetMember
+SetMember
+loc0182:Jump loc01ab
+loc0187:Push register1, "start_num"
+GetMember
+Push register1, "end_num"
+GetMember
+Less2
+Not
+If loc01ab
+Push register1, "start_num", register1, "end_num"
+GetMember
+SetMember
+loc01ab:Push register1, "start_num"
+GetMember
+Return
+}
+SetMember
+Push register2, "aniFinish"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "start_num"
+GetMember
+Push register1, "end_num"
+GetMember
+Equals2
+Return
+}
+SetMember
+Push 1, null, "Prince3"
+GetVariable
+Push "NumberAni"
+GetMember
+Push "prototype"
+GetMember
+Push 3, "ASSetPropFlags"
+CallFunction
+loc01fd:Pop

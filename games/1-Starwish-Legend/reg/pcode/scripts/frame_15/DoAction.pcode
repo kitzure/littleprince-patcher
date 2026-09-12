@@ -1,0 +1,107 @@
+ConstantPool "btn_start", "setBtn", "btn_print", "onRelease", "txtUsername", "text", "_parent", "Username", "txtPhone", "Phone", "txtEmail", "Email", "txtSerial", "Serial", "printasbitmap:#bmax", "mc_print", "loadOpening"
+Push "btn_start"
+GetVariable
+Push 1, "setBtn"
+CallFunction
+Pop
+Push "btn_print"
+GetVariable
+Push 1, "setBtn"
+CallFunction
+Pop
+Push "btn_print"
+GetVariable
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "txtUsername"
+GetMember
+Push "text", register1, "_parent"
+GetMember
+Push "Username"
+GetMember
+SetMember
+Push register1, "txtPhone"
+GetMember
+Push "text", register1, "_parent"
+GetMember
+Push "Phone"
+GetMember
+SetMember
+Push register1, "txtEmail"
+GetMember
+Push "text", register1, "_parent"
+GetMember
+Push "Email"
+GetMember
+SetMember
+Push register1, "txtSerial"
+GetMember
+Push "text", register1, "_parent"
+GetMember
+Push "Serial"
+GetMember
+SetMember
+Push "printasbitmap:#bmax", register1, "_parent"
+GetMember
+Push "mc_print"
+GetMember
+GetURL2 false, false, 0
+}
+SetMember
+Push "btn_start"
+GetVariable
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, true, true, false, true, false, true, false, false {
+Push 0.0, register1, "loadOpening"
+CallMethod
+Pop
+}
+SetMember
+Push "txtUsername"
+GetVariable
+Push "text", "Username"
+GetVariable
+SetMember
+Push "txtPhone"
+GetVariable
+Push "text", "Phone"
+GetVariable
+SetMember
+Push "txtEmail"
+GetVariable
+Push "text", "Email"
+GetVariable
+SetMember
+Push "txtSerial"
+GetVariable
+Push "text", "Serial"
+GetVariable
+SetMember
+Push "mc_print"
+GetVariable
+Push "txtUsername"
+GetMember
+Push "text", "Username"
+GetVariable
+SetMember
+Push "mc_print"
+GetVariable
+Push "txtPhone"
+GetMember
+Push "text", "Phone"
+GetVariable
+SetMember
+Push "mc_print"
+GetVariable
+Push "txtEmail"
+GetMember
+Push "text", "Email"
+GetVariable
+SetMember
+Push "mc_print"
+GetVariable
+Push "txtSerial"
+GetMember
+Push "text", "Serial"
+GetVariable
+SetMember

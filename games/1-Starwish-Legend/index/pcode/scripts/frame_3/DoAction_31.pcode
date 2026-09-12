@@ -1,0 +1,536 @@
+ConstantPool "Array", "mapObj", "traderLoc", "ABCE", "substr", "slice", "length", "mapEngine_Current", "groupGem", "mapGem", "charCodeAt", "setMapGem(", "toString", ")", "traceOut", "push", "mapGem: ", "tmpGem: "
+DefineFunction2 "getMapInfo", 1, 5, false, false, true, false, true, false, true, false, false, 4, "agReturnFrom" {
+Push 0.0, "Array"
+NewObject
+StoreRegister 2
+Pop
+Push 0.0
+StoreRegister 3
+Pop
+Push register4, 1
+Equals2
+Not
+If loc014d
+Push 0.0
+StoreRegister 1
+Pop
+loc0102:Push register1, 6
+Less2
+Not
+If loc014d
+Push "mapObj"
+GetVariable
+Push "traderLoc"
+GetMember
+Push register1, 1, 4
+RandomNumber
+Push 2, "ABCE", "substr"
+CallMethod
+SetMember
+Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc0102
+loc014d:Push register2, 0.0, 0.0, 1, "mapObj"
+GetVariable
+Push "traderLoc"
+GetMember
+Push "slice"
+CallMethod
+SetMember
+Push 0.0
+StoreRegister 1
+Pop
+loc018a:Push register1, register2, 0.0
+GetMember
+Push "length"
+GetMember
+Greater
+Not
+Not
+If loc01e6
+Push register2, 0.0
+GetMember
+Push register1
+GetMember
+Push "mapEngine_Current"
+GetVariable
+Equals2
+Not
+If loc01d6
+Push register3
+Increment
+StoreRegister 3
+Pop
+loc01d6:Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc018a
+loc01e6:Push 0.0, "groupGem"
+CallFunction
+Pop
+Push "mapObj"
+GetVariable
+Push "mapGem"
+GetMember
+Push 0.0, 1, "mapEngine_Current"
+GetVariable
+Push "charCodeAt"
+CallMethod
+Push 65
+Subtract
+GetMember
+Push "length"
+GetMember
+Push 20, register3
+Subtract
+Greater
+Not
+If loc029a
+Push register2, 1, 20, register3
+Subtract
+Push 0.0, 2, "mapObj"
+GetVariable
+Push "mapGem"
+GetMember
+Push 0.0, 1, "mapEngine_Current"
+GetVariable
+Push "charCodeAt"
+CallMethod
+Push 65
+Subtract
+GetMember
+Push "slice"
+CallMethod
+SetMember
+Jump loc02e6
+loc029a:Push register2, 1, 0.0, 1, "mapObj"
+GetVariable
+Push "mapGem"
+GetMember
+Push 0.0, 1, "mapEngine_Current"
+GetVariable
+Push "charCodeAt"
+CallMethod
+Push 65
+Subtract
+GetMember
+Push "slice"
+CallMethod
+SetMember
+loc02e6:Push register2
+Return
+}
+DefineFunction2 "setMapGem", 1, 3, false, false, true, false, true, false, true, false, false, 2, "agGemArr" {
+Push "setMapGem(", 0.0, register2, "toString"
+CallMethod
+Add2
+Push ")"
+Add2
+Push 1, "traceOut"
+CallFunction
+Pop
+Push 0.0
+StoreRegister 1
+Pop
+loc0341:Push register1, register2, "length"
+GetMember
+Less2
+Not
+If loc03a6
+Push register2, register1
+GetMember
+Push 1, "mapObj"
+GetVariable
+Push "mapGem"
+GetMember
+Push 0.0, 1, "mapEngine_Current"
+GetVariable
+Push "charCodeAt"
+CallMethod
+Push 65
+Subtract
+GetMember
+Push "push"
+CallMethod
+Pop
+Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc0341
+}
+loc03a6:DefineFunction2 "groupGem", 0, 4, false, false, true, false, true, false, true, false, false {
+Push 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 10
+InitArray
+StoreRegister 1
+Pop
+Push 0.0, "Array"
+NewObject
+StoreRegister 3
+Pop
+Push "mapGem: ", "mapObj"
+GetVariable
+Push "mapGem"
+GetMember
+Push 0.0, 1, "mapEngine_Current"
+GetVariable
+Push "charCodeAt"
+CallMethod
+Push 65
+Subtract
+GetMember
+Add2
+Push 1, "traceOut"
+CallFunction
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc0485:Push register2, "mapObj"
+GetVariable
+Push "mapGem"
+GetMember
+Push 0.0, 1, "mapEngine_Current"
+GetVariable
+Push "charCodeAt"
+CallMethod
+Push 65
+Subtract
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc074f
+Push "mapObj"
+GetVariable
+Push "mapGem"
+GetMember
+Push 0.0, 1, "mapEngine_Current"
+GetVariable
+Push "charCodeAt"
+CallMethod
+Push 65
+Subtract
+GetMember
+Push register2
+GetMember
+Push 20
+Greater
+Not
+If loc059b
+Push register1, "mapObj"
+GetVariable
+Push "mapGem"
+GetMember
+Push 0.0, 1, "mapEngine_Current"
+GetVariable
+Push "charCodeAt"
+CallMethod
+Push 65
+Subtract
+GetMember
+Push register2
+GetMember
+Push 21
+Subtract
+Push register1, "mapObj"
+GetVariable
+Push "mapGem"
+GetMember
+Push 0.0, 1, "mapEngine_Current"
+GetVariable
+Push "charCodeAt"
+CallMethod
+Push 65
+Subtract
+GetMember
+Push register2
+GetMember
+Push 21
+Subtract
+GetMember
+Push 10
+Add2
+SetMember
+Jump loc073f
+loc059b:Push "mapObj"
+GetVariable
+Push "mapGem"
+GetMember
+Push 0.0, 1, "mapEngine_Current"
+GetVariable
+Push "charCodeAt"
+CallMethod
+Push 65
+Subtract
+GetMember
+Push register2
+GetMember
+Push 10
+Greater
+PushDuplicate
+Not
+If loc0622
+Pop
+Push "mapObj"
+GetVariable
+Push "mapGem"
+GetMember
+Push 0.0, 1, "mapEngine_Current"
+GetVariable
+Push "charCodeAt"
+CallMethod
+Push 65
+Subtract
+GetMember
+Push register2
+GetMember
+Push 20
+Greater
+Not
+loc0622:Not
+If loc06ba
+Push register1, "mapObj"
+GetVariable
+Push "mapGem"
+GetMember
+Push 0.0, 1, "mapEngine_Current"
+GetVariable
+Push "charCodeAt"
+CallMethod
+Push 65
+Subtract
+GetMember
+Push register2
+GetMember
+Push 11
+Subtract
+Push register1, "mapObj"
+GetVariable
+Push "mapGem"
+GetMember
+Push 0.0, 1, "mapEngine_Current"
+GetVariable
+Push "charCodeAt"
+CallMethod
+Push 65
+Subtract
+GetMember
+Push register2
+GetMember
+Push 11
+Subtract
+GetMember
+Push 5
+Add2
+SetMember
+Jump loc073f
+loc06ba:Push register1, "mapObj"
+GetVariable
+Push "mapGem"
+GetMember
+Push 0.0, 1, "mapEngine_Current"
+GetVariable
+Push "charCodeAt"
+CallMethod
+Push 65
+Subtract
+GetMember
+Push register2
+GetMember
+Push 1
+Subtract
+Push register1, "mapObj"
+GetVariable
+Push "mapGem"
+GetMember
+Push 0.0, 1, "mapEngine_Current"
+GetVariable
+Push "charCodeAt"
+CallMethod
+Push 65
+Subtract
+GetMember
+Push register2
+GetMember
+Push 1
+Subtract
+GetMember
+Increment
+SetMember
+loc073f:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc0485
+loc074f:Push register1, 0.0
+GetMember
+Push register1, 1
+GetMember
+Add2
+Push register1, 2
+GetMember
+Add2
+Push register1, 3
+GetMember
+Add2
+Push register1, 4
+GetMember
+Add2
+Push register1, 5
+GetMember
+Add2
+Push register1, 6
+GetMember
+Add2
+Push register1, 7
+GetMember
+Add2
+Push register1, 8
+GetMember
+Add2
+Push register1, 9
+GetMember
+Add2
+Push 0.0
+Equals2
+Not
+Not
+If loc0988
+Push register1, 0.0
+GetMember
+Push register1, 1
+GetMember
+Add2
+Push register1, 2
+GetMember
+Add2
+Push register1, 3
+GetMember
+Add2
+Push register1, 4
+GetMember
+Add2
+Push register1, 5
+GetMember
+Add2
+Push register1, 6
+GetMember
+Add2
+Push register1, 7
+GetMember
+Add2
+Push register1, 8
+GetMember
+Add2
+Push register1, 9
+GetMember
+Add2
+Push 1, "traceOut"
+CallFunction
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc0876:Push register2, 10
+Less2
+Not
+If loc0983
+Push register1, register2
+GetMember
+Push 10
+Less2
+Not
+Not
+If loc08dc
+Push register2, 1
+Add2
+Push 20
+Add2
+Push 1, register3, "push"
+CallMethod
+Pop
+Push register1, register2, register1, register2
+GetMember
+Push 10
+Subtract
+SetMember
+Jump loc0973
+loc08dc:Push register1, register2
+GetMember
+Push 5
+Less2
+Not
+Not
+If loc0931
+Push register2, 1
+Add2
+Push 10
+Add2
+Push 1, register3, "push"
+CallMethod
+Pop
+Push register1, register2, register1, register2
+GetMember
+Push 5
+Subtract
+SetMember
+Jump loc0973
+loc0931:Push register1, register2
+GetMember
+Push 0.0
+Greater
+Not
+If loc0973
+Push register2, 1
+Add2
+Push 1, register3, "push"
+CallMethod
+Pop
+Push register1, register2, register1, register2
+GetMember
+Decrement
+SetMember
+loc0973:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc0876
+loc0983:Jump loc074f
+loc0988:Push "mapObj"
+GetVariable
+Push "mapGem"
+GetMember
+Push 0.0, 1, "mapEngine_Current"
+GetVariable
+Push "charCodeAt"
+CallMethod
+Push 65
+Subtract
+Push register3
+SetMember
+Push "tmpGem: ", register1
+Add2
+Push 1, "traceOut"
+CallFunction
+Pop
+Push "mapGem: ", "mapObj"
+GetVariable
+Push "mapGem"
+GetMember
+Push 0.0, 1, "mapEngine_Current"
+GetVariable
+Push "charCodeAt"
+CallMethod
+Push 65
+Subtract
+GetMember
+Add2
+Push 1, "traceOut"
+CallFunction
+Pop
+}

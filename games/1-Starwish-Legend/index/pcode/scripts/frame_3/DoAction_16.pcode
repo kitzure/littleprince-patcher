@@ -1,0 +1,1138 @@
+ConstantPool "A", "管理員", "Admin", "adminPass", "adminName", "createUser", "validateLogin(", ", ", ")", "/", "prince2set", "SharedObject", "getLocal", "data", "userList", "length", "check pass: ", "username", ",", "password", "initUser", "createAdmin", "createUser(", "hasDuplicateUser", "Object", "scoreReport", "itemReport", "gemReport", "1-0", "score", "agUser", "equipment", "Array", "type", "name", "gender", "school", "edLevel", "classLevel", "className", "firstHint", "quality", "winmode", "musicvolume", "bossQue", "push", "defeatedBoss", "flush", "loadUserData(", "User", "report", "itemSpec", "gemSpec", "gameSpec", "Report", "slice", "passRate", "O", "language", "extra", "getScoreBoardInArray", "getGemBoard", "getItemBoardInArray", "Error", "e_err", "toString", "admin", "prince", "demoName", "demo", "demoPass"
+DefineFunction "createAdmin", 0 {
+Push true, 2, "A", 6, 1, "管理員", 1, "Admin", "adminPass"
+GetVariable
+Push "adminName"
+GetVariable
+Push 10, "createUser"
+CallFunction
+Return
+}
+DefineFunction2 "validateLogin", 2, 6, false, false, true, false, true, false, true, false, false, 3, "agUsername", 4, "agUserPass" {
+Push "validateLogin(", register3
+Add2
+Push ", "
+Add2
+Push register4
+Add2
+Push ")"
+Add2
+Trace
+Push "/", "prince2set", 2, "SharedObject"
+GetVariable
+Push "getLocal"
+CallMethod
+StoreRegister 2
+Pop
+Push false
+StoreRegister 5
+Pop
+Push 0.0
+StoreRegister 1
+Pop
+loc0329:Push register1, register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc0418
+Push "check pass: ", register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "username"
+GetMember
+Add2
+Push ","
+Add2
+Push register3
+Add2
+Push ","
+Add2
+Push register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "password"
+GetMember
+Add2
+Push ","
+Add2
+Push register4
+Add2
+Trace
+Push register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "username"
+GetMember
+Push register3
+Equals2
+PushDuplicate
+Not
+If loc03e5
+Pop
+Push register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "password"
+GetMember
+Push register4
+Equals2
+loc03e5:Not
+If loc0408
+Push true
+StoreRegister 5
+Pop
+Push register3, 1, "initUser"
+CallFunction
+Pop
+Jump loc0418
+loc0408:Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc0329
+loc0418:Push register5
+Not
+PushDuplicate
+Not
+If loc042f
+Pop
+Push register3, "adminName"
+GetVariable
+Equals2
+loc042f:PushDuplicate
+Not
+If loc0440
+Pop
+Push register4, "adminPass"
+GetVariable
+Equals2
+loc0440:Not
+If loc0477
+Push 0.0, "createAdmin"
+CallFunction
+Not
+If loc0477
+Push true
+StoreRegister 5
+Pop
+Push "adminName"
+GetVariable
+Push 1, "initUser"
+CallFunction
+Pop
+loc0477:Push register5
+Return
+}
+DefineFunction2 "hasDuplicateUser", 1, 5, false, false, true, false, true, false, true, false, false, 4, "agUsername" {
+Push "/", "prince2set", 2, "SharedObject"
+GetVariable
+Push "getLocal"
+CallMethod
+StoreRegister 2
+Pop
+Push false
+StoreRegister 3
+Pop
+Push 0.0
+StoreRegister 1
+Pop
+loc04d9:Push register1, register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc053b
+Push register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "username"
+GetMember
+Push register4
+Equals2
+Not
+If loc052b
+Push true
+StoreRegister 3
+Pop
+Jump loc053b
+loc052b:Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc04d9
+loc053b:Push register3
+Return
+}
+DefineFunction2 "createUser", 9, 16, false, false, true, false, true, false, false, true, false, 6, "agUsername", 15, "agUserPass", 11, "agName", 12, "agGender", 14, "agSchool", 9, "agEdLevel", 10, "agClassLevel", 13, "agClassName", 8, "agType" {
+Push "createUser(", register6
+Add2
+Push ","
+Add2
+Push register15
+Add2
+Push ","
+Add2
+Push register11
+Add2
+Push ","
+Add2
+Push register12
+Add2
+Push ","
+Add2
+Push register14
+Add2
+Push ","
+Add2
+Push register9
+Add2
+Push ","
+Add2
+Push register10
+Add2
+Push ","
+Add2
+Push register13
+Add2
+Push ","
+Add2
+Push register8
+Add2
+Push ")"
+Add2
+Trace
+Push "/", "prince2set", 2, "SharedObject"
+GetVariable
+Push "getLocal"
+CallMethod
+StoreRegister 7
+Pop
+Push false
+StoreRegister 5
+Pop
+Push register6, 1, "hasDuplicateUser"
+CallFunction
+StoreRegister 5
+Pop
+Push register5
+Not
+If loc066e
+Push false
+Return
+loc066e:Push 0.0, "Object"
+NewObject
+StoreRegister 3
+Pop
+Push register3, "scoreReport", null
+SetMember
+Push register3, "itemReport", null
+SetMember
+Push register6, "adminName"
+GetVariable
+Equals2
+Not
+If loc0713
+Push register3, "gemReport", 5, 5, 5, 5, 5, 10, 10, 10, 10, 10, 10
+InitArray
+SetMember
+Push register3, "itemReport", 200, "1-0", 2
+InitArray
+Push 1
+InitArray
+SetMember
+Push register3, "score", 10000
+SetMember
+Jump loc073f
+loc0713:Push register3, "scoreReport", null
+SetMember
+Push register3, "gemReport", null
+SetMember
+Push register3, "itemReport", null
+SetMember
+Push register3, "score", 0.0
+SetMember
+loc073f:Push "agUser"
+GetVariable
+Push "equipment", 0.0, "Array"
+NewObject
+SetMember
+Push register3, "username", register6
+SetMember
+Push register3, "password", register15
+SetMember
+Push register8
+Not
+If loc0785
+Push register3, "type", register8
+SetMember
+Jump loc0792
+loc0785:Push register3, "type", 1
+SetMember
+loc0792:Push register3, "name", register11
+SetMember
+Push register3, "gender", register12
+SetMember
+Push register3, "school", register14
+SetMember
+Push register3, "edLevel", register9
+SetMember
+Push register3, "classLevel", register10
+SetMember
+Push register3, "className", register13
+SetMember
+Push register3, "firstHint", true
+SetMember
+Push register3, "quality", 0.0
+SetMember
+Push register3, "winmode", 1
+SetMember
+Push register3, "musicvolume", 0.0
+SetMember
+Push register3, "bossQue", 0.0, "Array"
+NewObject
+SetMember
+Push 0.0
+StoreRegister 4
+Pop
+loc082c:Push register4, 4
+Less2
+Not
+If loc08c5
+Push 0.0, "Array"
+NewObject
+Push 1, register3, "bossQue"
+GetMember
+Push "push"
+CallMethod
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc0871:Push register2, 4
+Less2
+Not
+If loc08b5
+Push 0.0, 1, register1, "bossQue"
+GetMember
+Push register4
+GetMember
+Push "push"
+CallMethod
+Pop
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc0871
+loc08b5:Push register4
+Increment
+StoreRegister 4
+Pop
+Jump loc082c
+loc08c5:Push register3, "defeatedBoss", 0.0, "Array"
+NewObject
+SetMember
+Push 0.0
+StoreRegister 4
+Pop
+loc08ea:Push register4, 4
+Less2
+Not
+If loc0928
+Push 0.0, 1, register3, "defeatedBoss"
+GetMember
+Push "push"
+CallMethod
+Pop
+Push register4
+Increment
+StoreRegister 4
+Pop
+Jump loc08ea
+loc0928:Push register3, 1, register7, "data"
+GetMember
+Push "userList"
+GetMember
+Push "push"
+CallMethod
+Pop
+Push 0.0, register7, "flush"
+CallMethod
+Pop
+Push true
+Return
+}
+DefineFunction2 "loadUserData", 1, 8, false, false, true, false, true, false, true, false, false, 7, "agUsername" {
+Push "loadUserData(", register7
+Add2
+Push ")"
+Add2
+Trace
+Push "/", "prince2set", 2, "SharedObject"
+GetVariable
+Push "getLocal"
+CallMethod
+StoreRegister 2
+Pop
+Push 0.0, "User"
+NewObject
+StoreRegister 3
+Pop
+Push 0.0
+StoreRegister 1
+Pop
+loc09cd:Push register1, register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc0e83
+Push register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "username"
+GetMember
+Push register7
+Equals2
+Not
+If loc0e73
+Push register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "scoreReport"
+GetMember
+StoreRegister 4
+Pop
+Push register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "gemReport"
+GetMember
+StoreRegister 6
+Pop
+Push register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "itemReport"
+GetMember
+StoreRegister 5
+Pop
+Push register3, "report", "itemSpec"
+GetVariable
+Push register5, "gemSpec"
+GetVariable
+Push register6, "gameSpec"
+GetVariable
+Push register4, 6, "Report"
+NewObject
+SetMember
+Push register3, "equipment", 0.0, 1, register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "equipment"
+GetMember
+Push "slice"
+CallMethod
+SetMember
+Push register3, "score", register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "score"
+GetMember
+SetMember
+Push register3, "username", register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "username"
+GetMember
+SetMember
+Push register3, "password", register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "password"
+GetMember
+SetMember
+Push register3, "type", register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "type"
+GetMember
+SetMember
+Push register3, "name", register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "name"
+GetMember
+SetMember
+Push register3, "gender", register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "gender"
+GetMember
+SetMember
+Push register3, "school", register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "school"
+GetMember
+SetMember
+Push register3, "edLevel", register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "edLevel"
+GetMember
+SetMember
+Push register3, "classLevel", register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "classLevel"
+GetMember
+SetMember
+Push register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "edLevel"
+GetMember
+Push 2
+Less2
+Not
+PushDuplicate
+If loc0c2d
+Pop
+Push register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "classLevel"
+GetMember
+Push 4
+Greater
+loc0c2d:Not
+If loc0c49
+Push register3, "passRate", 0.8
+SetMember
+Jump loc0c99
+loc0c49:Push register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "classLevel"
+GetMember
+Push 2
+Greater
+Not
+If loc0c88
+Push register3, "passRate", 0.7
+SetMember
+Jump loc0c99
+loc0c88:Push register3, "passRate", 0.6
+SetMember
+loc0c99:Push register3, "className", register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "className"
+GetMember
+SetMember
+Push register3, "bossQue", "O"
+GetVariable
+Push 1, register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "bossQue"
+GetMember
+Push "slice"
+CallMethod
+SetMember
+Push register3, "defeatedBoss", "O"
+GetVariable
+Push 1, register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "defeatedBoss"
+GetMember
+Push "slice"
+CallMethod
+SetMember
+Push register3, "firstHint", register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "firstHint"
+GetMember
+SetMember
+Push register3, "quality", register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "quality"
+GetMember
+SetMember
+Push register3, "winmode", register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "winmode"
+GetMember
+SetMember
+Push register3, "musicvolume", register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "musicvolume"
+GetMember
+SetMember
+Push register3, "language", register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "language"
+GetMember
+Push undefined
+Equals2
+If loc0ddb
+Push register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "language"
+GetMember
+Jump loc0de3
+loc0ddb:Push 1
+loc0de3:SetMember
+Push register3, "extra", register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "extra"
+GetMember
+Not
+If loc0e27
+Push register2, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "extra"
+GetMember
+Jump loc0e33
+loc0e27:Push 0.0
+loc0e33:SetMember
+Push register3, "defeatedBoss"
+GetMember
+Push "length"
+GetMember
+Push 4
+Equals2
+Not
+If loc0e6e
+Push 0.0, 1, register3, "defeatedBoss"
+GetMember
+Push "push"
+CallMethod
+Pop
+loc0e6e:Jump loc0e83
+loc0e73:Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc09cd
+loc0e83:Push register3
+Return
+}
+DefineFunction2 "saveUserData", 1, 6, false, false, true, false, true, false, true, false, false, 4, "agUser" {
+Try register0 {
+Push "/", "prince2set", 2, "SharedObject"
+GetVariable
+Push "getLocal"
+CallMethod
+StoreRegister 3
+Pop
+Push 0.0, "Object"
+NewObject
+StoreRegister 2
+Pop
+Push register2, "scoreReport", 0.0, register4, "report"
+GetMember
+Push "getScoreBoardInArray"
+CallMethod
+SetMember
+Push register2, "gemReport", 0.0, register4, "report"
+GetMember
+Push "getGemBoard"
+CallMethod
+SetMember
+Push register2, "itemReport", 0.0, register4, "report"
+GetMember
+Push "getItemBoardInArray"
+CallMethod
+SetMember
+Push register2, "score", register4, "score"
+GetMember
+SetMember
+Push register2, "equipment", 0.0, 1, register4, "equipment"
+GetMember
+Push "slice"
+CallMethod
+SetMember
+Push register2, "username", register4, "username"
+GetMember
+SetMember
+Push register2, "password", register4, "password"
+GetMember
+SetMember
+Push register2, "type", register4, "type"
+GetMember
+SetMember
+Push register2, "name", register4, "name"
+GetMember
+SetMember
+Push register2, "gender", register4, "gender"
+GetMember
+SetMember
+Push register2, "school", register4, "school"
+GetMember
+SetMember
+Push register2, "edLevel", register4, "edLevel"
+GetMember
+SetMember
+Push register2, "classLevel", register4, "classLevel"
+GetMember
+SetMember
+Push register2, "className", register4, "className"
+GetMember
+SetMember
+Push register2, "bossQue", 0.0, 1, register4, "bossQue"
+GetMember
+Push "slice"
+CallMethod
+SetMember
+Push register2, "defeatedBoss", 0.0, 1, register4, "defeatedBoss"
+GetMember
+Push "slice"
+CallMethod
+SetMember
+Push register2, "firstHint", register4, "firstHint"
+GetMember
+SetMember
+Push register2, "quality", register4, "quality"
+GetMember
+SetMember
+Push register2, "winmode", register4, "winmode"
+GetMember
+SetMember
+Push register2, "musicvolume", register4, "musicvolume"
+GetMember
+SetMember
+Push register2, "language", register4, "language"
+GetMember
+SetMember
+Push register2, "extra", register4, "extra"
+GetMember
+SetMember
+Push false
+StoreRegister 5
+Pop
+Push 0.0
+StoreRegister 1
+Pop
+loc1083:Push register1, register3, "data"
+GetMember
+Push "userList"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc140a
+Push register3, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "username"
+GetMember
+Push register4, "username"
+GetMember
+Equals2
+Not
+If loc13fa
+Push register3, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "scoreReport", 0.0, 1, register2, "scoreReport"
+GetMember
+Push "slice"
+CallMethod
+SetMember
+Push register3, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "gemReport", 0.0, 1, register2, "gemReport"
+GetMember
+Push "slice"
+CallMethod
+SetMember
+Push register3, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "itemReport", 0.0, 1, register2, "itemReport"
+GetMember
+Push "slice"
+CallMethod
+SetMember
+Push register3, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "score", register2, "score"
+GetMember
+SetMember
+Push register3, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "equipment", 0.0, 1, register2, "equipment"
+GetMember
+Push "slice"
+CallMethod
+SetMember
+Push register3, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "username", register2, "username"
+GetMember
+SetMember
+Push register3, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "password", register2, "password"
+GetMember
+SetMember
+Push register3, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "type", register2, "type"
+GetMember
+SetMember
+Push register3, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "name", register2, "name"
+GetMember
+SetMember
+Push register3, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "gender", register2, "gender"
+GetMember
+SetMember
+Push register3, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "school", register2, "school"
+GetMember
+SetMember
+Push register3, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "edLevel", register2, "edLevel"
+GetMember
+SetMember
+Push register3, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "classLevel", register2, "classLevel"
+GetMember
+SetMember
+Push register3, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "className", register2, "className"
+GetMember
+SetMember
+Push register3, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "bossQue", 0.0, 1, register2, "bossQue"
+GetMember
+Push "slice"
+CallMethod
+SetMember
+Push register3, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "defeatedBoss", 0.0, 1, register2, "defeatedBoss"
+GetMember
+Push "slice"
+CallMethod
+SetMember
+Push register3, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "firstHint", register2, "firstHint"
+GetMember
+SetMember
+Push register3, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "quality", register2, "quality"
+GetMember
+SetMember
+Push register3, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "winmode", register2, "winmode"
+GetMember
+SetMember
+Push register3, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "musicvolume", register2, "musicvolume"
+GetMember
+SetMember
+Push register3, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "language", register2, "language"
+GetMember
+SetMember
+Push register3, "data"
+GetMember
+Push "userList"
+GetMember
+Push register1
+GetMember
+Push "extra", register2, "extra"
+GetMember
+SetMember
+Push true
+StoreRegister 5
+Pop
+Jump loc140a
+loc13fa:Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc1083
+loc140a:Push register5
+Not
+Not
+If loc1432
+Push register2, 1, register3, "data"
+GetMember
+Push "userList"
+GetMember
+Push "push"
+CallMethod
+Pop
+loc1432:Push 0.0, register3, "flush"
+CallMethod
+Pop
+Jump loc1489
+}
+Catch {
+Push "Error"
+GetVariable
+Push register0
+CastOp
+PushDuplicate
+Push null
+Equals2
+If loc1482
+Push "e_err"
+StackSwap
+DefineLocal
+Push 0.0, "e_err"
+GetVariable
+Push "toString"
+CallMethod
+Trace
+Jump loc1489
+loc1482:Pop
+Push register0
+Throw
+}
+}
+loc1489:DefineFunction2 "numUsers", 0, 2, false, false, true, false, true, false, true, false, false {
+Push "/", "prince2set", 2, "SharedObject"
+GetVariable
+Push "getLocal"
+CallMethod
+StoreRegister 1
+Pop
+Push register1, "data"
+GetMember
+Push "userList"
+GetMember
+Push "length"
+GetMember
+Return
+}
+Push "adminName", "admin"
+DefineLocal
+Push "adminPass", "prince"
+DefineLocal
+Push "demoName", "demo"
+DefineLocal
+Push "demoPass", "demo"
+DefineLocal

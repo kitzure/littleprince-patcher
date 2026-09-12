@@ -1,0 +1,8 @@
+ConstantPool "_parent", "buyNow"
+Push 0.0, "_parent"
+GetVariable
+Push "_parent"
+GetMember
+Push "buyNow"
+CallMethod
+Pop

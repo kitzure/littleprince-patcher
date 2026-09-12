@@ -1,0 +1,15 @@
+ConstantPool "tempNose"
+Push "tempNose", 10
+RandomNumber
+SetVariable
+Push "tempNose"
+GetVariable
+Push 5
+Equals2
+Not
+If loc0035
+Play
+Jump loc003b
+loc0035:GotoFrame 0
+Play
+loc003b:

@@ -1,0 +1,17 @@
+ConstantPool "_global", "traceOut", "debug", "text", "\n"
+Push "_global"
+GetVariable
+Push "traceOut"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "msg" {
+Push "debug"
+GetVariable
+Push "text", register1, "\n"
+Add2
+Push "debug"
+GetVariable
+Push "text"
+GetMember
+Add2
+SetMember
+}
+SetMember

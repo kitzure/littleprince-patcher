@@ -1,0 +1,28 @@
+ConstantPool "my_so", "/", "prince2set", "SharedObject", "getLocal", "data", "userList", "Array", "flush"
+Push "my_so", "/", "prince2set", 2, "SharedObject"
+GetVariable
+Push "getLocal"
+CallMethod
+DefineLocal
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "userList"
+GetMember
+Push undefined
+Equals2
+Not
+If loc009b
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "userList", 0.0, "Array"
+NewObject
+SetMember
+loc009b:Push 0.0, "my_so"
+GetVariable
+Push "flush"
+CallMethod
+Pop

@@ -1,0 +1,119 @@
+{
+  "tool": "JPEXS Free Flash Decompiler v.26.2.1",
+  "files": [
+    {
+      "source": "games/1-Starwish-Legend/index.swf",
+      "sha256": "1228b8e98d223dbee4fccfc43c6a483ed99c51e5992452a55544d60b3eb56c19",
+      "size_bytes": 254288,
+      "signature": "CWS",
+      "swf_version": 8,
+      "output": "1-Starwish-Legend/index",
+      "exports": {
+        "actionscript": {
+          "exit_code": 0,
+          "file_count": 132
+        },
+        "pcode": {
+          "exit_code": 0,
+          "file_count": 132
+        }
+      },
+      "text_file_count": 86
+    },
+    {
+      "source": "games/1-Starwish-Legend/reg.swf",
+      "sha256": "0b0a6e8559734344973cd2c52d20a295e3ef872b9097a569d07b872059cdcfbe",
+      "size_bytes": 235358,
+      "signature": "CWS",
+      "swf_version": 8,
+      "output": "1-Starwish-Legend/reg",
+      "exports": {
+        "actionscript": {
+          "exit_code": 0,
+          "file_count": 59
+        },
+        "pcode": {
+          "exit_code": 0,
+          "file_count": 59
+        }
+      },
+      "text_file_count": 96
+    },
+    {
+      "source": "games/1-Starwish-Legend/start.swf",
+      "sha256": "d399885ec18a59da063708b5ec703768b3e294e7762185ba843b7ce013830a0b",
+      "size_bytes": 257409,
+      "signature": "CWS",
+      "swf_version": 8,
+      "output": "1-Starwish-Legend/start",
+      "exports": {
+        "actionscript": {
+          "exit_code": 0,
+          "file_count": 131
+        },
+        "pcode": {
+          "exit_code": 0,
+          "file_count": 131
+        }
+      },
+      "text_file_count": 86
+    },
+    {
+      "source": "games/2-Little-Prince/reg.swf",
+      "sha256": "e12ee36933cb77b5cadbc699f4e382ee0c5699b5b13f56cb736cc980c39ee4a2",
+      "size_bytes": 243000,
+      "signature": "CWS",
+      "swf_version": 98,
+      "output": "2-Little-Prince/reg",
+      "exports": {
+        "actionscript": {
+          "exit_code": 0,
+          "file_count": 63
+        },
+        "pcode": {
+          "exit_code": 0,
+          "file_count": 63
+        }
+      },
+      "text_file_count": 91
+    },
+    {
+      "source": "games/3-Prince-Adventure/login.swf",
+      "sha256": "bfe4e9502aa519eecef48d757d1edbd20396fcbe06e4d10d7eb9afeda8bf1b88",
+      "size_bytes": 605248,
+      "signature": "CWS",
+      "swf_version": 8,
+      "output": "3-Prince-Adventure/login",
+      "exports": {
+        "actionscript": {
+          "exit_code": 0,
+          "file_count": 39
+        },
+        "pcode": {
+          "exit_code": 0,
+          "file_count": 39
+        }
+      },
+      "text_file_count": 47
+    },
+    {
+      "source": "games/3-Prince-Adventure/reg.swf",
+      "sha256": "56935320d2e1c5f3d01d213aa0e38b93431ea62ac3ae96a15048c53a0bb8689c",
+      "size_bytes": 266406,
+      "signature": "CWS",
+      "swf_version": 8,
+      "output": "3-Prince-Adventure/reg",
+      "exports": {
+        "actionscript": {
+          "exit_code": 0,
+          "file_count": 77
+        },
+        "pcode": {
+          "exit_code": 0,
+          "file_count": 77
+        }
+      },
+      "text_file_count": 92
+    }
+  ]
+}

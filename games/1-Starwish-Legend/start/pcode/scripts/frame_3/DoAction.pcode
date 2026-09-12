@@ -1,0 +1,44 @@
+ConstantPool "initSystem:", "traceOut", "initSys", "initMapObj", "initGameSpec", "initHiddenGemSpec", "initRestrictLevel", "initGemSpec", "initItemSpec", "go to 2", "_currentframe", "GameStart", "gotoAndStop", "went to 2"
+DefineFunction2 "initSystem", 1, 3, false, false, true, false, true, false, false, true, false, 2, "agVersion" {
+Push "initSystem:", register2
+Add2
+Push 1, "traceOut"
+CallFunction
+Pop
+Push register2, 1, "initSys"
+CallFunction
+Pop
+Push 0.0, "initMapObj"
+CallFunction
+Pop
+Push 0.0, "initGameSpec"
+CallFunction
+Pop
+Push 0.0, "initHiddenGemSpec"
+CallFunction
+Pop
+Push 0.0, "initRestrictLevel"
+CallFunction
+Pop
+Push 0.0, "initGemSpec"
+CallFunction
+Pop
+Push 0.0, "initItemSpec"
+CallFunction
+Pop
+Push "go to 2", register1, "_currentframe"
+GetMember
+Add2
+Push 1, "traceOut"
+CallFunction
+Pop
+Push "GameStart", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+Push "went to 2", register1, "_currentframe"
+GetMember
+Add2
+Push 1, "traceOut"
+CallFunction
+Pop
+}

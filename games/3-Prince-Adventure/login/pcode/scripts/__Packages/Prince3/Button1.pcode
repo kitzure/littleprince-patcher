@@ -1,0 +1,248 @@
+ConstantPool "_global", "Prince3", "Object", "Button1", "onReleaseOutside", "onRollOut", "UI", "CheckButton", "prototype", "onLoad", "__set__label", "setText", "__get__label", "_yscale", "tf", "_height", "real_width", "_width", "real_height", "_xscale", "autoSize", "text", "border", "highlight", "bg", "blur", "_x", "_y", "onRelease", "checked", "textColor", "onRollOver", "label", "addProperty", "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "Prince3"
+GetMember
+Not
+Not
+If loc015a
+Push "_global"
+GetVariable
+Push "Prince3", 0.0, "Object"
+NewObject
+SetMember
+loc015a:Pop
+Push "_global"
+GetVariable
+Push "Prince3"
+GetMember
+Push "Button1"
+GetMember
+Not
+Not
+If loc0515
+Push "Prince3"
+GetVariable
+Push "Button1"
+DefineFunction2 "", 0, 3, false, false, false, true, true, false, false, true, false {
+Push 0.0, register2, undefined
+CallMethod
+Pop
+Push register1, "onReleaseOutside", register1, "onRollOut"
+GetMember
+SetMember
+}
+StoreRegister 1
+SetMember
+Push "Prince3"
+GetVariable
+Push "Button1"
+GetMember
+Push "Prince3"
+GetVariable
+Push "UI"
+GetMember
+Push "CheckButton"
+GetMember
+Extends
+Push register1, "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2, "onLoad"
+DefineFunction2 "", 0, 2, false, false, false, true, true, false, true, false, false {
+Push 0.0, register1, "onLoad"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "__set__label"
+DefineFunction2 "", 1, 3, false, false, true, false, true, false, false, true, false, 2, "lbl" {
+Push register2, 1, register1, "setText"
+CallMethod
+Pop
+Push 0.0, register1, "__get__label"
+CallMethod
+Return
+}
+SetMember
+Push register2, "setText"
+DefineFunction2 "", 1, 6, false, false, true, false, true, false, false, true, false, 5, "txt" {
+Push register1, "_yscale"
+GetMember
+StoreRegister 2
+Pop
+Push register1, "tf"
+GetMember
+Push "_height"
+GetMember
+StoreRegister 4
+Pop
+Push register1, "real_width", register1, "_width"
+GetMember
+SetMember
+Push register1, "real_height", register1, "_height"
+GetMember
+SetMember
+Push register1, "_xscale", register1, "_yscale", 100
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register1, "tf"
+GetMember
+Push "_xscale", register2
+SetMember
+Push register1, "tf"
+GetMember
+Push "_yscale", register2
+SetMember
+Push register1, "_width"
+GetMember
+Push register1, "tf"
+GetMember
+Push "_width"
+GetMember
+Subtract
+StoreRegister 3
+Pop
+Push register1, "tf"
+GetMember
+Push "autoSize", true
+SetMember
+Push register1, "tf"
+GetMember
+Push "text", register5
+SetMember
+Push register1, "border"
+GetMember
+Push "_width", register1, "highlight"
+GetMember
+Push "_width", register1, "bg"
+GetMember
+Push "_width", register1, "blur"
+GetMember
+Push "_width", register3, register1, "tf"
+GetMember
+Push "_width"
+GetMember
+Add2
+StoreRegister 0
+SetMember
+Push register0
+StoreRegister 0
+SetMember
+Push register0
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register1, "border"
+GetMember
+Push "_height", register1, "highlight"
+GetMember
+Push "_height", register1, "bg"
+GetMember
+Push "_height", register1, "blur"
+GetMember
+Push "_height", register1, "real_height"
+GetMember
+StoreRegister 0
+SetMember
+Push register0
+StoreRegister 0
+SetMember
+Push register0
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register1, "tf"
+GetMember
+Push "_x", register1, "_width"
+GetMember
+Push register1, "tf"
+GetMember
+Push "_width"
+GetMember
+Subtract
+Push 2
+Divide
+SetMember
+Push register1, "tf"
+GetMember
+Push "_y", register1, "_height"
+GetMember
+Push register1, "tf"
+GetMember
+Push "_height"
+GetMember
+Subtract
+Push 2
+Divide
+SetMember
+}
+SetMember
+Push register2, "onRelease"
+DefineFunction2 "", 0, 3, false, false, false, true, true, false, false, true, false {
+Push 0.0, register2, "onRelease"
+CallMethod
+Pop
+Push register1, "checked"
+GetMember
+Not
+Not
+If loc0444
+Push register1, "tf"
+GetMember
+Push "textColor", 16777215
+SetMember
+}
+loc0444:SetMember
+Push register2, "onRollOver"
+DefineFunction2 "", 0, 3, false, false, false, true, true, false, false, true, false {
+Push 0.0, register2, "onRollOver"
+CallMethod
+Pop
+Push register1, "checked"
+GetMember
+Not
+Not
+If loc048b
+Push register1, "tf"
+GetMember
+Push "textColor", 16763904
+SetMember
+}
+loc048b:SetMember
+Push register2, "onRollOut"
+DefineFunction2 "", 0, 3, false, false, false, true, true, false, false, true, false {
+Push 0.0, register2, "onRollOut"
+CallMethod
+Pop
+Push register1, "checked"
+GetMember
+Not
+Not
+If loc04d2
+Push register1, "tf"
+GetMember
+Push "textColor", 16777215
+SetMember
+}
+loc04d2:SetMember
+Push register2, "__set__label"
+GetMember
+DefineFunction "", 0 {
+}
+Push "label", 3, register2, "addProperty"
+CallMethod
+Push 1, null, "Prince3"
+GetVariable
+Push "Button1"
+GetMember
+Push "prototype"
+GetMember
+Push 3, "ASSetPropFlags"
+CallFunction
+loc0515:Pop

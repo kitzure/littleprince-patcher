@@ -1,0 +1,32 @@
+ConstantPool "initFx", "ver", "cddemo", "webdemo", "webdemoedcity", "trialLabel", "gotoAndStop"
+DefineFunction "initMisc", 0 {
+Push 0.0, "initFx"
+CallFunction
+Pop
+Push "ver"
+GetVariable
+Push "cddemo"
+Equals2
+PushDuplicate
+If loc0083
+Pop
+Push "ver"
+GetVariable
+Push "webdemo"
+Equals2
+loc0083:PushDuplicate
+If loc0096
+Pop
+Push "ver"
+GetVariable
+Push "webdemoedcity"
+Equals2
+loc0096:Not
+If loc00b3
+Push 2, 1, "trialLabel"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+}
+loc00b3:

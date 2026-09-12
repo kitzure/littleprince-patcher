@@ -1,0 +1,89 @@
+ConstantPool "_global", "Prince3", "Object", "MiniGame", "MiniGameCore init", "PrinceSystem", "game", "MovieClip", "prototype", "gameInit", "preload", "playGame", "gameover", "scoreChangeCallBack", "reduceChanceCallBack", "timeupCallBack", "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "Prince3"
+GetMember
+Not
+Not
+If loc00f2
+Push "_global"
+GetVariable
+Push "Prince3", 0.0, "Object"
+NewObject
+SetMember
+loc00f2:Pop
+Push "_global"
+GetVariable
+Push "Prince3"
+GetMember
+Push "MiniGame"
+GetMember
+Not
+Not
+If loc0205
+Push "Prince3"
+GetVariable
+Push "MiniGame"
+DefineFunction2 "", 0, 3, false, false, false, true, true, false, false, true, false {
+Push 0.0, register2, undefined
+CallMethod
+Pop
+Push "MiniGameCore init"
+Trace
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "game", register1
+SetMember
+}
+StoreRegister 1
+SetMember
+Push "Prince3"
+GetVariable
+Push "MiniGame"
+GetMember
+Push "MovieClip"
+GetVariable
+Extends
+Push register1, "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2, "gameInit"
+DefineFunction "", 0 {
+}
+SetMember
+Push register2, "preload"
+DefineFunction "", 0 {
+}
+SetMember
+Push register2, "playGame"
+DefineFunction "", 0 {
+}
+SetMember
+Push register2, "gameover"
+DefineFunction "", 0 {
+}
+SetMember
+Push register2, "scoreChangeCallBack"
+DefineFunction "", 0 {
+}
+SetMember
+Push register2, "reduceChanceCallBack"
+DefineFunction "", 0 {
+}
+SetMember
+Push register2, "timeupCallBack"
+DefineFunction "", 0 {
+}
+SetMember
+Push 1, null, "Prince3"
+GetVariable
+Push "MiniGame"
+GetMember
+Push "prototype"
+GetMember
+Push 3, "ASSetPropFlags"
+CallFunction
+loc0205:Pop

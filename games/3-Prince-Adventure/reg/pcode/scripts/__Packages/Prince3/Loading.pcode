@@ -1,0 +1,210 @@
+ConstantPool "_global", "Prince3", "Object", "Loading", "loader", "_visible", "mcl", "MovieClipLoader", "addListener", "MovieClip", "prototype", "preload", "loadFinishCB", "loaded", "loadingList", "target", "unloadMovie", "url", "loadClip", "onLoadStart", "load start: ", "onLoadProgress", "loadProgress: ", "length", "%", "onLoadInit", "loadInit: ", "load finish", "play", "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "Prince3"
+GetMember
+Not
+Not
+If loc0151
+Push "_global"
+GetVariable
+Push "Prince3", 0.0, "Object"
+NewObject
+SetMember
+loc0151:Pop
+Push "_global"
+GetVariable
+Push "Prince3"
+GetMember
+Push "Loading"
+GetMember
+Not
+Not
+If loc0488
+Push "Prince3"
+GetVariable
+Push "Loading"
+DefineFunction2 "", 0, 3, false, false, false, true, true, false, false, true, false {
+Push 0.0, register2, undefined
+CallMethod
+Pop
+Push "loader"
+Trace
+Push register1, "_visible", false
+SetMember
+Push register1, "mcl", 0.0, "MovieClipLoader"
+NewObject
+SetMember
+Push register1, 1, register1, "mcl"
+GetMember
+Push "addListener"
+CallMethod
+Pop
+}
+StoreRegister 1
+SetMember
+Push "Prince3"
+GetVariable
+Push "Loading"
+GetMember
+Push "MovieClip"
+GetVariable
+Extends
+Push register1, "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2, "preload"
+DefineFunction2 "", 2, 4, false, false, true, false, true, false, false, true, false, 3, "ary", 2, "callBack" {
+Push "preload"
+Trace
+Push register1, "loadFinishCB", register2
+SetMember
+Push register1, "_visible", true
+SetMember
+Push register1, "loaded", 0.0
+SetMember
+Push register1, "loadingList", register3
+SetMember
+Push 0.0, register1, "loadingList"
+GetMember
+Push register1, "loaded"
+GetMember
+GetMember
+Push "target"
+GetMember
+Push "unloadMovie"
+CallMethod
+Pop
+Push register1, "loadingList"
+GetMember
+Push register1, "loaded"
+GetMember
+GetMember
+Push "target"
+GetMember
+Push register1, "loadingList"
+GetMember
+Push register1, "loaded"
+GetMember
+GetMember
+Push "url"
+GetMember
+Push 2, register1, "mcl"
+GetMember
+Push "loadClip"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "onLoadStart"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "target_mc" {
+Push "load start: ", register1
+Add2
+Trace
+}
+SetMember
+Push register2, "onLoadProgress"
+DefineFunction2 "", 3, 4, false, false, true, false, true, false, false, true, false, 0, "target_mc", 3, "bytesLoaded", 2, "bytesTotal" {
+Push "loadProgress: ", 100, register3, register2
+Divide
+Push register1, "loaded"
+GetMember
+Add2
+Multiply
+Push register1, "loadingList"
+GetMember
+Push "length"
+GetMember
+Divide
+ToInteger
+Add2
+Push "%"
+Add2
+Trace
+}
+SetMember
+Push register2, "onLoadInit"
+DefineFunction2 "", 1, 4, false, false, true, false, true, false, false, true, false, 3, "target_mc" {
+Push "loadInit: ", register3
+Add2
+Trace
+Push register1, "loaded", register1, "loaded"
+GetMember
+Increment
+SetMember
+Push register1, "loaded"
+GetMember
+Push register1, "loadingList"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc03d8
+Push register1, "loadingList"
+GetMember
+Push register1, "loaded"
+GetMember
+GetMember
+Push "target"
+GetMember
+Push register1, "loadingList"
+GetMember
+Push register1, "loaded"
+GetMember
+GetMember
+Push "url"
+GetMember
+Push 2, register1, "mcl"
+GetMember
+Push "loadClip"
+CallMethod
+Pop
+Jump loc0464
+loc03d8:Push "load finish"
+Trace
+Push register1, "_visible", false
+SetMember
+Push register1, "loadFinishCB"
+GetMember
+Not
+If loc0408
+Push 0.0, register1, "loadFinishCB"
+CallMethod
+Pop
+loc0408:Push 0.0
+StoreRegister 2
+Pop
+loc0419:Push register2, register1, "loadingList"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc0464
+Push 0.0, register1, "loadingList"
+GetMember
+Push register2
+GetMember
+Push "target"
+GetMember
+Push "play"
+CallMethod
+Pop
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc0419
+}
+loc0464:SetMember
+Push 1, null, "Prince3"
+GetVariable
+Push "Loading"
+GetMember
+Push "prototype"
+GetMember
+Push 3, "ASSetPropFlags"
+CallFunction
+loc0488:Pop

@@ -1,0 +1,9 @@
+ConstantPool "_parent", "resumeDemo"
+Push 0.0, "_parent"
+GetVariable
+Push "_parent"
+GetMember
+Push "resumeDemo"
+CallMethod
+Pop
+GotoFrame 0

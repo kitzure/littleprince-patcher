@@ -1,0 +1,1 @@
+currentTraderID = 0;

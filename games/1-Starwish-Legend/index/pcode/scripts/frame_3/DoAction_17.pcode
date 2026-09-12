@@ -1,0 +1,123 @@
+ConstantPool "Array", "prototype", "randomize", "length", "Math", "random", "floor", "createIndexArray", "isNaN", "push"
+Push "Array"
+GetVariable
+Push "prototype"
+GetMember
+Push "randomize"
+DefineFunction2 "", 0, 7, false, false, true, false, true, false, false, true, false {
+Push register1
+StoreRegister 2
+Pop
+Push register2, "length"
+GetMember
+StoreRegister 3
+Pop
+Push register3, 0.0
+Equals2
+Not
+If loc00a1
+Push undefined
+Return
+loc00a1:Push register3
+Decrement
+StoreRegister 3
+Not
+If loc011b
+Push 0.0, "Math"
+GetVariable
+Push "random"
+CallMethod
+Push register3, 1
+Add2
+Multiply
+Push 1, "Math"
+GetVariable
+Push "floor"
+CallMethod
+StoreRegister 4
+Pop
+Push register2, register3
+GetMember
+StoreRegister 6
+Pop
+Push register2, register4
+GetMember
+StoreRegister 5
+Pop
+Push register2, register3, register5
+SetMember
+Push register2, register4, register6
+SetMember
+Jump loc00a1
+loc011b:Push register2
+Return
+}
+SetMember
+Push "Array"
+GetVariable
+Push "prototype"
+GetMember
+Push "createIndexArray"
+DefineFunction2 "", 0, 8, false, false, true, false, false, true, false, true, false {
+Push register2, 0.0
+GetMember
+StoreRegister 6
+Pop
+Push register2, 1
+GetMember
+StoreRegister 7
+Pop
+Push register1
+StoreRegister 5
+Pop
+Push register6, 0.0
+Greater
+Not
+Not
+If loc0187
+Push null
+Return
+loc0187:Push 1
+StoreRegister 4
+Pop
+Push register7, undefined
+Equals2
+Not
+If loc01b3
+Push 1
+StoreRegister 4
+Pop
+Jump loc01d5
+loc01b3:Push register7, 1, "isNaN"
+CallFunction
+Not
+If loc01cb
+Push null
+Return
+loc01cb:Push register7
+StoreRegister 4
+Pop
+loc01d5:Push 0.0, "Array"
+NewObject
+StoreRegister 5
+Pop
+Push register4
+StoreRegister 3
+Pop
+loc01f3:Push register3, register6, register4
+Add2
+Less2
+Not
+If loc0224
+Push register3, 1, register5, "push"
+CallMethod
+Pop
+Push register3
+Increment
+StoreRegister 3
+Pop
+Jump loc01f3
+loc0224:Push register5
+Return
+}
+SetMember

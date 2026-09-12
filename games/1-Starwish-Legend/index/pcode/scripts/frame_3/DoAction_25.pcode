@@ -1,0 +1,172 @@
+ConstantPool "princeInit", "gotoAndPlay", "firstTimeEnter", "init", "map", "mapEngine_Current", "playMusic", "resumePCounter", "core", "resume", "user", "extra", "langHint", "popup", "firstHint", "showPrince", "player", "_visible", "saveUserData", "popupClip", "gotoAndStop", "clearMap", "header", "showSmallMap", "enableRightPane"
+DefineFunction "initPrince", 0 {
+Push 2, 1, "princeInit"
+GetVariable
+Push "gotoAndPlay"
+CallMethod
+Pop
+}
+DefineFunction "resumePrince", 0 {
+Push "princeInit", "princeInit"
+GetVariable
+Add2
+Trace
+Push "firstTimeEnter"
+GetVariable
+Push undefined
+Equals2
+Not
+If loc018d
+Push "firstTimeEnter", true
+SetVariable
+Push "init", 1, "princeInit"
+GetVariable
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push 10000, "map", "mapEngine_Current"
+GetVariable
+Add2
+Push 2, "playMusic"
+CallFunction
+Pop
+Jump loc01b3
+loc018d:Push "resumePCounter", "resumePCounter"
+GetVariable
+Increment
+SetVariable
+Push 0.0, "map"
+GetVariable
+Push "core"
+GetMember
+Push "resume"
+CallMethod
+Pop
+}
+loc01b3:DefineFunction "showFirstHint", 0 {
+Push "user"
+GetVariable
+Push "extra"
+GetMember
+Push 8
+BitAnd
+Push 0.0
+Equals2
+Not
+If loc0203
+Push "langHint", 1, "popup"
+CallFunction
+Pop
+Jump loc0238
+loc0203:Push "user"
+GetVariable
+Push "firstHint"
+GetMember
+Not
+If loc0228
+Push "firstHint", 1, "popup"
+CallFunction
+Pop
+Jump loc0238
+loc0228:Push 0.0, "showPrince"
+CallFunction
+Pop
+loc0238:Push "map"
+GetVariable
+Push "core"
+GetMember
+Push "player"
+GetMember
+Push "_visible", true
+SetMember
+}
+DefineFunction "resumeFirstHint", 0 {
+Push "user"
+GetVariable
+Push 1, "saveUserData"
+CallFunction
+Pop
+Push 1, 1, "popupClip"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, "clearMap"
+CallFunction
+Pop
+Push 0.0, "showPrince"
+CallFunction
+Pop
+}
+DefineFunction "resumeLangHint", 0 {
+Push "user"
+GetVariable
+Push 1, "saveUserData"
+CallFunction
+Pop
+Push "user"
+GetVariable
+Push "firstHint"
+GetMember
+Not
+If loc0305
+Push "firstHint", 1, "popupClip"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Jump loc033c
+loc0305:Push 1, 1, "popupClip"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, "clearMap"
+CallFunction
+Pop
+Push 0.0, "showPrince"
+CallFunction
+Pop
+}
+loc033c:DefineFunction "resumeDemo", 0 {
+Push 1, 1, "popupClip"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, "clearMap"
+CallFunction
+Pop
+Push 0.0, "showPrince"
+CallFunction
+Pop
+}
+DefineFunction "showPrince", 0 {
+Push 0.0, "header"
+GetVariable
+Push "showSmallMap"
+CallMethod
+Pop
+Push "map"
+GetVariable
+Push "core"
+GetMember
+Push "player"
+GetMember
+Push "_visible", true
+SetMember
+Push 0.0, "map"
+GetVariable
+Push "core"
+GetMember
+Push "resume"
+CallMethod
+Pop
+Push 0.0, "header"
+GetVariable
+Push "enableRightPane"
+CallMethod
+Pop
+}
+Push "resumePCounter", 0.0
+SetVariable

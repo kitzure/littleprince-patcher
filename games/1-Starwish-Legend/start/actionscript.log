@@ -1,0 +1,223 @@
+JPEXS Free Flash Decompiler v.26.2.1
+------------------------------------
+Exporting texts...
+Exported text 1/86 DefineEditText (chid: 40)
+Exported text 2/86 DefineText (chid: 42)
+Exported text 3/86 DefineText (chid: 44)
+Exported text 4/86 DefineEditText (chid: 45)
+Exported text 5/86 DefineText (chid: 62)
+Exported text 6/86 DefineText (chid: 70)
+Exported text 7/86 DefineText (chid: 77)
+Exported text 8/86 DefineText (chid: 85)
+Exported text 9/86 DefineText (chid: 92)
+Exported text 10/86 DefineText (chid: 102)
+Exported text 11/86 DefineText (chid: 103)
+Exported text 12/86 DefineText (chid: 104)
+Exported text 13/86 DefineText (chid: 105)
+Exported text 14/86 DefineText (chid: 106)
+Exported text 15/86 DefineText (chid: 107)
+Exported text 16/86 DefineText (chid: 108)
+Exported text 17/86 DefineText (chid: 109)
+Exported text 18/86 DefineEditText (chid: 136, vn: "msgVar")
+Exported text 19/86 DefineText (chid: 142)
+Exported text 20/86 DefineText (chid: 147)
+Exported text 21/86 DefineEditText (chid: 157, vn: "msgVar")
+Exported text 22/86 DefineText (chid: 158)
+Exported text 23/86 DefineEditText (chid: 164, vn: "msgVar")
+Exported text 24/86 DefineText (chid: 169)
+Exported text 25/86 DefineText (chid: 183)
+Exported text 26/86 DefineText (chid: 198)
+Exported text 27/86 DefineText (chid: 199)
+Exported text 28/86 DefineText (chid: 205)
+Exported text 29/86 DefineText (chid: 207)
+Exported text 30/86 DefineText (chid: 214)
+Exported text 31/86 DefineText (chid: 221)
+Exported text 32/86 DefineText (chid: 241)
+Exported text 33/86 DefineText (chid: 246)
+Exported text 34/86 DefineText (chid: 258)
+Exported text 35/86 DefineText (chid: 262)
+Exported text 36/86 DefineText (chid: 267)
+Exported text 37/86 DefineText (chid: 276)
+Exported text 38/86 DefineText (chid: 277)
+Exported text 39/86 DefineText (chid: 278)
+Exported text 40/86 DefineText (chid: 279)
+Exported text 41/86 DefineText (chid: 280)
+Exported text 42/86 DefineText (chid: 281)
+Exported text 43/86 DefineText (chid: 282)
+Exported text 44/86 DefineText (chid: 293)
+Exported text 45/86 DefineText (chid: 294)
+Exported text 46/86 DefineText (chid: 296)
+Exported text 47/86 DefineText (chid: 298)
+Exported text 48/86 DefineText (chid: 301)
+Exported text 49/86 DefineText (chid: 303)
+Exported text 50/86 DefineText (chid: 305)
+Exported text 51/86 DefineText (chid: 331)
+Exported text 52/86 DefineText (chid: 332)
+Exported text 53/86 DefineText (chid: 333)
+Exported text 54/86 DefineText (chid: 335)
+Exported text 55/86 DefineText (chid: 337)
+Exported text 56/86 DefineText (chid: 338)
+Exported text 57/86 DefineText (chid: 342)
+Exported text 58/86 DefineText (chid: 343)
+Exported text 59/86 DefineText (chid: 346)
+Exported text 60/86 DefineText (chid: 347)
+Exported text 61/86 DefineText (chid: 348)
+Exported text 62/86 DefineText (chid: 350)
+Exported text 63/86 DefineText (chid: 351)
+Exported text 64/86 DefineText (chid: 354)
+Exported text 65/86 DefineText (chid: 355)
+Exported text 66/86 DefineText (chid: 358)
+Exported text 67/86 DefineText (chid: 359)
+Exported text 68/86 DefineText (chid: 361)
+Exported text 69/86 DefineText (chid: 362)
+Exported text 70/86 DefineText (chid: 363)
+Exported text 71/86 DefineText (chid: 365)
+Exported text 72/86 DefineText (chid: 366)
+Exported text 73/86 DefineText (chid: 367)
+Exported text 74/86 DefineEditText (chid: 369, vn: "verNumber")
+Exported text 75/86 DefineText (chid: 370)
+Exported text 76/86 DefineText (chid: 371)
+Exported text 77/86 DefineText (chid: 373)
+Exported text 78/86 DefineText (chid: 374)
+Exported text 79/86 DefineText (chid: 376)
+Exported text 80/86 DefineText (chid: 377)
+Exported text 81/86 DefineText (chid: 379)
+Exported text 82/86 DefineText (chid: 387)
+Exported text 83/86 DefineText (chid: 390)
+Exported text 84/86 DefineText (chid: 391)
+Exported text 85/86 DefineEditText (chid: 414)
+Exported text 86/86 DefineText (chid: 416)
+Exporting scripts...
+Exported script 7/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineButton2_266/BUTTONCONDACTION on(release).as, 00:00.007
+Exported script 8/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineButton2_269/BUTTONCONDACTION on(release).as, 00:00.005
+Exported script 9/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineButton2_324/BUTTONCONDACTION on(release).as, 00:00.003
+Exported script 4/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/__Packages/User.as, 00:00.020
+Exported script 6/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/__Packages/lib/LoadQue/LoadQue.as, 00:00.020
+Exported script 10/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineButton2_326/BUTTONCONDACTION on(release).as, 00:00.004
+Exported script 11/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineButton2_330/BUTTONCONDACTION on(release).as, 00:00.006
+Exported script 13/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineButton2_389/BUTTONCONDACTION on(release).as, 00:00.004
+Exported script 12/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineButton2_384/BUTTONCONDACTION on(release).as, 00:00.006
+Exported script 14/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_20/frame_1/DoAction.as, 00:00.002
+Exported script 17/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_55/frame_10/DoAction.as, 00:00.001
+Exported script 15/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_38/frame_1/DoAction.as, 00:00.003
+Exported script 5/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/__Packages/lib/LoadQue/LoadMovie.as, 00:00.030
+Exported script 16/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_51_loading/frame_25/DoAction.as, 00:00.004
+Exported script 18/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_60/frame_10/DoAction.as, 00:00.003
+Exported script 20/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_66/frame_10/DoAction.as, 00:00.003
+Exported script 19/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_63/frame_13/DoAction.as, 00:00.003
+Exported script 21/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_69/frame_10/DoAction.as, 00:00.005
+Exported script 23/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_74/frame_10/DoAction.as, 00:00.004
+Exported script 24/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_78/frame_13/DoAction.as, 00:00.003
+Exported script 22/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_71/frame_13/DoAction.as, 00:00.005
+Exported script 25/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_81/frame_10/DoAction.as, 00:00.003
+Exported script 26/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_84/frame_10/DoAction.as, 00:00.002
+Exported script 27/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_86/frame_13/DoAction.as, 00:00.002
+Exported script 28/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_89/frame_10/DoAction.as, 00:00.002
+Exported script 29/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_93/frame_13/DoAction.as, 00:00.003
+Exported script 31/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_94/frame_9/DoAction.as, 00:00.002
+Exported script 30/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_94/frame_1/DoAction.as, 00:00.003
+Exported script 33/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_94/frame_28/DoAction.as, 00:00.001
+Exported script 32/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_94/frame_20/DoAction.as, 00:00.003
+Exported script 34/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_94/frame_39/DoAction.as, 00:00.001
+Exported script 35/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_94/frame_47/DoAction.as, 00:00.003
+Exported script 36/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_94/frame_58/DoAction.as, 00:00.003
+Exported script 38/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_94/frame_77/DoAction.as, 00:00.004
+Exported script 37/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_94/frame_66/DoAction.as, 00:00.004
+Exported script 39/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_94/frame_85/DoAction.as, 00:00.001
+Exported script 40/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_94/frame_96/DoAction.as, 00:00.001
+Exported script 41/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_99/frame_1/DoAction.as, 00:00.001
+Exported script 44/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_99/frame_30/DoAction.as, 00:00.001
+Exported script 42/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_99/frame_2/DoAction.as, 00:00.001
+Exported script 43/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_99/frame_19/DoAction.as, 00:00.002
+Exported script 47/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_99/frame_55/DoAction.as, 00:00.004
+Exported script 45/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_99/frame_37/DoAction.as, 00:00.004
+Exported script 46/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_99/frame_38/DoAction.as, 00:00.004
+Exported script 48/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_99/frame_66/DoAction.as, 00:00.005
+Exported script 50/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_110/frame_1/DoAction.as, 00:00.003
+Exported script 49/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_99/frame_73/DoAction.as, 00:00.002
+Exported script 51/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_116/frame_1/DoAction.as, 00:00.002
+Exported script 53/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_120/frame_2/DoAction.as, 00:00.001
+Exported script 52/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_120/frame_1/DoAction.as, 00:00.002
+Exported script 54/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_120/frame_19/DoAction.as, 00:00.001
+Exported script 55/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_120/frame_30/DoAction.as, 00:00.001
+Exported script 56/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_120/frame_37/DoAction.as, 00:00.001
+Exported script 59/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_155/frame_11/DoAction.as, 00:00.001
+Exported script 58/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_155/frame_7/DoAction.as, 00:00.002
+Exported script 61/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_162/frame_11/DoAction.as, 00:00.002
+Exported script 60/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_162/frame_7/DoAction.as, 00:00.002
+Exported script 57/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_127/frame_4/DoAction.as, 00:00.004
+Exported script 62/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_178/frame_7/DoAction.as, 00:00.001
+Exported script 63/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_178/frame_11/DoAction.as, 00:00.003
+Exported script 64/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_184/frame_1/DoAction.as, 00:00.003
+Exported script 66/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_231/frame_1/DoAction.as, 00:00.002
+Exported script 65/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_225/frame_1/DoAction.as, 00:00.003
+Exported script 68/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_239/frame_1/DoAction.as, 00:00.002
+Exported script 69/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_271/frame_1/DoAction.as, 00:00.002
+Exported script 67/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_235/frame_1/DoAction.as, 00:00.002
+Exported script 70/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_287/frame_1/DoAction.as, 00:00.003
+Exported script 72/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_289/frame_2/DoAction.as, 00:00.002
+Exported script 73/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_289/frame_8/DoAction.as, 00:00.003
+Exported script 71/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_287/frame_7/DoAction.as, 00:00.004
+Exported script 74/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_289/frame_10/DoAction.as, 00:00.003
+Exported script 75/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_325/frame_1/DoAction.as, 00:00.003
+Exported script 76/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_327/frame_2/DoAction.as, 00:00.003
+Exported script 78/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_327/frame_10/DoAction.as, 00:00.001
+Exported script 77/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_327/frame_8/DoAction.as, 00:00.002
+Exported script 79/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_380/frame_1/DoAction.as, 00:00.001
+Exported script 82/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_380/frame_13/DoAction.as, 00:00.002
+Exported script 81/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_380/frame_9/DoAction.as, 00:00.002
+Exported script 80/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_380/frame_8/DoAction.as, 00:00.002
+Exported script 84/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_393/frame_8/DoAction.as, 00:00.002
+Exported script 83/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_393/frame_2/DoAction.as, 00:00.003
+Exported script 85/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_393/frame_10/DoAction.as, 00:00.003
+Exported script 87/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_407/frame_1/DoAction.as, 00:00.001
+Exported script 88/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_411/frame_1/DoAction.as, 00:00.002
+Exported script 90/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_411/frame_100/DoAction.as, 00:00.003
+Exported script 86/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_394/frame_1/DoAction.as, 00:00.005
+Exported script 91/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_411/frame_110/DoAction.as, 00:00.002
+Exported script 89/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_411/frame_98/DoAction.as, 00:00.003
+Exported script 92/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_411/frame_111/DoAction.as, 00:00.001
+Exported script 93/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_413/frame_1/DoAction.as, 00:00.001
+Exported script 95/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_413/frame_12/DoAction.as, 00:00.001
+Exported script 94/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_413/frame_2/DoAction.as, 00:00.002
+Exported script 98/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_1/DoAction.as, 00:00.003
+Exported script 97/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_418/frame_2/DoAction.as, 00:00.004
+Exported script 96/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/DefineSprite_418/frame_1/DoAction.as, 00:00.005
+Exported script 99/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction.as, 00:00.005
+Exported script 101/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_3.as, 00:00.002
+Exported script 1/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/__Packages/Reg.as, 00:00.089
+Exported script 104/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_6.as, 00:00.005
+Exported script 100/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_2.as, 00:00.009
+Exported script 103/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_5.as, 00:00.007
+Exported script 107/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_9.as, 00:00.002
+Exported script 109/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_11.as, 00:00.001
+Exported script 108/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_10.as, 00:00.002
+Exported script 105/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_7.as, 00:00.007
+Exported script 111/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_13.as, 00:00.002
+Exported script 112/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_14.as, 00:00.002
+Exported script 110/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_12.as, 00:00.004
+Exported script 3/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/__Packages/SaveLoadSystem.as, 00:00.100
+Exported script 115/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_17.as, 00:00.006
+Exported script 106/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_8.as, 00:00.017
+Exported script 113/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_15.as, 00:00.011
+Exported script 114/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_16.as, 00:00.012
+Exported script 102/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_4.as, 00:00.040
+Exported script 2/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/__Packages/Report.as, 00:00.128
+Exported script 117/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_19.as, 00:00.028
+Exported script 121/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_23.as, 00:00.013
+Exported script 122/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_24.as, 00:00.011
+Exported script 123/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_25.as, 00:00.011
+Exported script 125/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_27.as, 00:00.004
+Exported script 126/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_28.as, 00:00.003
+Exported script 119/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_21.as, 00:00.039
+Exported script 128/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_30.as, 00:00.002
+Exported script 116/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_18.as, 00:00.048
+Exported script 120/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_22.as, 00:00.040
+Exported script 124/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_26.as, 00:00.012
+Exported script 131/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_4/DoAction.as, 00:00.003
+Exported script 129/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_31.as, 00:00.004
+Exported script 130/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_32.as, 00:00.005
+Exported script 118/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_20.as, 00:00.050
+Exported script 127/131 <repo>/decompiled/1-Starwish-Legend/start/scripts/frame_3/DoAction_29.as, 00:00.015
+Export finished. Total export time: 00:00.992
+OK

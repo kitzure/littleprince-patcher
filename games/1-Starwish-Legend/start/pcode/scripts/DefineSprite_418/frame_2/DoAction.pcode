@@ -1,0 +1,7 @@
+Push "onRelease"
+DefineFunction2 "", 0, 2, true, false, true, false, true, false, true, false, false {
+Push 0.0, register1, "buyNow"
+CallMethod
+Pop
+}
+SetVariable

@@ -1,0 +1,2553 @@
+ConstantPool "_global", "Header", "MovieClip", "prototype", "onLoad", "mcPanePet", "_visible", "showGem", "mcPaneMenu", "gembar", "gem", "gotoAndStop", "num", "Prince3", "PrinceSystem", "curUser", "gems", "Utils", "num2Str", "showHeader", "show", "mcPaneL", "gotoAndPlay", "hideHeader", "mcScore", "setScore", "normal", "dec", "inc", "numLimit", "substr", "mcNum", "length", "mcCore", "initNum", "score", "initPaneLBtn", "btnItem", "onRollOver", "btnCrown", "btnReport", "mcBubble", "_parent", "over", "_name", "showHint", "onRollOut", "killHint", "onPress", "onRelease", "onEnterFrame", "fall", "initWind", "counter", "amplitude", "side", "mov", "Math", "sin", "_rotation", "showOtherPane", "enter", "initMenu", "menu", "sfx/drag", "SoundSystem", "playSound", "pause", "blurBG", "showMenu", "sfx/drop", "btn_card", "card", "onReleaseOutside", "prepareGame", "initMenuCore", "showExit", "showHelp", "showSetting", "btnExit", "btnHelp", "btnSetting", "id", "f", "mcTag", "out", "leaveMenu", "enabled", "open1", "toGo", "sOut", "setting", "select", "btnSetting2", "hOut", "help", "btnHelp2", "eOut", "exit", "btnExit2", "initBtnResult", "btnGetResult", "result", "miniGameSetting", "gameNumber", "gameLevel", "type", "timer", "game", "timeupCallBack", "reduceChanceCallBack", "initBtnLeave", "btnLeaveGame", "leaveGame", "application", "loading", "status", "buy card", "canCloseBuyCard", "end", "gamebar", "buycard", "mcGameTag", "btnGameHelp", "_currentframe", "leave", "mcGameInst", "initBtnHelp", "acc", "_x", "showGameHelp", "prepareGame2", "switchGame", "toGame", "switchInGame", "inGame", "mc_number", "gameArea", "exitPopup", "btnYes", "btnNo", "btnLevel", "down", "request_exit_end", "loadMap", "play", "ingame", "exitGameToSelectLevel", "switchMenu", "request_exit", "game select menu", "prebattle", "closeGameSelectMenu", "switchBacktoGame", "settingInit", "save", "高", "中", "低", "mcSetting", "btn_q", "txt", "sfx/bob", ",", "screen_quality", "settingChange", "_quality", "LOW", "MEDIUM", "HIGH", "全螢幕", "視窗", "btn_f", "applicationWindowMode", "applicationFullScreenMode", "fullscreen", "大", "小", "無", "btn_s", "sound_level", "maxVal", "setVolume", "普通話", "粵語", "btn_lang", "language", "exitInit", "mcHelp", "btn_logout", "isCheckButton", "onSelect", "reset", "btn_exit", "applicationClose", "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "Header"
+GetMember
+Not
+Not
+If loc2f74
+Push "_global"
+GetVariable
+Push "Header"
+DefineFunction2 "", 0, 2, false, false, false, true, true, false, true, false, false {
+Push 0.0, register1, undefined
+CallMethod
+Pop
+}
+StoreRegister 1
+SetMember
+Push "_global"
+GetVariable
+Push "Header"
+GetMember
+Push "MovieClip"
+GetVariable
+Extends
+Push register1, "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2, "onLoad"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "mcPanePet"
+GetMember
+Push "_visible", false
+SetMember
+}
+SetMember
+Push register2, "showGem"
+DefineFunction2 "", 0, 4, false, false, true, false, true, false, false, true, false {
+Push 0.0
+StoreRegister 2
+Pop
+loc077f:Push register2, 8
+Less2
+Not
+If loc0850
+Push register1, "mcPaneMenu"
+GetMember
+Push "gembar"
+GetMember
+Push "gembar"
+GetMember
+Push "gem", register2
+Add2
+GetMember
+StoreRegister 3
+Pop
+Push 1, 1, register3, "gotoAndStop"
+CallMethod
+Pop
+Push register2, 1
+Add2
+Push 1, register3, "gem"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1, "mcPaneMenu"
+GetMember
+Push "gembar"
+GetMember
+Push "gembar"
+GetMember
+Push "num", register2
+Add2
+Push 1, 10, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "gems"
+GetMember
+Push register2
+GetMember
+Push 3, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "num2Str"
+CallMethod
+SetMember
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc077f
+}
+loc0850:SetMember
+Push register2, "showHeader"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "show", 1, register1, "mcPaneL"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "hideHeader"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 1, 1, register1, "mcPaneMenu"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 1, 1, register1, "mcScore"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 1, 1, register1, "mcPaneL"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 1, 1, register1, "mcPanePet"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "setScore"
+DefineFunction2 "", 2, 8, false, false, true, false, true, false, false, true, false, 4, "num", 7, "type" {
+Push register7, "normal"
+Equals2
+Not
+If loc092e
+Push 1
+StoreRegister 5
+Pop
+Jump loc0969
+loc092e:Push register7, "dec"
+Equals2
+Not
+If loc094e
+Push 2
+StoreRegister 5
+Pop
+Jump loc0969
+loc094e:Push register7, "inc"
+Equals2
+Not
+If loc0969
+Push 3
+StoreRegister 5
+Pop
+loc0969:Push 1, 10, 9999999, 0.0, register4, 3, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "numLimit"
+CallMethod
+Push 3, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "num2Str"
+CallMethod
+StoreRegister 6
+Pop
+Push 1
+StoreRegister 3
+Pop
+loc09c3:Push register3, 7
+Greater
+Not
+Not
+If loc0aa1
+Push 1, register3, 1
+Subtract
+Push 2, register6, "substr"
+CallMethod
+ToNumber
+Push 1
+Add2
+StoreRegister 4
+Pop
+Push register1, "mcScore"
+GetMember
+Push "mcNum", register3
+Add2
+GetMember
+StoreRegister 2
+Pop
+Push register3, register6, "length"
+GetMember
+Greater
+Not
+Not
+If loc0a5e
+Push register4, 1, register2, "gotoAndStop"
+CallMethod
+Pop
+Push register5, 1, register2, "mcCore"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register2, "_visible", true
+SetMember
+Jump loc0a91
+loc0a5e:Push 1, 1, register2, "gotoAndStop"
+CallMethod
+Pop
+Push register5, 1, register2, "mcCore"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register2, "_visible", false
+SetMember
+loc0a91:Push register3
+Increment
+StoreRegister 3
+Pop
+Jump loc09c3
+}
+loc0aa1:SetMember
+Push register2, "initNum"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 2, 1, register1, "mcScore"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push "normal", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "score"
+GetMember
+Push 2, register1, "setScore"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "initPaneLBtn"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "mcPaneL"
+GetMember
+Push "btnItem"
+GetMember
+Push "onRollOver", register1, "mcPaneL"
+GetMember
+Push "btnCrown"
+GetMember
+Push "onRollOver", register1, "mcPaneL"
+GetMember
+Push "btnReport"
+GetMember
+Push "onRollOver"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 2, 1, register1, "mcBubble"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1, "_parent"
+GetMember
+Push "over", true
+SetMember
+Push "over", 1, register1, "gotoAndPlay"
+CallMethod
+Pop
+Push register1, "_name"
+GetMember
+Push 1, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "showHint"
+CallMethod
+Pop
+}
+StoreRegister 0
+SetMember
+Push register0
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register1, "mcPaneL"
+GetMember
+Push "btnItem"
+GetMember
+Push "onRollOut", register1, "mcPaneL"
+GetMember
+Push "btnCrown"
+GetMember
+Push "onRollOut", register1, "mcPaneL"
+GetMember
+Push "btnReport"
+GetMember
+Push "onRollOut"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 1, 1, register1, "mcBubble"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1, "_parent"
+GetMember
+Push "over", false
+SetMember
+Push "normal", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "killHint"
+CallMethod
+Pop
+}
+StoreRegister 0
+SetMember
+Push register0
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register1, "mcPaneL"
+GetMember
+Push "btnItem"
+GetMember
+Push "onPress", register1, "mcPaneL"
+GetMember
+Push "btnCrown"
+GetMember
+Push "onPress", register1, "mcPaneL"
+GetMember
+Push "btnReport"
+GetMember
+Push "onPress"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "onRollOver"
+Delete
+Pop
+Push register1, "onRollOut"
+Delete
+Pop
+Push register1, "onRelease"
+Delete
+Pop
+Push register1, "mcPaneL"
+GetMember
+Push "btnItem"
+GetMember
+Push "onEnterFrame"
+Delete
+Pop
+Push register1, "mcPaneL"
+GetMember
+Push "btnCrown"
+GetMember
+Push "onEnterFrame"
+Delete
+Pop
+Push register1, "mcPaneL"
+GetMember
+Push "btnReport"
+GetMember
+Push "onEnterFrame"
+Delete
+Pop
+Push "fall", 1, register1, "gotoAndPlay"
+CallMethod
+Pop
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "killHint"
+CallMethod
+Pop
+}
+StoreRegister 0
+SetMember
+Push register0
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+}
+SetMember
+Push register2, "showHint"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "pmHint" {
+Push register1, 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "showHint"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "killHint"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "showHint"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "initWind"
+DefineFunction2 "", 2, 5, false, false, true, false, true, false, false, true, false, 3, "pmBase", 4, "pmBtn" {
+Push 1
+StoreRegister 2
+Pop
+loc0dcb:Push register2, 3
+Greater
+Not
+Not
+If loc0f3b
+Push register3, register4, register2, 1
+Subtract
+GetMember
+GetMember
+Push "counter", 10
+RandomNumber
+Push 3
+Divide
+SetMember
+Push register3, register4, register2, 1
+Subtract
+GetMember
+GetMember
+Push "amplitude", 5
+RandomNumber
+Push 5
+Add2
+SetMember
+Push register3, register4, register2, 1
+Subtract
+GetMember
+GetMember
+Push "side", 2
+RandomNumber
+Push 1
+Equals2
+If loc0e60
+Push -1
+Jump loc0e68
+loc0e60:Push 1
+loc0e68:SetMember
+Push register3, register4, register2, 1
+Subtract
+GetMember
+GetMember
+Push "onEnterFrame"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "_parent"
+GetMember
+Push "over"
+GetMember
+Not
+Not
+If loc0f2a
+Push register1, "counter", register1, "counter"
+GetMember
+Push 0.2
+Add2
+SetMember
+Push register1, "amplitude", register1, "amplitude"
+GetMember
+Push 0.2
+Add2
+SetMember
+Push register1, "mov", register1, "amplitude"
+GetMember
+Push 1, "Math"
+GetVariable
+Push "sin"
+CallMethod
+Push 3
+Multiply
+SetMember
+Push register1, "_rotation", register1, "side"
+GetMember
+Push register1, "counter"
+GetMember
+Push 1, "Math"
+GetVariable
+Push "sin"
+CallMethod
+Multiply
+Push register1, "mov"
+GetMember
+Multiply
+SetMember
+}
+loc0f2a:SetMember
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc0dcb
+}
+loc0f3b:SetMember
+Push register2, "showOtherPane"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "enter", 1, register1, "mcPanePet"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push "enter", 1, register1, "mcPaneMenu"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "initMenu"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "mcPaneMenu"
+GetMember
+Push "mcCore"
+GetMember
+Push "onRollOver"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "over", 1, register1, "gotoAndPlay"
+CallMethod
+Pop
+Push "menu", 1, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "showHint"
+CallMethod
+Pop
+Push "sfx/drag", 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "playSound"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "mcPaneMenu"
+GetMember
+Push "mcCore"
+GetMember
+Push "onRollOut"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 11, 1, register1, "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "killHint"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "mcPaneMenu"
+GetMember
+Push "mcCore"
+GetMember
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "pause", true
+SetMember
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "blurBG"
+CallMethod
+Pop
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "showMenu"
+CallMethod
+Pop
+Push "sfx/drop", 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "playSound"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "mcPaneL"
+GetMember
+Push "over"
+Delete
+Pop
+Push register1, "mcPaneMenu"
+GetMember
+Push "btn_card"
+GetMember
+Push "onRollOver"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "over", 1, register1, "gotoAndPlay"
+CallMethod
+Pop
+Push "card", 1, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "showHint"
+CallMethod
+Pop
+Push "sfx/drag", 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "playSound"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "mcPaneMenu"
+GetMember
+Push "btn_card"
+GetMember
+Push "onRollOut", register1, "btn_card"
+GetMember
+Push "onReleaseOutside"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 11, 1, register1, "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "killHint"
+CallMethod
+Pop
+}
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register1, "mcPaneMenu"
+GetMember
+Push "btn_card"
+GetMember
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "killHint"
+CallMethod
+Pop
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "prepareGame"
+CallMethod
+Pop
+Push "sfx/drop", 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "playSound"
+CallMethod
+Pop
+}
+SetMember
+}
+SetMember
+Push register2, "initMenuCore"
+DefineFunction2 "", 0, 5, false, false, true, false, true, false, false, true, false {
+Push "showExit", "showHelp", "showSetting", "btnExit", "btnHelp", "btnSetting", 6
+InitArray
+StoreRegister 3
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc1254:Push register2, 3
+Less2
+Not
+If loc138c
+Push register1, "mcPaneMenu"
+GetMember
+Push register3, register2
+GetMember
+GetMember
+StoreRegister 4
+Pop
+Push register4, "id", register2, 1
+Add2
+SetMember
+Push register4, "f", register3, register2, 3
+Add2
+GetMember
+SetMember
+Push register4, "onRollOver"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "over", 1, register1, "gotoAndPlay"
+CallMethod
+Pop
+Push 2, 1, register1, "_parent"
+GetMember
+Push "mcTag", register1, "id"
+GetMember
+Add2
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push "sfx/drag", 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "playSound"
+CallMethod
+Pop
+}
+SetMember
+Push register4, "onRollOut"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "out", 1, register1, "gotoAndPlay"
+CallMethod
+Pop
+Push 1, 1, register1, "_parent"
+GetMember
+Push "mcTag", register1, "id"
+GetMember
+Add2
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+Push register4, "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push register1, "f"
+GetMember
+CallMethod
+Pop
+}
+SetMember
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc1254
+loc138c:Push register1, "mcPaneMenu"
+GetMember
+Push "mcCore"
+GetMember
+StoreRegister 4
+Pop
+Push register4, "onRollOver"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "leaveMenu", 1, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "showHint"
+CallMethod
+Pop
+Push "over", 1, register1, "gotoAndPlay"
+CallMethod
+Pop
+Push "sfx/drag", 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "playSound"
+CallMethod
+Pop
+}
+SetMember
+Push register4, "onRollOut"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "killHint"
+CallMethod
+Pop
+Push 22, 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+Push register4, "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "killHint"
+CallMethod
+Pop
+Push "out", 1, register1, "_parent"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push register1, "enabled", false
+SetMember
+Push "fall", 1, register1, "gotoAndPlay"
+CallMethod
+Pop
+}
+SetMember
+}
+SetMember
+Push register2, "showMenu"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 0.0, register1, "killHint"
+CallMethod
+Pop
+Push "open1", 1, register1, "mcPaneMenu"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push register1, "mcPaneL"
+GetMember
+Push "over", true
+SetMember
+}
+SetMember
+Push register2, "showSetting"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "mcPaneMenu"
+GetMember
+Push "mcCore"
+GetMember
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "killHint"
+CallMethod
+Pop
+Push register1, "_parent"
+GetMember
+Push "toGo", "normal"
+SetMember
+Push "sOut", 1, register1, "_parent"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push register1, "enabled", false
+SetMember
+Push "fall", 1, register1, "gotoAndPlay"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "mcPaneMenu"
+GetMember
+Push "btnSetting"
+GetMember
+Push "enabled", false
+SetMember
+Push "setting", 1, register1, "mcPaneMenu"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push "select", 1, register1, "mcPaneMenu"
+GetMember
+Push "btnSetting2"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "showHelp"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "mcPaneMenu"
+GetMember
+Push "mcCore"
+GetMember
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "killHint"
+CallMethod
+Pop
+Push register1, "_parent"
+GetMember
+Push "toGo", "normal"
+SetMember
+Push "hOut", 1, register1, "_parent"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push register1, "enabled", false
+SetMember
+Push "fall", 1, register1, "gotoAndPlay"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "mcPaneMenu"
+GetMember
+Push "btnHelp"
+GetMember
+Push "enabled", false
+SetMember
+Push "help", 1, register1, "mcPaneMenu"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push "select", 1, register1, "mcPaneMenu"
+GetMember
+Push "btnHelp2"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "showExit"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "mcPaneMenu"
+GetMember
+Push "mcCore"
+GetMember
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "killHint"
+CallMethod
+Pop
+Push register1, "_parent"
+GetMember
+Push "toGo", "normal"
+SetMember
+Push "eOut", 1, register1, "_parent"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push register1, "enabled", false
+SetMember
+Push "fall", 1, register1, "gotoAndPlay"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "mcPaneMenu"
+GetMember
+Push "btnExit"
+GetMember
+Push "enabled", false
+SetMember
+Push "exit", 1, register1, "mcPaneMenu"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push "select", 1, register1, "mcPaneMenu"
+GetMember
+Push "btnExit2"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "initBtnResult"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "mcPaneMenu"
+GetMember
+Push "btnGetResult"
+GetMember
+Push "onRollOver"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "result", 1, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "showHint"
+CallMethod
+Pop
+Push "over", 1, register1, "gotoAndPlay"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "mcPaneMenu"
+GetMember
+Push "btnGetResult"
+GetMember
+Push "onRollOut"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "killHint"
+CallMethod
+Pop
+Push "normal", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "mcPaneMenu"
+GetMember
+Push "btnGetResult"
+GetMember
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "killHint"
+CallMethod
+Pop
+Push register1, "onRollOver"
+Delete
+Pop
+Push register1, "onRollOut"
+Delete
+Pop
+Push "fall", 1, register1, "gotoAndPlay"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "miniGameSetting"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameNumber"
+GetMember
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameLevel"
+GetMember
+Push 1
+Subtract
+GetMember
+Push "type"
+GetMember
+Push "timer"
+Equals2
+Not
+If loc18f3
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "game"
+GetMember
+Push "timeupCallBack"
+CallMethod
+Pop
+Jump loc1915
+loc18f3:Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "game"
+GetMember
+Push "reduceChanceCallBack"
+CallMethod
+Pop
+}
+loc1915:SetMember
+}
+SetMember
+Push register2, "initBtnLeave"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "mcPaneMenu"
+GetMember
+Push "btnLeaveGame"
+GetMember
+Push "onRollOver"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "leaveGame", 1, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "showHint"
+CallMethod
+Pop
+Push "over", 1, register1, "gotoAndPlay"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "mcPaneMenu"
+GetMember
+Push "btnLeaveGame"
+GetMember
+Push "onRollOut"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "killHint"
+CallMethod
+Pop
+Push "normal", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "mcPaneMenu"
+GetMember
+Push "btnLeaveGame"
+GetMember
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "loading"
+GetMember
+Push "_visible"
+GetMember
+Not
+Not
+If loc1b8a
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "status"
+GetMember
+Push "buy card"
+Equals2
+Not
+If loc1a75
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "canCloseBuyCard"
+CallMethod
+Not
+Not
+If loc1a49
+Push undefined
+Return
+loc1a49:Push "end", 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "gamebar"
+GetMember
+Push "buycard"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+loc1a75:Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "killHint"
+CallMethod
+Pop
+Push register1, "onRollOver"
+Delete
+Pop
+Push register1, "onRollOut"
+Delete
+Pop
+Push "fall", 1, register1, "gotoAndPlay"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "status"
+GetMember
+Push "game"
+Equals2
+PushDuplicate
+Not
+If loc1ae3
+Pop
+Push register1, "_parent"
+GetMember
+Push "mcGameTag"
+GetMember
+loc1ae3:Not
+If loc1aee
+Push undefined
+Return
+loc1aee:Push register1, "_parent"
+GetMember
+Push "btnGameHelp"
+GetMember
+Push "_currentframe"
+GetMember
+Push 40
+Equals2
+Not
+Not
+If loc1b2e
+Push "leave", 1, register1, "_parent"
+GetMember
+Push "btnGameHelp"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+loc1b2e:Push "leave", 1, register1, "_parent"
+GetMember
+Push "mcGameTag"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push register1, "_parent"
+GetMember
+Push "mcGameInst"
+GetMember
+Push "_currentframe"
+GetMember
+Push 1
+Equals2
+Not
+Not
+If loc1b8a
+Push "leave", 1, register1, "_parent"
+GetMember
+Push "mcGameInst"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+}
+loc1b8a:SetMember
+}
+SetMember
+Push register2, "initBtnHelp"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "mcPaneMenu"
+GetMember
+Push "btnGameHelp"
+GetMember
+Push "onRollOver"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "help", 1, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "showHint"
+CallMethod
+Pop
+Push "over", 1, register1, "gotoAndPlay"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "mcPaneMenu"
+GetMember
+Push "btnGameHelp"
+GetMember
+Push "onRollOut"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "killHint"
+CallMethod
+Pop
+Push "normal", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "mcPaneMenu"
+GetMember
+Push "btnGameHelp"
+GetMember
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "killHint"
+CallMethod
+Pop
+Push register1, "onRollOver"
+Delete
+Pop
+Push register1, "onRollOut"
+Delete
+Pop
+Push "fall", 1, register1, "gotoAndPlay"
+CallMethod
+Pop
+Push register1, "_parent"
+GetMember
+Push "mcGameTag"
+GetMember
+Push "acc", 7
+SetMember
+Push register1, "_parent"
+GetMember
+Push "mcGameTag"
+GetMember
+Push "onEnterFrame"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "_x"
+GetMember
+Push 285
+Greater
+Not
+If loc1d3c
+Push register1, "_x", register1, "_x"
+GetMember
+Push register1, "acc"
+GetMember
+Subtract
+SetMember
+Push register1, "acc", register1, "acc"
+GetMember
+Push register1, "acc"
+GetMember
+Add2
+SetMember
+Push register1, "_x"
+GetMember
+Push 285
+Greater
+Not
+Not
+If loc1d3c
+Push register1, "_x", 285
+SetMember
+Push register1, "onEnterFrame", null
+SetMember
+}
+loc1d3c:SetMember
+}
+SetMember
+}
+SetMember
+Push register2, "showGameHelp"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "enter", 1, register1, "mcPaneMenu"
+GetMember
+Push "mcGameInst"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "prepareGame"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "prepareGame", 1, register1, "mcPaneMenu"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push "fall", 1, register1, "mcPaneL"
+GetMember
+Push "btnItem"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push "fall", 1, register1, "mcPaneL"
+GetMember
+Push "btnCrown"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push "fall", 1, register1, "mcPaneL"
+GetMember
+Push "btnReport"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push "leave", 1, register1, "mcPanePet"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "prepareGame2"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "prepareGame2", 1, register1, "mcPaneMenu"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push "fall", 1, register1, "mcPaneL"
+GetMember
+Push "btnItem"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push "fall", 1, register1, "mcPaneL"
+GetMember
+Push "btnCrown"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push "fall", 1, register1, "mcPaneL"
+GetMember
+Push "btnReport"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push "leave", 1, register1, "mcPanePet"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "switchGame"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "toGame", 1, register1, "mcPaneMenu"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "switchInGame"
+DefineFunction2 "", 0, 3, false, false, true, false, true, false, false, true, false {
+Push "inGame", 1, register1, "mcPaneMenu"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push register1, "mcPaneMenu"
+GetMember
+Push "mcGameTag"
+GetMember
+Push "_x", 512
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameNumber"
+GetMember
+Push 1
+Add2
+Push 1, register1, "mcPaneMenu"
+GetMember
+Push "mcGameTag"
+GetMember
+Push "mcCore"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameLevel"
+GetMember
+Push 1
+Add2
+Push 1, register1, "mcPaneMenu"
+GetMember
+Push "mcGameTag"
+GetMember
+Push "mcCore"
+GetMember
+Push "mc_number"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 4, 7, 5, 3, 1, 5
+InitArray
+StoreRegister 2
+Pop
+Push register2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameArea"
+GetMember
+GetMember
+Push 1, register1, "mcPaneMenu"
+GetMember
+Push "mcGameTag"
+GetMember
+Push "mcCore"
+GetMember
+Push "mc_number"
+GetMember
+Push "mcCore"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameNumber"
+GetMember
+Push 1
+Add2
+Push 1, register1, "mcPaneMenu"
+GetMember
+Push "mcGameInst"
+GetMember
+Push "mcCore"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1, "mcPaneMenu"
+GetMember
+Push "mcGameInst"
+GetMember
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "leave", 1, register1, "gotoAndPlay"
+CallMethod
+Pop
+Push register1, "_parent"
+GetMember
+Push "mcGameTag"
+GetMember
+Push "acc", 7
+SetMember
+Push register1, "_parent"
+GetMember
+Push "mcGameTag"
+GetMember
+Push "onEnterFrame"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "_x"
+GetMember
+Push 512
+Less2
+Not
+If loc2111
+Push register1, "_x", register1, "_x"
+GetMember
+Push register1, "acc"
+GetMember
+Add2
+SetMember
+Push register1, "acc", register1, "acc"
+GetMember
+Push register1, "acc"
+GetMember
+Add2
+SetMember
+Push register1, "_x"
+GetMember
+Push 512
+Less2
+Not
+Not
+If loc2111
+Push register1, "_x", 512
+SetMember
+Push register1, "onEnterFrame", null
+SetMember
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "initBtnHelp"
+CallMethod
+Pop
+}
+loc2111:SetMember
+Push "enter", 1, register1, "_parent"
+GetMember
+Push "btnGameHelp"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+}
+SetMember
+}
+SetMember
+Push register2, "exitPopup"
+DefineFunction2 "", 0, 5, false, false, true, false, true, false, false, true, false {
+Push register1, "mcPaneMenu"
+GetMember
+Push "btnYes"
+GetMember
+StoreRegister 2
+Pop
+Push register1, "mcPaneMenu"
+GetMember
+Push "btnNo"
+GetMember
+StoreRegister 4
+Pop
+Push register1, "mcPaneMenu"
+GetMember
+Push "btnLevel"
+GetMember
+StoreRegister 3
+Pop
+Push register2, "onRollOut", register2, "onReleaseOutside", register4, "onRollOut", register4, "onReleaseOutside", register3, "onRollOut", register3, "onReleaseOutside"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "normal", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+StoreRegister 0
+SetMember
+Push register0
+StoreRegister 0
+SetMember
+Push register0
+StoreRegister 0
+SetMember
+Push register0
+StoreRegister 0
+SetMember
+Push register0
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register2, "onRollOver", register4, "onRollOver", register3, "onRollOver"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "over", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+StoreRegister 0
+SetMember
+Push register0
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register2, "onPress", register4, "onPress", register3, "onPress"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "down", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+StoreRegister 0
+SetMember
+Push register0
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register2, "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "request_exit_end", 1, register1, "_parent"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "loadMap"
+CallMethod
+Pop
+}
+SetMember
+Push register4, "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 0.0, register1, "_parent"
+GetMember
+Push "btnLeaveGame"
+GetMember
+Push "play"
+CallMethod
+Pop
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "initBtnLeave"
+CallMethod
+Pop
+Push "ingame", 1, register1, "_parent"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+Push register3, "onRelease"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "exitGameToSelectLevel"
+CallMethod
+Pop
+}
+SetMember
+}
+SetMember
+Push register2, "switchMenu"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "status"
+GetMember
+Push "buy card"
+Equals2
+Not
+If loc236e
+Jump loc24d4
+loc236e:Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "status"
+GetMember
+Push "game"
+Equals2
+PushDuplicate
+Not
+If loc239c
+Pop
+Push register1, "mcPaneMenu"
+GetMember
+Push "mcGameTag"
+GetMember
+loc239c:Not
+If loc2406
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gamebar"
+GetMember
+Push "_currentframe"
+GetMember
+Push 1
+Equals2
+Not
+Not
+If loc23eb
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "loadMap"
+CallMethod
+Pop
+Jump loc2401
+loc23eb:Push "request_exit", 1, register1, "mcPaneMenu"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+loc2401:Push undefined
+Return
+loc2406:Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "status"
+GetMember
+Push "game select menu"
+Equals2
+PushDuplicate
+If loc243d
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "status"
+GetMember
+Push "prebattle"
+Equals2
+loc243d:Not
+If loc2464
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "closeGameSelectMenu"
+CallMethod
+Pop
+Jump loc2480
+loc2464:Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "loadMap"
+CallMethod
+Pop
+loc2480:Push "enter", 1, register1, "mcPaneL"
+GetMember
+Push "btnItem"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push "enter", 1, register1, "mcPaneL"
+GetMember
+Push "btnCrown"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push "enter", 1, register1, "mcPaneL"
+GetMember
+Push "btnReport"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+}
+loc24d4:SetMember
+Push register2, "switchBacktoGame"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 0.0, register1, "mcPaneMenu"
+GetMember
+Push "play"
+CallMethod
+Pop
+Push register1, "mcPaneMenu"
+GetMember
+Push "btnGameHelp"
+GetMember
+Push "_currentframe"
+GetMember
+Push 40
+Equals2
+Not
+Not
+If loc253f
+Push "leave", 1, register1, "mcPaneMenu"
+GetMember
+Push "btnGameHelp"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+loc253f:Push "leave", 1, register1, "mcPaneMenu"
+GetMember
+Push "mcGameTag"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push register1, "mcPaneMenu"
+GetMember
+Push "mcGameInst"
+GetMember
+Push "_currentframe"
+GetMember
+Push 1
+Equals2
+Not
+Not
+If loc259b
+Push "leave", 1, register1, "mcPaneMenu"
+GetMember
+Push "mcGameInst"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+}
+loc259b:SetMember
+Push register2, "settingInit"
+DefineFunction2 "", 0, 8, false, true, true, false, true, false, false, true, false {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "save"
+CallMethod
+Pop
+Push "settingInit"
+Trace
+Push "高", "中", "低", 3
+InitArray
+StoreRegister 5
+Pop
+Push 0.0
+StoreRegister 4
+Pop
+loc25f5:Push register4, 3
+Less2
+Not
+If loc27de
+Push register1, "mcPaneMenu"
+GetMember
+Push "mcSetting"
+GetMember
+Push "btn_q", register4
+Add2
+GetMember
+StoreRegister 7
+Pop
+Push 1, 1, register7, "gotoAndStop"
+CallMethod
+Pop
+Push register7, "txt", register5, register4
+GetMember
+SetMember
+Push register7, "onRollOver"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "sfx/drag", 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "playSound"
+CallMethod
+Pop
+Push 3, 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+Push register7, "onRollOut", register7, "onReleaseOutside"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 1, 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register7, "onRelease"
+DefineFunction2 "", 0, 4, false, true, true, false, true, false, false, true, false {
+Push "sfx/bob", 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "playSound"
+CallMethod
+Pop
+Push 5, 1, register1, "_name"
+GetMember
+Push "substr"
+CallMethod
+Push ","
+Add2
+Push register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Add2
+Trace
+Push 5, 1, register1, "_name"
+GetMember
+Push "substr"
+CallMethod
+ToInteger
+StoreRegister 3
+Pop
+Push register3, "screen_quality", 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "settingChange"
+CallMethod
+Pop
+Push register3, 0.0
+Equals2
+Not
+If loc276e
+Push register2, "_quality", "LOW"
+SetMember
+Jump loc27a9
+loc276e:Push register3, 1
+Equals2
+Not
+If loc278e
+Push register2, "_quality", "MEDIUM"
+SetMember
+Jump loc27a9
+loc278e:Push register3, 2
+Equals2
+Not
+If loc27a9
+Push register2, "_quality", "HIGH"
+SetMember
+loc27a9:Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "settingInit"
+CallMethod
+Pop
+}
+SetMember
+Push register4
+Increment
+StoreRegister 4
+Pop
+Jump loc25f5
+loc27de:Push register1, "mcPaneMenu"
+GetMember
+Push "mcSetting"
+GetMember
+Push "btn_q", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "screen_quality"
+GetMember
+Add2
+GetMember
+StoreRegister 7
+Pop
+Push 2, 1, register7, "gotoAndStop"
+CallMethod
+Pop
+Push register7, "onRollOver"
+Delete
+Pop
+Push register7, "onRollOut"
+Delete
+Pop
+Push register7, "onReleaseOutside"
+Delete
+Pop
+Push register7, "onRelease"
+Delete
+Pop
+Push "全螢幕", "視窗", 2
+InitArray
+StoreRegister 5
+Pop
+Push 0.0
+StoreRegister 4
+Pop
+loc2867:Push register4, 2
+Less2
+Not
+If loc2a0f
+Push register1, "mcPaneMenu"
+GetMember
+Push "mcSetting"
+GetMember
+Push "btn_f", register4
+Add2
+GetMember
+StoreRegister 7
+Pop
+Push 1, 1, register7, "gotoAndStop"
+CallMethod
+Pop
+Push register7, "txt", register5, register4
+GetMember
+SetMember
+Push register7, "onRollOver"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "sfx/drag", 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "playSound"
+CallMethod
+Pop
+Push 3, 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+Push register7, "onRollOut", register7, "onReleaseOutside"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 1, 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register7, "onRelease"
+DefineFunction2 "", 0, 3, false, true, true, false, true, false, false, true, false {
+Push "sfx/bob", 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "playSound"
+CallMethod
+Pop
+Push 5, 1, register1, "_name"
+GetMember
+Push "substr"
+CallMethod
+Push 0.0
+Equals2
+Not
+If loc2996
+Push 0.0, register2, "applicationWindowMode"
+CallMethod
+Pop
+Jump loc29a8
+loc2996:Push 0.0, register2, "applicationFullScreenMode"
+CallMethod
+Pop
+loc29a8:Push 5, 1, register1, "_name"
+GetMember
+Push "substr"
+CallMethod
+Push "fullscreen", 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "settingChange"
+CallMethod
+Pop
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "settingInit"
+CallMethod
+Pop
+}
+SetMember
+Push register4
+Increment
+StoreRegister 4
+Pop
+Jump loc2867
+loc2a0f:Push register1, "mcPaneMenu"
+GetMember
+Push "mcSetting"
+GetMember
+Push "btn_f", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "fullscreen"
+GetMember
+Add2
+GetMember
+StoreRegister 7
+Pop
+Push 2, 1, register7, "gotoAndStop"
+CallMethod
+Pop
+Push register7, "onRollOver"
+Delete
+Pop
+Push register7, "onRollOut"
+Delete
+Pop
+Push register7, "onReleaseOutside"
+Delete
+Pop
+Push register7, "onRelease"
+Delete
+Pop
+Push "大", "中", "小", "無", 4
+InitArray
+StoreRegister 5
+Pop
+Push 0.0
+StoreRegister 4
+Pop
+loc2a9c:Push register4, 4
+Less2
+Not
+If loc2c6a
+Push register1, "mcPaneMenu"
+GetMember
+Push "mcSetting"
+GetMember
+Push "btn_s", register4
+Add2
+GetMember
+StoreRegister 7
+Pop
+Push 1, 1, register7, "gotoAndStop"
+CallMethod
+Pop
+Push register7, "txt", register5, register4
+GetMember
+SetMember
+Push register7, "onRollOver"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "sfx/drag", 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "playSound"
+CallMethod
+Pop
+Push 3, 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+Push register7, "onRollOut", register7, "onReleaseOutside"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 1, 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register7, "onRelease"
+DefineFunction2 "", 0, 3, false, false, true, false, true, false, false, true, false {
+Push "sfx/bob", 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "playSound"
+CallMethod
+Pop
+Push 5, 1, register1, "_name"
+GetMember
+Push "substr"
+CallMethod
+Push "sound_level", 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "settingChange"
+CallMethod
+Pop
+Push 100, 66, 33, 0.0, 4
+InitArray
+StoreRegister 2
+Pop
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "maxVal", register2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "sound_level"
+GetMember
+GetMember
+SetMember
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "maxVal"
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "setVolume"
+CallMethod
+Pop
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "settingInit"
+CallMethod
+Pop
+}
+SetMember
+Push register4
+Increment
+StoreRegister 4
+Pop
+Jump loc2a9c
+loc2c6a:Push register1, "mcPaneMenu"
+GetMember
+Push "mcSetting"
+GetMember
+Push "btn_s", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "sound_level"
+GetMember
+Add2
+GetMember
+StoreRegister 7
+Pop
+Push 2, 1, register7, "gotoAndStop"
+CallMethod
+Pop
+Push register7, "onRollOver"
+Delete
+Pop
+Push register7, "onRollOut"
+Delete
+Pop
+Push register7, "onReleaseOutside"
+Delete
+Pop
+Push register7, "onRelease"
+Delete
+Pop
+Push "普通話", "粵語", 2
+InitArray
+StoreRegister 5
+Pop
+Push 0.0
+StoreRegister 4
+Pop
+loc2cf3:Push register4, 2
+Less2
+Not
+If loc2e47
+Push register1, "mcPaneMenu"
+GetMember
+Push "mcSetting"
+GetMember
+Push "btn_lang", register4
+Add2
+GetMember
+StoreRegister 7
+Pop
+Push 1, 1, register7, "gotoAndStop"
+CallMethod
+Pop
+Push register7, "txt", register5, register4
+GetMember
+SetMember
+Push register7, "onRollOver"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "sfx/drag", 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "playSound"
+CallMethod
+Pop
+Push 3, 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+Push register7, "onRollOut", register7, "onReleaseOutside"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 1, 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register7, "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "sfx/bob", 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "playSound"
+CallMethod
+Pop
+Push 8, 1, register1, "_name"
+GetMember
+Push "substr"
+CallMethod
+Push "language", 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "settingChange"
+CallMethod
+Pop
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "settingInit"
+CallMethod
+Pop
+}
+SetMember
+Push register4
+Increment
+StoreRegister 4
+Pop
+Jump loc2cf3
+loc2e47:Push register1, "mcPaneMenu"
+GetMember
+Push "mcSetting"
+GetMember
+Push "btn_lang", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "language"
+GetMember
+Add2
+GetMember
+StoreRegister 7
+Pop
+Push 2, 1, register7, "gotoAndStop"
+CallMethod
+Pop
+Push register7, "onRollOver"
+Delete
+Pop
+Push register7, "onRollOut"
+Delete
+Pop
+Push register7, "onReleaseOutside"
+Delete
+Pop
+Push register7, "onRelease"
+Delete
+Pop
+}
+SetMember
+Push register2, "exitInit"
+DefineFunction2 "", 0, 4, false, true, true, false, true, false, false, true, false {
+Push register1, "mcPaneMenu"
+GetMember
+Push "mcHelp"
+GetMember
+StoreRegister 3
+Pop
+Push register3, "btn_logout"
+GetMember
+Push "isCheckButton", false
+SetMember
+Push register3, "btn_logout"
+GetMember
+Push "onSelect"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "reset"
+CallMethod
+Pop
+}
+SetMember
+Push register3, "btn_exit"
+GetMember
+Push "isCheckButton", false
+SetMember
+Push register3, "btn_exit"
+GetMember
+Push "onSelect"
+DefineFunction2 "", 0, 2, false, true, true, false, true, false, true, false, false {
+Push 0.0, register1, "applicationClose"
+CallMethod
+Pop
+}
+SetMember
+}
+SetMember
+Push 1, null, "_global"
+GetVariable
+Push "Header"
+GetMember
+Push "prototype"
+GetMember
+Push 3, "ASSetPropFlags"
+CallFunction
+loc2f74:Pop

@@ -1,0 +1,28 @@
+DefineFunction "restartSys", 0 {
+Push "mapEngine_Current"
+Delete2
+Pop
+Push "mapEngine_From"
+Delete2
+Pop
+Push "bossDefeat"
+Delete2
+Pop
+Push "firstTimeEnter"
+Delete2
+Pop
+Push "mapEngine_x"
+Delete2
+Pop
+Push "mapEngine_y"
+Delete2
+Pop
+Push "onTop"
+Delete2
+Pop
+Push 0.0, "hideCursor"
+CallFunction
+Pop
+GotoFrame 0
+Play
+}

@@ -1,0 +1,82 @@
+JPEXS Free Flash Decompiler v.26.2.1
+------------------------------------
+Exporting scripts...
+Exported script 1/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/loading.pcode, 00:00.003
+Exported script 7/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/__Packages/Prince3/MiniGame.pcode, 00:00.008
+Exported script 8/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/__Packages/Prince3/NumberAni.pcode, 00:00.007
+Exported script 6/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/__Packages/Prince3/Loading.pcode, 00:00.010
+Exported script 5/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/__Packages/Prince3/KeyController.pcode, 00:00.011
+Exported script 12/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/__Packages/Prince3/User.pcode, 00:00.007
+Exported script 11/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/__Packages/Prince3/SoundSystem.pcode, 00:00.017
+Exported script 14/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineButton2_105/BUTTONCONDACTION on(release).pcode, 00:00.000
+Exported script 2/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/__Packages/Application.pcode, 00:00.029
+Exported script 15/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineButton2_122/BUTTONCONDACTION on(release).pcode, 00:00.001
+Exported script 16/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineButton2_172/BUTTONCONDACTION on(release).pcode, 00:00.001
+Exported script 17/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_11/frame_9/DoAction.pcode, 00:00.001
+Exported script 18/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_14/frame_10/DoAction.pcode, 00:00.000
+Exported script 19/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_44/frame_1/DoAction.pcode, 00:00.001
+Exported script 20/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_51/frame_1/DoAction.pcode, 00:00.001
+Exported script 21/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_51/frame_8/DoAction.pcode, 00:00.000
+Exported script 22/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_51/frame_15/DoAction.pcode, 00:00.000
+Exported script 23/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_54/frame_1/DoAction.pcode, 00:00.000
+Exported script 24/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_54/frame_8/DoAction.pcode, 00:00.000
+Exported script 25/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_54/frame_15/DoAction.pcode, 00:00.001
+Exported script 27/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_57/frame_1/DoAction.pcode, 00:00.000
+Exported script 28/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_57/frame_8/DoAction.pcode, 00:00.001
+Exported script 26/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_54/frame_22/DoAction.pcode, 00:00.001
+Exported script 29/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_57/frame_15/DoAction.pcode, 00:00.000
+Exported script 30/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_59/frame_1/DoAction.pcode, 00:00.001
+Exported script 3/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/__Packages/GameBar.pcode, 00:00.034
+Exported script 31/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_59/frame_8/DoAction.pcode, 00:00.001
+Exported script 33/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_2/DoAction.pcode, 00:00.001
+Exported script 34/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_6/DoAction.pcode, 00:00.001
+Exported script 35/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_10/DoAction.pcode, 00:00.000
+Exported script 36/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_11/DoAction.pcode, 00:00.001
+Exported script 32/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_1/DoAction.pcode, 00:00.002
+Exported script 38/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_19/DoAction.pcode, 00:00.000
+Exported script 37/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_15/DoAction.pcode, 00:00.001
+Exported script 40/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_24/DoAction.pcode, 00:00.001
+Exported script 41/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_28/DoAction.pcode, 00:00.001
+Exported script 39/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_20/DoAction.pcode, 00:00.001
+Exported script 42/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_29/DoAction.pcode, 00:00.000
+Exported script 44/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_37/DoAction.pcode, 00:00.000
+Exported script 43/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_33/DoAction.pcode, 00:00.000
+Exported script 45/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_38/DoAction.pcode, 00:00.001
+Exported script 47/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_46/DoAction.pcode, 00:00.001
+Exported script 46/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_42/DoAction.pcode, 00:00.001
+Exported script 48/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_47/DoAction.pcode, 00:00.000
+Exported script 50/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_55/DoAction.pcode, 00:00.000
+Exported script 51/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_65/DoAction.pcode, 00:00.000
+Exported script 52/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_66/DoAction.pcode, 00:00.000
+Exported script 54/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_74/DoAction.pcode, 00:00.001
+Exported script 55/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_75/DoAction.pcode, 00:00.000
+Exported script 53/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_70/DoAction.pcode, 00:00.001
+Exported script 57/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_83/DoAction.pcode, 00:00.000
+Exported script 10/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/__Packages/Prince3/Setting.pcode, 00:00.029
+Exported script 49/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_51/DoAction.pcode, 00:00.002
+Exported script 58/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_93/DoAction.pcode, 00:00.001
+Exported script 60/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_98/DoAction.pcode, 00:00.000
+Exported script 4/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/__Packages/Header.pcode, 00:00.039
+Exported script 59/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_94/DoAction.pcode, 00:00.000
+Exported script 64/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_111/DoAction.pcode, 00:00.001
+Exported script 61/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_102/DoAction.pcode, 00:00.001
+Exported script 56/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_79/DoAction.pcode, 00:00.002
+Exported script 65/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_112/DoAction.pcode, 00:00.000
+Exported script 67/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_232/frame_1/DoAction.pcode, 00:00.000
+Exported script 62/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_103/DoAction.pcode, 00:00.001
+Exported script 63/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_107/DoAction.pcode, 00:00.002
+Exported script 68/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_232/frame_8/DoAction.pcode, 00:00.001
+Exported script 69/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_232/frame_15/DoAction.pcode, 00:00.000
+Exported script 72/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/frame_1/DoAction_2.pcode, 00:00.000
+Exported script 73/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/frame_2/DoAction.pcode, 00:00.000
+Exported script 70/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_257/frame_7/DoAction.pcode, 00:00.001
+Exported script 74/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/frame_3/DoAction.pcode, 00:00.001
+Exported script 66/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/DefineSprite_229/frame_122/DoAction.pcode, 00:00.002
+Exported script 76/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/frame_15/DoAction.pcode, 00:00.001
+Exported script 77/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/frame_23/DoAction.pcode, 00:00.001
+Exported script 13/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/__Packages/Prince3/Utils.pcode, 00:00.025
+Exported script 75/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/frame_9/DoAction.pcode, 00:00.004
+Exported script 71/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/frame_1/DoAction.pcode, 00:00.007
+Exported script 9/77 <repo>/decompiled/3-Prince-Adventure/reg/pcode/scripts/__Packages/Prince3/PrinceSystem.pcode, 00:00.046
+Export finished. Total export time: 00:00.828
+OK

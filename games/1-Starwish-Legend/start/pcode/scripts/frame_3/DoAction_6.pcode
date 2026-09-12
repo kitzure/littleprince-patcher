@@ -1,0 +1,89 @@
+ConstantPool "ver", "cdsingle", "randomize", "chosenGame", "splice", "gameSpec", "game", "dat", "length", "gemType", "no", "getGem", "push"
+DefineFunction2 "initHiddenGemSpec", 0, 8, false, false, true, false, true, false, true, false, false {
+Push "ver"
+GetVariable
+Push "cdsingle"
+Equals2
+Not
+If loc021b
+Push 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 17
+InitArray
+StoreRegister 7
+Pop
+Push 0.0, register7, "randomize"
+CallMethod
+StoreRegister 6
+Pop
+Push "chosenGame", 5, 0.0, 2, register6, "splice"
+CallMethod
+SetVariable
+Push 1
+StoreRegister 2
+Pop
+loc0130:Push register2, 5
+Greater
+Not
+Not
+If loc021b
+Push "gameSpec"
+GetVariable
+Push "game", "chosenGame"
+GetVariable
+Push register2, 1
+Subtract
+GetMember
+Add2
+GetMember
+Push "dat"
+GetMember
+Push "length"
+GetMember
+StoreRegister 5
+Pop
+Push 0.0
+StoreRegister 1
+Pop
+loc0180:Push register1, 1
+Greater
+Not
+Not
+If loc020b
+Push "gemType", register2, 5
+Add2
+Push "no", 2, register1
+Subtract
+Push 2
+InitObject
+Push 1, "gameSpec"
+GetVariable
+Push "game", "chosenGame"
+GetVariable
+Push register2, 1
+Subtract
+GetMember
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register5, register1
+Subtract
+Push 1
+Subtract
+GetMember
+Push "getGem"
+GetMember
+Push "push"
+CallMethod
+Pop
+Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc0180
+loc020b:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc0130
+}
+loc021b:

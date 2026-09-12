@@ -1,0 +1,88 @@
+ConstantPool "_global", "Prince3", "Object", "User", "userName", "", "loginName", "password", "sex", "schoolName", "schoolType", "classLv", "className", "gems", "Array", "gameResult", "gameCards", "cards", "items", "process", "cardSequence", "screen_quality", "fullscreen", "sound_level", "language", "prototype", "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "Prince3"
+GetMember
+Not
+Not
+If loc011e
+Push "_global"
+GetVariable
+Push "Prince3", 0.0, "Object"
+NewObject
+SetMember
+loc011e:Pop
+Push "_global"
+GetVariable
+Push "Prince3"
+GetMember
+Push "User"
+GetMember
+Not
+Not
+If loc02a4
+Push "Prince3"
+GetVariable
+Push "User"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "userName", ""
+SetMember
+Push register1, "loginName", ""
+SetMember
+Push register1, "password", ""
+SetMember
+Push register1, "sex", 1
+SetMember
+Push register1, "schoolName", ""
+SetMember
+Push register1, "schoolType", 1
+SetMember
+Push register1, "classLv", 1
+SetMember
+Push register1, "className", ""
+SetMember
+Push register1, "gems", 0.0, "Array"
+NewObject
+SetMember
+Push register1, "gameResult", 0.0, "Array"
+NewObject
+SetMember
+Push register1, "gameCards", 0.0, "Array"
+NewObject
+SetMember
+Push register1, "cards", 0.0, "Array"
+NewObject
+SetMember
+Push register1, "items", 0.0, "Array"
+NewObject
+SetMember
+Push register1, "process", 0.0, "Array"
+NewObject
+SetMember
+Push register1, "cardSequence", 0.0, "Array"
+NewObject
+SetMember
+Push register1, "screen_quality", 2
+SetMember
+Push register1, "fullscreen", 0.0
+SetMember
+Push register1, "sound_level", 3
+SetMember
+Push register1, "language", 0.0
+SetMember
+}
+StoreRegister 1
+SetMember
+Push register1, "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push 1, null, "Prince3"
+GetVariable
+Push "User"
+GetMember
+Push "prototype"
+GetMember
+Push 3, "ASSetPropFlags"
+CallFunction
+loc02a4:Pop

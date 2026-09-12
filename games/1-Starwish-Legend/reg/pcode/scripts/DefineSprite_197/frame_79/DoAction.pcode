@@ -1,0 +1,314 @@
+ConstantPool "btn_ok", "_parent", "setBtn", "btn_cancel", "onRelease", "txtPhone", "text", "length", "a1", "mc_al_phone", "gotoAndPlay", "gotoAndStop", "txtEmail", "mc_al_email", "correctEmailFormat", "a2", "Phone", "Email", "reactivation", "last", "e070l", "clearActivation", "Username", "", "Serial", "form", "txtUsername", "tabIndex", "txtSerial", "killPopup", "restrict", "0-9 \\-", "this"
+Push "btn_ok"
+GetVariable
+Push 1, "_parent"
+GetVariable
+Push "setBtn"
+CallMethod
+Pop
+Push "btn_cancel"
+GetVariable
+Push 1, "_parent"
+GetVariable
+Push "setBtn"
+CallMethod
+Pop
+Push "btn_ok"
+GetVariable
+Push "onRelease"
+DefineFunction2 "", 0, 3, false, false, true, false, true, false, false, true, false {
+Push false
+StoreRegister 2
+Pop
+Push register1, "_parent"
+GetMember
+Push "txtPhone"
+GetMember
+Push "text"
+GetMember
+Push "length"
+GetMember
+Push 1
+Less2
+Not
+If loc01c3
+Push true
+StoreRegister 2
+Pop
+Push "a1", 1, register1, "_parent"
+GetMember
+Push "mc_al_phone"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Jump loc01e2
+loc01c3:Push 1, 1, register1, "_parent"
+GetMember
+Push "mc_al_phone"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+loc01e2:Push register1, "_parent"
+GetMember
+Push "txtEmail"
+GetMember
+Push "text"
+GetMember
+Push "length"
+GetMember
+Push 1
+Less2
+Not
+If loc0236
+Push true
+StoreRegister 2
+Pop
+Push "a1", 1, register1, "_parent"
+GetMember
+Push "mc_al_email"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Jump loc02b4
+loc0236:Push register1, "_parent"
+GetMember
+Push "txtEmail"
+GetMember
+Push "text"
+GetMember
+Push 1, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "correctEmailFormat"
+CallMethod
+Not
+Not
+If loc0295
+Push true
+StoreRegister 2
+Pop
+Push "a2", 1, register1, "_parent"
+GetMember
+Push "mc_al_email"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Jump loc02b4
+loc0295:Push 1, 1, register1, "_parent"
+GetMember
+Push "mc_al_email"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+loc02b4:Push register2
+Not
+Not
+If loc0357
+Push register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "Phone", register1, "_parent"
+GetMember
+Push "txtPhone"
+GetMember
+Push "text"
+GetMember
+SetMember
+Push register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "Email", register1, "_parent"
+GetMember
+Push "txtEmail"
+GetMember
+Push "text"
+GetMember
+SetMember
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "reactivation"
+CallMethod
+Pop
+Push register1, "_parent"
+GetMember
+Push "last", 83
+SetMember
+Push "e070l", 1, register1, "_parent"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+}
+loc0357:SetMember
+Push "btn_cancel"
+GetVariable
+Push "onRelease"
+DefineFunction2 "", 0, 3, false, true, true, false, true, false, false, true, false {
+Push 0.0, register2, "clearActivation"
+CallMethod
+Pop
+Push register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "Username", ""
+SetMember
+Push register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "Phone", ""
+SetMember
+Push register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "Email", ""
+SetMember
+Push register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "Serial", ""
+SetMember
+Push "form", 1, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "txtUsername"
+GetMember
+Push "tabIndex", 1
+SetMember
+Push register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "txtPhone"
+GetMember
+Push "tabIndex", 2
+SetMember
+Push register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "txtEmail"
+GetMember
+Push "tabIndex", 3
+SetMember
+Push register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "txtSerial"
+GetMember
+Push "tabIndex", 4
+SetMember
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "killPopup"
+CallMethod
+Pop
+}
+SetMember
+Push "_parent"
+GetVariable
+Push "Phone"
+GetMember
+Not
+If loc04b6
+Push "txtPhone"
+GetVariable
+Push "text", "_parent"
+GetVariable
+Push "Phone"
+GetMember
+SetMember
+loc04b6:Push "_parent"
+GetVariable
+Push "Email"
+GetMember
+Not
+If loc04dd
+Push "txtEmail"
+GetVariable
+Push "text", "_parent"
+GetVariable
+Push "Email"
+GetMember
+SetMember
+loc04dd:Push "txtSerial"
+GetVariable
+Push "text", "_parent"
+GetVariable
+Push "Serial"
+GetMember
+SetMember
+Push "txtPhone"
+GetVariable
+Push "restrict", "0-9 \\-"
+SetMember
+Push "this"
+GetVariable
+Push "_parent"
+GetMember
+Push "txtUsername"
+GetMember
+Push "tabIndex", undefined
+SetMember
+Push "this"
+GetVariable
+Push "_parent"
+GetMember
+Push "txtPhone"
+GetMember
+Push "tabIndex", undefined
+SetMember
+Push "this"
+GetVariable
+Push "_parent"
+GetMember
+Push "txtEmail"
+GetMember
+Push "tabIndex", undefined
+SetMember
+Push "this"
+GetVariable
+Push "_parent"
+GetMember
+Push "txtSerial"
+GetMember
+Push "tabIndex", undefined
+SetMember
+Push "this"
+GetVariable
+Push "txtPhone"
+GetMember
+Push "tabIndex", 1
+SetMember
+Push "this"
+GetVariable
+Push "txtEmail"
+GetMember
+Push "tabIndex", 2
+SetMember

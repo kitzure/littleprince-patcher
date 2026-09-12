@@ -1,0 +1,52 @@
+ConstantPool "btn_ok", "onRollOut", "onReleaseOutside", "normal", "gotoAndStop", "onRollOver", "over", "onPress", "down", "onRelease", "_parent", "loginPageInit", "play"
+Push "btn_ok"
+GetVariable
+Push "onRollOut", "btn_ok"
+GetVariable
+Push "onReleaseOutside"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "normal", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push "btn_ok"
+GetVariable
+Push "onRollOver"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "over", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+Push "btn_ok"
+GetVariable
+Push "onPress"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "down", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+Push "btn_ok"
+GetVariable
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "loginPageInit"
+CallMethod
+Pop
+Push 0.0, register1, "_parent"
+GetMember
+Push "play"
+CallMethod
+Pop
+}
+SetMember
+Stop

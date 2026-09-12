@@ -1,0 +1,2226 @@
+ConstantPool "checkRegInfo()", "traceOut", "my_so", "/", "prince2set", "SharedObject", "getLocal", "_loc3_", "mdm", "Network", "checkConnection", "licMode", "", "data", "regInfo", "Object", "numNotConnect", "k1", "_loc4_", "getHD", "System", "getHDSerial", "k2", "toUpperCase", "k3", "username", "phone", "hkid", "email", "address", "_loc1_", "Date", "_loc7_", "getFullYear", "_loc5_", "getMonth", "0", "_loc6_", "getDate", "_loc10_", "getHours", "_loc11_", "getMinutes", "_loc8_", "getSeconds", "_loc9_", "getMilliseconds", "00", "d1", "noKeyS", "flush", "regIsChecked", "noKeyA", "hasNetwork:", "result_lv", "LoadVars", "_loc2_", "getKeyACS", "createKey", "POST", "getKeyAPath", "sendAndLoad", "onLoad", "valid", "true", "fullcd", "false", "my_so.data.regInfo.numNotConnect 1:", "my_so.data.regInfo.numNotConnect 2:", "userList", "Array", "reg.swf", "reg", "loadMovie", "loadFullVersion", "popup", "nextPage", "_visible", "noInfo", "gotoAndStop", "\r", "indexOf", "oneline", "isNaN", "badPhone", "badSerial", "activated", "getMode", "false1", "activatedAccount", "sysError", "badActivate", "noka", "noISP", "Encryption", "decryptString", "split", "encryptString", "storeKeyA"
+DefineFunction "checkRegInfo", 0 {
+Push "checkRegInfo()"
+Push 1
+Push "traceOut"
+CallFunction
+Pop
+Push "my_so"
+Push "/"
+Push "prince2set"
+Push 2
+Push "SharedObject"
+GetVariable
+Push "getLocal"
+CallMethod
+DefineLocal
+Push "_loc3_"
+Push 0
+Push "mdm"
+GetVariable
+Push "Network"
+GetMember
+Push "checkConnection"
+CallMethod
+DefineLocal
+Push "licMode"
+Push ""
+DefineLocal
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push undefined
+Equals2
+Not
+If loc08ad
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+Push 0
+Push "Object"
+NewObject
+SetMember
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "numNotConnect"
+Push 0
+SetMember
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k1"
+Push ""
+SetMember
+Push "_loc4_"
+Push 0
+Push "regInfo"
+GetVariable
+Push "getHD"
+CallMethod
+Push 1
+Push "mdm"
+GetVariable
+Push "System"
+GetMember
+Push "getHDSerial"
+CallMethod
+DefineLocal
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k2"
+Push 0
+Push "_loc4_"
+GetVariable
+Push "toUpperCase"
+CallMethod
+SetMember
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k3"
+Push ""
+SetMember
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "username"
+Push ""
+SetMember
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "phone"
+Push ""
+SetMember
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "hkid"
+Push ""
+SetMember
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "email"
+Push ""
+SetMember
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "address"
+Push ""
+SetMember
+Push "_loc1_"
+Push 0
+Push "Date"
+NewObject
+DefineLocal
+Push "_loc7_"
+Push 0
+Push "_loc1_"
+GetVariable
+Push "getFullYear"
+CallMethod
+DefineLocal
+Push "_loc5_"
+Push 0
+Push "_loc1_"
+GetVariable
+Push "getMonth"
+CallMethod
+Push 10
+Less2
+Not
+Not
+If loc05d8
+Push 0
+Push "_loc1_"
+GetVariable
+Push "getMonth"
+CallMethod
+Jump loc05f2
+loc05d8:Push "0"
+Push 0
+Push "_loc1_"
+GetVariable
+Push "getMonth"
+CallMethod
+Add2
+loc05f2:DefineLocal
+Push "_loc6_"
+Push 0
+Push "_loc1_"
+GetVariable
+Push "getDate"
+CallMethod
+Push 10
+Less2
+Not
+Not
+If loc0635
+Push 0
+Push "_loc1_"
+GetVariable
+Push "getDate"
+CallMethod
+Jump loc064f
+loc0635:Push "0"
+Push 0
+Push "_loc1_"
+GetVariable
+Push "getDate"
+CallMethod
+Add2
+loc064f:DefineLocal
+Push "_loc10_"
+Push 0
+Push "_loc1_"
+GetVariable
+Push "getHours"
+CallMethod
+Push 10
+Less2
+Not
+Not
+If loc0692
+Push 0
+Push "_loc1_"
+GetVariable
+Push "getHours"
+CallMethod
+Jump loc06ac
+loc0692:Push "0"
+Push 0
+Push "_loc1_"
+GetVariable
+Push "getHours"
+CallMethod
+Add2
+loc06ac:DefineLocal
+Push "_loc11_"
+Push 0
+Push "_loc1_"
+GetVariable
+Push "getMinutes"
+CallMethod
+Push 10
+Less2
+Not
+Not
+If loc06ef
+Push 0
+Push "_loc1_"
+GetVariable
+Push "getMinutes"
+CallMethod
+Jump loc0709
+loc06ef:Push "0"
+Push 0
+Push "_loc1_"
+GetVariable
+Push "getMinutes"
+CallMethod
+Add2
+loc0709:DefineLocal
+Push "_loc8_"
+Push 0
+Push "_loc1_"
+GetVariable
+Push "getSeconds"
+CallMethod
+Push 10
+Less2
+Not
+Not
+If loc074c
+Push 0
+Push "_loc1_"
+GetVariable
+Push "getSeconds"
+CallMethod
+Jump loc0766
+loc074c:Push "0"
+Push 0
+Push "_loc1_"
+GetVariable
+Push "getSeconds"
+CallMethod
+Add2
+loc0766:DefineLocal
+Push "_loc9_"
+Push 0
+Push "_loc1_"
+GetVariable
+Push "getMilliseconds"
+CallMethod
+Push 10
+Less2
+Not
+Not
+If loc07ec
+Push 0
+Push "_loc1_"
+GetVariable
+Push "getMilliseconds"
+CallMethod
+Push 100
+Less2
+Not
+Not
+If loc07cd
+Push 0
+Push "_loc1_"
+GetVariable
+Push "getMilliseconds"
+CallMethod
+Jump loc07e7
+loc07cd:Push "0"
+Push 0
+Push "_loc1_"
+GetVariable
+Push "getMilliseconds"
+CallMethod
+Add2
+loc07e7:Jump loc0806
+loc07ec:Push "00"
+Push 0
+Push "_loc1_"
+GetVariable
+Push "getMilliseconds"
+CallMethod
+Add2
+loc0806:DefineLocal
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "d1"
+Push "_loc7_"
+GetVariable
+Push ""
+Add2
+Push "_loc5_"
+GetVariable
+Add2
+Push ""
+Add2
+Push "_loc6_"
+GetVariable
+Add2
+Push ""
+Add2
+Push "_loc10_"
+GetVariable
+Add2
+Push ""
+Add2
+Push "_loc11_"
+GetVariable
+Add2
+Push ""
+Add2
+Push "_loc8_"
+GetVariable
+Add2
+Push ""
+Add2
+Push "_loc9_"
+GetVariable
+Add2
+SetMember
+Push "licMode"
+Push "noKeyS"
+SetVariable
+Push 0
+Push "my_so"
+GetVariable
+Push "flush"
+CallMethod
+Pop
+Push "licMode"
+GetVariable
+Push 1
+Push "regIsChecked"
+CallFunction
+Pop
+Jump loc10e2
+loc08ad:Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k1"
+GetMember
+Push ""
+Equals2
+PushDuplicate
+If loc08ef
+Pop
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k1"
+GetMember
+Push undefined
+Equals2
+loc08ef:Not
+If loc092f
+Push "licMode"
+Push "noKeyS"
+SetVariable
+Push 0
+Push "my_so"
+GetVariable
+Push "flush"
+CallMethod
+Pop
+Push "licMode"
+GetVariable
+Push 1
+Push "regIsChecked"
+CallFunction
+Pop
+Jump loc10e2
+loc092f:Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k3"
+GetMember
+Push ""
+Equals2
+PushDuplicate
+If loc0971
+Pop
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k3"
+GetMember
+Push undefined
+Equals2
+loc0971:Not
+If loc09b1
+Push "licMode"
+Push "noKeyA"
+SetVariable
+Push 0
+Push "my_so"
+GetVariable
+Push "flush"
+CallMethod
+Pop
+Push "licMode"
+GetVariable
+Push 1
+Push "regIsChecked"
+CallFunction
+Pop
+Jump loc10e2
+loc09b1:Push "hasNetwork:"
+Push "_loc3_"
+GetVariable
+Add2
+Push 1
+Push "traceOut"
+CallFunction
+Pop
+Push "_loc3_"
+GetVariable
+Not
+If loc0f1c
+Push "result_lv"
+Push 0
+Push "LoadVars"
+NewObject
+DefineLocal
+Push "_loc2_"
+Push 0
+Push "LoadVars"
+NewObject
+DefineLocal
+Push "_loc2_"
+GetVariable
+Push "k1"
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k1"
+GetMember
+SetMember
+Push "_loc2_"
+GetVariable
+Push "k2"
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k2"
+GetMember
+SetMember
+Push "_loc2_"
+GetVariable
+Push "k3"
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k3"
+GetMember
+SetMember
+Push "_loc2_"
+GetVariable
+Push "d1"
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "d1"
+GetMember
+SetMember
+Push "_loc2_"
+GetVariable
+Push "username"
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "username"
+GetMember
+SetMember
+Push "_loc2_"
+GetVariable
+Push "phone"
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "phone"
+GetMember
+SetMember
+Push "_loc2_"
+GetVariable
+Push "hkid"
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "hkid"
+GetMember
+SetMember
+Push "_loc2_"
+GetVariable
+Push "email"
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "email"
+GetMember
+SetMember
+Push "_loc2_"
+GetVariable
+Push "address"
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "address"
+GetMember
+SetMember
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k2"
+GetMember
+Push 0
+Push 0
+Push "regInfo"
+GetVariable
+Push "getHD"
+CallMethod
+Push 1
+Push "mdm"
+GetVariable
+Push "System"
+GetMember
+Push "getHDSerial"
+CallMethod
+Push "toUpperCase"
+CallMethod
+Equals2
+PushDuplicate
+Not
+If loc0c4a
+Pop
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k3"
+GetMember
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "d1"
+GetMember
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k2"
+GetMember
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k1"
+GetMember
+Push 0
+Push "regInfo"
+GetVariable
+Push "getKeyACS"
+CallMethod
+Push 1
+GetMember
+Push 0
+Push "regInfo"
+GetVariable
+Push "getKeyACS"
+CallMethod
+Push 0
+GetMember
+Push 5
+Push "createKey"
+CallFunction
+Equals2
+loc0c4a:Not
+If loc0ee2
+Push "POST"
+Push "result_lv"
+GetVariable
+Push 0
+Push "regInfo"
+GetVariable
+Push "getKeyAPath"
+CallMethod
+Push 3
+Push "_loc2_"
+GetVariable
+Push "sendAndLoad"
+CallMethod
+Pop
+Push "result_lv"
+GetVariable
+Push "onLoad"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "success" {
+Push register1
+Not
+If loc0dfe
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "numNotConnect"
+Push 0
+SetMember
+Push "result_lv"
+GetVariable
+Push "valid"
+GetMember
+Push "true"
+Equals2
+PushDuplicate
+If loc0cf9
+Pop
+Push "result_lv"
+GetVariable
+Push "valid"
+GetMember
+Push true
+Equals2
+loc0cf9:Not
+If loc0d0f
+Push "licMode"
+Push "fullcd"
+SetVariable
+Jump loc0dcf
+loc0d0f:Push "result_lv"
+GetVariable
+Push "valid"
+GetMember
+Push "false"
+Equals2
+PushDuplicate
+If loc0d3a
+Pop
+Push "result_lv"
+GetVariable
+Push "valid"
+GetMember
+Push false
+Equals2
+loc0d3a:Not
+If loc0d8a
+Push "licMode"
+Push "noKeyS"
+SetVariable
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k1"
+Push ""
+SetMember
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k3"
+Push ""
+SetMember
+Jump loc0dcf
+loc0d8a:Push "licMode"
+Push "noKeyA"
+SetVariable
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k1"
+Push ""
+SetMember
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k3"
+Push ""
+SetMember
+loc0dcf:Push 0
+Push "my_so"
+GetVariable
+Push "flush"
+CallMethod
+Pop
+Push "licMode"
+GetVariable
+Push 1
+Push "regIsChecked"
+CallFunction
+Pop
+Jump loc0edc
+loc0dfe:Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "numNotConnect"
+GetMember
+Push undefined
+Equals2
+Not
+If loc0e46
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "numNotConnect"
+Push 1
+SetMember
+Jump loc0ea7
+loc0e46:Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "numNotConnect"
+GetMember
+Push 0
+Less2
+Not
+Not
+If loc0ea7
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "numNotConnect"
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "numNotConnect"
+GetMember
+Push 1
+Add2
+SetMember
+loc0ea7:Push "licMode"
+Push "fullcd"
+SetVariable
+Push 0
+Push "my_so"
+GetVariable
+Push "flush"
+CallMethod
+Pop
+Push "licMode"
+GetVariable
+Push 1
+Push "regIsChecked"
+CallFunction
+Pop
+}
+loc0edc:SetMember
+Jump loc0f17
+loc0ee2:Push "licMode"
+Push "noKeyS"
+SetVariable
+Push 0
+Push "my_so"
+GetVariable
+Push "flush"
+CallMethod
+Pop
+Push "licMode"
+GetVariable
+Push 1
+Push "regIsChecked"
+CallFunction
+Pop
+loc0f17:Jump loc10e2
+loc0f1c:Push "my_so.data.regInfo.numNotConnect 1:"
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "numNotConnect"
+GetMember
+Add2
+Push 1
+Push "traceOut"
+CallFunction
+Pop
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "numNotConnect"
+GetMember
+Push undefined
+Equals2
+Not
+If loc0f91
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "numNotConnect"
+Push 1
+SetMember
+Jump loc0ff2
+loc0f91:Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "numNotConnect"
+GetMember
+Push 0
+Less2
+Not
+Not
+If loc0ff2
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "numNotConnect"
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "numNotConnect"
+GetMember
+Push 1
+Add2
+SetMember
+loc0ff2:Push "my_so.data.regInfo.numNotConnect 2:"
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "numNotConnect"
+GetMember
+Add2
+Push 1
+Push "traceOut"
+CallFunction
+Pop
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "numNotConnect"
+GetMember
+Push 10
+Greater
+Not
+If loc10ad
+Push "licMode"
+Push "fullcd"
+SetVariable
+Push "my_so.data.regInfo.numNotConnect 2:"
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "numNotConnect"
+GetMember
+Add2
+Push 1
+Push "traceOut"
+CallFunction
+Pop
+Push 0
+Push "my_so"
+GetVariable
+Push "flush"
+CallMethod
+Pop
+Push "licMode"
+GetVariable
+Push 1
+Push "regIsChecked"
+CallFunction
+Pop
+Jump loc10e2
+loc10ad:Push "licMode"
+Push "fullcd"
+SetVariable
+Push 0
+Push "my_so"
+GetVariable
+Push "flush"
+CallMethod
+Pop
+Push "licMode"
+GetVariable
+Push 1
+Push "regIsChecked"
+CallFunction
+Pop
+}
+loc10e2:DefineFunction2 "regIsChecked", 1, 4, false, false, true, false, true, false, true, false, false, 1, "agLicMode" {
+Push null
+StoreRegister 2
+Pop
+Push register1
+StoreRegister 2
+Push "fullcd"
+StrictEquals
+Not
+Not
+If loc1184
+Push "/"
+Push "prince2set"
+Push 2
+Push "SharedObject"
+GetVariable
+Push "getLocal"
+CallMethod
+StoreRegister 3
+Pop
+Push register3
+Push "data"
+GetMember
+Push "userList"
+Push 0
+Push "Array"
+NewObject
+SetMember
+Push "reg.swf"
+Push 1
+Push "reg"
+GetVariable
+Push "loadMovie"
+CallMethod
+Pop
+Jump loc1193
+loc1184:Push 0
+Push "loadFullVersion"
+CallFunction
+Pop
+}
+loc1193:DefineFunction2 "activateProduct", 6, 8, false, false, true, false, true, false, true, false, false, 1, "agSerialNum", 2, "agUsername", 3, "agPhone", 4, "agEmail", 5, "agHKID", 6, "agAddress" {
+Push register2
+Push ""
+Equals2
+PushDuplicate
+If loc1208
+Pop
+Push register3
+Push ""
+Equals2
+loc1208:PushDuplicate
+If loc121a
+Pop
+Push register4
+Push ""
+Equals2
+loc121a:Not
+If loc1274
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "nextPage"
+Push ""
+SetMember
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "_visible"
+Push true
+SetMember
+Push "noInfo"
+Push 1
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push false
+Return
+loc1274:Push "\r"
+Push 1
+Push register2
+Push register3
+Add2
+Push register4
+Add2
+Push register5
+Add2
+Push register6
+Add2
+Push "indexOf"
+CallMethod
+Push 0
+Less2
+Not
+Not
+If loc1308
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "nextPage"
+Push ""
+SetMember
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "_visible"
+Push true
+SetMember
+Push "oneline"
+Push 1
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push false
+Return
+loc1308:Push register3
+Push 1
+Push "isNaN"
+CallFunction
+Not
+If loc1375
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "nextPage"
+Push ""
+SetMember
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "_visible"
+Push true
+SetMember
+Push "badPhone"
+Push 1
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push false
+Return
+loc1375:Push register1
+Push ""
+Equals2
+Not
+If loc13da
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "nextPage"
+Push ""
+SetMember
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "_visible"
+Push true
+SetMember
+Push "badSerial"
+Push 1
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push false
+Return
+loc13da:Push "my_so"
+Push "/"
+Push "prince2set"
+Push 2
+Push "SharedObject"
+GetVariable
+Push "getLocal"
+CallMethod
+DefineLocal
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k1"
+Push 0
+Push register1
+Push "toUpperCase"
+CallMethod
+SetMember
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "username"
+Push register2
+SetMember
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "phone"
+Push register3
+SetMember
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "email"
+Push register4
+SetMember
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "hkid"
+Push register5
+SetMember
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "address"
+Push register6
+SetMember
+Push 0
+Push "my_so"
+GetVariable
+Push "flush"
+CallMethod
+Pop
+Push 0
+Push "mdm"
+GetVariable
+Push "Network"
+GetMember
+Push "checkConnection"
+CallMethod
+Not
+If loc1aee
+Push "result_lv"
+Push 0
+Push "LoadVars"
+NewObject
+DefineLocal
+Push 0
+Push "LoadVars"
+NewObject
+StoreRegister 7
+Pop
+Push register7
+Push "k1"
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k1"
+GetMember
+SetMember
+Push register7
+Push "k2"
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k2"
+GetMember
+SetMember
+Push register7
+Push "k3"
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "d1"
+GetMember
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k2"
+GetMember
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k1"
+GetMember
+Push 0
+Push "regInfo"
+GetVariable
+Push "getKeyACS"
+CallMethod
+Push 1
+GetMember
+Push 0
+Push "regInfo"
+GetVariable
+Push "getKeyACS"
+CallMethod
+Push 0
+GetMember
+Push 5
+Push "createKey"
+CallFunction
+SetMember
+Push register7
+Push "d1"
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "d1"
+GetMember
+SetMember
+Push register7
+Push "username"
+Push register2
+SetMember
+Push register7
+Push "phone"
+Push register3
+SetMember
+Push register7
+Push "email"
+Push register4
+SetMember
+Push register7
+Push "hkid"
+Push register5
+SetMember
+Push register7
+Push "address"
+Push register6
+SetMember
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k2"
+GetMember
+Push 0
+Push 0
+Push "regInfo"
+GetVariable
+Push "getHD"
+CallMethod
+Push 1
+Push "mdm"
+GetVariable
+Push "System"
+GetMember
+Push "getHDSerial"
+CallMethod
+Push "toUpperCase"
+CallMethod
+Equals2
+Not
+If loc1a6b
+Push "POST"
+Push "result_lv"
+GetVariable
+Push 0
+Push "regInfo"
+GetVariable
+Push "getKeyAPath"
+CallMethod
+Push 3
+Push register7
+Push "sendAndLoad"
+CallMethod
+Pop
+Push "result_lv"
+GetVariable
+Push "onLoad"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "success" {
+Push register1
+Not
+If loc19f1
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "numNotConnect"
+Push 0
+SetMember
+Push 0
+Push "my_so"
+GetVariable
+Push "flush"
+CallMethod
+Pop
+Push "result_lv"
+GetVariable
+Push "valid"
+GetMember
+Push "true"
+Equals2
+PushDuplicate
+If loc1782
+Pop
+Push "result_lv"
+GetVariable
+Push "valid"
+GetMember
+Push true
+Equals2
+loc1782:Not
+If loc1885
+Push "licMode"
+Push "activated"
+SetVariable
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k3"
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "d1"
+GetMember
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k2"
+GetMember
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k1"
+GetMember
+Push 0
+Push "regInfo"
+GetVariable
+Push "getKeyACS"
+CallMethod
+Push 1
+GetMember
+Push 0
+Push "regInfo"
+GetVariable
+Push "getKeyACS"
+CallMethod
+Push 0
+GetMember
+Push 5
+Push "createKey"
+CallFunction
+SetMember
+Push 0
+Push "my_so"
+GetVariable
+Push "flush"
+CallMethod
+Pop
+Push "licMode"
+GetVariable
+Push 1
+Push "regInfo"
+GetVariable
+Push "getMode"
+CallMethod
+Push 1
+Push "reg"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Push true
+Return
+loc1885:Push "result_lv"
+GetVariable
+Push "valid"
+GetMember
+Push "false"
+Equals2
+PushDuplicate
+If loc18b0
+Pop
+Push "result_lv"
+GetVariable
+Push "valid"
+GetMember
+Push false
+Equals2
+loc18b0:Not
+If loc18e6
+Push "licMode"
+Push "noKeyS"
+SetVariable
+Push "badSerial"
+Push 1
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Jump loc1959
+loc18e6:Push "result_lv"
+GetVariable
+Push "valid"
+GetMember
+Push "false1"
+Equals2
+Not
+If loc192e
+Push "licMode"
+Push "noKeyA"
+SetVariable
+Push "activatedAccount"
+Push 1
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Jump loc1959
+loc192e:Push "licMode"
+Push "noKeyA"
+SetVariable
+Push "sysError"
+Push 1
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+loc1959:Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k1"
+Push ""
+SetMember
+Push "my_so"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k3"
+Push ""
+SetMember
+Push 0
+Push "my_so"
+GetVariable
+Push "flush"
+CallMethod
+Pop
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "nextPage"
+Push "licMode"
+GetVariable
+Push 1
+Push "regInfo"
+GetVariable
+Push "getMode"
+CallMethod
+SetMember
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "_visible"
+Push true
+SetMember
+Push false
+Return
+loc19f1:Push "licMode"
+Push "noKeyA"
+SetVariable
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "nextPage"
+Push "licMode"
+GetVariable
+Push 1
+Push "regInfo"
+GetVariable
+Push "getMode"
+CallMethod
+SetMember
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "_visible"
+Push true
+SetMember
+Push "sysError"
+Push 1
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push false
+Return
+}
+SetMember
+Jump loc1aee
+loc1a6b:Push "licMode"
+Push "noKeyA"
+SetVariable
+Push 0
+Push "my_so"
+GetVariable
+Push "flush"
+CallMethod
+Pop
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "nextPage"
+Push "licMode"
+GetVariable
+Push 1
+Push "regInfo"
+GetVariable
+Push "getMode"
+CallMethod
+SetMember
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "_visible"
+Push true
+SetMember
+Push "badActivate"
+Push 1
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+loc1aee:Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "nextPage"
+Push "noka"
+SetMember
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "_visible"
+Push true
+SetMember
+Push "noISP"
+Push 1
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push false
+Return
+}
+DefineFunction2 "storeKeyA", 1, 13, false, false, true, false, true, false, true, false, false, 1, "agKeyA" {
+Push "/"
+Push "prince2set"
+Push 2
+Push "SharedObject"
+GetVariable
+Push "getLocal"
+CallMethod
+StoreRegister 2
+Pop
+Push register1
+Push 0
+Push "regInfo"
+GetVariable
+Push "getKeyACS"
+CallMethod
+Push 0
+GetMember
+Push 2
+Push "mdm"
+GetVariable
+Push "Encryption"
+GetMember
+Push "decryptString"
+CallMethod
+StoreRegister 3
+Pop
+Push 0
+Push "regInfo"
+GetVariable
+Push "getKeyACS"
+CallMethod
+Push 1
+GetMember
+Push 1
+Push register3
+Push "split"
+CallMethod
+StoreRegister 4
+Pop
+Push register4
+Push 0
+GetMember
+Push ""
+Equals2
+PushDuplicate
+Not
+If loc1c39
+Pop
+Push register4
+Push 1
+GetMember
+Push register2
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k2"
+GetMember
+Equals2
+loc1c39:PushDuplicate
+Not
+If loc1c67
+Pop
+Push register4
+Push 2
+GetMember
+Push register2
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k1"
+GetMember
+Equals2
+loc1c67:Not
+If loc1f89
+Push register2
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k3"
+Push register1
+SetMember
+Push 0
+Push "Date"
+NewObject
+StoreRegister 5
+Pop
+Push 0
+Push register5
+Push "getFullYear"
+CallMethod
+StoreRegister 6
+Pop
+Push 0
+Push register5
+Push "getMonth"
+CallMethod
+Push 10
+Less2
+Not
+Not
+If loc1cef
+Push 0
+Push register5
+Push "getMonth"
+CallMethod
+Jump loc1d08
+loc1cef:Push "0"
+Push 0
+Push register5
+Push "getMonth"
+CallMethod
+Add2
+loc1d08:StoreRegister 7
+Pop
+Push 0
+Push register5
+Push "getDate"
+CallMethod
+Push 10
+Less2
+Not
+Not
+If loc1d48
+Push 0
+Push register5
+Push "getDate"
+CallMethod
+Jump loc1d61
+loc1d48:Push "0"
+Push 0
+Push register5
+Push "getDate"
+CallMethod
+Add2
+loc1d61:StoreRegister 8
+Pop
+Push 0
+Push register5
+Push "getHours"
+CallMethod
+Push 10
+Less2
+Not
+Not
+If loc1da1
+Push 0
+Push register5
+Push "getHours"
+CallMethod
+Jump loc1dba
+loc1da1:Push "0"
+Push 0
+Push register5
+Push "getHours"
+CallMethod
+Add2
+loc1dba:StoreRegister 9
+Pop
+Push 0
+Push register5
+Push "getMinutes"
+CallMethod
+Push 10
+Less2
+Not
+Not
+If loc1dfa
+Push 0
+Push register5
+Push "getMinutes"
+CallMethod
+Jump loc1e13
+loc1dfa:Push "0"
+Push 0
+Push register5
+Push "getMinutes"
+CallMethod
+Add2
+loc1e13:StoreRegister 10
+Pop
+Push 0
+Push register5
+Push "getSeconds"
+CallMethod
+Push 10
+Less2
+Not
+Not
+If loc1e53
+Push 0
+Push register5
+Push "getSeconds"
+CallMethod
+Jump loc1e6c
+loc1e53:Push "0"
+Push 0
+Push register5
+Push "getSeconds"
+CallMethod
+Add2
+loc1e6c:StoreRegister 11
+Pop
+Push 0
+Push register5
+Push "getMilliseconds"
+CallMethod
+Push 10
+Less2
+Not
+Not
+If loc1eed
+Push 0
+Push register5
+Push "getMilliseconds"
+CallMethod
+Push 100
+Less2
+Not
+Not
+If loc1ecf
+Push 0
+Push register5
+Push "getMilliseconds"
+CallMethod
+Jump loc1ee8
+loc1ecf:Push "0"
+Push 0
+Push register5
+Push "getMilliseconds"
+CallMethod
+Add2
+loc1ee8:Jump loc1f06
+loc1eed:Push "00"
+Push 0
+Push register5
+Push "getMilliseconds"
+CallMethod
+Add2
+loc1f06:StoreRegister 12
+Pop
+Push register2
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "d1"
+Push register6
+Push ""
+Add2
+Push register7
+Add2
+Push ""
+Add2
+Push register8
+Add2
+Push ""
+Add2
+Push register9
+Add2
+Push ""
+Add2
+Push register10
+Add2
+Push ""
+Add2
+Push register11
+Add2
+Push ""
+Add2
+Push register12
+Add2
+SetMember
+Push 0
+Push register2
+Push "flush"
+CallMethod
+Pop
+Push true
+Return
+loc1f89:Push false
+Return
+}
+DefineFunction "getEncryptKey", 0 {
+Push "_loc1_"
+Push "/"
+Push "prince2set"
+Push 2
+Push "SharedObject"
+GetVariable
+Push "getLocal"
+CallMethod
+DefineLocal
+Push "_loc1_"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k1"
+GetMember
+Push 0
+Push "regInfo"
+GetVariable
+Push "getKeyACS"
+CallMethod
+Push 1
+GetMember
+Add2
+Push "_loc1_"
+GetVariable
+Push "data"
+GetMember
+Push "regInfo"
+GetMember
+Push "k2"
+GetMember
+Push 0
+Push "regInfo"
+GetVariable
+Push "getKeyACS"
+CallMethod
+Push 0
+GetMember
+Push 2
+Push "mdm"
+GetVariable
+Push "Encryption"
+GetMember
+Push "encryptString"
+CallMethod
+Add2
+Push 0
+Push "regInfo"
+GetVariable
+Push "getKeyACS"
+CallMethod
+Push 0
+GetMember
+Push 2
+Push "mdm"
+GetVariable
+Push "Encryption"
+GetMember
+Push "encryptString"
+CallMethod
+Return
+}
+DefineFunction2 "checkManual", 1, 2, false, false, true, false, true, false, true, false, false, 1, "agKeyA" {
+Push register1
+Push ""
+Equals2
+Not
+Not
+If loc2181
+Push register1
+Push 1
+Push "storeKeyA"
+CallFunction
+Not
+If loc210e
+Push "licMode"
+Push "activated"
+SetVariable
+Push "licMode"
+GetVariable
+Push 1
+Push "regInfo"
+GetVariable
+Push "getMode"
+CallMethod
+Push 1
+Push "reg"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Jump loc217c
+loc210e:Push "licMode"
+Push "noKeyA"
+SetVariable
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "nextPage"
+Push "licMode"
+GetVariable
+Push 1
+Push "regInfo"
+GetVariable
+Push "getMode"
+CallMethod
+SetMember
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "_visible"
+Push true
+SetMember
+Push "badActivate"
+Push 1
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+loc217c:Jump loc21ef
+loc2181:Push "licMode"
+Push "noKeyA"
+SetVariable
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "nextPage"
+Push "licMode"
+GetVariable
+Push 1
+Push "regInfo"
+GetVariable
+Push "getMode"
+CallMethod
+SetMember
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "_visible"
+Push true
+SetMember
+Push "badActivate"
+Push 1
+Push "reg"
+GetVariable
+Push "popup"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+}
+loc21ef:DefineFunction2 "createKey", 5, 6, false, false, true, false, true, false, true, false, false, 1, "agCode", 2, "agCode2", 3, "agK1", 4, "agK2", 5, "agD1" {
+Push register2
+Push register4
+Add2
+Push register2
+Add2
+Push register3
+Add2
+Push register1
+Push 2
+Push "mdm"
+GetVariable
+Push "Encryption"
+GetMember
+Push "encryptString"
+CallMethod
+Return
+}

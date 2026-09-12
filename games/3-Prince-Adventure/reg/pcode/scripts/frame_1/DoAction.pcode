@@ -1,0 +1,519 @@
+ConstantPool "_level0", "activationSuccess", "stop", "onRollOver", "gotoAndStop", "onRollOut", "onReleaseOutside", "onPress", "mc_popup", "gotoAndPlay", "onEnterFrame", "btn_clear", "useHandCursor", "restore", "length", "mc_over", "mc_prince", "mc_head", "_loc1_", "play", ".", "lastIndexOf", "@", " ", "split", "substr", "_loc2_", "-", "Serial", "P3", "Username", "txtUsername", "text", "Phone", "txtPhone", "Email", "txtEmail", "txtSerial", "a1", "mc_al_name", "mc_al_phone", "mc_al_email", "correctEmailFormat", "a2", "mc_al_serial", "correctSNFormat", "connectActivationServer"
+Push "_level0"
+GetVariable
+Not
+If loc01ec
+Push "_level0"
+GetVariable
+Push "activationSuccess"
+DefineFunction2 "", 3, 4, false, false, true, false, true, false, true, false, false, 1, "sn", 2, "hdkey", 3, "akey" {
+Push true
+Return
+}
+SetMember
+loc01ec:DefineFunction2 "setBtn", 1, 2, false, false, true, false, true, false, true, false, false, 1, "pmBtn" {
+Push 0
+Push register1
+Push "stop"
+CallMethod
+Pop
+Push register1
+Push "onRollOver"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 2
+Push 1
+Push register1
+Push "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+Push register1
+Push "onRollOut"
+Push register1
+Push "onReleaseOutside"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 1
+Push 1
+Push register1
+Push "gotoAndStop"
+CallMethod
+Pop
+}
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register1
+Push "onPress"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 3
+Push 1
+Push register1
+Push "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+}
+DefineFunction2 "popup", 2, 4, false, false, true, false, true, false, true, false, false, 1, "pmErr", 2, "pmRestore" {
+Push register1
+Push 1
+Push "mc_popup"
+GetVariable
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push "onEnterFrame"
+DefineFunction2 "", 0, 1, false, false, true, false, true, false, true, false, false {
+Push "mc_popup"
+GetVariable
+Push "btn_clear"
+GetMember
+Push "useHandCursor"
+Push false
+SetMember
+Push "onEnterFrame"
+Delete2
+Pop
+}
+SetVariable
+Push "restore"
+Push register2
+SetVariable
+Push 1
+StoreRegister 3
+Pop
+loc0345:Push register3
+Push "restore"
+GetVariable
+Push "length"
+GetMember
+Greater
+Not
+Not
+If loc03d4
+Push 1
+Push 1
+Push "restore"
+GetVariable
+Push register3
+Push 1
+Subtract
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 1
+Push 1
+Push "restore"
+GetVariable
+Push register3
+Push 1
+Subtract
+GetMember
+Push "mc_over"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register3
+Push 1
+Add2
+StoreRegister 3
+Pop
+Jump loc0345
+loc03d4:Push 5
+Push 1
+Push "mc_prince"
+GetVariable
+Push "mc_head"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+}
+DefineFunction "killPopup", 0 {
+Push 1
+Push 1
+Push "mc_popup"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Push "_loc1_"
+Push 1
+DefineLocal
+loc0433:Push "_loc1_"
+GetVariable
+Push "restore"
+GetVariable
+Push "length"
+GetMember
+Greater
+Not
+Not
+If loc0492
+Push 0
+Push "restore"
+GetVariable
+Push "_loc1_"
+GetVariable
+Push 1
+Subtract
+GetMember
+Push "mc_over"
+GetMember
+Push "play"
+CallMethod
+Pop
+Push "_loc1_"
+Push "_loc1_"
+GetVariable
+Push 1
+Add2
+SetVariable
+Jump loc0433
+loc0492:Push 1
+Push 1
+Push "mc_prince"
+GetVariable
+Push "mc_head"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+}
+DefineFunction2 "correctEmailFormat", 1, 4, false, false, true, false, true, false, true, false, false, 1, "em" {
+Push "."
+Push 1
+Push register1
+Push "lastIndexOf"
+CallMethod
+StoreRegister 2
+Pop
+Push "@"
+Push 1
+Push register1
+Push "lastIndexOf"
+CallMethod
+StoreRegister 3
+Pop
+Push register2
+Push 0
+Greater
+PushDuplicate
+Not
+If loc0534
+Pop
+Push register3
+Push 0
+Greater
+loc0534:PushDuplicate
+Not
+If loc0556
+Pop
+Push register2
+Push register1
+Push "length"
+GetMember
+Push 1
+Subtract
+Less2
+loc0556:PushDuplicate
+Not
+If loc0572
+Pop
+Push register2
+Push register3
+Subtract
+Push 1
+Greater
+loc0572:PushDuplicate
+Not
+If loc05a9
+Pop
+Push register3
+Push 1
+Subtract
+Push "@"
+Push 2
+Push register1
+Push "lastIndexOf"
+CallMethod
+Push 0
+Less2
+loc05a9:PushDuplicate
+Not
+If loc05d8
+Pop
+Push " "
+Push 1
+Push register1
+Push "split"
+CallMethod
+Push "length"
+GetMember
+Push 1
+Equals2
+loc05d8:PushDuplicate
+Not
+If loc0610
+Pop
+Push 1
+Push register3
+Push 1
+Add2
+Push 2
+Push register1
+Push "substr"
+CallMethod
+Push "."
+Equals2
+Not
+loc0610:Not
+If loc061c
+Push true
+Return
+loc061c:Push false
+Return
+}
+DefineFunction "correctSNFormat", 0 {
+Push "_loc2_"
+Push "-"
+Push 1
+Push "Serial"
+GetVariable
+Push "split"
+CallMethod
+DefineLocal
+Push "_loc2_"
+GetVariable
+Push "length"
+GetMember
+Push 5
+Equals2
+Not
+Not
+If loc067a
+Push false
+Return
+loc067a:Push "_loc2_"
+GetVariable
+Push 0
+GetMember
+Push "P3"
+Equals2
+Not
+Not
+If loc069c
+Push false
+Return
+loc069c:Push "_loc1_"
+Push 1
+DefineLocal
+loc06aa:Push "_loc1_"
+GetVariable
+Push 5
+Less2
+Not
+If loc0702
+Push "_loc2_"
+GetVariable
+Push "_loc1_"
+GetVariable
+GetMember
+Push "length"
+GetMember
+Push 4
+Equals2
+Not
+Not
+If loc06e8
+Push false
+Return
+loc06e8:Push "_loc1_"
+Push "_loc1_"
+GetVariable
+Push 1
+Add2
+SetVariable
+Jump loc06aa
+loc0702:Push true
+Return
+}
+DefineFunction2 "checkInput", 0, 3, true, false, true, false, true, false, true, false, false {
+Push false
+StoreRegister 2
+Pop
+Push "Username"
+Push "txtUsername"
+GetVariable
+Push "text"
+GetMember
+SetVariable
+Push "Phone"
+Push "txtPhone"
+GetVariable
+Push "text"
+GetMember
+SetVariable
+Push "Email"
+Push "txtEmail"
+GetVariable
+Push "text"
+GetMember
+SetVariable
+Push "Serial"
+Push "txtSerial"
+GetVariable
+Push "text"
+GetMember
+SetVariable
+Push "Username"
+GetVariable
+Push "length"
+GetMember
+Push 1
+Less2
+Not
+If loc07b3
+Push true
+StoreRegister 2
+Pop
+Push "a1"
+Push 1
+Push "mc_al_name"
+GetVariable
+Push "gotoAndPlay"
+CallMethod
+Pop
+Jump loc07d0
+loc07b3:Push 1
+Push 1
+Push "mc_al_name"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+loc07d0:Push "Phone"
+GetVariable
+Push "length"
+GetMember
+Push 1
+Less2
+Not
+If loc0814
+Push true
+StoreRegister 2
+Pop
+Push "a1"
+Push 1
+Push "mc_al_phone"
+GetVariable
+Push "gotoAndPlay"
+CallMethod
+Pop
+Jump loc0831
+loc0814:Push 1
+Push 1
+Push "mc_al_phone"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+loc0831:Push "Email"
+GetVariable
+Push "length"
+GetMember
+Push 1
+Less2
+Not
+If loc0875
+Push true
+StoreRegister 2
+Pop
+Push "a1"
+Push 1
+Push "mc_al_email"
+GetVariable
+Push "gotoAndPlay"
+CallMethod
+Pop
+Jump loc08d5
+loc0875:Push "Email"
+GetVariable
+Push 1
+Push "correctEmailFormat"
+CallFunction
+Not
+If loc08b1
+Push 1
+Push 1
+Push "mc_al_email"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Jump loc08d5
+loc08b1:Push true
+StoreRegister 2
+Pop
+Push "a2"
+Push 1
+Push "mc_al_email"
+GetVariable
+Push "gotoAndPlay"
+CallMethod
+Pop
+loc08d5:Push "Serial"
+GetVariable
+Push "length"
+GetMember
+Push 1
+Less2
+Not
+If loc0919
+Push true
+StoreRegister 2
+Pop
+Push "a1"
+Push 1
+Push "mc_al_serial"
+GetVariable
+Push "gotoAndPlay"
+CallMethod
+Pop
+Jump loc0973
+loc0919:Push 0
+Push "correctSNFormat"
+CallFunction
+Not
+If loc094f
+Push 1
+Push 1
+Push "mc_al_serial"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Jump loc0973
+loc094f:Push true
+StoreRegister 2
+Pop
+Push "a2"
+Push 1
+Push "mc_al_serial"
+GetVariable
+Push "gotoAndPlay"
+CallMethod
+Pop
+loc0973:Push register2
+If loc0991
+Push 0
+Push register1
+Push "connectActivationServer"
+CallMethod
+Pop
+}
+loc0991:

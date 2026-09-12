@@ -1,0 +1,54 @@
+ConstantPool "reg", "unloadMovie", "cdsingle", "initSystem", "_root", "_level0", "prince", "admin", "validateLogin", "loadSystem", "gameid", "callGame"
+DefineFunction "loadTrialVersion", 0 {
+Push 0
+Push "reg"
+GetVariable
+Push "unloadMovie"
+CallMethod
+Pop
+Push "cdsingle"
+Push 1
+Push "initSystem"
+CallFunction
+Pop
+}
+DefineFunction "loadFullVersion", 0 {
+Push 0
+Push "reg"
+GetVariable
+Push "unloadMovie"
+CallMethod
+Pop
+Push "cdsingle"
+Push 1
+Push "initSystem"
+CallFunction
+Pop
+}
+Push "_root"
+GetVariable
+Push "_level0"
+GetVariable
+Equals2
+Not
+Not
+If loc0145
+Push "prince"
+Push "admin"
+Push 2
+Push "validateLogin"
+CallFunction
+Pop
+Push 0
+Push "loadSystem"
+CallFunction
+Pop
+Push "_level0"
+GetVariable
+Push "gameid"
+GetMember
+Push 1
+Push "callGame"
+CallFunction
+Pop
+loc0145:Stop

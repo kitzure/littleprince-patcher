@@ -1,0 +1,7 @@
+Push "Prince3.Button1"
+GetVariable
+Push "mc_setting_btn3", 2, "Object"
+GetVariable
+Push "registerClass"
+CallMethod
+Pop

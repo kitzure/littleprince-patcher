@@ -1,0 +1,8 @@
+Push 0.0, "_parent"
+GetVariable
+Push "header"
+GetMember
+Push "showLogo"
+CallMethod
+Pop
+GotoFrame 0

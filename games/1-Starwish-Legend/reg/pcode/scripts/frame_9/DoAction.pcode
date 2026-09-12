@@ -1,0 +1,166 @@
+ConstantPool "btn_print", "setBtn", "btn_back", "btn_activate", "onRelease", "_parent", "akey", "text", "length", "a1", "alert_act", "gotoAndPlay", "activationResponse", "gotoAndStop", "printasbitmap:#bmax", "mc_print", "str", "_root", "getHDKey", "Serial", "requestKey", "P2-", "indexOf", "substr", "str2", "", "i", "-", "key", "oldRequestKey"
+Push "btn_print"
+GetVariable
+Push 1, "setBtn"
+CallFunction
+Pop
+Push "btn_back"
+GetVariable
+Push 1, "setBtn"
+CallFunction
+Pop
+Push "btn_activate"
+GetVariable
+Push 1, "setBtn"
+CallFunction
+Pop
+Push "btn_activate"
+GetVariable
+Push "onRelease"
+DefineFunction2 "", 0, 3, false, true, true, false, true, false, false, true, false {
+Push register1, "_parent"
+GetMember
+Push "akey"
+GetMember
+Push "text"
+GetMember
+Push "length"
+GetMember
+Push 1
+Less2
+Not
+If loc018e
+Push "a1", 1, register1, "_parent"
+GetMember
+Push "alert_act"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Jump loc01b0
+loc018e:Push register1, "_parent"
+GetMember
+Push "akey"
+GetMember
+Push "text"
+GetMember
+Push 1, register2, "activationResponse"
+CallMethod
+Pop
+}
+loc01b0:SetMember
+Push "btn_back"
+GetVariable
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 2, 1, register1, "gotoAndStop"
+CallMethod
+Pop
+GoToLabel "form"
+}
+SetMember
+Push "btn_print"
+GetVariable
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "printasbitmap:#bmax", register1, "_parent"
+GetMember
+Push "mc_print"
+GetMember
+GetURL2 false, false, 0
+}
+SetMember
+Push "str", 0.0, "_root"
+GetVariable
+Push "getHDKey"
+CallMethod
+Push "Serial"
+GetVariable
+Push 2, "_root"
+GetVariable
+Push "requestKey"
+CallMethod
+DefineLocal
+Push "P2-", 1, "str"
+GetVariable
+Push "indexOf"
+CallMethod
+Push 0.0
+Equals2
+Not
+If loc031d
+Push "str", 32, 3, 2, "str"
+GetVariable
+Push "substr"
+CallMethod
+SetVariable
+Push "str2", ""
+DefineLocal
+Push "i", 0.0
+DefineLocal
+loc0298:Push "i"
+GetVariable
+Push "str"
+GetVariable
+Push "length"
+GetMember
+Less2
+Not
+If loc0309
+Push "i"
+GetVariable
+Not
+If loc02cc
+Push "str2", "str2"
+GetVariable
+Push "-"
+Add2
+SetVariable
+loc02cc:Push "str2", "str2"
+GetVariable
+Push 4, "i"
+GetVariable
+Push 2, "str"
+GetVariable
+Push "substr"
+CallMethod
+Add2
+SetVariable
+Push "i", "i"
+GetVariable
+Push 4
+Add2
+SetVariable
+Jump loc0298
+loc0309:Push "key"
+GetVariable
+Push "text", "str2"
+GetVariable
+SetMember
+Jump loc0352
+loc031d:Push "key"
+GetVariable
+Push "text", 0.0, "_root"
+GetVariable
+Push "getHDKey"
+CallMethod
+Push "Serial"
+GetVariable
+Push 2, "_root"
+GetVariable
+Push "oldRequestKey"
+CallMethod
+SetMember
+loc0352:Push "mc_print"
+GetVariable
+Push "key"
+GetMember
+Push "text", "key"
+GetVariable
+Push "text"
+GetMember
+SetMember
+Push "akey"
+GetVariable
+Push "text", ""
+SetMember

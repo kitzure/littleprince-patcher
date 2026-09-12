@@ -1,0 +1,8 @@
+ConstantPool "_parent", "chopLoading"
+Push 0.0, "_parent"
+GetVariable
+Push "_parent"
+GetMember
+Push "chopLoading"
+CallMethod
+Pop

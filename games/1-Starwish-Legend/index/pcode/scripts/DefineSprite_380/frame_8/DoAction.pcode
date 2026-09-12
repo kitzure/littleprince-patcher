@@ -1,0 +1,14 @@
+ConstantPool "_parent", "initSetting", "verNumber", "_root"
+Push 0.0, "_parent"
+GetVariable
+Push "_parent"
+GetMember
+Push "initSetting"
+CallMethod
+Pop
+Push "verNumber", "_root"
+GetVariable
+Push "verNumber"
+GetMember
+SetVariable
+Stop

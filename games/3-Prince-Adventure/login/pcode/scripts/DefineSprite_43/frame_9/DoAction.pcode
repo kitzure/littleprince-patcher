@@ -1,0 +1,15 @@
+ConstantPool "tempEar"
+Push "tempEar", 10
+RandomNumber
+SetVariable
+Push "tempEar"
+GetVariable
+Push 5
+Equals2
+Not
+If loc0034
+Play
+Jump loc003a
+loc0034:GotoFrame 0
+Play
+loc003a:

@@ -1,0 +1,151 @@
+ConstantPool "ver", "verShort", "substring", "FSCommand:showMenu", "FSCommand:allowScale", "frameRate", "MovieClip", "prototype", "useHandCursor", "Button", "cddemo", "cdsingle", "localPath", "mdm", "Application", "pathUnicode", "cdwebsunny", "/", "prince2set", "SharedObject", "getLocal", "webdemo", "webedcity", "webdemoedcity", "websunny", "webschool", "testing", "appPath", "", "http://file.sunnyinteractive.com/download/hung/test/", "verLevel", "loadingColor", "green", "channel1", "none", "channel2"
+DefineFunction2 "initSys", 1, 3, false, false, true, false, true, false, true, false, false, 2, "agVersion" {
+Push "ver", register2
+SetVariable
+Push "verShort", 2, 0.0, 2, "ver"
+GetVariable
+Push "substring"
+CallMethod
+SetVariable
+Push "FSCommand:showMenu", false
+GetURL2 false, false, 0
+Push "FSCommand:allowScale", false
+GetURL2 false, false, 0
+Push "frameRate", 24
+SetVariable
+Push "MovieClip"
+GetVariable
+Push "prototype"
+GetMember
+Push "useHandCursor", false
+SetMember
+Push "Button"
+GetVariable
+Push "prototype"
+GetMember
+Push "useHandCursor", false
+SetMember
+Push "ver"
+GetVariable
+Push "cddemo"
+Equals2
+PushDuplicate
+If loc0236
+Pop
+Push "ver"
+GetVariable
+Push "cdsingle"
+Equals2
+loc0236:Not
+If loc0251
+Push "localPath", "mdm"
+GetVariable
+Push "Application"
+GetMember
+Push "pathUnicode"
+GetMember
+SetVariable
+loc0251:Push "ver"
+GetVariable
+Push "cddemo"
+Equals2
+PushDuplicate
+If loc0270
+Pop
+Push "ver"
+GetVariable
+Push "cdsingle"
+Equals2
+loc0270:PushDuplicate
+If loc0283
+Pop
+Push "ver"
+GetVariable
+Push "cdwebsunny"
+Equals2
+loc0283:Not
+If loc02a3
+Push "/", "prince2set", 2, "SharedObject"
+GetVariable
+Push "getLocal"
+CallMethod
+StoreRegister 1
+Pop
+loc02a3:Push "ver"
+GetVariable
+Push "webdemo"
+Equals2
+PushDuplicate
+If loc02c2
+Pop
+Push "ver"
+GetVariable
+Push "webedcity"
+Equals2
+loc02c2:PushDuplicate
+If loc02d5
+Pop
+Push "ver"
+GetVariable
+Push "webdemoedcity"
+Equals2
+loc02d5:PushDuplicate
+If loc02e8
+Pop
+Push "ver"
+GetVariable
+Push "websunny"
+Equals2
+loc02e8:PushDuplicate
+If loc02fb
+Pop
+Push "ver"
+GetVariable
+Push "webschool"
+Equals2
+loc02fb:PushDuplicate
+If loc030e
+Pop
+Push "ver"
+GetVariable
+Push "testing"
+Equals2
+loc030e:Not
+If loc0321
+Push "appPath", ""
+SetVariable
+Jump loc036e
+loc0321:Push "ver"
+GetVariable
+Push "cddemo"
+Equals2
+PushDuplicate
+If loc0340
+Pop
+Push "ver"
+GetVariable
+Push "cdsingle"
+Equals2
+loc0340:Not
+If loc0354
+Push "appPath", "localPath"
+GetVariable
+SetVariable
+Jump loc036e
+loc0354:Push "ver"
+GetVariable
+Push "cdwebsunny"
+Equals2
+Not
+If loc036e
+Push "appPath", "http://file.sunnyinteractive.com/download/hung/test/"
+SetVariable
+loc036e:Push "verLevel", 100000
+SetVariable
+Push "loadingColor", "green"
+SetVariable
+Push "channel1", "none"
+SetVariable
+Push "channel2", "none"
+SetVariable
+}

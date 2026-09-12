@@ -1,0 +1,473 @@
+ConstantPool "header", "addGem", "user", "report", "saveUserData", "mapObj", "mapGem", "mapEngine_Current", "charCodeAt", "length", "slice", "concat", "reduceGem(", ", ", ",", ")", "traceOut", "reduceGem", "currentTraderID", "killSmallMap", "blurMap", "hidePaneR", "file", "traderStore.swf", "showNow", "loc", "traderStore", "switchFile", "trader", "playMusic", "map", "fadeOutMusic", "hideLogo", "mapName", "gotoAndStop", "traderinmap.swf", "shadowinmap.swf", "itemSpec", "dat", "pattern", "index.addItemList(", "-", "addItem"
+DefineFunction2 "addGem", 4, 7, false, false, true, false, true, false, true, false, false, 3, "agGemID", 4, "agAmount", 5, "checkEnabled", 6, "animation" {
+Push 0.0
+StoreRegister 2
+Pop
+Push 0.0
+StoreRegister 1
+Pop
+Push register3, 20
+Greater
+Not
+If loc021d
+Push register3, 20
+Subtract
+StoreRegister 2
+Pop
+Push register4, 10
+Multiply
+StoreRegister 1
+Pop
+Jump loc0267
+loc021d:Push register3, 10
+Greater
+Not
+If loc0253
+Push register3, 10
+Subtract
+StoreRegister 2
+Pop
+Push register4, 5
+Multiply
+StoreRegister 1
+Pop
+Jump loc0267
+loc0253:Push register3
+StoreRegister 2
+Pop
+Push register4
+StoreRegister 1
+Pop
+loc0267:Push register6, register5, register1, register2, 4, "header"
+GetVariable
+Push "addGem"
+CallMethod
+Pop
+Push register1, register2, 2, "user"
+GetVariable
+Push "report"
+GetMember
+Push "addGem"
+CallMethod
+Pop
+Push "user"
+GetVariable
+Push 1, "saveUserData"
+CallFunction
+Pop
+}
+DefineFunction2 "reduceMapGem", 2, 7, false, false, true, false, true, false, true, false, false, 5, "agGemID", 6, "agAmount" {
+Push 0.0
+StoreRegister 4
+Pop
+loc02ea:Push register4, register6
+Less2
+Not
+If loc04cc
+Push 0.0
+StoreRegister 1
+Pop
+loc0309:Push register1, "mapObj"
+GetVariable
+Push "mapGem"
+GetMember
+Push 0.0, 1, "mapEngine_Current"
+GetVariable
+Push "charCodeAt"
+CallMethod
+Push 65
+Subtract
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc04bc
+Push "mapObj"
+GetVariable
+Push "mapGem"
+GetMember
+Push 0.0, 1, "mapEngine_Current"
+GetVariable
+Push "charCodeAt"
+CallMethod
+Push 65
+Subtract
+GetMember
+Push register1
+GetMember
+Push register5
+Equals2
+Not
+If loc04ac
+Push undefined
+StoreRegister 3
+Pop
+Push undefined
+StoreRegister 2
+Pop
+Push register1, 0.0, 2, "mapObj"
+GetVariable
+Push "mapGem"
+GetMember
+Push 0.0, 1, "mapEngine_Current"
+GetVariable
+Push "charCodeAt"
+CallMethod
+Push 65
+Subtract
+GetMember
+Push "slice"
+CallMethod
+StoreRegister 3
+Pop
+Push "mapObj"
+GetVariable
+Push "mapGem"
+GetMember
+Push 0.0, 1, "mapEngine_Current"
+GetVariable
+Push "charCodeAt"
+CallMethod
+Push 65
+Subtract
+GetMember
+Push "length"
+GetMember
+Push register1, 1
+Add2
+Push 2, "mapObj"
+GetVariable
+Push "mapGem"
+GetMember
+Push 0.0, 1, "mapEngine_Current"
+GetVariable
+Push "charCodeAt"
+CallMethod
+Push 65
+Subtract
+GetMember
+Push "slice"
+CallMethod
+StoreRegister 2
+Pop
+Push "mapObj"
+GetVariable
+Push "mapGem"
+GetMember
+Push 0.0, 1, "mapEngine_Current"
+GetVariable
+Push "charCodeAt"
+CallMethod
+Push 65
+Subtract
+Push register2, 1, register3, "concat"
+CallMethod
+SetMember
+Jump loc04bc
+loc04ac:Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc0309
+loc04bc:Push register4
+Increment
+StoreRegister 4
+Pop
+Jump loc02ea
+}
+loc04cc:DefineFunction2 "reduceGem", 3, 4, false, false, true, false, true, false, true, false, false, 1, "agGemID", 2, "agAmount", 3, "checkEnabled" {
+Push "reduceGem(", register1
+Add2
+Push ", "
+Add2
+Push register2
+Add2
+Push ","
+Add2
+Push register3
+Add2
+Push ")"
+Add2
+Push 1, "traceOut"
+CallFunction
+Pop
+Push register3, register2, register1, 3, "header"
+GetVariable
+Push "reduceGem"
+CallMethod
+Pop
+Push register2, register1, 2, "user"
+GetVariable
+Push "report"
+GetMember
+Push "reduceGem"
+CallMethod
+Pop
+Push "user"
+GetVariable
+Push 1, "saveUserData"
+CallFunction
+Pop
+}
+DefineFunction2 "showBuyItem", 1, 5, false, false, true, false, true, false, true, false, false, 4, "agTraderID" {
+Push "currentTraderID", register4
+SetVariable
+Push 0.0, "header"
+GetVariable
+Push "killSmallMap"
+CallMethod
+Pop
+Push 0.0, "blurMap"
+CallFunction
+Pop
+Push 0.0, "header"
+GetVariable
+Push "hidePaneR"
+CallMethod
+Pop
+Push "file", "traderStore.swf", "showNow", true, "loc", "traderStore", 3
+InitObject
+Push 1
+InitArray
+Push 1, "switchFile"
+CallFunction
+Pop
+Push 10000, "trader", 2, "playMusic"
+CallFunction
+Pop
+Push 25, "map", "mapEngine_Current"
+GetVariable
+Add2
+Push 2, "fadeOutMusic"
+CallFunction
+Pop
+}
+DefineFunction2 "showSPShop", 0, 5, false, false, true, false, true, false, false, true, false {
+Push 0.0, register1, "header"
+GetMember
+Push "hideLogo"
+CallMethod
+Pop
+Push 1, 1, register1, "mapName"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, "header"
+GetVariable
+Push "killSmallMap"
+CallMethod
+Pop
+Push 0.0, "blurMap"
+CallFunction
+Pop
+Push 0.0, "header"
+GetVariable
+Push "hidePaneR"
+CallMethod
+Pop
+Push "file", "traderinmap.swf", "showNow", true, "loc", "traderStore", 3
+InitObject
+Push 1
+InitArray
+Push 1, "switchFile"
+CallFunction
+Pop
+Push 10000, "trader", 2, "playMusic"
+CallFunction
+Pop
+Push 25, "map", "mapEngine_Current"
+GetVariable
+Add2
+Push 2, "fadeOutMusic"
+CallFunction
+Pop
+}
+DefineFunction2 "showShadowMsg", 0, 5, false, false, true, false, true, false, false, true, false {
+Push 0.0, register1, "header"
+GetMember
+Push "hideLogo"
+CallMethod
+Pop
+Push 1, 1, register1, "mapName"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, "header"
+GetVariable
+Push "killSmallMap"
+CallMethod
+Pop
+Push 0.0, "blurMap"
+CallFunction
+Pop
+Push 0.0, "header"
+GetVariable
+Push "hidePaneR"
+CallMethod
+Pop
+Push "file", "shadowinmap.swf", "showNow", true, "loc", "traderStore", 3
+InitObject
+Push 1
+InitArray
+Push 1, "switchFile"
+CallFunction
+Pop
+Push 10000, "trader", 2, "playMusic"
+CallFunction
+Pop
+Push 25, "map", "mapEngine_Current"
+GetVariable
+Add2
+Push 2, "fadeOutMusic"
+CallFunction
+Pop
+}
+DefineFunction2 "createGemItem", 2, 6, false, false, true, false, true, false, true, false, false, 3, "agTraderID", 4, "agGemArr" {
+Push 0.0
+StoreRegister 5
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc083b:Push register2, "itemSpec"
+GetVariable
+Push "trader", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc0979
+Push 0.0
+StoreRegister 1
+Pop
+loc0870:Push register1, "itemSpec"
+GetVariable
+Push "trader", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "pattern"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc0969
+Push register4, register1
+GetMember
+Push "itemSpec"
+GetVariable
+Push "trader", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "pattern"
+GetMember
+Push register1
+GetMember
+Equals2
+Not
+Not
+If loc08dc
+Jump loc0969
+loc08dc:Push register1, "itemSpec"
+GetVariable
+Push "trader", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "pattern"
+GetMember
+Push "length"
+GetMember
+Push 1
+Subtract
+Equals2
+PushDuplicate
+Not
+If loc0947
+Pop
+Push register4, register1
+GetMember
+Push "itemSpec"
+GetVariable
+Push "trader", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "pattern"
+GetMember
+Push register1
+GetMember
+Equals2
+loc0947:Not
+If loc0959
+Push register2, 1
+Add2
+Return
+loc0959:Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc0870
+loc0969:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc083b
+loc0979:Push register5
+Return
+}
+DefineFunction2 "addItemList", 3, 4, false, false, true, false, true, false, true, false, false, 2, "agTraderID", 1, "agItemID", 3, "agAmount" {
+Push "index.addItemList(", register2
+Add2
+Push ","
+Add2
+Push register1
+Add2
+Push ", "
+Add2
+Push register3
+Add2
+Push ")"
+Add2
+Push 1, "traceOut"
+CallFunction
+Pop
+Push register3, register2, "-"
+Add2
+Push register1, 1
+Subtract
+Add2
+Push 2, "user"
+GetVariable
+Push "report"
+GetMember
+Push "addItem"
+CallMethod
+Pop
+Push "user"
+GetVariable
+Push 1, "saveUserData"
+CallFunction
+Pop
+}

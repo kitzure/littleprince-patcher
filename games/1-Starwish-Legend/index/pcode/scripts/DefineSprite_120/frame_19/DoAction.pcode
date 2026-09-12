@@ -1,0 +1,35 @@
+ConstantPool "_parent", "bossStatus", "question", "callBossQuestion", "start", "callBossBattle", "loadMapFromBoss"
+Push "_parent"
+GetVariable
+Push "bossStatus"
+GetMember
+Push "question"
+Equals2
+Not
+If loc008a
+Push 0.0, "_parent"
+GetVariable
+Push "callBossQuestion"
+CallMethod
+Pop
+Jump loc00d3
+loc008a:Push "_parent"
+GetVariable
+Push "bossStatus"
+GetMember
+Push "start"
+Equals2
+Not
+If loc00bd
+Push 0.0, "_parent"
+GetVariable
+Push "callBossBattle"
+CallMethod
+Pop
+Jump loc00d3
+loc00bd:Push 0.0, "_parent"
+GetVariable
+Push "loadMapFromBoss"
+CallMethod
+Pop
+loc00d3:Stop

@@ -1,0 +1,3 @@
+請在下面輸入啟動密碼
+--- RECORDSEPARATOR ---
+:

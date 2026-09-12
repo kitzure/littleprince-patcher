@@ -1,0 +1,103 @@
+ConstantPool "bossData", "Array", "i", "Object", "hp", "getItem", "id", "6-2", "amount", "6-1", "6-4", "6-3", "6-0", "5-0", "7-2", "7-1", "7-0"
+Push "bossData", 0.0, "Array"
+NewObject
+SetVariable
+Push "i", 1
+SetVariable
+loc0073:Push "i"
+GetVariable
+Push 5
+Greater
+Not
+Not
+If loc00bd
+Push "bossData"
+GetVariable
+Push "i"
+GetVariable
+Push 1
+Subtract
+Push 0.0, "Object"
+NewObject
+SetMember
+Push "i", "i"
+GetVariable
+Increment
+SetVariable
+Jump loc0073
+loc00bd:Push "bossData"
+GetVariable
+Push 0.0
+GetMember
+Push "hp", 10000
+SetMember
+Push "bossData"
+GetVariable
+Push 0.0
+GetMember
+Push "getItem", "id", "6-2", "amount", 1, 2
+InitObject
+Push "id", "6-1", "amount", 1, 2
+InitObject
+Push 2
+InitArray
+SetMember
+Push "bossData"
+GetVariable
+Push 1
+GetMember
+Push "hp", 17000
+SetMember
+Push "bossData"
+GetVariable
+Push 1
+GetMember
+Push "getItem", "id", "6-4", "amount", 1, 2
+InitObject
+Push "id", "6-3", "amount", 1, 2
+InitObject
+Push 2
+InitArray
+SetMember
+Push "bossData"
+GetVariable
+Push 2
+GetMember
+Push "hp", 20000
+SetMember
+Push "bossData"
+GetVariable
+Push 2
+GetMember
+Push "getItem", "id", "6-0", "amount", 1, 2
+InitObject
+Push "id", "5-0", "amount", 1, 2
+InitObject
+Push 2
+InitArray
+SetMember
+Push "bossData"
+GetVariable
+Push 3
+GetMember
+Push "hp", 35000
+SetMember
+Push "bossData"
+GetVariable
+Push 4
+GetMember
+Push "hp", 10000
+SetMember
+Push "bossData"
+GetVariable
+Push 4
+GetMember
+Push "getItem", "id", "7-2", "amount", 1, 2
+InitObject
+Push "id", "7-1", "amount", 1, 2
+InitObject
+Push "id", "7-0", "amount", 1, 2
+InitObject
+Push 3
+InitArray
+SetMember

@@ -1,0 +1,724 @@
+ConstantPool "loading", "popupClip", "gotoAndStop", "map", "core", "pause", "popupStatus", "traderStore", "mapIsMoving", "hideCursor", "isPopup", "error", "slide", "playFx", "msg", "_visible", "bttn1", "msgVar", "param", "onRollOver", "drag", "onRelease", "killPopup", "restartSys", "question", "message", "bttn2", "vo", "voNo", "totalWidth", "voProgress", "_width", "firstHint", "blurMap", "demo", "langHint", "alert", "setting", "stopAllTrader", "darkMask", "_height", "Math", "round", "reuse", "showCursor", "hideHint", "resume", "centre", "textHeight", "_y", "upper", "tmpLoaded", "tmpPreLoaded", "mapEngine_Current", "A", "loadingColor", "blue", "B", "green", "C", "pink", "orange", "droplet", "surface", "fill", "tmpTotal", "_currentframe", "percent", "text", "%", "percentShadow"
+DefineFunction "prepareLoadingPopup", 0 {
+Push "loading", 1, "popupClip"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+}
+DefineFunction2 "popup", 3, 3, false, false, true, false, true, false, true, false, false, 1, "whichType", 0, "param", 2, "dark" {
+Push 0.0, "map"
+GetVariable
+Push "core"
+GetMember
+Push "pause"
+CallMethod
+Pop
+Push "popupStatus", register1
+SetVariable
+Push "traderStore"
+GetVariable
+Push "mapIsMoving", true
+SetMember
+Push true, 1, "hideCursor"
+CallFunction
+Pop
+Push "isPopup", true
+SetVariable
+Push register1, "loading"
+Equals2
+Not
+If loc02fd
+Push "loading", 1, "popupClip"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Jump loc0833
+loc02fd:Push register1, "error"
+Equals2
+Not
+If loc03f6
+Push "slide", 1, "playFx"
+CallFunction
+Pop
+Push "error", 1, "popupClip"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "msg"
+GetMember
+Push "_visible", false
+SetMember
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "bttn1"
+GetMember
+Push "_visible", false
+SetMember
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "msgVar", "param"
+GetVariable
+Push 0.0
+GetMember
+SetMember
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "bttn1"
+GetMember
+Push "onRollOver"
+DefineFunction "", 0 {
+Push "drag", 1, "playFx"
+CallFunction
+Pop
+}
+SetMember
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "bttn1"
+GetMember
+Push "onRelease"
+DefineFunction "", 0 {
+Push 0.0, "killPopup"
+CallFunction
+Pop
+Push 0.0, "restartSys"
+CallFunction
+Pop
+}
+SetMember
+Jump loc0833
+loc03f6:Push register1, "question"
+Equals2
+Push register1, "message"
+Equals2
+Or
+Not
+If loc05e3
+Push "slide", 1, "playFx"
+CallFunction
+Pop
+Push "question", 1, "popupClip"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "msg"
+GetMember
+Push "_visible", false
+SetMember
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "bttn1"
+GetMember
+Push "_visible", false
+SetMember
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "bttn2"
+GetMember
+Push "_visible", false
+SetMember
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "msgVar", "param"
+GetVariable
+Push 0.0
+GetMember
+SetMember
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "bttn1"
+GetMember
+Push "onRelease"
+DefineFunction "", 0 {
+Push 0.0, "killPopup"
+CallFunction
+Pop
+Push 0.0, "param"
+GetVariable
+Push 1
+CallMethod
+Pop
+}
+SetMember
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "bttn1"
+GetMember
+Push "onRollOver"
+DefineFunction "", 0 {
+Push "drag", 1, "playFx"
+CallFunction
+Pop
+}
+SetMember
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "bttn2"
+GetMember
+Push "onRollOver"
+DefineFunction "", 0 {
+Push "drag", 1, "playFx"
+CallFunction
+Pop
+}
+SetMember
+Push register1, "question"
+Equals2
+Not
+If loc05a0
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "bttn2"
+GetMember
+Push "onRelease"
+DefineFunction "", 0 {
+Push 0.0, "killPopup"
+CallFunction
+Pop
+Push 0.0, "param"
+GetVariable
+Push 2
+CallMethod
+Pop
+}
+SetMember
+Jump loc05de
+loc05a0:Push register1, "message"
+Equals2
+Not
+If loc05de
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "bttn2"
+GetMember
+Push "onRelease"
+DefineFunction "", 0 {
+Push 0.0, "killPopup"
+CallFunction
+Pop
+}
+SetMember
+loc05de:Jump loc0833
+loc05e3:Push register1, "vo"
+Equals2
+Not
+If loc0667
+Push "vo", 1, "popupClip"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "voNo", "param"
+GetVariable
+SetMember
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "totalWidth", "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "voProgress"
+GetMember
+Push "_width"
+GetMember
+SetMember
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "voProgress"
+GetMember
+Push "_width", 0.0
+SetMember
+Jump loc0833
+loc0667:Push register1, "firstHint"
+Equals2
+Not
+If loc069e
+Push "firstHint", 1, "popupClip"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, "blurMap"
+CallFunction
+Pop
+Jump loc0833
+loc069e:Push register1, "demo"
+Equals2
+Not
+If loc06d5
+Push "demo", 1, "popupClip"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, "blurMap"
+CallFunction
+Pop
+Jump loc0833
+loc06d5:Push register1, "langHint"
+Equals2
+Not
+If loc070c
+Push "langHint", 1, "popupClip"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, "blurMap"
+CallFunction
+Pop
+Jump loc0833
+loc070c:Push register1, "alert"
+Equals2
+Not
+If loc07f5
+Push "slide", 1, "playFx"
+CallFunction
+Pop
+Push "alert", 1, "popupClip"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "msg"
+GetMember
+Push "_visible", false
+SetMember
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "bttn1"
+GetMember
+Push "_visible", false
+SetMember
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "msgVar", "param"
+GetVariable
+Push 0.0
+GetMember
+SetMember
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "bttn1"
+GetMember
+Push "onRollOver"
+DefineFunction "", 0 {
+Push "drag", 1, "playFx"
+CallFunction
+Pop
+}
+SetMember
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "bttn1"
+GetMember
+Push "onRelease"
+DefineFunction "", 0 {
+Push 0.0, "killPopup"
+CallFunction
+Pop
+}
+SetMember
+Jump loc0833
+loc07f5:Push register1, "setting"
+Equals2
+Not
+If loc0833
+Push 0.0, "map"
+GetVariable
+Push "core"
+GetMember
+Push "stopAllTrader"
+CallMethod
+Pop
+Push "setting", 1, "popupClip"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+loc0833:Push register2
+Not
+If loc085a
+Push "popupClip"
+GetVariable
+Push "darkMask"
+GetMember
+Push "_height", 600
+SetMember
+Jump loc0871
+loc085a:Push "popupClip"
+GetVariable
+Push "darkMask"
+GetMember
+Push "_height", 561
+SetMember
+}
+loc0871:DefineFunction2 "showVOProgress", 1, 2, false, false, true, false, true, false, true, false, false, 1, "amount" {
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "voProgress"
+GetMember
+Push "_width", register1, "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "voNo"
+GetMember
+Divide
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "totalWidth"
+GetMember
+Multiply
+Push 1, "Math"
+GetVariable
+Push "round"
+CallMethod
+SetMember
+}
+DefineFunction "killPopup", 0 {
+Push "reuse", 1, "showCursor"
+CallFunction
+Pop
+Push "traderStore"
+GetVariable
+Push "mapIsMoving"
+Delete
+Pop
+Push 0.0, "hideHint"
+CallFunction
+Pop
+Push 1, 1, "popupClip"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Push "popupStatus"
+Delete2
+Pop
+Push "isPopup"
+Delete2
+Pop
+}
+DefineFunction "resumeMap", 0 {
+Push 0.0, "map"
+GetVariable
+Push "core"
+GetMember
+Push "resume"
+CallMethod
+Pop
+}
+DefineFunction2 "adjustPopupText", 1, 3, false, false, true, false, true, false, true, false, false, 2, "bttnMargin" {
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "centre"
+GetMember
+Push "_height"
+GetMember
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "msg"
+GetMember
+Push "textHeight"
+GetMember
+Subtract
+Push register2
+Subtract
+Push 2
+Divide
+Push 1, "Math"
+GetVariable
+Push "round"
+CallMethod
+StoreRegister 1
+Pop
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "msg"
+GetMember
+Push "_y", "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "upper"
+GetMember
+Push "_y"
+GetMember
+Push register1
+Add2
+Push 5
+Subtract
+SetMember
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "bttn1"
+GetMember
+Push "_y", "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "upper"
+GetMember
+Push "_y"
+GetMember
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "msg"
+GetMember
+Push "textHeight"
+GetMember
+Add2
+Push register2
+Add2
+Push 5
+Subtract
+SetMember
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "bttn2"
+GetMember
+Push "_y", "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "bttn1"
+GetMember
+Push "_y"
+GetMember
+SetMember
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "msg"
+GetMember
+Push "_visible", true
+SetMember
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "bttn1"
+GetMember
+Push "_visible", true
+SetMember
+Push "popupClip"
+GetVariable
+Push "core"
+GetMember
+Push "bttn2"
+GetMember
+Push "_visible", true
+SetMember
+}
+DefineFunction "chopLoading", 0 {
+Push "tmpLoaded"
+GetVariable
+Push undefined
+Equals2
+Not
+If loc0b2e
+Push "tmpPreLoaded", 0.0
+SetVariable
+Jump loc0b37
+loc0b2e:Push "tmpPreLoaded", "tmpLoaded"
+GetVariable
+SetVariable
+loc0b37:Push "mapEngine_Current"
+GetVariable
+Push "A"
+Equals2
+Not
+If loc0b56
+Push "loadingColor", "blue"
+SetVariable
+Jump loc0b9c
+loc0b56:Push "mapEngine_Current"
+GetVariable
+Push "B"
+Equals2
+Not
+If loc0b75
+Push "loadingColor", "green"
+SetVariable
+Jump loc0b9c
+loc0b75:Push "mapEngine_Current"
+GetVariable
+Push "C"
+Equals2
+Not
+If loc0b94
+Push "loadingColor", "pink"
+SetVariable
+Jump loc0b9c
+loc0b94:Push "loadingColor", "orange"
+SetVariable
+loc0b9c:Push 25, 1, "popupClip"
+GetVariable
+Push "droplet"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push "loadingColor"
+GetVariable
+Push 1, "popupClip"
+GetVariable
+Push "droplet"
+GetMember
+Push "surface"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push "loadingColor"
+GetVariable
+Push 1, "popupClip"
+GetVariable
+Push "droplet"
+GetMember
+Push "fill"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+}
+DefineFunction2 "showLoading", 1, 3, false, false, true, false, true, false, true, false, false, 2, "param" {
+Push "tmpLoaded", register2, 0.0
+GetMember
+SetVariable
+Push "tmpTotal", register2, 1
+GetMember
+SetVariable
+Push "popupClip"
+GetVariable
+Push "droplet"
+GetMember
+Push "_currentframe"
+GetMember
+Push 25
+Less2
+Not
+Not
+If loc0cf7
+Push "tmpLoaded"
+GetVariable
+Push "tmpPreLoaded"
+GetVariable
+Subtract
+Push "tmpTotal"
+GetVariable
+Push "tmpPreLoaded"
+GetVariable
+Subtract
+Divide
+Push 100
+Multiply
+Push 1, "Math"
+GetVariable
+Push "round"
+CallMethod
+StoreRegister 1
+Pop
+Push "popupClip"
+GetVariable
+Push "droplet"
+GetMember
+Push "percent"
+GetMember
+Push "text", register1, "%"
+Add2
+SetMember
+Push "popupClip"
+GetVariable
+Push "droplet"
+GetMember
+Push "percentShadow"
+GetMember
+Push "text", register1, "%"
+Add2
+SetMember
+Push 25, register1
+Add2
+Push 1, "popupClip"
+GetVariable
+Push "droplet"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+}
+loc0cf7:

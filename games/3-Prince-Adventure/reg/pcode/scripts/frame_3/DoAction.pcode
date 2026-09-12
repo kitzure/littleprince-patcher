@@ -1,0 +1,129 @@
+ConstantPool "btnQuit", "onRelease", "applicationClose", "btn_activate", "setBtn", "btn_try", "Prince3", "PrinceSystem", "loadOpening", "_parent", "trial", "txtUsername", "restrict", "A-Z a-z", "txtPhone", "0-9 \\-", "txtSerial", "A-Z0-9\\-", "Username", "text", "Phone", "Email", "txtEmail", "Serial", "tabIndex"
+Push "btnQuit"
+GetVariable
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, true, true, false, true, false, true, false, false {
+Push 0
+Push register1
+Push "applicationClose"
+CallMethod
+Pop
+}
+SetMember
+Push "btn_activate"
+GetVariable
+Push 1
+Push "setBtn"
+CallFunction
+Pop
+Push "btn_try"
+GetVariable
+Push 1
+Push "setBtn"
+CallFunction
+Pop
+Push "btn_activate"
+GetVariable
+Push "onRelease"
+DefineFunction "", 0 {
+Push 0
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "loadOpening"
+CallMethod
+Pop
+}
+SetMember
+Push "btn_try"
+GetVariable
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 0
+Push register1
+Push "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "trial"
+CallMethod
+Pop
+}
+SetMember
+Push "txtUsername"
+GetVariable
+Push "restrict"
+Push "A-Z a-z"
+SetMember
+Push "txtPhone"
+GetVariable
+Push "restrict"
+Push "0-9 \\-"
+SetMember
+Push "txtSerial"
+GetVariable
+Push "restrict"
+Push "A-Z0-9\\-"
+SetMember
+Push "Username"
+GetVariable
+Not
+If loc01f2
+Push "txtUsername"
+GetVariable
+Push "text"
+Push "Username"
+GetVariable
+SetMember
+loc01f2:Push "Phone"
+GetVariable
+Not
+If loc0210
+Push "txtPhone"
+GetVariable
+Push "text"
+Push "Phone"
+GetVariable
+SetMember
+loc0210:Push "Email"
+GetVariable
+Not
+If loc022e
+Push "txtEmail"
+GetVariable
+Push "text"
+Push "Email"
+GetVariable
+SetMember
+loc022e:Push "Serial"
+GetVariable
+Not
+If loc024c
+Push "txtSerial"
+GetVariable
+Push "text"
+Push "Serial"
+GetVariable
+SetMember
+loc024c:Push "txtUsername"
+GetVariable
+Push "tabIndex"
+Push 1
+SetMember
+Push "txtPhone"
+GetVariable
+Push "tabIndex"
+Push 2
+SetMember
+Push "txtEmail"
+GetVariable
+Push "tabIndex"
+Push 3
+SetMember
+Push "txtSerial"
+GetVariable
+Push "tabIndex"
+Push 4
+SetMember
+Stop

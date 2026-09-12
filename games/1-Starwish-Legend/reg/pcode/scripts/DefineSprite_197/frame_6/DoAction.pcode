@@ -1,0 +1,17 @@
+ConstantPool "btn_ok", "_parent", "setBtn", "onRelease", "killPopup"
+Push "btn_ok"
+GetVariable
+Push 1, "_parent"
+GetVariable
+Push "setBtn"
+CallMethod
+Pop
+Push "btn_ok"
+GetVariable
+Push "onRelease"
+DefineFunction2 "", 0, 2, true, false, true, false, true, false, true, false, false {
+Push 0.0, register1, "killPopup"
+CallMethod
+Pop
+}
+SetMember

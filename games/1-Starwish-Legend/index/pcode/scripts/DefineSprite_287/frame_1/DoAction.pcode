@@ -1,0 +1,14 @@
+ConstantPool "walk", "_parent", "playFx"
+Push "walk", 1, "_parent"
+GetVariable
+Push "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "playFx"
+CallMethod
+Pop

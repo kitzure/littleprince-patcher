@@ -1,0 +1,265 @@
+ConstantPool "loadFullVersion", "createAdmin", "user", "loadUserData", "|=_=|", "SIEdutainment", "mdm", "Encryption", "encryptString", "Dialogs", "prompt", "Application", "exit", "c", "System", "getHDSerial", "Network", "checkConnection", "reg", "unloadMovie", "reg.swf", "mcl", "loadClip", "load start: ", "Reg", "onLoadInit", "initGameSpec", "initGemSpec", "initItemSpec", "this", "SaveLoadSystem", "init", "url", "target", "adminName", "admin", "adminPass", "prince", "demoName", "demo", "demoPass", "validateLogin", "hasDuplicateUser", "createUser", "saveUserData", "numUsers", "getAccountList", "getNonAdminAccounts", "getRanks", "delAccount", "requestKey", "checkActivation", "connectActivationServer", "reactivation", "activationResponse", "MovieClipLoader", "addListener"
+DefineFunction "loadOpening", 0 {
+Push 0
+Push "loadFullVersion"
+CallFunction
+Pop
+}
+DefineFunction "createAdmin", 0 {
+Push "createAdmin"
+Trace
+Push true
+Return
+}
+DefineFunction2 "initUser", 1, 2, false, false, true, false, true, false, true, false, false, 1, "agUsername" {
+Push "user"
+Push register1
+Push 1
+Push "loadUserData"
+CallFunction
+SetVariable
+}
+DefineFunction2 "oldRequestKey", 2, 3, false, false, true, false, true, false, true, false, false, 1, "sn", 2, "hdkey" {
+Push register1
+Push "|=_=|"
+Add2
+Push register2
+Push "SIEdutainment"
+Push 2
+Push "mdm"
+GetVariable
+Push "Encryption"
+GetMember
+Push "encryptString"
+CallMethod
+Add2
+Push "SIEdutainment"
+Push 2
+Push "mdm"
+GetVariable
+Push "Encryption"
+GetMember
+Push "encryptString"
+CallMethod
+Return
+}
+DefineFunction2 "alert", 1, 2, false, false, true, false, true, false, true, false, false, 1, "msg" {
+Push register1
+Push 1
+Push "mdm"
+GetVariable
+Push "Dialogs"
+GetMember
+Push "prompt"
+CallMethod
+Pop
+}
+DefineFunction "applicationClose", 0 {
+Push 0
+Push "mdm"
+GetVariable
+Push "Application"
+GetMember
+Push "exit"
+CallMethod
+Pop
+}
+DefineFunction "getHDKey", 0 {
+Push "c"
+Push 1
+Push "mdm"
+GetVariable
+Push "System"
+GetMember
+Push "getHDSerial"
+CallMethod
+Return
+}
+DefineFunction "haveNetwork", 0 {
+Push 0
+Push "mdm"
+GetVariable
+Push "Network"
+GetMember
+Push "checkConnection"
+CallMethod
+Return
+}
+DefineFunction "loadRegSWF", 0 {
+Push 0
+Push "reg"
+GetVariable
+Push "unloadMovie"
+CallMethod
+Pop
+Push "reg"
+GetVariable
+Push "reg.swf"
+Push 2
+Push "mcl"
+GetVariable
+Push "loadClip"
+CallMethod
+Pop
+}
+DefineFunction2 "onLoadStart", 1, 2, false, false, true, false, true, false, true, false, false, 1, "target_mc" {
+Push "load start: "
+Push register1
+Add2
+Trace
+}
+DefineFunction2 "onLoadProgress", 3, 0, false, false, true, false, true, false, true, false, false, 1, "target_mc", 2, "bytesLoaded", 3, "bytesTotal" {
+}
+DefineFunction2 "onLoadInit", 1, 2, false, false, true, false, true, false, true, false, false, 1, "target_mc" {
+Push register1
+Push 1
+Push "Reg"
+GetVariable
+Push "onLoadInit"
+CallMethod
+Pop
+}
+Push 0
+Push "initGameSpec"
+CallFunction
+Pop
+Push 0
+Push "initGemSpec"
+CallFunction
+Pop
+Push 0
+Push "initItemSpec"
+CallFunction
+Pop
+Push "mdm"
+GetVariable
+Push "this"
+GetVariable
+Push 2
+Push "SaveLoadSystem"
+GetVariable
+Push "init"
+CallMethod
+Pop
+Push "url"
+Push "reg.swf"
+Push "target"
+Push "reg"
+GetVariable
+Push 2
+InitObject
+Push 1
+Push "Reg"
+GetVariable
+Push "init"
+CallMethod
+Pop
+Push "adminName"
+Push "admin"
+DefineLocal
+Push "adminPass"
+Push "prince"
+DefineLocal
+Push "demoName"
+Push "demo"
+DefineLocal
+Push "demoPass"
+Push "demo"
+DefineLocal
+Push "validateLogin"
+Push "SaveLoadSystem"
+GetVariable
+Push "validateLogin"
+GetMember
+SetVariable
+Push "hasDuplicateUser"
+Push "SaveLoadSystem"
+GetVariable
+Push "hasDuplicateUser"
+GetMember
+SetVariable
+Push "createUser"
+Push "SaveLoadSystem"
+GetVariable
+Push "createUser"
+GetMember
+SetVariable
+Push "loadUserData"
+Push "SaveLoadSystem"
+GetVariable
+Push "loadUserData"
+GetMember
+SetVariable
+Push "saveUserData"
+Push "SaveLoadSystem"
+GetVariable
+Push "saveUserData"
+GetMember
+SetVariable
+Push "numUsers"
+Push "SaveLoadSystem"
+GetVariable
+Push "numUsers"
+GetMember
+SetVariable
+Push "getAccountList"
+Push "SaveLoadSystem"
+GetVariable
+Push "getNonAdminAccounts"
+GetMember
+SetVariable
+Push "getRanks"
+Push "SaveLoadSystem"
+GetVariable
+Push "getRanks"
+GetMember
+SetVariable
+Push "delAccount"
+Push "SaveLoadSystem"
+GetVariable
+Push "delAccount"
+GetMember
+SetVariable
+Push "requestKey"
+Push "Reg"
+GetVariable
+Push "requestKey"
+GetMember
+SetVariable
+Push "checkActivation"
+Push "Reg"
+GetVariable
+Push "checkActivation"
+GetMember
+SetVariable
+Push "connectActivationServer"
+Push "Reg"
+GetVariable
+Push "connectActivationServer"
+GetMember
+SetVariable
+Push "reactivation"
+Push "Reg"
+GetVariable
+Push "reactivation"
+GetMember
+SetVariable
+Push "activationResponse"
+Push "Reg"
+GetVariable
+Push "activationResponse"
+GetMember
+SetVariable
+Push "mcl"
+Push 0
+Push "MovieClipLoader"
+NewObject
+DefineLocal
+Push "this"
+GetVariable
+Push 1
+Push "mcl"
+GetVariable
+Push "addListener"
+CallMethod
+Pop

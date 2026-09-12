@@ -1,0 +1,15 @@
+ConstantPool "hint", "gotoAndStop"
+DefineFunction2 "showHint", 1, 2, false, false, true, false, true, false, true, false, false, 1, "which" {
+Push register1, 1, "hint"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+}
+DefineFunction "hideHint", 0 {
+Push 1, 1, "hint"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+}

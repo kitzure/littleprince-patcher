@@ -1,0 +1,7436 @@
+ConstantPool "_global", "Prince3", "Object", "PrinceSystem", "PrinceSystem init", "mode", "normal", "online", "http://", "_url", "indexOf", "MovieClip", "prototype", "useHandCursor", "Button", "keyListener", "onKeyDown", "Key.addListener", "Key", "addListener", "cheatCode", "", "updateList", "status", "map", "pause", "getAscii", "solomon@score", "length", "sfx/ding", "SoundSystem", "playSound", "scoreChange", "curUser", "score", "application", "mcHeader", "setScore", "save", "solomon@gem", "gemChange", "showGem", "solomonbrain", "setCard", "solomoncollector", "gameCardChange", "solomonopendoor", "miniGameSetting", "maxscore", "saveGameScore", "kctrl2", "mcPaneMenu", "_currentframe", "onKeyDownEvent", "setKeyCtrl", "kctrl", "KeyController", "setKeyCtrl2", "keyUpdate", "run", "setMouseCtrl", "mctrl", "onMouseUp", "inGameQuitMenu", "lastx", "_xmouse", "lasty", "_ymouse", "onMouseUpEvent", "onMouseDown", ">>>>mouse down", "onMouseDownEvent", "onMouseMove", "onMouseMoveEvent", "random", "Math", "actionCapture", "capture", "game", "hitTest", "notInGameQuitMenu", "serviceRequest", "onResult", "serviceResponse", "princeService_nc", "NetConnection", "haveNetwork", "http://www.little-prince.com.hk/littleprince/amfservice/gateway.php", "connect", "Prince3.serviceRequest", "call", "serviceResponse: ", "response", "checkVersionResult", "message", "checkVersionResponse", "activationResult", "activationResponse", "reactivationResult", "reactivationResponse", "checkActivationResult", "checkActivationResponse", "loginFail", "alert", "flash", "external", "ExternalInterface", "requestFail", "reset", "requestSuccess", "getRank", "equip_rank", "star_rank", "score_rank", "userName", "sex", "schoolName", "classLv", "className", "gems", ",", "Utils", "str2nArray", "items", "cards", "t_star", "t_weapon", "t_card", "t_item", "content", "mcPop", "myRank", "updateTopRankView", "updateRankView", "loginSuccess", "User", "loginName", "name", "schoolType", "screen_quality", "fullscreen", "Stage", "displayState", "fullScreen", "sound_level", "language", "login success", "gameResult", "str2Date", "gameCards", "cardSequence", "HIGH", "MEDIUM", "LOW", "_quality", "maxVal", "loadMap", "Unknow error.", "save online", "Array", "gameScore", "type", "data", "date2Str", "gameLv", "gameId", "push", "nArray2Str", "tGem", "totalGems", "tItem", "totalWeapon", "tCard", "totalCards", "save offline", "save user change", "users", "\n", "split", "process", "createUserText", "mc_trial", "_visible", "applicationSaveRecord", "getUserNameList", "applicationReadRecord", "null2str", "V1.0\n", ";", "#", "addUser", "add user", "nArray", "updateUserInfo", "getUser", "delUser", "password", "settingChange", "itemChange", "cardSequenceChange", "killBoss", "Date", "totalCards1", "totalCards2", "finishPercent", "finishPercentOfResult", "t_card1", "t_card2", "concat", "orderScore", "sort", "orderStar", "orderItem", "mapRecord", "mcHint", "gotoAndStop", "hideHeader", "gamebar", "unloadMovie", "none", "mcFooter", "loadLogin", "showHint", "loadReg", "cardInfo", "Setting", "cardSetting", "reg", "onloadRegComplete", "url", "reg.swf", "target", "loading", "preload", "checkActivation", "loadOpening", "opening", "opening.swf", "blurBG", "login", "curBGM", "fadeOut", "preLoadComplete", "onloadLoginSound", "sfx/slide", "sfx/timeup", "sfx/reducechance", "sfx/inhouse", "sfx/ingame", "sfx/sel8", "sfx/sel7", "sfx/sel6", "sfx/sel5", "sfx/sel4", "sfx/sel3", "sfx/sel2", "sfx/sel1", "sfx/bob", "sfx/drop", "sfx/drag", "sfx/score", "sfx/wrong", "sfx/right", "bgm/bgm-2", "preloadByArray", "onloadLoginComplete", "login.swf", "unblurBG", "fadeIn", "applicationWindowMode", "applicationFullScreenMode", "webLogin", "loginname", "Mouse", "show", "releaseGameSound", "backFromGame", "onloadMapSound", "bgm/villagetheme", "onloadMapComplete", "village.swf", "showHeader", "loadCardSequenceMenu", "mcScore", "mcPaneL", "cardseq.swf", "loadBuyCard", "buy card", "prepareGame2", "onloadBuyCardSound", "bgm/trader", "onloadBuyCardComplete", "buycard.swf", "canCloseBuyCard", "buycard", "closeBuyCard", "loadGameSelectMenu", "game select menu", "gameArea", "onloadGameSelectMenuComplete", "showgame.swf", "switchGame", "closeGameSelectMenu", "loadHome", "home", "onloadHomeSound", "bgm/home", "onloadHomeComplete", "home.swf", "loadPreBattle", "prebattle", "onloadPreBattleComplete", "warinst.swf", "loadBattle", "battle", "onloadBattleSound", "sfx/short_miniboss", "sfx/short_bigboss", "boss", "bgm/battle_miniboss", "bgm/battle_bigboss", "onloadBattleComplete", "war.swf", "loadEnding", "ending", "onloadEndingComplete", "ending.swf", "loadGame", "gameName", "_e4", "_e3", "_e2", "_e1", "_m3", "_m2", "_m1", "c7", "c6", "c5", "c4", "c3", "c2", "c1", "b3", "b2", "b1", "a7", "a6", "a5", "a4", "a3", "a2", "a1", "gameNumber", "onloadGameSound", "bgm/game", "onloadGameBarComplete", "gamebar.swf", "onloadGameComplete", ".swf", "showSelectLevel", "showlv :", "showLevel", "select level", "gameInit", "curMiniGameSetting", "gameLevel", "switchInGame", "showFooter", "setFooterType", "showPreload", "miniGamePreload", "showReady", "ready", "fadeInOut", "replay", "resetFooterType", "backToSelectLevel", "toGame", "gotoAndPlay", "play", "exitGameToSelectLevel", "enter", "btnLeaveGame", "onEnterFrame", "startTimer", "stopVO", "playGame", "showGameResult", "btnGetResult", "onRollOut", "ingame", "showGameRelsult", "gameAddScore", "addScore", "reduceChance", "chanceReset", "timerStart", "timerStop", "timerReset", "changePrinceStatus", "changeStatus", "bmp", "draw", "mc_blur", "__princeSystem", "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "Prince3"
+GetMember
+Not
+Not
+If loc1129
+Push "_global"
+GetVariable
+Push "Prince3", 0.0, "Object"
+NewObject
+SetMember
+loc1129:Pop
+Push "_global"
+GetVariable
+Push "Prince3"
+GetMember
+Push "PrinceSystem"
+GetMember
+Not
+Not
+If loc80ca
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+DefineFunction2 "", 0, 2, false, true, true, false, true, false, true, false, false {
+Push "PrinceSystem init"
+Trace
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "mode", "normal"
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "online", "http://", 1, register1, "_url"
+GetMember
+Push "indexOf"
+CallMethod
+Push -1
+Equals2
+Not
+SetMember
+Push "MovieClip"
+GetVariable
+Push "prototype"
+GetMember
+Push "useHandCursor", false
+SetMember
+Push "Button"
+GetVariable
+Push "prototype"
+GetMember
+Push "useHandCursor", false
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "keyListener", 0.0, "Object"
+NewObject
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "keyListener"
+GetMember
+Push "onKeyDown"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "onKeyDown"
+CallMethod
+Pop
+}
+SetMember
+Push "Key.addListener"
+Trace
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "keyListener"
+GetMember
+Push 1, "Key"
+GetVariable
+Push "addListener"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "cheatCode", ""
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "updateList", 0.0, "Object"
+NewObject
+SetMember
+}
+StoreRegister 1
+SetMember
+Push register1, "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register1, "onKeyDown"
+DefineFunction2 "", 0, 4, false, false, true, false, true, false, true, false, false {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "status"
+GetMember
+Push "map"
+Equals2
+PushDuplicate
+Not
+If loc12db
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "pause"
+GetMember
+Push false
+Equals2
+loc12db:Not
+If loc18be
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "cheatCode", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "cheatCode"
+GetMember
+Push 0.0, "Key"
+GetVariable
+Push "getAscii"
+CallMethod
+AsciiToChar
+Add2
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "cheatCode"
+GetMember
+Push 1, "solomon@score", "indexOf"
+CallMethod
+Push 0.0
+Equals2
+Not
+If loc141c
+Push "solomon@score", "length"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "cheatCode"
+GetMember
+Push "length"
+GetMember
+Equals2
+Not
+If loc1417
+Push "sfx/ding", 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "playSound"
+CallMethod
+Pop
+Push 2000, 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "scoreChange"
+CallMethod
+Pop
+Push "normal", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "score"
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "setScore"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "save"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "cheatCode", ""
+SetMember
+loc1417:Jump loc18be
+loc141c:Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "cheatCode"
+GetMember
+Push 1, "solomon@gem", "indexOf"
+CallMethod
+Push 0.0
+Equals2
+Not
+If loc153d
+Push "solomon@gem", "length"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "cheatCode"
+GetMember
+Push "length"
+GetMember
+Equals2
+Not
+If loc1538
+Push "sfx/ding", 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "playSound"
+CallMethod
+Pop
+Push 0.0
+StoreRegister 3
+Pop
+loc14a0:Push register3, 8
+Less2
+Not
+If loc14e0
+Push 10, register3, 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gemChange"
+CallMethod
+Pop
+Push register3
+Increment
+StoreRegister 3
+Pop
+Jump loc14a0
+loc14e0:Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "save"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "showGem"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "cheatCode", ""
+SetMember
+loc1538:Jump loc18be
+loc153d:Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "cheatCode"
+GetMember
+Push 1, "solomonbrain", "indexOf"
+CallMethod
+Push 0.0
+Equals2
+Not
+If loc1631
+Push "solomonbrain", "length"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "cheatCode"
+GetMember
+Push "length"
+GetMember
+Equals2
+Not
+If loc162c
+Push "sfx/ding", 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "playSound"
+CallMethod
+Pop
+Push 0.0
+StoreRegister 3
+Pop
+loc15c1:Push register3, 84
+Less2
+Not
+If loc15fc
+Push register3, 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "setCard"
+CallMethod
+Pop
+Push register3
+Increment
+StoreRegister 3
+Pop
+Jump loc15c1
+loc15fc:Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "save"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "cheatCode", ""
+SetMember
+loc162c:Jump loc18be
+loc1631:Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "cheatCode"
+GetMember
+Push 1, "solomoncollector", "indexOf"
+CallMethod
+Push 0.0
+Equals2
+Not
+If loc1726
+Push "solomoncollector", "length"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "cheatCode"
+GetMember
+Push "length"
+GetMember
+Equals2
+Not
+If loc1721
+Push "sfx/ding", 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "playSound"
+CallMethod
+Pop
+Push 1
+StoreRegister 3
+Pop
+loc16b1:Push register3, 28
+Less2
+Not
+If loc16f1
+Push 1, register3, 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameCardChange"
+CallMethod
+Pop
+Push register3
+Increment
+StoreRegister 3
+Pop
+Jump loc16b1
+loc16f1:Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "save"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "cheatCode", ""
+SetMember
+loc1721:Jump loc18be
+loc1726:Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "cheatCode"
+GetMember
+Push 1, "solomonopendoor", "indexOf"
+CallMethod
+Push 0.0
+Equals2
+Not
+If loc18aa
+Push "solomonopendoor", "length"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "cheatCode"
+GetMember
+Push "length"
+GetMember
+Equals2
+Not
+If loc18a5
+Push "sfx/ding", 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "playSound"
+CallMethod
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc17aa:Push register2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "miniGameSetting"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc1875
+Push 0.0
+StoreRegister 1
+Pop
+loc17dc:Push register1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "miniGameSetting"
+GetMember
+Push register2
+GetMember
+Push "length"
+GetMember
+Push 1
+Subtract
+Less2
+Not
+If loc1865
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "miniGameSetting"
+GetMember
+Push register2
+GetMember
+Push register1
+GetMember
+Push "maxscore"
+GetMember
+Push register1, 1
+Add2
+Push register2, 3, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "saveGameScore"
+CallMethod
+Pop
+Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc17dc
+loc1865:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc17aa
+loc1875:Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "save"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "cheatCode", ""
+SetMember
+loc18a5:Jump loc18be
+loc18aa:Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "cheatCode", ""
+SetMember
+loc18be:Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "kctrl2"
+GetMember
+PushDuplicate
+Not
+If loc193d
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "mcPaneMenu"
+GetMember
+Push "_currentframe"
+GetMember
+Push 178
+Less2
+Not
+PushDuplicate
+Not
+If loc193c
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "mcPaneMenu"
+GetMember
+Push "_currentframe"
+GetMember
+Push 188
+Greater
+Not
+loc193c:Not
+loc193d:Not
+If loc1965
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "kctrl2"
+GetMember
+Push "onKeyDownEvent"
+CallMethod
+Pop
+}
+loc1965:SetMember
+Push register1, "setKeyCtrl"
+DefineFunction2 "", 2, 3, false, false, true, false, true, false, true, false, false, 2, "target", 1, "keyCfg" {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "kctrl", register1, register2, 2, "Prince3"
+GetVariable
+Push "KeyController"
+NewMethod
+SetMember
+}
+SetMember
+Push register1, "setKeyCtrl2"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "target" {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "kctrl2", register1
+SetMember
+}
+SetMember
+Push register1, "keyUpdate"
+DefineFunction "", 0 {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "kctrl"
+GetMember
+PushDuplicate
+Not
+If loc1a6a
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "mcPaneMenu"
+GetMember
+Push "_currentframe"
+GetMember
+Push 178
+Less2
+Not
+PushDuplicate
+Not
+If loc1a69
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "mcPaneMenu"
+GetMember
+Push "_currentframe"
+GetMember
+Push 188
+Greater
+Not
+loc1a69:Not
+loc1a6a:Not
+If loc1a92
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "kctrl"
+GetMember
+Push "run"
+CallMethod
+Pop
+}
+loc1a92:SetMember
+Push register1, "setMouseCtrl"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "target" {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "mctrl", register1
+SetMember
+}
+SetMember
+Push register1, "onMouseUp"
+DefineFunction2 "", 0, 2, false, true, true, false, true, false, true, false, false {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "mctrl"
+GetMember
+PushDuplicate
+Not
+If loc1b09
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "inGameQuitMenu"
+CallMethod
+loc1b09:Not
+If loc1b6b
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "lastx", register1, "_xmouse"
+GetMember
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "lasty", register1, "_ymouse"
+GetMember
+SetMember
+Push register1, "_ymouse"
+GetMember
+Push register1, "_xmouse"
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "mctrl"
+GetMember
+Push "onMouseUpEvent"
+CallMethod
+Pop
+}
+loc1b6b:SetMember
+Push register1, "onMouseDown"
+DefineFunction2 "", 0, 2, false, true, true, false, true, false, true, false, false {
+Push ">>>>mouse down"
+Trace
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "mctrl"
+GetMember
+PushDuplicate
+Not
+If loc1bb9
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "inGameQuitMenu"
+CallMethod
+loc1bb9:Not
+If loc1c1b
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "lastx", register1, "_xmouse"
+GetMember
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "lasty", register1, "_ymouse"
+GetMember
+SetMember
+Push register1, "_ymouse"
+GetMember
+Push register1, "_xmouse"
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "mctrl"
+GetMember
+Push "onMouseDownEvent"
+CallMethod
+Pop
+}
+loc1c1b:SetMember
+Push register1, "onMouseMove"
+DefineFunction2 "", 0, 2, false, true, true, false, true, false, true, false, false {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "mctrl"
+GetMember
+PushDuplicate
+Not
+If loc1cad
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "mcPaneMenu"
+GetMember
+Push "_currentframe"
+GetMember
+Push 178
+Less2
+Not
+PushDuplicate
+Not
+If loc1cac
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "mcPaneMenu"
+GetMember
+Push "_currentframe"
+GetMember
+Push 188
+Greater
+Not
+loc1cac:Not
+loc1cad:Not
+If loc1d0f
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "lastx", register1, "_xmouse"
+GetMember
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "lasty", register1, "_ymouse"
+GetMember
+SetMember
+Push register1, "_ymouse"
+GetMember
+Push register1, "_xmouse"
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "mctrl"
+GetMember
+Push "onMouseMoveEvent"
+CallMethod
+Pop
+}
+loc1d0f:SetMember
+Push register1, "random"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "num" {
+Push 0.0, "Math"
+GetVariable
+Push "random"
+CallMethod
+Push register1
+Multiply
+ToInteger
+Return
+}
+SetMember
+Push register1, "actionCapture"
+DefineFunction "", 2, "obj" , "eventName"  {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "mode"
+GetMember
+Push "capture"
+Equals2
+Not
+If loc1d80
+}
+loc1d80:SetMember
+Push register1, "inGameQuitMenu"
+DefineFunction2 "", 0, 2, false, true, true, false, true, false, true, false, false {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "status"
+GetMember
+Push "game"
+Equals2
+PushDuplicate
+Not
+If loc1de8
+Pop
+Push true, register1, "_ymouse"
+GetMember
+Push register1, "_xmouse"
+GetMember
+Push 3, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "hitTest"
+CallMethod
+loc1de8:Not
+PushDuplicate
+Not
+If loc1e56
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "mcPaneMenu"
+GetMember
+Push "_currentframe"
+GetMember
+Push 178
+Less2
+Not
+PushDuplicate
+Not
+If loc1e55
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "mcPaneMenu"
+GetMember
+Push "_currentframe"
+GetMember
+Push 188
+Greater
+Not
+loc1e55:Not
+loc1e56:Return
+}
+SetMember
+Push register1, "notInGameQuitMenu"
+DefineFunction "", 0 {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "mcPaneMenu"
+GetMember
+Push "_currentframe"
+GetMember
+Push 178
+Less2
+Not
+PushDuplicate
+Not
+If loc1ecb
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "mcPaneMenu"
+GetMember
+Push "_currentframe"
+GetMember
+Push 188
+Greater
+Not
+loc1ecb:Not
+Return
+}
+SetMember
+Push register1, "serviceRequest"
+DefineFunction2 "", 1, 4, false, true, true, false, true, false, true, false, false, 3, "data" {
+Push 0.0, "Object"
+NewObject
+StoreRegister 2
+Pop
+Push register2, "onResult", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "serviceResponse"
+GetMember
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "princeService_nc", 0.0, "NetConnection"
+NewObject
+SetMember
+Push 0.0, register1, "haveNetwork"
+CallMethod
+Not
+If loc1f90
+Push "http://www.little-prince.com.hk/littleprince/amfservice/gateway.php", 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "princeService_nc"
+GetMember
+Push "connect"
+CallMethod
+Pop
+Push register3, register2, "Prince3.serviceRequest", 3, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "princeService_nc"
+GetMember
+Push "call"
+CallMethod
+Pop
+Push true
+Return
+loc1f90:Push false
+Return
+}
+SetMember
+Push register1, "serviceResponse"
+DefineFunction2 "", 1, 13, false, true, true, false, true, false, true, false, false, 8, "val" {
+Push register8
+Not
+If loc2bda
+Push "serviceResponse: ", register8, "response"
+GetMember
+Add2
+Trace
+Push register8, "response"
+GetMember
+Push "checkVersionResult"
+Equals2
+Not
+If loc2004
+Push register8, "message"
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "checkVersionResponse"
+CallMethod
+Pop
+Jump loc2bd5
+loc2004:Push register8, "response"
+GetMember
+Push "activationResult"
+Equals2
+Not
+If loc2043
+Push register8, "message"
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "activationResponse"
+CallMethod
+Pop
+Jump loc2bd5
+loc2043:Push register8, "response"
+GetMember
+Push "reactivationResult"
+Equals2
+Not
+If loc2082
+Push register8, "message"
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "reactivationResponse"
+CallMethod
+Pop
+Jump loc2bd5
+loc2082:Push register8, "response"
+GetMember
+Push "checkActivationResult"
+Equals2
+Not
+If loc20c1
+Push register8, "message"
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "checkActivationResponse"
+CallMethod
+Pop
+Jump loc2bd5
+loc20c1:Push register8, "response"
+GetMember
+Push "loginFail"
+Equals2
+Not
+If loc2102
+Push register8, "message"
+GetMember
+Push "alert", 2, "flash"
+GetVariable
+Push "external"
+GetMember
+Push "ExternalInterface"
+GetMember
+Push "call"
+CallMethod
+Pop
+Jump loc2bd5
+loc2102:Push register8, "response"
+GetMember
+Push "requestFail"
+Equals2
+Not
+If loc215f
+Push register8, "message"
+GetMember
+Push "alert", 2, "flash"
+GetVariable
+Push "external"
+GetMember
+Push "ExternalInterface"
+GetMember
+Push "call"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "reset"
+CallMethod
+Pop
+Jump loc2bd5
+loc215f:Push register8, "response"
+GetMember
+Push "requestSuccess"
+Equals2
+Not
+If loc2178
+Jump loc2bd5
+loc2178:Push register8, "response"
+GetMember
+Push "getRank"
+Equals2
+Not
+If loc24cd
+Push register8, "equip_rank"
+GetMember
+Push register8, "star_rank"
+GetMember
+Push register8, "score_rank"
+GetMember
+Push 3
+InitArray
+StoreRegister 10
+Pop
+Push 0.0
+StoreRegister 6
+Pop
+loc21c3:Push register6, 3
+Less2
+Not
+If loc2447
+Push 0.0
+StoreRegister 4
+Pop
+loc21e5:Push register10, register6
+GetMember
+Push register4
+GetMember
+Not
+If loc2437
+Push register10, register6
+GetMember
+Push register4
+GetMember
+StoreRegister 2
+Pop
+Push register2, "userName", register2, 0.0
+GetMember
+SetMember
+Push register2, "sex", register2, 1
+GetMember
+SetMember
+Push register2, "schoolName", register2, 2
+GetMember
+SetMember
+Push register2, "classLv", register2, 3
+GetMember
+SetMember
+Push register2, "className", register2, 4
+GetMember
+SetMember
+Push register2, "score", register2, 5
+GetMember
+SetMember
+Push register2, "gems", ",", register2, 6
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "str2nArray"
+CallMethod
+SetMember
+Push 0.0
+StoreRegister 9
+Pop
+loc22aa:Push register9, register2, "gems"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc22eb
+Push register2, "gems"
+GetMember
+Push register9, register2, "gems"
+GetMember
+Push register9
+GetMember
+ToInteger
+SetMember
+Push register9
+Increment
+StoreRegister 9
+Pop
+Jump loc22aa
+loc22eb:Push register2, "items", ",", register2, 7
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "str2nArray"
+CallMethod
+SetMember
+Push 0.0
+StoreRegister 9
+Pop
+loc2325:Push register9, register2, "items"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc2366
+Push register2, "items"
+GetMember
+Push register9, register2, "items"
+GetMember
+Push register9
+GetMember
+ToInteger
+SetMember
+Push register9
+Increment
+StoreRegister 9
+Pop
+Jump loc2325
+loc2366:Push register2, "cards", ",", register2, 8
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "str2nArray"
+CallMethod
+SetMember
+Push 0.0
+StoreRegister 9
+Pop
+loc23a0:Push register9, register2, "cards"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc23e1
+Push register2, "cards"
+GetMember
+Push register9, register2, "cards"
+GetMember
+Push register9
+GetMember
+ToInteger
+SetMember
+Push register9
+Increment
+StoreRegister 9
+Pop
+Jump loc23a0
+loc23e1:Push register2, "t_star", register2, 9
+GetMember
+SetMember
+Push register2, "t_weapon", register2, 10
+GetMember
+SetMember
+Push register2, "t_card", register2, 11
+GetMember
+SetMember
+Push register2, "t_item", register2, "t_card"
+GetMember
+Push register2, "t_weapon"
+GetMember
+Add2
+SetMember
+Push register4
+Increment
+StoreRegister 4
+Pop
+Jump loc21e5
+loc2437:Push register6
+Increment
+StoreRegister 6
+Pop
+Jump loc21c3
+loc2447:Push register8, "equip_rank"
+GetMember
+Push register8, "star_rank"
+GetMember
+Push register8, "score_rank"
+GetMember
+Push 3, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "content"
+GetMember
+Push "mcPop"
+GetMember
+Push "myRank"
+GetMember
+Push "updateTopRankView"
+CallMethod
+Pop
+Push 0.0, 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "content"
+GetMember
+Push "mcPop"
+GetMember
+Push "myRank"
+GetMember
+Push "updateRankView"
+CallMethod
+Pop
+Jump loc2bd5
+loc24cd:Push register8, "response"
+GetMember
+Push "loginSuccess"
+Equals2
+Not
+If loc2bd5
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser", 0.0, "Prince3"
+GetVariable
+Push "User"
+NewMethod
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "loginName", register8, "loginName"
+GetMember
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "userName", register8, "name"
+GetMember
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "sex", register8, "sex"
+GetMember
+ToInteger
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "schoolName", register8, "schoolName"
+GetMember
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "schoolType", register8, "schoolType"
+GetMember
+ToInteger
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "classLv", register8, "classLv"
+GetMember
+ToInteger
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "className", register8, "className"
+GetMember
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "screen_quality", register8, "screen_quality"
+GetMember
+ToInteger
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "fullscreen", register8, "fullscreen"
+GetMember
+ToInteger
+SetMember
+Push "Stage"
+GetVariable
+Push "displayState", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "fullscreen"
+GetMember
+Push 1
+Equals2
+If loc2647
+Push "normal"
+Jump loc264c
+loc2647:Push "fullScreen"
+loc264c:SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "sound_level", register8, "sound_level"
+GetMember
+ToInteger
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "language", register8, "language"
+GetMember
+ToInteger
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "score", register8, "score"
+GetMember
+ToInteger
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "gems", ",", register8, "gems"
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "str2nArray"
+CallMethod
+SetMember
+Push 0.0
+StoreRegister 9
+Pop
+loc26ee:Push register9, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "gems"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc275f
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "gems"
+GetMember
+Push register9, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "gems"
+GetMember
+Push register9
+GetMember
+ToInteger
+SetMember
+Push register9
+Increment
+StoreRegister 9
+Pop
+Jump loc26ee
+loc275f:Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "cards", ",", register8, "cards"
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "str2nArray"
+CallMethod
+SetMember
+Push 0.0
+StoreRegister 9
+Pop
+loc27a6:Push register9, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "cards"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc2817
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "cards"
+GetMember
+Push register9, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "cards"
+GetMember
+Push register9
+GetMember
+ToInteger
+SetMember
+Push register9
+Increment
+StoreRegister 9
+Pop
+Jump loc27a6
+loc2817:Push "login success"
+Trace
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "gameResult", register8, "gameResult"
+GetMember
+SetMember
+Push 0.0
+StoreRegister 7
+Pop
+loc284b:Push register7, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "gameResult"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc29c5
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "gameResult"
+GetMember
+Push register7
+GetMember
+Push "length"
+GetMember
+StoreRegister 11
+Pop
+Push 0.0
+StoreRegister 5
+Pop
+loc28ac:Push register5, register11
+Less2
+Not
+If loc29b5
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "gameResult"
+GetMember
+Push register7
+GetMember
+Push register5
+GetMember
+StoreRegister 3
+Pop
+Push register3, 0.0, register3, 0.0
+GetMember
+ToInteger
+SetMember
+Push register3, 1, register3, 1
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "str2Date"
+CallMethod
+SetMember
+Push register3, 2, register3, 2
+GetMember
+ToInteger
+SetMember
+Push register3, 3, register3, 3
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "str2Date"
+CallMethod
+SetMember
+Push register3, 4, register3, 4
+GetMember
+ToInteger
+SetMember
+Push register3, 5, register3, 5
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "str2Date"
+CallMethod
+SetMember
+Push register5
+Increment
+StoreRegister 5
+Pop
+Jump loc28ac
+loc29b5:Push register7
+Increment
+StoreRegister 7
+Pop
+Jump loc284b
+loc29c5:Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "gameCards", ",", register8, "gameCards"
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "str2nArray"
+CallMethod
+SetMember
+Push 0.0
+StoreRegister 9
+Pop
+loc2a0c:Push register9, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "gameCards"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc2a7d
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "gameCards"
+GetMember
+Push register9, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "gameCards"
+GetMember
+Push register9
+GetMember
+ToInteger
+SetMember
+Push register9
+Increment
+StoreRegister 9
+Pop
+Jump loc2a0c
+loc2a7d:Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "cardSequence", ",", register8, "cardSequence"
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "str2nArray"
+CallMethod
+SetMember
+Push 0.0
+StoreRegister 9
+Pop
+loc2ac4:Push register9, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "cardSequence"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc2b35
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "cardSequence"
+GetMember
+Push register9, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "cardSequence"
+GetMember
+Push register9
+GetMember
+ToInteger
+SetMember
+Push register9
+Increment
+StoreRegister 9
+Pop
+Jump loc2ac4
+loc2b35:Push "HIGH", "MEDIUM", "LOW", 3
+InitArray
+StoreRegister 12
+Pop
+Push register1, "_quality", register12, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "screen_quality"
+GetMember
+GetMember
+SetMember
+Push 100, 66, 33, 0.0, 4
+InitArray
+StoreRegister 12
+Pop
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "maxVal", register12, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "sound_level"
+GetMember
+GetMember
+SetMember
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "loadMap"
+CallMethod
+Pop
+loc2bd5:Jump loc2c18
+loc2bda:Push "Unknow error.", "alert", 2, "flash"
+GetVariable
+Push "external"
+GetMember
+Push "ExternalInterface"
+GetMember
+Push "call"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "reset"
+CallMethod
+Pop
+}
+loc2c18:SetMember
+Push register1, "save"
+DefineFunction2 "", 0, 8, false, true, true, false, true, false, true, false, false {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "online"
+GetMember
+Not
+If loc30f4
+Push "Stage"
+GetVariable
+Push "displayState", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "fullscreen"
+GetMember
+Push 1
+Equals2
+If loc2c7b
+Push "normal"
+Jump loc2c80
+loc2c7b:Push "fullScreen"
+loc2c80:SetMember
+Push "save online"
+Trace
+Push 0.0, "Array"
+NewObject
+StoreRegister 2
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "updateList"
+GetMember
+Enumerate2
+loc2cae:StoreRegister 0
+Push null
+Equals2
+If loc30b7
+Push register0
+StoreRegister 7
+Pop
+Push register7, "gameScore"
+Equals2
+Not
+If loc2e6e
+Push "type", "setScore", "data", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "updateList"
+GetMember
+Push register7
+GetMember
+Push "data"
+GetMember
+Push 5
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "date2Str"
+CallMethod
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "updateList"
+GetMember
+Push register7
+GetMember
+Push "data"
+GetMember
+Push 4
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "updateList"
+GetMember
+Push register7
+GetMember
+Push "data"
+GetMember
+Push 3
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "date2Str"
+CallMethod
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "updateList"
+GetMember
+Push register7
+GetMember
+Push "data"
+GetMember
+Push 2
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "updateList"
+GetMember
+Push register7
+GetMember
+Push "data"
+GetMember
+Push 1
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "date2Str"
+CallMethod
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "updateList"
+GetMember
+Push register7
+GetMember
+Push "data"
+GetMember
+Push 0.0
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "updateList"
+GetMember
+Push register7
+GetMember
+Push "gameLv"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "updateList"
+GetMember
+Push register7
+GetMember
+Push "gameId"
+GetMember
+Push 8
+InitArray
+Push 2
+InitObject
+Push 1, register2, "push"
+CallMethod
+Pop
+Jump loc30b2
+loc2e6e:Push register7, "gems"
+Equals2
+PushDuplicate
+If loc2e85
+Pop
+Push register7, "items"
+Equals2
+loc2e85:PushDuplicate
+If loc2e94
+Pop
+Push register7, "cards"
+Equals2
+loc2e94:PushDuplicate
+If loc2ea3
+Pop
+Push register7, "cardSequence"
+Equals2
+loc2ea3:PushDuplicate
+If loc2eb2
+Pop
+Push register7, "gameCards"
+Equals2
+loc2eb2:Not
+If loc307d
+Push "type", register7, "data", ",", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push register7
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "nArray2Str"
+CallMethod
+Push 2
+InitObject
+Push 1, register2, "push"
+CallMethod
+Pop
+Push register7, "gems"
+Equals2
+Not
+If loc2f51
+Push "type", "tGem", "data", 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "totalGems"
+CallMethod
+Push 2
+InitObject
+Push 1, register2, "push"
+CallMethod
+Pop
+Jump loc3078
+loc2f51:Push register7, "items"
+Equals2
+Not
+If loc2f9c
+Push "type", "tItem", "data", 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "totalWeapon"
+CallMethod
+Push 2
+InitObject
+Push 1, register2, "push"
+CallMethod
+Pop
+Jump loc3078
+loc2f9c:Push register7, "cards"
+Equals2
+Not
+If loc2fe7
+Push "type", "tCard", "data", 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "totalCards"
+CallMethod
+Push 2
+InitObject
+Push 1, register2, "push"
+CallMethod
+Pop
+Jump loc3078
+loc2fe7:Push register7, "cardSequence"
+Equals2
+Not
+If loc3032
+Push "type", "cardSequence", "data", 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "totalWeapon"
+CallMethod
+Push 2
+InitObject
+Push 1, register2, "push"
+CallMethod
+Pop
+Jump loc3078
+loc3032:Push register7, "gameCards"
+Equals2
+Not
+If loc3078
+Push "type", "gameCards", "data", 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "totalWeapon"
+CallMethod
+Push 2
+InitObject
+Push 1, register2, "push"
+CallMethod
+Pop
+loc3078:Jump loc30b2
+loc307d:Push "type", register7, "data", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push register7
+GetMember
+Push 2
+InitObject
+Push 1, register2, "push"
+CallMethod
+Pop
+loc30b2:Jump loc2cae
+loc30b7:Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "updateList", 0.0, "Object"
+NewObject
+SetMember
+Push register2, 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "serviceRequest"
+CallMethod
+Pop
+Jump loc33c4
+loc30f4:Push "save offline"
+Trace
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Not
+If loc338f
+Push "save user change"
+Trace
+Push 0.0
+StoreRegister 3
+Pop
+loc3129:Push register3, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "users"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc338f
+Push "\n", 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "users"
+GetMember
+Push register3
+GetMember
+Push "split"
+CallMethod
+StoreRegister 4
+Pop
+Push register4, 1
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "userName"
+GetMember
+Equals2
+Not
+If loc337f
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "users"
+GetMember
+Push register3, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "language"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "sound_level"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "fullscreen"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "screen_quality"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "gameResult"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "cardSequence"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "process"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "items"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "cards"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "gameCards"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "gems"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "score"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "className"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "classLv"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "schoolType"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "schoolName"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "sex"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "userName"
+GetMember
+Push 18, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "createUserText"
+CallMethod
+SetMember
+Jump loc338f
+loc337f:Push register3
+Increment
+StoreRegister 3
+Pop
+Jump loc3129
+loc338f:Push register1, "mc_trial"
+GetMember
+Push "_visible"
+GetMember
+Not
+Not
+If loc33c4
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "users"
+GetMember
+Push 1, register1, "applicationSaveRecord"
+CallMethod
+Pop
+}
+loc33c4:SetMember
+Push register1, "getUserNameList"
+DefineFunction2 "", 0, 5, false, true, true, false, true, false, true, false, false {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "online", false
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "users", 0.0, register1, "applicationReadRecord"
+CallMethod
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "users"
+GetMember
+Not
+Not
+If loc3443
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "users", 6, 1, "Array"
+NewObject
+SetMember
+loc3443:Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "users"
+GetMember
+Push "length"
+GetMember
+Push 1, "Array"
+NewObject
+StoreRegister 4
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc347c:Push register2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "users"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc34e7
+Push "\n", 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "users"
+GetMember
+Push register2
+GetMember
+Push "split"
+CallMethod
+StoreRegister 3
+Pop
+Push register4, register2, register3, 1
+GetMember
+SetMember
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc347c
+loc34e7:Push register4
+Trace
+Push register4
+Return
+}
+SetMember
+Push register1, "null2str"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "input" {
+Push register1
+If loc3521
+Push ""
+Jump loc3527
+loc3521:Push register1
+ToString
+loc3527:Return
+}
+SetMember
+Push register1, "createUserText"
+DefineFunction2 "", 18, 25, false, false, true, false, true, false, true, false, false, 8, "userName", 18, "sex", 17, "schoolName", 9, "schoolType", 14, "classLv", 20, "className", 21, "score", 23, "gems", 19, "gameCards", 11, "cards", 22, "items", 24, "process", 15, "cardSequence", 7, "gameResult", 10, "screen_quality", 12, "fullscreen", 16, "sound_level", 13, "language" {
+Push "V1.0\n", register8
+Add2
+Push "\n"
+Add2
+StoreRegister 6
+Pop
+Push register6, register8, "\n"
+Add2
+Add2
+StoreRegister 6
+Pop
+Push register6, "\n"
+Add2
+StoreRegister 6
+Pop
+Push register6, register18, "\n"
+Add2
+Add2
+StoreRegister 6
+Pop
+Push register6, register17, "\n"
+Add2
+Add2
+StoreRegister 6
+Pop
+Push register6, register9, "\n"
+Add2
+Add2
+StoreRegister 6
+Pop
+Push register6, register14, "\n"
+Add2
+Add2
+StoreRegister 6
+Pop
+Push register6, register20, "\n"
+Add2
+Add2
+StoreRegister 6
+Pop
+Push register6, register21, "\n"
+Add2
+Add2
+StoreRegister 6
+Pop
+Push register6, ",", register23, 2, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "nArray2Str"
+CallMethod
+Push "\n"
+Add2
+Add2
+StoreRegister 6
+Pop
+Push ""
+StoreRegister 5
+Pop
+Push 0.0
+StoreRegister 3
+Pop
+loc36c6:Push register3, register7, "length"
+GetMember
+Less2
+Not
+If loc385e
+Push register3
+Not
+If loc36ef
+Push register5, ","
+Add2
+StoreRegister 5
+Pop
+loc36ef:Push register7, register3
+GetMember
+StoreRegister 4
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc370d:Push register2, register4, "length"
+GetMember
+Less2
+Not
+If loc384e
+Push register2
+Not
+If loc3736
+Push register5, ";"
+Add2
+StoreRegister 5
+Pop
+loc3736:Push register4, register2
+GetMember
+StoreRegister 1
+Pop
+Push register5, register1, 0.0
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "null2str"
+CallMethod
+Push "#"
+Add2
+Push register1, 1
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "date2Str"
+CallMethod
+Add2
+Push "#"
+Add2
+Push register1, 2
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "null2str"
+CallMethod
+Add2
+Push "#"
+Add2
+Push register1, 3
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "date2Str"
+CallMethod
+Add2
+Push "#"
+Add2
+Push register1, 4
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "null2str"
+CallMethod
+Add2
+Push "#"
+Add2
+Push register1, 5
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "date2Str"
+CallMethod
+Add2
+Add2
+StoreRegister 5
+Pop
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc370d
+loc384e:Push register3
+Increment
+StoreRegister 3
+Pop
+Jump loc36c6
+loc385e:Push register6, register5, "\n"
+Add2
+Add2
+StoreRegister 6
+Pop
+Push register6, ",", register19, 2, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "nArray2Str"
+CallMethod
+Push "\n"
+Add2
+Add2
+StoreRegister 6
+Pop
+Push register6, ",", register11, 2, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "nArray2Str"
+CallMethod
+Push "\n"
+Add2
+Add2
+StoreRegister 6
+Pop
+Push register6, ",", register22, 2, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "nArray2Str"
+CallMethod
+Push "\n"
+Add2
+Add2
+StoreRegister 6
+Pop
+Push register6, ",", register24, 2, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "nArray2Str"
+CallMethod
+Push "\n"
+Add2
+Add2
+StoreRegister 6
+Pop
+Push register6, ",", register15, 2, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "nArray2Str"
+CallMethod
+Push "\n"
+Add2
+Add2
+StoreRegister 6
+Pop
+Push register6, register10, "\n"
+Add2
+Add2
+StoreRegister 6
+Pop
+Push register6, register12, "\n"
+Add2
+Add2
+StoreRegister 6
+Pop
+Push register6, register16, "\n"
+Add2
+Add2
+StoreRegister 6
+Pop
+Push register6, register13, "\n"
+Add2
+Add2
+StoreRegister 6
+Pop
+Push register6
+Return
+}
+SetMember
+Push register1, "addUser"
+DefineFunction2 "", 7, 12, false, false, true, false, true, false, true, false, false, 9, "userID", 5, "userName", 10, "sex", 8, "schoolName", 6, "schoolType", 7, "classLv", 11, "className" {
+Push "add user"
+Trace
+Push 0.0
+StoreRegister 2
+Pop
+loc39ee:Push register2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "users"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc3a88
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "users"
+GetMember
+Push register2
+GetMember
+Not
+If loc3a78
+Push "\n", 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "users"
+GetMember
+Push register2
+GetMember
+Push "split"
+CallMethod
+StoreRegister 3
+Pop
+Push register3, 0.0
+GetMember
+Push register5
+Equals2
+Not
+If loc3a78
+Push false
+Return
+loc3a78:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc39ee
+loc3a88:Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "miniGameSetting"
+GetMember
+Push "length"
+GetMember
+Push 1, "Array"
+NewObject
+StoreRegister 4
+Pop
+Push 0.0
+StoreRegister 1
+Pop
+loc3ac1:Push register1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "miniGameSetting"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc3b31
+Push register4, register1, 6, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "miniGameSetting"
+GetMember
+Push register1
+GetMember
+Push "length"
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "nArray"
+CallMethod
+SetMember
+Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc3ac1
+loc3b31:Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "users"
+GetMember
+Push register9, 0.0, 3, 0.0, 2, register4, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1, 21
+InitArray
+Push 0.0, 1
+InitArray
+Push 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 8
+InitArray
+Push 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 12
+InitArray
+Push 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 40
+InitArray
+Push 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 10
+InitArray
+Push 0.0, register11, register7, register6, register8, register10, register5, 18, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "createUserText"
+CallMethod
+SetMember
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "save"
+CallMethod
+Pop
+Push true
+Return
+}
+SetMember
+Push register1, "updateUserInfo"
+DefineFunction2 "", 3, 5, false, false, true, false, true, false, true, false, false, 2, "userID", 3, "userName", 4, "classLv" {
+Push register2, 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "getUser"
+CallMethod
+StoreRegister 1
+Pop
+Push register1
+Not
+If loc4049
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "users"
+GetMember
+Push register2, register1, "language"
+GetMember
+Push register1, "sound_level"
+GetMember
+Push register1, "fullscreen"
+GetMember
+Push register1, "screen_quality"
+GetMember
+Push register1, "gameResult"
+GetMember
+Push register1, "cardSequence"
+GetMember
+Push register1, "process"
+GetMember
+Push register1, "items"
+GetMember
+Push register1, "cards"
+GetMember
+Push register1, "gameCards"
+GetMember
+Push register1, "gems"
+GetMember
+Push register1, "score"
+GetMember
+Push register1, "className"
+GetMember
+Push register4, register1, "schoolType"
+GetMember
+Push register1, "schoolName"
+GetMember
+Push register1, "sex"
+GetMember
+Push register3, 18, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "createUserText"
+CallMethod
+SetMember
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "save"
+CallMethod
+Pop
+Push true
+Return
+loc4049:Push false
+Return
+}
+SetMember
+Push register1, "delUser"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "userID" {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "users"
+GetMember
+Push register1
+GetMember
+Not
+If loc40c3
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "users"
+GetMember
+Push register1, null
+SetMember
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "save"
+CallMethod
+Pop
+Push true
+Return
+loc40c3:Push false
+Return
+}
+SetMember
+Push register1, "getUser"
+DefineFunction2 "", 1, 9, false, false, true, false, true, false, true, false, false, 8, "userID" {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "users"
+GetMember
+Push register8
+GetMember
+Not
+If loc468e
+Push "\n", 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "users"
+GetMember
+Push register8
+GetMember
+Push "split"
+CallMethod
+StoreRegister 7
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "User"
+NewMethod
+StoreRegister 2
+Pop
+Push register2, "userName", register7, 1
+GetMember
+SetMember
+Push register2, "loginName", register7, 2
+GetMember
+SetMember
+Push register2, "password", register7, 3
+GetMember
+SetMember
+Push register2, "sex", register7, 4
+GetMember
+ToInteger
+SetMember
+Push register2, "schoolName", register7, 5
+GetMember
+SetMember
+Push register2, "schoolType", register7, 6
+GetMember
+ToInteger
+SetMember
+Push register2, "classLv", register7, 7
+GetMember
+ToInteger
+SetMember
+Push register2, "className", register7, 8
+GetMember
+SetMember
+Push register2, "score", register7, 9
+GetMember
+ToInteger
+SetMember
+Push register2, "gems", ",", register7, 10
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "str2nArray"
+CallMethod
+SetMember
+Push 0.0
+StoreRegister 5
+Pop
+loc4214:Push register5, register2, "gems"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc4255
+Push register2, "gems"
+GetMember
+Push register5, register2, "gems"
+GetMember
+Push register5
+GetMember
+ToInteger
+SetMember
+Push register5
+Increment
+StoreRegister 5
+Pop
+Jump loc4214
+loc4255:Push register2, "gameResult", "#", ";", ",", register7, 11
+GetMember
+Push 4, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "str2nArray"
+CallMethod
+SetMember
+Push 0.0
+StoreRegister 4
+Pop
+loc4293:Push register4, register2, "gameResult"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc43dd
+Push register2, "gameResult"
+GetMember
+Push register4
+GetMember
+Push "length"
+GetMember
+StoreRegister 6
+Pop
+Push 0.0
+StoreRegister 3
+Pop
+loc42d4:Push register3, register6
+Less2
+Not
+If loc43cd
+Push register2, "gameResult"
+GetMember
+Push register4
+GetMember
+Push register3
+GetMember
+StoreRegister 1
+Pop
+Push register1, 0.0, register1, 0.0
+GetMember
+ToInteger
+SetMember
+Push register1, 1, register1, 1
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "str2Date"
+CallMethod
+SetMember
+Push register1, 2, register1, 2
+GetMember
+ToInteger
+SetMember
+Push register1, 3, register1, 3
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "str2Date"
+CallMethod
+SetMember
+Push register1, 4, register1, 4
+GetMember
+ToInteger
+SetMember
+Push register1, 5, register1, 5
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "str2Date"
+CallMethod
+SetMember
+Push register3
+Increment
+StoreRegister 3
+Pop
+Jump loc42d4
+loc43cd:Push register4
+Increment
+StoreRegister 4
+Pop
+Jump loc4293
+loc43dd:Push register2, "gameCards", ",", register7, 12
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "str2nArray"
+CallMethod
+SetMember
+Push 0.0
+StoreRegister 5
+Pop
+loc4417:Push register5, register2, "gameCards"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc4458
+Push register2, "gameCards"
+GetMember
+Push register5, register2, "gameCards"
+GetMember
+Push register5
+GetMember
+ToInteger
+SetMember
+Push register5
+Increment
+StoreRegister 5
+Pop
+Jump loc4417
+loc4458:Push register2, "cards", ",", register7, 13
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "str2nArray"
+CallMethod
+SetMember
+Push 0.0
+StoreRegister 5
+Pop
+loc4492:Push register5, register2, "cards"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc44d3
+Push register2, "cards"
+GetMember
+Push register5, register2, "cards"
+GetMember
+Push register5
+GetMember
+ToInteger
+SetMember
+Push register5
+Increment
+StoreRegister 5
+Pop
+Jump loc4492
+loc44d3:Push register2, "items", ",", register7, 14
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "str2nArray"
+CallMethod
+SetMember
+Push 0.0
+StoreRegister 5
+Pop
+loc450d:Push register5, register2, "items"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc454e
+Push register2, "items"
+GetMember
+Push register5, register2, "items"
+GetMember
+Push register5
+GetMember
+ToInteger
+SetMember
+Push register5
+Increment
+StoreRegister 5
+Pop
+Jump loc450d
+loc454e:Push register2, "process", ",", register7, 15
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "str2nArray"
+CallMethod
+SetMember
+Push 0.0
+StoreRegister 5
+Pop
+loc4588:Push register5, register2, "process"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc45c9
+Push register2, "process"
+GetMember
+Push register5, register2, "process"
+GetMember
+Push register5
+GetMember
+ToInteger
+SetMember
+Push register5
+Increment
+StoreRegister 5
+Pop
+Jump loc4588
+loc45c9:Push register2, "cardSequence", ",", register7, 16
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "str2nArray"
+CallMethod
+SetMember
+Push 0.0
+StoreRegister 5
+Pop
+loc4603:Push register5, register2, "cardSequence"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc4644
+Push register2, "cardSequence"
+GetMember
+Push register5, register2, "cardSequence"
+GetMember
+Push register5
+GetMember
+ToInteger
+SetMember
+Push register5
+Increment
+StoreRegister 5
+Pop
+Jump loc4603
+loc4644:Push register2, "screen_quality", register7, 17
+GetMember
+ToInteger
+SetMember
+Push register2, "fullscreen", register7, 18
+GetMember
+ToInteger
+SetMember
+Push register2, "sound_level", register7, 19
+GetMember
+ToInteger
+SetMember
+Push register2, "language", register7, 20
+GetMember
+ToInteger
+SetMember
+Push register2
+Return
+loc468e:Push null
+Return
+}
+SetMember
+Push register1, "settingChange"
+DefineFunction2 "", 2, 3, false, false, true, false, true, false, true, false, false, 1, "name", 2, "value" {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Not
+If loc46ff
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push register1, register2
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "updateList"
+GetMember
+Push register1, true
+SetMember
+}
+loc46ff:SetMember
+Push register1, "gemChange"
+DefineFunction2 "", 2, 3, false, false, true, false, true, false, true, false, false, 2, "gemId", 1, "num" {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Not
+If loc478f
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "gems"
+GetMember
+Push register2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "gems"
+GetMember
+Push register2
+GetMember
+Push register1
+Add2
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "updateList"
+GetMember
+Push "gems", true
+SetMember
+}
+loc478f:SetMember
+Push register1, "itemChange"
+DefineFunction2 "", 2, 3, false, false, true, false, true, false, true, false, false, 2, "itemId", 1, "num" {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Not
+If loc4820
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "items"
+GetMember
+Push register2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "items"
+GetMember
+Push register2
+GetMember
+Push register1
+Add2
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "updateList"
+GetMember
+Push "items", true
+SetMember
+}
+loc4820:SetMember
+Push register1, "setCard"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "cardId" {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Not
+If loc48c9
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "cards"
+GetMember
+Push register1, 7
+Divide
+ToInteger
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "cards"
+GetMember
+Push register1, 7
+Divide
+ToInteger
+GetMember
+Push 1, register1, 7
+Modulo
+BitLShift
+BitOr
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "updateList"
+GetMember
+Push "cards", true
+SetMember
+}
+loc48c9:SetMember
+Push register1, "gameCardChange"
+DefineFunction2 "", 2, 3, false, false, true, false, true, false, true, false, false, 2, "cardId", 1, "num" {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Not
+If loc495a
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "gameCards"
+GetMember
+Push register2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "gameCards"
+GetMember
+Push register2
+GetMember
+Push register1
+Add2
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "updateList"
+GetMember
+Push "gameCards", true
+SetMember
+}
+loc495a:SetMember
+Push register1, "cardSequenceChange"
+DefineFunction2 "", 2, 3, false, false, true, false, true, false, true, false, false, 2, "seqId", 1, "cardId" {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Not
+If loc49ce
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "cardSequence"
+GetMember
+Push register2, register1
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "updateList"
+GetMember
+Push "cardSequence", true
+SetMember
+}
+loc49ce:SetMember
+Push register1, "scoreChange"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "num" {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Not
+If loc4a4b
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "score", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "score"
+GetMember
+Push register1
+Add2
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "updateList"
+GetMember
+Push "score", true
+SetMember
+}
+loc4a4b:SetMember
+Push register1, "killBoss"
+DefineFunction "", 0 {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Not
+If loc4b09
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "process"
+GetMember
+Push 0.0
+GetMember
+Push 3
+Less2
+Not
+If loc4aef
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "process"
+GetMember
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "process"
+GetMember
+Push 0.0
+GetMember
+Increment
+SetMember
+loc4aef:Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "updateList"
+GetMember
+Push "process", true
+SetMember
+}
+loc4b09:SetMember
+Push register1, "saveGameScore"
+DefineFunction2 "", 3, 6, false, false, true, false, true, false, true, false, false, 5, "gameId", 3, "gameLv", 2, "gameScore" {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Not
+If loc4c66
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "gameResult"
+GetMember
+Push register5
+GetMember
+Push register3, 1
+Subtract
+GetMember
+StoreRegister 1
+Pop
+Push register1, 1
+GetMember
+Not
+If loc4bcc
+Push register2, register1, 2
+GetMember
+Greater
+Not
+If loc4bc7
+Push register1, 2, register2
+SetMember
+Push register1, 3, 0.0, "Date"
+NewObject
+SetMember
+loc4bc7:Jump loc4c18
+loc4bcc:Push register1, 0.0, register2
+SetMember
+Push register1, 1, 0.0, "Date"
+NewObject
+SetMember
+Push register1, 2, register2
+SetMember
+Push register1, 3, 0.0, "Date"
+NewObject
+SetMember
+loc4c18:Push register1, 4, register2
+SetMember
+Push register1, 5, 0.0, "Date"
+NewObject
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "updateList"
+GetMember
+Push "gameScore", "gameId", register5, "gameLv", register3, "data", register1, 3
+InitObject
+SetMember
+}
+loc4c66:SetMember
+Push register1, "totalGems"
+DefineFunction2 "", 1, 4, false, false, true, false, true, false, true, false, false, 2, "user" {
+Push 0.0
+StoreRegister 3
+Pop
+Push 0.0
+StoreRegister 1
+Pop
+loc4ca1:Push register1, register2, "gems"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc4cde
+Push register3, register2, "gems"
+GetMember
+Push register1
+GetMember
+Add2
+StoreRegister 3
+Pop
+Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc4ca1
+loc4cde:Push register3
+Return
+}
+SetMember
+Push register1, "totalWeapon"
+DefineFunction2 "", 1, 4, false, false, true, false, true, false, true, false, false, 2, "user" {
+Push 0.0
+StoreRegister 3
+Pop
+Push 0.0
+StoreRegister 1
+Pop
+loc4d1f:Push register1, register2, "gameCards"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc4d5c
+Push register3, register2, "gameCards"
+GetMember
+Push register1
+GetMember
+Add2
+StoreRegister 3
+Pop
+Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc4d1f
+loc4d5c:Push 0.0
+StoreRegister 1
+Pop
+loc4d6d:Push register1, register2, "cardSequence"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc4db4
+Push register2, "cardSequence"
+GetMember
+Push register1
+GetMember
+ToInteger
+Not
+If loc4da4
+Push register3
+Increment
+StoreRegister 3
+Pop
+loc4da4:Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc4d6d
+loc4db4:Push register3
+Return
+}
+SetMember
+Push register1, "totalCards"
+DefineFunction2 "", 1, 5, false, false, true, false, true, false, true, false, false, 3, "user" {
+Push 0.0
+StoreRegister 4
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc4df5:Push register2, register3, "cards"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc4e74
+Push 1
+StoreRegister 1
+Pop
+loc4e19:Push register1, 128
+Less2
+Not
+If loc4e64
+Push register3, "cards"
+GetMember
+Push register2
+GetMember
+Push register1
+BitAnd
+Not
+If loc4e4f
+Push register4
+Increment
+StoreRegister 4
+Pop
+loc4e4f:Push register1, 1
+BitLShift
+StoreRegister 1
+Pop
+Jump loc4e19
+loc4e64:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc4df5
+loc4e74:Push register4
+Return
+}
+SetMember
+Push register1, "totalCards1"
+DefineFunction2 "", 1, 6, false, false, true, false, true, false, true, false, false, 4, "user" {
+Push 0.0
+StoreRegister 3
+Pop
+Push register4, "cards"
+GetMember
+Push "length"
+GetMember
+Push 2
+Divide
+ToInteger
+StoreRegister 5
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc4ed2:Push register2, register5
+Less2
+Not
+If loc4f48
+Push 1
+StoreRegister 1
+Pop
+loc4eed:Push register1, 128
+Less2
+Not
+If loc4f38
+Push register4, "cards"
+GetMember
+Push register2
+GetMember
+Push register1
+BitAnd
+Not
+If loc4f23
+Push register3
+Increment
+StoreRegister 3
+Pop
+loc4f23:Push register1, 1
+BitLShift
+StoreRegister 1
+Pop
+Jump loc4eed
+loc4f38:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc4ed2
+loc4f48:Push register3
+Return
+}
+SetMember
+Push register1, "totalCards2"
+DefineFunction2 "", 1, 6, false, false, true, false, true, false, true, false, false, 3, "user" {
+Push 0.0
+StoreRegister 4
+Pop
+Push register3, "cards"
+GetMember
+Push "length"
+GetMember
+Push 2
+Divide
+ToInteger
+StoreRegister 5
+Pop
+Push register5
+StoreRegister 2
+Pop
+loc4f9f:Push register2, register3, "cards"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc501e
+Push 1
+StoreRegister 1
+Pop
+loc4fc3:Push register1, 128
+Less2
+Not
+If loc500e
+Push register3, "cards"
+GetMember
+Push register2
+GetMember
+Push register1
+BitAnd
+Not
+If loc4ff9
+Push register4
+Increment
+StoreRegister 4
+Pop
+loc4ff9:Push register1, 1
+BitLShift
+StoreRegister 1
+Pop
+Jump loc4fc3
+loc500e:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc4f9f
+loc501e:Push register4
+Return
+}
+SetMember
+Push register1, "finishPercent"
+DefineFunction "", 0 {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Not
+If loc507c
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "gameResult"
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "finishPercentOfResult"
+CallMethod
+Return
+loc507c:Push null
+Return
+}
+SetMember
+Push register1, "finishPercentOfResult"
+DefineFunction2 "", 1, 7, false, false, true, false, true, false, true, false, false, 5, "r" {
+Push 0.0
+StoreRegister 4
+Pop
+Push 0.0
+StoreRegister 6
+Pop
+Push 0.0
+StoreRegister 3
+Pop
+loc50ca:Push register3, register5, "length"
+GetMember
+Less2
+Not
+If loc51a3
+Push register5, register3
+GetMember
+StoreRegister 2
+Pop
+Push register6, register2, "length"
+GetMember
+Add2
+StoreRegister 6
+Pop
+Push 0.0
+StoreRegister 1
+Pop
+loc5109:Push register1, register2, "length"
+GetMember
+Less2
+Not
+If loc5193
+Push register2, register1
+GetMember
+Push 1
+GetMember
+Push null
+Equals2
+Not
+Not
+If loc5183
+Push register2, register1
+GetMember
+Push 0.0
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "miniGameSetting"
+GetMember
+Push register3
+GetMember
+Push register1
+GetMember
+Push "maxscore"
+GetMember
+Less2
+Not
+Not
+If loc5183
+Push register4
+Increment
+StoreRegister 4
+Pop
+loc5183:Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc5109
+loc5193:Push register3
+Increment
+StoreRegister 3
+Pop
+Jump loc50ca
+loc51a3:Push register4, 100
+Multiply
+Push register6
+Divide
+Return
+}
+SetMember
+Push register1, "getRank"
+DefineFunction2 "", 0, 8, false, false, true, false, true, false, true, false, false {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "online"
+GetMember
+Not
+If loc52a9
+Push 0.0, "Array"
+NewObject
+Push 0.0, "Array"
+NewObject
+Push 0.0, "Array"
+NewObject
+Push 3, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "content"
+GetMember
+Push "mcPop"
+GetMember
+Push "myRank"
+GetMember
+Push "updateTopRankView"
+CallMethod
+Pop
+Push 0.0, 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "content"
+GetMember
+Push "mcPop"
+GetMember
+Push "myRank"
+GetMember
+Push "updateRankView"
+CallMethod
+Pop
+Push "type", "getRank", 1
+InitObject
+Push 1
+InitArray
+Push 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "serviceRequest"
+CallMethod
+Pop
+Jump loc54f6
+loc52a9:Push 0.0, "Array"
+NewObject
+StoreRegister 3
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc52ce:Push register2, 6
+Less2
+Not
+If loc53e5
+Push register2, 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "getUser"
+CallMethod
+StoreRegister 1
+Pop
+Push register1
+Not
+If loc53d5
+Push register1, "t_star", register1, 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "totalGems"
+CallMethod
+SetMember
+Push register1, "t_card", register1, 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "totalCards"
+CallMethod
+SetMember
+Push register1, "t_card1", register1, 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "totalCards1"
+CallMethod
+SetMember
+Push register1, "t_card2", register1, 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "totalCards2"
+CallMethod
+SetMember
+Push register1, "t_weapon", register1, 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "totalWeapon"
+CallMethod
+SetMember
+Push register1, "t_item", register1, "t_card"
+GetMember
+Push register1, "t_weapon"
+GetMember
+Add2
+SetMember
+Push register1, "sex", 0.0
+SetMember
+Push register1, 1, register3, "push"
+CallMethod
+Pop
+loc53d5:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc52ce
+loc53e5:Push 0.0, register3, "concat"
+CallMethod
+StoreRegister 6
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "orderScore"
+GetMember
+Push 1, register6, "sort"
+CallMethod
+Pop
+Push 0.0, register3, "concat"
+CallMethod
+StoreRegister 5
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "orderStar"
+GetMember
+Push 1, register5, "sort"
+CallMethod
+Pop
+Push 0.0, register3, "concat"
+CallMethod
+StoreRegister 4
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "orderItem"
+GetMember
+Push 1, register4, "sort"
+CallMethod
+Pop
+Push register4, register5, register6, 3, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "content"
+GetMember
+Push "mcPop"
+GetMember
+Push "myRank"
+GetMember
+Push "updateTopRankView"
+CallMethod
+Pop
+Push 0.0, 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "content"
+GetMember
+Push "mcPop"
+GetMember
+Push "myRank"
+GetMember
+Push "updateRankView"
+CallMethod
+Pop
+}
+loc54f6:SetMember
+Push register1, "orderScore"
+DefineFunction2 "", 2, 3, false, false, true, false, true, false, true, false, false, 2, "a", 1, "b" {
+Push register2, "score"
+GetMember
+Push register1, "score"
+GetMember
+Less2
+Not
+If loc5533
+Push 1
+Jump loc553b
+loc5533:Push -1
+loc553b:Return
+}
+SetMember
+Push register1, "orderStar"
+DefineFunction2 "", 2, 3, false, false, true, false, true, false, true, false, false, 2, "a", 1, "b" {
+Push register2, "t_star"
+GetMember
+Push register1, "t_star"
+GetMember
+Less2
+Not
+If loc5579
+Push 1
+Jump loc5581
+loc5579:Push -1
+loc5581:Return
+}
+SetMember
+Push register1, "orderItem"
+DefineFunction2 "", 2, 3, false, false, true, false, true, false, true, false, false, 2, "a", 1, "b" {
+Push register2, "t_item"
+GetMember
+Push register1, "t_item"
+GetMember
+Less2
+Not
+If loc55bf
+Push 1
+Jump loc55c7
+loc55bf:Push -1
+loc55c7:Return
+}
+SetMember
+Push register1, "reset"
+DefineFunction "", 0 {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "mapRecord", null
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser", null
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "kctrl", null
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "pause", false
+SetMember
+Push 1, 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHint"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "hideHeader"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "gamebar"
+GetMember
+Push "unloadMovie"
+CallMethod
+Pop
+Push "none", 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcFooter"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "loadLogin"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "showHint"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "pmHint" {
+Push register1
+If loc5712
+Push 1
+Jump loc5717
+loc5712:Push register1
+loc5717:Push 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHint"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "loadReg"
+DefineFunction2 "", 0, 3, false, false, true, false, true, false, true, false, false {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "cardInfo", "Prince3"
+GetVariable
+Push "Setting"
+GetMember
+Push "cardInfo"
+GetMember
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "cardSetting", "Prince3"
+GetVariable
+Push "Setting"
+GetMember
+Push "cardSetting"
+GetMember
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "miniGameSetting", "Prince3"
+GetVariable
+Push "Setting"
+GetMember
+Push "miniGameSetting"
+GetMember
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "status", "reg"
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "onloadRegComplete"
+GetMember
+Push "url", "reg.swf", "target", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "content"
+GetMember
+Push 2
+InitObject
+Push 1
+InitArray
+Push 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "loading"
+GetMember
+Push "preload"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "onloadRegComplete"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "checkActivation"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "loadOpening"
+DefineFunction2 "", 0, 3, false, false, true, false, true, false, true, false, false {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "status", "opening"
+SetMember
+Push null, "url", "opening.swf", "target", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "content"
+GetMember
+Push 2
+InitObject
+Push 1
+InitArray
+Push 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "loading"
+GetMember
+Push "preload"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "loadLogin"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "blurBG"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "loading"
+GetMember
+Push "_visible", true
+SetMember
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "content"
+GetMember
+Push "unloadMovie"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "status", "login"
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM"
+GetMember
+Not
+If loc59a8
+Push 24, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM"
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeOut"
+CallMethod
+Pop
+loc59a8:Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "preLoadComplete", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "onloadLoginSound"
+GetMember
+SetMember
+Push "sfx/slide", "sfx/timeup", "sfx/reducechance", "sfx/inhouse", "sfx/ingame", "sfx/sel8", "sfx/sel7", "sfx/sel6", "sfx/sel5", "sfx/sel4", "sfx/sel3", "sfx/sel2", "sfx/sel1", "sfx/bob", "sfx/drop", "sfx/drag", "sfx/score", "sfx/wrong", "sfx/right", "sfx/ding", "bgm/bgm-2", 21
+InitArray
+Push 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "preloadByArray"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "onloadLoginSound"
+DefineFunction2 "", 0, 3, false, false, true, false, true, false, true, false, false {
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "preLoadComplete", null
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "onloadLoginComplete"
+GetMember
+Push "url", "login.swf", "target", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "content"
+GetMember
+Push 2
+InitObject
+Push 1
+InitArray
+Push 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "loading"
+GetMember
+Push "preload"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "onloadLoginComplete"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "unblurBG"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM", "bgm/bgm-2"
+SetMember
+Push 24, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM"
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeIn"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "login"
+DefineFunction2 "", 1, 4, false, true, true, false, true, false, true, false, false, 3, "userID" {
+Push "login"
+Trace
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "users"
+GetMember
+Push 0.0
+GetMember
+Trace
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser", register3, 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "getUser"
+CallMethod
+SetMember
+Push "HIGH", "MEDIUM", "LOW", 3
+InitArray
+StoreRegister 2
+Pop
+Push register1, "_quality", register2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "screen_quality"
+GetMember
+GetMember
+SetMember
+Push 100, 66, 33, 0.0, 4
+InitArray
+StoreRegister 2
+Pop
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "maxVal", register2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "sound_level"
+GetMember
+GetMember
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curUser"
+GetMember
+Push "fullscreen"
+GetMember
+Push 0.0
+Equals2
+Not
+If loc5c4e
+Push 0.0, register1, "applicationWindowMode"
+CallMethod
+Pop
+Jump loc5c61
+loc5c4e:Push 0.0, register1, "applicationFullScreenMode"
+CallMethod
+Pop
+loc5c61:Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "loadMap"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "webLogin"
+DefineFunction2 "", 2, 4, false, false, true, false, true, false, true, false, false, 1, "loginname", 2, "password" {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "online", true
+SetMember
+Push "type", "login", "loginname", register1, "password", register2, 3
+InitObject
+Push 1
+InitArray
+Push 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "serviceRequest"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "loadMap"
+DefineFunction "", 0 {
+Push 0.0, "Mouse"
+GetVariable
+Push "show"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "releaseGameSound"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "cheatCode", ""
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "backFromGame", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "status"
+GetMember
+Push "game"
+Equals2
+SetMember
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "blurBG"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "loading"
+GetMember
+Push "_visible", true
+SetMember
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "content"
+GetMember
+Push "unloadMovie"
+CallMethod
+Pop
+Push 24, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM"
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeOut"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "preLoadComplete", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "onloadMapSound"
+GetMember
+SetMember
+Push "bgm/villagetheme", 1
+InitArray
+Push 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "preloadByArray"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "gamebar"
+GetMember
+Push "unloadMovie"
+CallMethod
+Pop
+Push "none", 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcFooter"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "onloadMapSound"
+DefineFunction2 "", 0, 3, false, false, true, false, true, false, true, false, false {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "onloadMapComplete"
+GetMember
+Push "url", "village.swf", "target", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "content"
+GetMember
+Push 2
+InitObject
+Push 1
+InitArray
+Push 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "loading"
+GetMember
+Push "preload"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "onloadMapComplete"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "unblurBG"
+CallMethod
+Pop
+Push "onloadMapComplete"
+Trace
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM", "bgm/villagetheme"
+SetMember
+Push 24, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM"
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeIn"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "status"
+GetMember
+Push "game"
+Equals2
+Not
+Not
+If loc5fd8
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "showHeader"
+CallMethod
+Pop
+loc5fd8:Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "status", "map"
+SetMember
+}
+SetMember
+Push register1, "loadCardSequenceMenu"
+DefineFunction2 "", 0, 3, false, false, true, false, true, false, true, false, false {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "pause", true
+SetMember
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "blurBG"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "loading"
+GetMember
+Push "_visible", true
+SetMember
+Push "none", 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcFooter"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 1, 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "mcScore"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 1, 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "mcPaneL"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push null, "url", "cardseq.swf", "target", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "gamebar"
+GetMember
+Push 2
+InitObject
+Push 1
+InitArray
+Push 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "loading"
+GetMember
+Push "preload"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "loadBuyCard"
+DefineFunction "", 0 {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "status", "buy card"
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "pause", true
+SetMember
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "blurBG"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "loading"
+GetMember
+Push "_visible", true
+SetMember
+Push "none", 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcFooter"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 1, 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "mcScore"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 1, 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "mcPaneL"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "prepareGame2"
+CallMethod
+Pop
+Push 24, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM"
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeOut"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "preLoadComplete", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "onloadBuyCardSound"
+GetMember
+SetMember
+Push "bgm/trader", 1
+InitArray
+Push 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "preloadByArray"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "onloadBuyCardSound"
+DefineFunction2 "", 0, 3, false, false, true, false, true, false, true, false, false {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "onloadBuyCardComplete"
+GetMember
+Push "url", "buycard.swf", "target", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "gamebar"
+GetMember
+Push 2
+InitObject
+Push 1
+InitArray
+Push 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "loading"
+GetMember
+Push "preload"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "onloadBuyCardComplete"
+DefineFunction "", 0 {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM", "bgm/trader"
+SetMember
+Push 24, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM"
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeIn"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "canCloseBuyCard"
+DefineFunction "", 0 {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "gamebar"
+GetMember
+Push "buycard"
+GetMember
+Push "status"
+GetMember
+Trace
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "gamebar"
+GetMember
+Push "buycard"
+GetMember
+Push "status"
+GetMember
+Push "run"
+Equals2
+Return
+}
+SetMember
+Push register1, "closeBuyCard"
+DefineFunction "", 0 {
+Push 24, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM"
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeOut"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM", "bgm/villagetheme"
+SetMember
+Push 24, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM"
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeIn"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "status", "map"
+SetMember
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "unblurBG"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "showHeader"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "gamebar"
+GetMember
+Push "unloadMovie"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "loadGameSelectMenu"
+DefineFunction2 "", 1, 4, false, false, true, false, true, false, true, false, false, 3, "area" {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "status", "game select menu"
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameArea", register3
+SetMember
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "blurBG"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "loading"
+GetMember
+Push "_visible", true
+SetMember
+Push "none", 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcFooter"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "prepareGame2"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "onloadGameSelectMenuComplete"
+GetMember
+Push "url", "showgame.swf", "target", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "gamebar"
+GetMember
+Push 2
+InitObject
+Push 1
+InitArray
+Push 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "loading"
+GetMember
+Push "preload"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "onloadGameSelectMenuComplete"
+DefineFunction "", 0 {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "backFromGame"
+GetMember
+PushDuplicate
+Not
+If loc6680
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM"
+GetMember
+Push "bgm/villagetheme"
+Equals2
+Not
+loc6680:Not
+If loc66cb
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM", "bgm/villagetheme"
+SetMember
+Push 24, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM"
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeIn"
+CallMethod
+Pop
+loc66cb:Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "switchGame"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "closeGameSelectMenu"
+DefineFunction "", 0 {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "status", "map"
+SetMember
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "unblurBG"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "showHeader"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "gamebar"
+GetMember
+Push "unloadMovie"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "loadHome"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "blurBG"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "loading"
+GetMember
+Push "_visible", true
+SetMember
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "content"
+GetMember
+Push "unloadMovie"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "status", "home"
+SetMember
+Push "none", 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcFooter"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "prepareGame2"
+CallMethod
+Pop
+Push 24, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM"
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeOut"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "preLoadComplete", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "onloadHomeSound"
+GetMember
+SetMember
+Push "bgm/home", 1
+InitArray
+Push 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "preloadByArray"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "onloadHomeSound"
+DefineFunction2 "", 0, 3, false, false, true, false, true, false, true, false, false {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "onloadHomeComplete"
+GetMember
+Push "url", "home.swf", "target", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "content"
+GetMember
+Push 2
+InitObject
+Push 1
+InitArray
+Push 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "loading"
+GetMember
+Push "preload"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "onloadHomeComplete"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "unblurBG"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM", "bgm/home"
+SetMember
+Push 24, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM"
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeIn"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "switchGame"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "loadPreBattle"
+DefineFunction2 "", 0, 3, false, false, true, false, true, false, true, false, false {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "blurBG"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "loading"
+GetMember
+Push "_visible", true
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "status", "prebattle"
+SetMember
+Push "none", 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcFooter"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 1, 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "mcScore"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 1, 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "mcPaneL"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "prepareGame2"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "onloadPreBattleComplete"
+GetMember
+Push "url", "warinst.swf", "target", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "gamebar"
+GetMember
+Push 2
+InitObject
+Push 1
+InitArray
+Push 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "loading"
+GetMember
+Push "preload"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "onloadPreBattleComplete"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "switchGame"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "loadBattle"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "blurBG"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "loading"
+GetMember
+Push "_visible", true
+SetMember
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "gamebar"
+GetMember
+Push "unloadMovie"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "content"
+GetMember
+Push "unloadMovie"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "status", "battle"
+SetMember
+Push "none", 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcFooter"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 1, 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "mcPaneL"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 1, 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "mcScore"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 24, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM"
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeOut"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "preLoadComplete", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "onloadBattleSound"
+GetMember
+SetMember
+Push "sfx/short_miniboss", "sfx/short_bigboss", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "boss"
+GetMember
+Push 2
+Equals2
+If loc6d5f
+Push "bgm/battle_miniboss"
+Jump loc6d65
+loc6d5f:Push "bgm/battle_bigboss"
+loc6d65:Push 3
+InitArray
+Push 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "preloadByArray"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "onloadBattleSound"
+DefineFunction2 "", 0, 3, false, false, true, false, true, false, true, false, false {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "onloadBattleComplete"
+GetMember
+Push "url", "war.swf", "target", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "content"
+GetMember
+Push 2
+InitObject
+Push 1
+InitArray
+Push 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "loading"
+GetMember
+Push "preload"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "onloadBattleComplete"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "unblurBG"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "boss"
+GetMember
+Push 2
+Equals2
+If loc6e6b
+Push "bgm/battle_miniboss"
+Jump loc6e71
+loc6e6b:Push "bgm/battle_bigboss"
+loc6e71:SetMember
+Push 24, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM"
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeIn"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "loadEnding"
+DefineFunction2 "", 0, 3, false, false, true, false, true, false, true, false, false {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "blurBG"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "status", "ending"
+SetMember
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "hideHeader"
+CallMethod
+Pop
+Push 24, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM"
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeOut"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "onloadEndingComplete"
+GetMember
+Push "url", "ending.swf", "target", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "content"
+GetMember
+Push 2
+InitObject
+Push 1
+InitArray
+Push 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "loading"
+GetMember
+Push "preload"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "loading"
+GetMember
+Push "_visible", false
+SetMember
+}
+SetMember
+Push register1, "onloadEndingComplete"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "unblurBG"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "loadGame"
+DefineFunction2 "", 1, 4, false, false, true, false, true, false, true, false, false, 3, "name" {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "status", "game"
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameName", register3
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "loading"
+GetMember
+Push "_visible", true
+SetMember
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "content"
+GetMember
+Push "unloadMovie"
+CallMethod
+Pop
+Push "none", 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcFooter"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "prepareGame2"
+CallMethod
+Pop
+Push "_e4", "_e3", "_e2", "_e1", "_m3", "_m2", "_m1", "c7", "c6", "c5", "c4", "c3", "c2", "c1", "b3", "b2", "b1", "a7", "a6", "a5", "a4", "a3", "a2", "a1", 24
+InitArray
+StoreRegister 2
+Pop
+Push 0.0
+StoreRegister 1
+Pop
+loc7135:Push register1, register2, "length"
+GetMember
+Less2
+Not
+If loc7192
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameName"
+GetMember
+Push register2, register1
+GetMember
+Equals2
+Not
+If loc7182
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameNumber", register1
+SetMember
+Jump loc7192
+loc7182:Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc7135
+loc7192:Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameNumber"
+GetMember
+Push 7
+Less2
+Not
+If loc71d5
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameArea", 0.0
+SetMember
+Jump loc72aa
+loc71d5:Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameNumber"
+GetMember
+Push 10
+Less2
+Not
+If loc7214
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameArea", 1
+SetMember
+Jump loc72aa
+loc7214:Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameNumber"
+GetMember
+Push 17
+Less2
+Not
+If loc7253
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameArea", 2
+SetMember
+Jump loc72aa
+loc7253:Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameNumber"
+GetMember
+Push 20
+Less2
+Not
+If loc7292
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameArea", 3
+SetMember
+Jump loc72aa
+loc7292:Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameArea", 4
+SetMember
+loc72aa:Push 24, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM"
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeOut"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "preLoadComplete", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "onloadGameSound"
+GetMember
+SetMember
+Push "bgm/game", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameArea"
+GetMember
+Add2
+Push 1
+InitArray
+Push 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "preloadByArray"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "onloadGameSound"
+DefineFunction2 "", 0, 3, false, false, true, false, true, false, true, false, false {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "onloadGameBarComplete"
+GetMember
+Push "url", "gamebar.swf", "target", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "gamebar"
+GetMember
+Push 2
+InitObject
+Push 1
+InitArray
+Push 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "loading"
+GetMember
+Push "preload"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "onloadGameBarComplete"
+DefineFunction2 "", 0, 3, false, false, true, false, true, false, true, false, false {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "onloadGameComplete"
+GetMember
+Push "url", "game", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameName"
+GetMember
+Add2
+Push ".swf"
+Add2
+Push "target", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "content"
+GetMember
+Push 2
+InitObject
+Push 1
+InitArray
+Push 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "loading"
+GetMember
+Push "preload"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "onloadGameComplete"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "blurBG"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM", "bgm/game", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameArea"
+GetMember
+Add2
+SetMember
+Push 24, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM"
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeIn"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "switchGame"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "showSelectLevel"
+DefineFunction "", 0 {
+Push "showlv :", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "miniGameSetting"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameNumber"
+GetMember
+GetMember
+Push "length"
+GetMember
+Add2
+Trace
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "miniGameSetting"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameNumber"
+GetMember
+GetMember
+Push "length"
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gamebar"
+GetMember
+Push "showLevel"
+CallMethod
+Pop
+Push "select level", 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "game"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "gameInit"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "level" {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curMiniGameSetting", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "miniGameSetting"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameNumber"
+GetMember
+GetMember
+Push register1, 1
+Subtract
+GetMember
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameLevel", register1
+SetMember
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "switchInGame"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcFooter"
+GetMember
+Push "showFooter"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "miniGameSetting"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameNumber"
+GetMember
+GetMember
+Push register1, 1
+Subtract
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcFooter"
+GetMember
+Push "setFooterType"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "game"
+GetMember
+Push "gameInit"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "showPreload"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gamebar"
+GetMember
+Push "showPreload"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "miniGamePreload"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "game"
+GetMember
+Push "preload"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "showReady"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "unblurBG"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gamebar"
+GetMember
+Push "showReady"
+CallMethod
+Pop
+Push "ready", 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "game"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "maxVal"
+GetMember
+Push 0.7
+Multiply
+Push 24, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM"
+GetMember
+Push 3, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeInOut"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "replay"
+DefineFunction "", 0 {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curMiniGameSetting", "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "miniGameSetting"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameNumber"
+GetMember
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameLevel"
+GetMember
+Push 1
+Subtract
+GetMember
+SetMember
+Push 24, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM"
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeIn"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "maxVal"
+GetMember
+Push 0.7
+Multiply
+Push 24, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM"
+GetMember
+Push 3, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeInOut"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "switchInGame"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gamebar"
+GetMember
+Push "replay"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "miniGameSetting"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameNumber"
+GetMember
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameLevel"
+GetMember
+Push 1
+Subtract
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcFooter"
+GetMember
+Push "resetFooterType"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "backToSelectLevel"
+DefineFunction "", 0 {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "miniGameSetting"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameNumber"
+GetMember
+GetMember
+Push "length"
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gamebar"
+GetMember
+Push "showLevel"
+CallMethod
+Pop
+Push "toGame", 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "mcPaneMenu"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcFooter"
+GetMember
+Push "play"
+CallMethod
+Pop
+Push "select level", 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "game"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 24, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "curBGM"
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeIn"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "exitGameToSelectLevel"
+DefineFunction "", 0 {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "miniGameSetting"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gameNumber"
+GetMember
+GetMember
+Push "length"
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gamebar"
+GetMember
+Push "showLevel"
+CallMethod
+Pop
+Push "toGame", 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "mcPaneMenu"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push "enter", 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "mcPaneMenu"
+GetMember
+Push "btnLeaveGame"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcFooter"
+GetMember
+Push "play"
+CallMethod
+Pop
+Push "select level", 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "game"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "game"
+GetMember
+Push "onEnterFrame"
+Delete
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcFooter"
+GetMember
+Push "startTimer", false
+SetMember
+Push 0.0, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "stopVO"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "playGame"
+DefineFunction "", 0 {
+Push "none", 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gamebar"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "game"
+GetMember
+Push "playGame"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "showGameResult"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "blurBG"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "mcPaneMenu"
+GetMember
+Push "btnGetResult"
+GetMember
+PushDuplicate
+Not
+If loc7cdc
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "mcPaneMenu"
+GetMember
+Push "btnGetResult"
+GetMember
+Push "onRollOut"
+GetMember
+loc7cdc:Not
+If loc7d10
+Push "ingame", 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcHeader"
+GetMember
+Push "mcPaneMenu"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+loc7d10:Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcFooter"
+GetMember
+Push "score"
+GetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcFooter"
+GetMember
+Push "maxscore"
+GetMember
+Less2
+Not
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcFooter"
+GetMember
+Push "score"
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "gamebar"
+GetMember
+Push "showGameRelsult"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "gameAddScore"
+DefineFunction2 "", 0, 2, false, false, true, false, false, true, true, false, false {
+Push register1, "length"
+GetMember
+Not
+If loc7de6
+Push register1, 0.0
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcFooter"
+GetMember
+Push "addScore"
+CallMethod
+Pop
+Jump loc7e0f
+loc7de6:Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcFooter"
+GetMember
+Push "addScore"
+CallMethod
+Pop
+}
+loc7e0f:SetMember
+Push register1, "reduceChance"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcFooter"
+GetMember
+Push "reduceChance"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "chanceReset"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcFooter"
+GetMember
+Push "chanceReset"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "timerStart"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcFooter"
+GetMember
+Push "timerStart"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "timerStop"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcFooter"
+GetMember
+Push "timerStop"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "timerReset"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcFooter"
+GetMember
+Push "timerReset"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "changePrinceStatus"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "newStatus" {
+Push register1, 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mcFooter"
+GetMember
+Push "changeStatus"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "blurBG"
+DefineFunction "", 0 {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "pause", true
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "content"
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "bmp"
+GetMember
+Push "draw"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "content"
+GetMember
+Push "_visible", false
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mc_blur"
+GetMember
+Push "_visible", true
+SetMember
+}
+SetMember
+Push register1, "unblurBG"
+DefineFunction "", 0 {
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "pause", false
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "content"
+GetMember
+Push "_visible", true
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "mc_blur"
+GetMember
+Push "_visible", false
+SetMember
+}
+SetMember
+Push register1, "__princeSystem", 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+NewMethod
+SetMember
+Push register1, "pause", false
+SetMember
+Push 1, null, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "prototype"
+GetMember
+Push 3, "ASSetPropFlags"
+CallFunction
+loc80ca:Pop

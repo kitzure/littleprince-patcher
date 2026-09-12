@@ -1,0 +1,15 @@
+ConstantPool "_parent", "resumeMap", "killPopup"
+Push 0.0, "_parent"
+GetVariable
+Push "_parent"
+GetMember
+Push "resumeMap"
+CallMethod
+Pop
+Push 0.0, "_parent"
+GetVariable
+Push "_parent"
+GetMember
+Push "killPopup"
+CallMethod
+Pop

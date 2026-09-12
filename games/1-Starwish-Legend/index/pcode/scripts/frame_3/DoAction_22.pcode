@@ -1,0 +1,1354 @@
+ConstantPool "ver", "webedcity", "file", "login.swf", "showNow", "loc", "login", "preloadFile", "animation", "unloadFile", "randomMap", "showMapName", "gamebar.swf", "gameBar", "header.swf", "header", "map", "switchFile", "getUserResolution", "user", "quality", "setUserQuality", "winmode", "setUserWinMode", "hideHint", "traceOut", "completeAction", "currentframe:", "_currentframe", "mapEngine_Current", "A", "B", "C", "getCurrentMapSWF", "getCurrentMapSWF()", "map_garden.swf", "map_candy.swf", "D", "map_final.swf", "E", "map_glass.swf", "map_question.swf", "togglePaneRButton", "gameID", "pmGame", "leave", "core", "panel", "gotoAndPlay", "killSmallMap", "counter", "steps", "jumpScale", "oriY", "player", "_y", "moveX", "building", "_x", "gas", "moveY", "gotoAndStop", "onEnterFrame", "moveBuilding", "enter", "Math", "sin", "_xscale", "_yscale", "dir", "togame", "playFx", "_visible", "counterT", "counterS", "incre", "loadGame", "cos", "ding", "leaveHeader", "killMapName", "hideLogo", "bossStatus", "preBoss", "fadeOutBossMusic", "question", "showBossTransition", "start", "hideBossTransition", "question.swf", "bossQ", "blurMap", "clearMap", "open", "openGate", "resumeStone", "bossStage", "mapD", "fadeOutMusic", "bossAni.swf", "bossBattle", ".swf", "game", "bossBar.swf", "/instruction.swf", "", "/game", "showGameName", "leaveMap", "zone", "loadingColor", "pink", "green", "orange", "enter spshop", "transition", "mapEngine_From", "shop", "hideTransition", "lucky.swf", "leave spshop", "loadMap", "showMapTransition", "hideMapTransition", "traderStore", "clearGem", "disableGems", "type", "admin", "showPaneR", "normal", "resume", "trader", "playMusic", "pause", "fly", "mc_merchant", "play", "message", "callBoss", "shadow", "onTop", "showLogo", "showSmallMap", "toggleOnTop", "help", "mirror", "equip", "report.swf", "report", "equip.swf", "mirrorStatus", "mirror.swf", "admin.swf", "help.swf", "ending.swf"
+DefineFunction2 "checkLogin", 0, 4, false, false, true, false, true, false, true, false, false {
+Push "ver"
+GetVariable
+Push "webedcity"
+Equals2
+Not
+Not
+If loc05fa
+Push "file", "login.swf", "showNow", true, "loc", "login", 3
+InitObject
+Push 1
+InitArray
+Push 1, "preloadFile"
+CallFunction
+Pop
+loc05fa:Push "animation", 1
+InitArray
+Push 1, "unloadFile"
+CallFunction
+Pop
+}
+DefineFunction2 "loadSystem", 0, 5, false, false, true, false, true, false, true, false, false {
+Push 0.0, "randomMap"
+CallFunction
+StoreRegister 1
+Pop
+Push "showMapName"
+GetVariable
+Push "login", 1
+InitArray
+Push "file", "gamebar.swf", "showNow", false, "loc", "gameBar", 3
+InitObject
+Push "file", "header.swf", "showNow", true, "loc", "header", 3
+InitObject
+Push "file", register1, "showNow", true, "loc", "map", 3
+InitObject
+Push 3
+InitArray
+Push 3, "switchFile"
+CallFunction
+Pop
+Push 0.0, "getUserResolution"
+CallFunction
+Pop
+Push "user"
+GetVariable
+Push "quality"
+GetMember
+Push 1, "setUserQuality"
+CallFunction
+Pop
+Push "user"
+GetVariable
+Push "winmode"
+GetMember
+Push 1, "setUserWinMode"
+CallFunction
+Pop
+}
+DefineFunction2 "switchFile", 3, 5, false, false, true, false, true, false, false, true, false, 2, "toLoad", 4, "toUnload", 3, "toDo" {
+Push 0.0, "hideHint"
+CallFunction
+Pop
+Push register2, 1, "preloadFile"
+CallFunction
+Pop
+Push "switchFile", 1, "traceOut"
+CallFunction
+Pop
+Push register4, 1, "unloadFile"
+CallFunction
+Pop
+Push "completeAction", register3
+SetVariable
+Push "currentframe:", register1, "_currentframe"
+GetMember
+Add2
+Push 1, "traceOut"
+CallFunction
+Pop
+}
+DefineFunction2 "randomMap", 0, 2, false, false, true, false, true, false, true, false, false {
+Push 3
+RandomNumber
+StoreRegister 1
+Pop
+Push register1, 0.0
+Equals2
+Not
+If loc07a9
+Push "mapEngine_Current", "A"
+SetVariable
+Jump loc07cf
+loc07a9:Push register1, 1
+Equals2
+Not
+If loc07c7
+Push "mapEngine_Current", "B"
+SetVariable
+Jump loc07cf
+loc07c7:Push "mapEngine_Current", "C"
+SetVariable
+loc07cf:Push "mapEngine_Current"
+GetVariable
+Push 1, "getCurrentMapSWF"
+CallFunction
+Return
+}
+DefineFunction "getCurrentMapSWF", 0 {
+Push "getCurrentMapSWF()", 1, "traceOut"
+CallFunction
+Pop
+Push "mapEngine_Current"
+GetVariable
+Push "B"
+Equals2
+Not
+If loc081f
+Push "map_garden.swf"
+Return
+loc081f:Push "mapEngine_Current"
+GetVariable
+Push "C"
+Equals2
+Not
+If loc0837
+Push "map_candy.swf"
+Return
+loc0837:Push "mapEngine_Current"
+GetVariable
+Push "D"
+Equals2
+Not
+If loc084f
+Push "map_final.swf"
+Return
+loc084f:Push "mapEngine_Current"
+GetVariable
+Push "E"
+Equals2
+Not
+If loc0867
+Push "map_glass.swf"
+Return
+loc0867:Push "map_question.swf"
+Return
+}
+DefineFunction "callGame", 1, "pmGame"  {
+Push false, 1, "header"
+GetVariable
+Push "togglePaneRButton"
+CallMethod
+Pop
+Push "gameID", "pmGame"
+GetVariable
+SetVariable
+Push "leave", 1, "map"
+GetVariable
+Push "core"
+GetMember
+Push "panel", "pmGame"
+GetVariable
+Add2
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push 0.0, "header"
+GetVariable
+Push "killSmallMap"
+CallMethod
+Pop
+Push "counter", 0.0
+SetVariable
+Push "steps", 10
+SetVariable
+Push "jumpScale", 100
+SetVariable
+Push "oriY", "map"
+GetVariable
+Push "core"
+GetMember
+Push "player"
+GetMember
+Push "_y"
+GetMember
+SetVariable
+Push "moveX", "map"
+GetVariable
+Push "core"
+GetMember
+Push "building", "gameID"
+GetVariable
+Add2
+GetMember
+Push "_x"
+GetMember
+Push "map"
+GetVariable
+Push "core"
+GetMember
+Push "player"
+GetMember
+Push "_x"
+GetMember
+Subtract
+Push "map"
+GetVariable
+Push "core"
+GetMember
+Push "building", "gameID"
+GetVariable
+Add2
+GetMember
+Push "gas"
+GetMember
+Push "_x"
+GetMember
+Add2
+Push "steps"
+GetVariable
+Divide
+SetVariable
+Push "moveY", "map"
+GetVariable
+Push "core"
+GetMember
+Push "building", "gameID"
+GetVariable
+Add2
+GetMember
+Push "_y"
+GetMember
+Push "map"
+GetVariable
+Push "core"
+GetMember
+Push "player"
+GetMember
+Push "_y"
+GetMember
+Subtract
+Push "map"
+GetVariable
+Push "core"
+GetMember
+Push "building", "gameID"
+GetVariable
+Add2
+GetMember
+Push "gas"
+GetMember
+Push "_y"
+GetMember
+Add2
+Push "steps"
+GetVariable
+Divide
+SetVariable
+Push "moveX"
+GetVariable
+Push 0.0
+Greater
+Not
+If loc0a20
+Push 2, 1, "map"
+GetVariable
+Push "core"
+GetMember
+Push "player"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Jump loc0a43
+loc0a20:Push 8, 1, "map"
+GetVariable
+Push "core"
+GetMember
+Push "player"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+loc0a43:Push "onEnterFrame"
+DefineFunction "", 0 {
+Push "counter"
+GetVariable
+Push "steps"
+GetVariable
+Greater
+Not
+If loc0ace
+Push "pmGame"
+GetVariable
+Push 1, "moveBuilding"
+CallFunction
+Pop
+Push "enter", 1, "map"
+GetVariable
+Push "core"
+GetMember
+Push "building", "gameID"
+GetVariable
+Add2
+GetMember
+Push "gas"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push "counter"
+Delete2
+Pop
+Push "steps"
+Delete2
+Pop
+Push "jumpScale"
+Delete2
+Pop
+Push "oriY"
+Delete2
+Pop
+Push "moveX"
+Delete2
+Pop
+Push "moveY"
+Delete2
+Pop
+Jump loc0c49
+loc0ace:Push "counter", "counter"
+GetVariable
+Increment
+SetVariable
+Push "map"
+GetVariable
+Push "core"
+GetMember
+Push "player"
+GetMember
+Push "_x", "map"
+GetVariable
+Push "core"
+GetMember
+Push "player"
+GetMember
+Push "_x"
+GetMember
+Push "moveX"
+GetVariable
+Add2
+SetMember
+Push "map"
+GetVariable
+Push "core"
+GetMember
+Push "player"
+GetMember
+Push "_y", "oriY"
+GetVariable
+Push "moveY"
+GetVariable
+Push "counter"
+GetVariable
+Multiply
+Add2
+Push "counter"
+GetVariable
+Push "steps"
+GetVariable
+Divide
+Push 180
+Multiply
+Push 3.141592653589793
+Multiply
+Push 180
+Divide
+Push 1, "Math"
+GetVariable
+Push "sin"
+CallMethod
+Push "jumpScale"
+GetVariable
+Multiply
+Subtract
+SetMember
+Push "map"
+GetVariable
+Push "core"
+GetMember
+Push "player"
+GetMember
+Push "_xscale", "map"
+GetVariable
+Push "core"
+GetMember
+Push "player"
+GetMember
+Push "_xscale"
+GetMember
+Push 5
+Subtract
+SetMember
+Push "map"
+GetVariable
+Push "core"
+GetMember
+Push "player"
+GetMember
+Push "_yscale", "map"
+GetVariable
+Push "core"
+GetMember
+Push "player"
+GetMember
+Push "_xscale"
+GetMember
+SetMember
+Push "counter"
+GetVariable
+Push 3
+Greater
+Not
+If loc0c20
+Push 2, 1, "map"
+GetVariable
+Push "core"
+GetMember
+Push "player"
+GetMember
+Push "dir"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Jump loc0c49
+loc0c20:Push 1, 1, "map"
+GetVariable
+Push "core"
+GetMember
+Push "player"
+GetMember
+Push "dir"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+loc0c49:Push "counter"
+GetVariable
+Push 5
+Equals2
+Not
+If loc0c6c
+Push "togame", 1, "playFx"
+CallFunction
+Pop
+}
+loc0c6c:SetVariable
+}
+DefineFunction "moveBuilding", 1, "pmGame"  {
+Push "map"
+GetVariable
+Push "core"
+GetMember
+Push "player"
+GetMember
+Push "_visible", false
+SetMember
+Push "counterT", 0.0
+SetVariable
+Push "counterS", 0.0
+SetVariable
+Push "incre", 1
+SetVariable
+Push "onEnterFrame"
+DefineFunction "", 0 {
+Push "counterT", "counterT"
+GetVariable
+Increment
+SetVariable
+Push "counterS", "counterS"
+GetVariable
+Push "incre"
+GetVariable
+Add2
+SetVariable
+Push "counterT"
+GetVariable
+Push 15
+Greater
+Not
+If loc0d25
+Push "gameID"
+GetVariable
+Push 1, "loadGame"
+CallFunction
+Pop
+Push "onEnterFrame"
+Delete2
+Pop
+Jump loc0deb
+loc0d25:Push "counterT"
+GetVariable
+Push 10
+Greater
+Not
+If loc0d3f
+Jump loc0deb
+loc0d3f:Push "map"
+GetVariable
+Push "core"
+GetMember
+Push "building", "gameID"
+GetVariable
+Add2
+GetMember
+Push "core"
+GetMember
+Push "_xscale", 100, 15, "counterS"
+GetVariable
+Push 1, "Math"
+GetVariable
+Push "sin"
+CallMethod
+Multiply
+Add2
+Push "counterT"
+GetVariable
+Push 0.5
+Multiply
+Subtract
+SetMember
+Push "map"
+GetVariable
+Push "core"
+GetMember
+Push "building", "gameID"
+GetVariable
+Add2
+GetMember
+Push "core"
+GetMember
+Push "_yscale", 100, 10, "counterS"
+GetVariable
+Push 1, "Math"
+GetVariable
+Push "cos"
+CallMethod
+Multiply
+Add2
+Push "counterT"
+GetVariable
+Push 0.5
+Multiply
+Subtract
+SetMember
+}
+loc0deb:SetVariable
+}
+DefineFunction "prepareBoss", 0 {
+Push "ding", 1, "playFx"
+CallFunction
+Pop
+Push 0.0, "header"
+GetVariable
+Push "leaveHeader"
+CallMethod
+Pop
+Push 0.0, "killMapName"
+CallFunction
+Pop
+Push 0.0, "header"
+GetVariable
+Push "hideLogo"
+CallMethod
+Pop
+Push 0.0, "header"
+GetVariable
+Push "killSmallMap"
+CallMethod
+Pop
+}
+DefineFunction "loadBoss", 0 {
+Push "bossStatus", "preBoss"
+SetVariable
+Push 0.0, "fadeOutBossMusic"
+CallFunction
+Pop
+Push "question", 1, "showBossTransition"
+CallFunction
+Pop
+}
+DefineFunction "callBoss", 0 {
+Push 0.0, "fadeOutBossMusic"
+CallFunction
+Pop
+Push "start", 1, "showBossTransition"
+CallFunction
+Pop
+}
+DefineFunction2 "callBossQuestion", 0, 4, false, false, true, false, true, false, true, false, false {
+Push "bossStatus", "question"
+SetVariable
+Push "hideBossTransition"
+GetVariable
+Push "header", "map", 2
+InitArray
+Push "file", "question.swf", "showNow", true, "loc", "bossQ", 3
+InitObject
+Push 1
+InitArray
+Push 3, "switchFile"
+CallFunction
+Pop
+}
+DefineFunction2 "callFinalBossQuestion", 0, 4, false, false, true, false, true, false, true, false, false {
+Push 0.0, "blurMap"
+CallFunction
+Pop
+Push "header", 1
+InitArray
+Push "file", "question.swf", "showNow", true, "loc", "bossQ", 3
+InitObject
+Push 1
+InitArray
+Push 2, "switchFile"
+CallFunction
+Pop
+}
+DefineFunction2 "resumeFinalBossQuestion", 1, 5, false, false, true, false, true, false, true, false, false, 4, "type" {
+Push 0.0, "clearMap"
+CallFunction
+Pop
+Push register4, "open"
+Equals2
+Not
+If loc0fe9
+Push 0.0, "map"
+GetVariable
+Push "openGate"
+CallMethod
+Pop
+Jump loc0fff
+loc0fe9:Push 0.0, "map"
+GetVariable
+Push "resumeStone"
+CallMethod
+Pop
+loc0fff:Push 0.0
+InitArray
+Push "file", "header.swf", "showNow", true, "loc", "header", 3
+InitObject
+Push 1
+InitArray
+Push 2, "switchFile"
+CallFunction
+Pop
+}
+DefineFunction2 "callBossBattle", 0, 4, false, false, true, false, true, false, true, false, false {
+Push "bossStage", 0.0
+SetVariable
+Push "mapEngine_Current"
+GetVariable
+StoreRegister 0
+Push "A"
+StrictEquals
+If loc109f
+Push register0, "B"
+StrictEquals
+If loc10af
+Push register0, "C"
+StrictEquals
+If loc10bf
+Push register0, "E"
+StrictEquals
+If loc10cf
+Jump loc10df
+loc109f:Push "bossStage", 1
+SetVariable
+Jump loc1102
+loc10af:Push "bossStage", 2
+SetVariable
+Jump loc1102
+loc10bf:Push "bossStage", 3
+SetVariable
+Jump loc1102
+loc10cf:Push "bossStage", 5
+SetVariable
+Jump loc1102
+loc10df:Push "bossStage", 4
+SetVariable
+Push 15, "mapD", 2, "fadeOutMusic"
+CallFunction
+Pop
+Jump loc1102
+loc1102:Push "hideBossTransition"
+GetVariable
+Push "bossQ", "map", "header", 3
+InitArray
+Push "file", "bossAni.swf", "showNow", false, "loc", "animation", 3
+InitObject
+Push "file", "bossBattle", "bossStage"
+GetVariable
+Add2
+Push ".swf"
+Add2
+Push "showNow", true, "loc", "game", 3
+InitObject
+Push "file", "bossBar.swf", "showNow", true, "loc", "gameBar", 3
+InitObject
+Push 3
+InitArray
+Push 3, "switchFile"
+CallFunction
+Pop
+}
+DefineFunction2 "callCastle", 0, 4, false, false, true, false, true, false, true, false, false {
+Push "game", 1
+InitArray
+Push 1, "unloadFile"
+CallFunction
+Pop
+Push 0.0
+InitArray
+Push "file", "bossAni.swf", "showNow", true, "loc", "animation", 3
+InitObject
+Push 1
+InitArray
+Push 2, "switchFile"
+CallFunction
+Pop
+Push 0.0, "fadeOutBossMusic"
+CallFunction
+Pop
+}
+DefineFunction2 "loadGame", 1, 5, false, false, true, false, true, false, true, false, false, 1, "pmGame" {
+Push "map", 1
+InitArray
+Push "file", "gamebar.swf", "showNow", true, "loc", "gameBar", 3
+InitObject
+Push "file", "game", register1
+Add2
+Push "/instruction.swf"
+Add2
+Push "showNow", false, "loc", "", 3
+InitObject
+Push "file", "game", register1
+Add2
+Push "/game"
+Add2
+Push register1
+Add2
+Push ".swf"
+Add2
+Push "showNow", true, "loc", "game", 3
+InitObject
+Push 3
+InitArray
+Push 2, "switchFile"
+CallFunction
+Pop
+Push register1, 1, "header"
+GetVariable
+Push "showGameName"
+CallMethod
+Pop
+Push 0.0, "header"
+GetVariable
+Push "leaveMap"
+CallMethod
+Pop
+Push "gameID"
+GetVariable
+Push 6
+Greater
+Not
+Not
+If loc12e1
+Push "zone", 1
+SetVariable
+Push "loadingColor", "pink"
+SetVariable
+Jump loc1350
+loc12e1:Push "gameID"
+GetVariable
+Push 9
+Greater
+Not
+Not
+If loc130f
+Push "zone", 2
+SetVariable
+Push "loadingColor", "green"
+SetVariable
+Jump loc1350
+loc130f:Push "gameID"
+GetVariable
+Push 17
+Greater
+Not
+Not
+If loc133d
+Push "zone", 3
+SetVariable
+Push "loadingColor", "orange"
+SetVariable
+Jump loc1350
+loc133d:Push "zone", 4
+SetVariable
+Push "loadingColor", "orange"
+SetVariable
+loc1350:Push 0.0, "killMapName"
+CallFunction
+Pop
+Push 0.0, "header"
+GetVariable
+Push "hideLogo"
+CallMethod
+Pop
+Push 25, "map", "mapEngine_Current"
+GetVariable
+Add2
+Push 2, "fadeOutMusic"
+CallFunction
+Pop
+}
+DefineFunction "loadSPShop", 0 {
+Push "enter spshop", 1, "transition"
+GetVariable
+Push "gotoAndPlay"
+CallMethod
+Pop
+}
+DefineFunction2 "loadSPShop2", 0, 4, false, false, true, false, true, false, true, false, false {
+Push "mapEngine_From", "shop"
+SetVariable
+Push "map", 1
+InitArray
+Push 1, "unloadFile"
+CallFunction
+Pop
+Push "hideTransition"
+GetVariable
+Push "gameBar", "game", 2
+InitArray
+Push "file", "lucky.swf", "showNow", true, "loc", "game", 3
+InitObject
+Push 1
+InitArray
+Push 3, "switchFile"
+CallFunction
+Pop
+Push 0.0, "killMapName"
+CallFunction
+Pop
+Push 0.0, "header"
+GetVariable
+Push "hideLogo"
+CallMethod
+Pop
+}
+DefineFunction "hideTransition", 0 {
+Push "leave spshop", 1, "transition"
+GetVariable
+Push "gotoAndPlay"
+CallMethod
+Pop
+}
+DefineFunction "unloadSPShop", 0 {
+Push 0.0, "loadMap"
+CallFunction
+Pop
+}
+DefineFunction "switchMap", 0 {
+Push 0.0, "showMapTransition"
+CallFunction
+Pop
+Push 0.0, "killMapName"
+CallFunction
+Pop
+}
+DefineFunction2 "loadMap", 0, 5, false, false, true, false, true, false, true, false, false {
+Push 0.0, "getCurrentMapSWF"
+CallFunction
+StoreRegister 1
+Pop
+Push "hideMapTransition"
+GetVariable
+Push "gameBar", "game", 2
+InitArray
+Push "file", register1, "showNow", true, "loc", "map", 3
+InitObject
+Push 1
+InitArray
+Push 3, "switchFile"
+CallFunction
+Pop
+}
+DefineFunction2 "loadMapFromBoss", 0, 5, false, false, true, false, true, false, true, false, false {
+Push 0.0, "getCurrentMapSWF"
+CallFunction
+StoreRegister 1
+Pop
+Push "hideBossTransition"
+GetVariable
+Push "bossQ", "animation", "gameBar", "game", 4
+InitArray
+Push "file", register1, "showNow", true, "loc", "map", 3
+InitObject
+Push 1
+InitArray
+Push 3, "switchFile"
+CallFunction
+Pop
+}
+DefineFunction "leaveTrader", 0 {
+Push 0.0, "traderStore"
+GetVariable
+Push "clearGem"
+CallMethod
+Pop
+Push "traderStore", 1
+InitArray
+Push 1, "unloadFile"
+CallFunction
+Pop
+Push 0.0, "header"
+GetVariable
+Push "disableGems"
+CallMethod
+Pop
+Push 0.0, "clearMap"
+CallFunction
+Pop
+Push "user"
+GetVariable
+Push "type"
+GetMember
+Push 2
+Equals2
+Not
+If loc1639
+Push "admin", 1, "header"
+GetVariable
+Push "showPaneR"
+CallMethod
+Pop
+Jump loc164d
+loc1639:Push "normal", 1, "header"
+GetVariable
+Push "showPaneR"
+CallMethod
+Pop
+loc164d:Push 0.0, "map"
+GetVariable
+Push "core"
+GetMember
+Push "resume"
+CallMethod
+Pop
+Push 0.0, "showMapName"
+CallFunction
+Pop
+Push 25, "trader", 2, "fadeOutMusic"
+CallFunction
+Pop
+Push 10000, "map", "mapEngine_Current"
+GetVariable
+Add2
+Push 2, "playMusic"
+CallFunction
+Pop
+}
+DefineFunction2 "selInSPShop", 1, 2, false, false, true, false, true, false, true, false, false, 1, "sel" {
+Push "traderStore", 1
+InitArray
+Push 1, "unloadFile"
+CallFunction
+Pop
+Push 0.0, "clearMap"
+CallFunction
+Pop
+Push register1
+Not
+If loc174e
+Push 0.0, "map"
+GetVariable
+Push "core"
+GetMember
+Push "pause"
+CallMethod
+Pop
+Push "fly", 1, "map"
+GetVariable
+Push "core"
+GetMember
+Push "mc_merchant"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push "map"
+GetVariable
+Push "core"
+GetMember
+Push "player"
+GetMember
+Push "_visible", false
+SetMember
+Jump loc183a
+loc174e:Push "user"
+GetVariable
+Push "type"
+GetMember
+Push 2
+Equals2
+Not
+If loc1782
+Push "admin", 1, "header"
+GetVariable
+Push "showPaneR"
+CallMethod
+Pop
+Jump loc1796
+loc1782:Push "normal", 1, "header"
+GetVariable
+Push "showPaneR"
+CallMethod
+Pop
+loc1796:Push 0.0, "map"
+GetVariable
+Push "core"
+GetMember
+Push "resume"
+CallMethod
+Pop
+Push 0.0, "map"
+GetVariable
+Push "core"
+GetMember
+Push "mc_merchant"
+GetMember
+Push "play"
+CallMethod
+Pop
+Push 1, 1, "map"
+GetVariable
+Push "core"
+GetMember
+Push "mc_merchant"
+GetMember
+Push "message"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push 0.0, "showMapName"
+CallFunction
+Pop
+Push 25, "trader", 2, "fadeOutMusic"
+CallFunction
+Pop
+Push 10000, "map", "mapEngine_Current"
+GetVariable
+Add2
+Push 2, "playMusic"
+CallFunction
+Pop
+}
+loc183a:DefineFunction2 "selInShadow", 1, 2, false, false, true, false, true, false, true, false, false, 1, "sel" {
+Push "traderStore", 1
+InitArray
+Push 1, "unloadFile"
+CallFunction
+Pop
+Push 0.0, "clearMap"
+CallFunction
+Pop
+Push register1
+Not
+If loc18cb
+Push 0.0, "map"
+GetVariable
+Push "core"
+GetMember
+Push "pause"
+CallMethod
+Pop
+Push 25, "trader", 2, "fadeOutMusic"
+CallFunction
+Pop
+Push 0.0, "callBoss"
+CallFunction
+Pop
+Jump loc19b7
+loc18cb:Push "user"
+GetVariable
+Push "type"
+GetMember
+Push 2
+Equals2
+Not
+If loc18ff
+Push "admin", 1, "header"
+GetVariable
+Push "showPaneR"
+CallMethod
+Pop
+Jump loc1913
+loc18ff:Push "normal", 1, "header"
+GetVariable
+Push "showPaneR"
+CallMethod
+Pop
+loc1913:Push 0.0, "map"
+GetVariable
+Push "core"
+GetMember
+Push "resume"
+CallMethod
+Pop
+Push 0.0, "map"
+GetVariable
+Push "core"
+GetMember
+Push "shadow"
+GetMember
+Push "play"
+CallMethod
+Pop
+Push 2, 1, "map"
+GetVariable
+Push "core"
+GetMember
+Push "shadow"
+GetMember
+Push "message"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push 0.0, "showMapName"
+CallFunction
+Pop
+Push 25, "trader", 2, "fadeOutMusic"
+CallFunction
+Pop
+Push 10000, "map", "mapEngine_Current"
+GetVariable
+Add2
+Push 2, "playMusic"
+CallFunction
+Pop
+}
+loc19b7:DefineFunction2 "toggleOnTop", 1, 2, false, false, true, false, true, false, true, false, false, 1, "type" {
+Push "onTop"
+GetVariable
+Push register1
+Equals2
+Not
+Not
+If loc1abe
+Push register1
+Not
+If loc1a4e
+Push 0.0, "clearMap"
+CallFunction
+Pop
+Push 0.0, "header"
+GetVariable
+Push "showLogo"
+CallMethod
+Pop
+Push 0.0, "header"
+GetVariable
+Push "showSmallMap"
+CallMethod
+Pop
+Push 0.0, "map"
+GetVariable
+Push "core"
+GetMember
+Push "resume"
+CallMethod
+Pop
+Jump loc1ab6
+loc1a4e:Push 0.0, "blurMap"
+CallFunction
+Pop
+Push 0.0, "map"
+GetVariable
+Push "core"
+GetMember
+Push "pause"
+CallMethod
+Pop
+Push 0.0, "header"
+GetVariable
+Push "hideLogo"
+CallMethod
+Pop
+Push 0.0, "killMapName"
+CallFunction
+Pop
+Push 0.0, "header"
+GetVariable
+Push "killSmallMap"
+CallMethod
+Pop
+loc1ab6:Push "onTop", register1
+SetVariable
+}
+loc1abe:DefineFunction2 "loadReport", 0, 4, false, false, true, false, true, false, true, false, false {
+Push false, 1, "toggleOnTop"
+CallFunction
+Pop
+Push "help", "admin", "mirror", "equip", 4
+InitArray
+Push "file", "report.swf", "showNow", true, "loc", "report", 3
+InitObject
+Push 1
+InitArray
+Push 2, "switchFile"
+CallFunction
+Pop
+}
+DefineFunction "killReport", 0 {
+Push true, 1, "toggleOnTop"
+CallFunction
+Pop
+Push "report", 1
+InitArray
+Push 1, "unloadFile"
+CallFunction
+Pop
+}
+DefineFunction2 "loadEquip", 0, 4, false, false, true, false, true, false, true, false, false {
+Push false, 1, "toggleOnTop"
+CallFunction
+Pop
+Push "help", "admin", "mirror", "report", 4
+InitArray
+Push "file", "equip.swf", "showNow", true, "loc", "equip", 3
+InitObject
+Push 1
+InitArray
+Push 2, "switchFile"
+CallFunction
+Pop
+}
+DefineFunction "killEquip", 0 {
+Push true, 1, "toggleOnTop"
+CallFunction
+Pop
+Push "equip", 1
+InitArray
+Push 1, "unloadFile"
+CallFunction
+Pop
+}
+DefineFunction2 "loadMirror", 0, 4, false, false, true, false, true, false, true, false, false {
+Push "mirrorStatus"
+GetVariable
+Push "normal"
+Equals2
+Not
+If loc1c1b
+Push false, 1, "toggleOnTop"
+CallFunction
+Pop
+loc1c1b:Push "help", "admin", "equip", "report", 4
+InitArray
+Push "file", "mirror.swf", "showNow", true, "loc", "mirror", 3
+InitObject
+Push 1
+InitArray
+Push 2, "switchFile"
+CallFunction
+Pop
+}
+DefineFunction2 "killMirror", 1, 2, false, false, true, false, true, false, true, false, false, 1, "pmType" {
+Push register1
+Trace
+Push register1, "normal"
+Equals2
+Not
+If loc1c95
+Push true, 1, "toggleOnTop"
+CallFunction
+Pop
+loc1c95:Push "mirror", 1
+InitArray
+Push 1, "unloadFile"
+CallFunction
+Pop
+}
+DefineFunction2 "loadAdmin", 0, 4, false, false, true, false, true, false, true, false, false {
+Push false, 1, "toggleOnTop"
+CallFunction
+Pop
+Push "help", "equip", "mirror", "report", 4
+InitArray
+Push "file", "admin.swf", "showNow", true, "loc", "admin", 3
+InitObject
+Push 1
+InitArray
+Push 2, "switchFile"
+CallFunction
+Pop
+}
+DefineFunction "killAdmin", 0 {
+Push true, 1, "toggleOnTop"
+CallFunction
+Pop
+Push "admin", 1
+InitArray
+Push 1, "unloadFile"
+CallFunction
+Pop
+}
+DefineFunction2 "loadHelp", 0, 4, false, false, true, false, true, false, true, false, false {
+Push false, 1, "toggleOnTop"
+CallFunction
+Pop
+Push "equip", "mirror", "report", "admin", 4
+InitArray
+Push "file", "help.swf", "showNow", true, "loc", "help", 3
+InitObject
+Push 1
+InitArray
+Push 2, "switchFile"
+CallFunction
+Pop
+}
+DefineFunction "killHelp", 0 {
+Push true, 1, "toggleOnTop"
+CallFunction
+Pop
+Push "help", 1
+InitArray
+Push 1, "unloadFile"
+CallFunction
+Pop
+}
+DefineFunction2 "showEnding", 0, 4, false, false, true, false, true, false, true, false, false {
+Push "file", "ending.swf", "showNow", true, "loc", "animation", 3
+InitObject
+Push 1
+InitArray
+Push 1, "switchFile"
+CallFunction
+Pop
+}

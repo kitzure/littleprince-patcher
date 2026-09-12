@@ -1,0 +1,215 @@
+ConstantPool "_global", "User", "prototype", "setUser", "report", "getScoreBoardInArray", "setScoreBoard", "getGemBoard", "setGemBoard", "getItemBoardInArray", "setItemBoard", "setSpec", "equipment", "slice", "passRate", "score", "username", "password", "type", "name", "gender", "school", "edLevel", "classLevel", "className", "bossQue", "defeatedBoss", "firstHint", "quality", "winmode", "musicvolume", "language", "extra", "setBossQue", "getBossQue", "setDefeatedBoss", "hasDefeatedBoss", "getDefeatedBossNum", "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "User"
+GetMember
+Not
+Not
+If loc0581
+Push "_global"
+GetVariable
+Push "User"
+DefineFunction "", 0 {
+}
+StoreRegister 1
+SetMember
+Push register1, "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2, "setUser"
+DefineFunction2 "", 1, 3, false, false, true, false, true, false, false, true, false, 2, "agUser" {
+Push 0.0, register2, "report"
+GetMember
+Push "getScoreBoardInArray"
+CallMethod
+Push 1, register1, "report"
+GetMember
+Push "setScoreBoard"
+CallMethod
+Pop
+Push 0.0, register2, "report"
+GetMember
+Push "getGemBoard"
+CallMethod
+Push 1, register1, "report"
+GetMember
+Push "setGemBoard"
+CallMethod
+Pop
+Push 0.0, register2, "report"
+GetMember
+Push "getItemBoardInArray"
+CallMethod
+Push 1, register1, "report"
+GetMember
+Push "setItemBoard"
+CallMethod
+Pop
+Push null, null, 2, register1, "report"
+GetMember
+Push "setSpec"
+CallMethod
+Pop
+Push register1, "equipment", 0.0, 1, register2, "equipment"
+GetMember
+Push "slice"
+CallMethod
+SetMember
+Push register1, "passRate", register2, "passRate"
+GetMember
+SetMember
+Push register1, "score", register2, "score"
+GetMember
+SetMember
+Push register1, "username", register2, "username"
+GetMember
+SetMember
+Push register1, "password", register2, "password"
+GetMember
+SetMember
+Push register1, "type", register2, "type"
+GetMember
+SetMember
+Push register1, "name", register2, "name"
+GetMember
+SetMember
+Push register1, "gender", register2, "gender"
+GetMember
+SetMember
+Push register1, "school", register2, "school"
+GetMember
+SetMember
+Push register1, "edLevel", register2, "edLevel"
+GetMember
+SetMember
+Push register1, "classLevel", register2, "classLevel"
+GetMember
+SetMember
+Push register1, "className", register2, "className"
+GetMember
+SetMember
+Push register1, "bossQue", 0.0, 1, register2, "bossQue"
+GetMember
+Push "slice"
+CallMethod
+SetMember
+Push register1, "defeatedBoss", 0.0, 1, register2, "defeatedBoss"
+GetMember
+Push "slice"
+CallMethod
+SetMember
+Push register1, "firstHint", register2, "firstHint"
+GetMember
+SetMember
+Push register1, "quality", register2, "quality"
+GetMember
+SetMember
+Push register1, "winmode", register2, "winmode"
+GetMember
+SetMember
+Push register1, "musicvolume", register2, "musicvolume"
+GetMember
+SetMember
+Push register1, "language", register2, "language"
+GetMember
+SetMember
+Push register1, "extra", register2, "extra"
+GetMember
+SetMember
+}
+SetMember
+Push register2, "setBossQue"
+DefineFunction2 "", 2, 4, false, false, true, false, true, false, false, true, false, 3, "agBossID", 2, "agQueID" {
+Push register1, "bossQue"
+GetMember
+Push register3, 1
+Subtract
+GetMember
+Push register2, 1
+Subtract
+Push 1
+SetMember
+}
+SetMember
+Push register2, "getBossQue"
+DefineFunction2 "", 1, 3, false, false, true, false, true, false, false, true, false, 2, "agBossID" {
+Push 0.0, 1, register1, "bossQue"
+GetMember
+Push register2, 1
+Subtract
+GetMember
+Push "slice"
+CallMethod
+Return
+}
+SetMember
+Push register2, "setDefeatedBoss"
+DefineFunction2 "", 1, 3, false, false, true, false, true, false, false, true, false, 2, "agBossID" {
+Push register1, "defeatedBoss"
+GetMember
+Push register2, 1
+Subtract
+Push 1
+SetMember
+}
+SetMember
+Push register2, "hasDefeatedBoss"
+DefineFunction2 "", 1, 3, false, false, true, false, true, false, false, true, false, 2, "agBossID" {
+Push register1, "defeatedBoss"
+GetMember
+Push register2, 1
+Subtract
+GetMember
+Push 1
+Equals2
+Not
+If loc04d3
+Push true
+Return
+loc04d3:Push false
+Return
+}
+SetMember
+Push register2, "getDefeatedBossNum"
+DefineFunction2 "", 0, 4, false, false, true, false, true, false, false, true, false {
+Push 0.0
+StoreRegister 3
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc050e:Push register2, 3
+Less2
+Not
+If loc0557
+Push register1, "defeatedBoss"
+GetMember
+Push register2
+GetMember
+Push 1
+Equals2
+Not
+If loc0547
+Push register3
+Increment
+StoreRegister 3
+Pop
+loc0547:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc050e
+loc0557:Push register3
+Return
+}
+SetMember
+Push 1, null, "_global"
+GetVariable
+Push "User"
+GetMember
+Push "prototype"
+GetMember
+Push 3, "ASSetPropFlags"
+CallFunction
+loc0581:Pop

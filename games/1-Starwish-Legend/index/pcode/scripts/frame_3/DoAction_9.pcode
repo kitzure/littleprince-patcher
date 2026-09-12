@@ -1,0 +1,70 @@
+ConstantPool "mapObj", "Object", "traderLoc", "Array", "Math", "random", "floor", "String", "fromCharCode", "mapGem"
+DefineFunction2 "initMapObj", 0, 2, false, false, true, false, true, false, true, false, false {
+Push "mapObj", 0.0, "Object"
+NewObject
+SetVariable
+Push "mapObj"
+GetVariable
+Push "traderLoc", 0.0, "Array"
+NewObject
+SetMember
+Push 0.0
+StoreRegister 1
+Pop
+loc00a0:Push register1, 6
+Less2
+Not
+If loc011f
+Push "mapObj"
+GetVariable
+Push "traderLoc"
+GetMember
+Push register1, 64, 0.0, "Math"
+GetVariable
+Push "random"
+CallMethod
+Push 3
+Multiply
+Push 1
+Add2
+Push 1, "Math"
+GetVariable
+Push "floor"
+CallMethod
+Add2
+Push 1, "String"
+GetVariable
+Push "fromCharCode"
+CallMethod
+SetMember
+Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc00a0
+loc011f:Push "mapObj"
+GetVariable
+Push "mapGem", 0.0, "Array"
+NewObject
+SetMember
+Push 0.0
+StoreRegister 1
+Pop
+loc0148:Push register1, 3
+Less2
+Not
+If loc0187
+Push "mapObj"
+GetVariable
+Push "mapGem"
+GetMember
+Push register1, 0.0, "Array"
+NewObject
+SetMember
+Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc0148
+}
+loc0187:

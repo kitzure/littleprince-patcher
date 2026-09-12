@@ -1,0 +1,149 @@
+ConstantPool "btn_print", "setBtn", "btn_back", "btn_activate", "onRelease", "_parent", "akey", "text", "length", "a1", "alert_act", "gotoAndPlay", "activationResponse", "gotoAndStop", "printasbitmap:#bmax", "mc_print", "str", "_root", "getHDKey", "Serial", "requestKey", "substr", "str2", "", "i", "-", "key", "restrict", "0-9"
+Push "btn_print"
+GetVariable
+Push 1, "setBtn"
+CallFunction
+Pop
+Push "btn_back"
+GetVariable
+Push 1, "setBtn"
+CallFunction
+Pop
+Push "btn_activate"
+GetVariable
+Push 1, "setBtn"
+CallFunction
+Pop
+Push "btn_activate"
+GetVariable
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "_parent"
+GetMember
+Push "akey"
+GetMember
+Push "text"
+GetMember
+Push "length"
+GetMember
+Push 1
+Less2
+Not
+If loc0181
+Push "a1", 1, register1, "_parent"
+GetMember
+Push "alert_act"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Jump loc01af
+loc0181:Push register1, "_parent"
+GetMember
+Push "akey"
+GetMember
+Push "text"
+GetMember
+Push 1, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "activationResponse"
+CallMethod
+Pop
+}
+loc01af:SetMember
+Push "btn_back"
+GetVariable
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 2, 1, register1, "gotoAndStop"
+CallMethod
+Pop
+GoToLabel "form"
+}
+SetMember
+Push "btn_print"
+GetVariable
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "printasbitmap:#bmax", register1, "_parent"
+GetMember
+Push "mc_print"
+GetMember
+GetURL2 false, false, 0
+}
+SetMember
+Push "str", 32, 0.0, 2, 0.0, "_root"
+GetVariable
+Push "getHDKey"
+CallMethod
+Push "Serial"
+GetVariable
+Push 2, "_root"
+GetVariable
+Push "requestKey"
+CallMethod
+Push "substr"
+CallMethod
+DefineLocal
+Push "str2", ""
+DefineLocal
+Push "i", 0.0
+DefineLocal
+loc026c:Push "i"
+GetVariable
+Push "str"
+GetVariable
+Push "length"
+GetMember
+Less2
+Not
+If loc02dd
+Push "i"
+GetVariable
+Not
+If loc02a0
+Push "str2", "str2"
+GetVariable
+Push "-"
+Add2
+SetVariable
+loc02a0:Push "str2", "str2"
+GetVariable
+Push 4, "i"
+GetVariable
+Push 2, "str"
+GetVariable
+Push "substr"
+CallMethod
+Add2
+SetVariable
+Push "i", "i"
+GetVariable
+Push 4
+Add2
+SetVariable
+Jump loc026c
+loc02dd:Push "key"
+GetVariable
+Push "text", "str2"
+GetVariable
+SetMember
+Push "mc_print"
+GetVariable
+Push "key"
+GetMember
+Push "text", "key"
+GetVariable
+Push "text"
+GetMember
+SetMember
+Push "akey"
+GetVariable
+Push "text", ""
+SetMember
+Push "akey"
+GetVariable
+Push "restrict", "0-9"
+SetMember

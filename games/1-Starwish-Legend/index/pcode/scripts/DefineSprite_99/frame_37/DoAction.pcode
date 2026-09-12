@@ -1,0 +1,6 @@
+Push 0.0, "_parent"
+GetVariable
+Push "showMapName"
+CallMethod
+Pop
+GotoFrame 0

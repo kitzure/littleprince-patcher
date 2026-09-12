@@ -1,0 +1,7 @@
+ConstantPool "verNumber", "_root"
+Push "verNumber", "_root"
+GetVariable
+Push "verNumber"
+GetMember
+SetVariable
+Stop

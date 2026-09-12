@@ -1,0 +1,257 @@
+ConstantPool "_global", "lib", "Object", "LoadQue", "doneObj", "que", "obj", "working", "current_obj", "movie_array", "prototype", "queItem", "push", "doLoad", "onDone", "home", "mc", "url", "bThick", "bColor", "bPad", "fColor", "fPad", "check_next", "onProgress", "LoadMovie", "length", "clearQue", "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "lib"
+GetMember
+Not
+Not
+If loc010a
+Push "_global"
+GetVariable
+Push "lib", 0.0, "Object"
+NewObject
+SetMember
+loc010a:Pop
+Push "_global"
+GetVariable
+Push "lib"
+GetMember
+Push "LoadQue"
+GetMember
+Not
+Not
+If loc0142
+Push "_global"
+GetVariable
+Push "lib"
+GetMember
+Push "LoadQue", 0.0, "Object"
+NewObject
+SetMember
+loc0142:Pop
+Push "_global"
+GetVariable
+Push "lib"
+GetMember
+Push "LoadQue"
+GetMember
+Push "LoadQue"
+GetMember
+Not
+Not
+If loc0502
+Push "lib"
+GetVariable
+Push "LoadQue"
+GetMember
+Push "LoadQue"
+DefineFunction2 "", 1, 3, false, false, true, false, true, false, false, true, false, 2, "done_obj" {
+Push register1, "doneObj", register2
+SetMember
+Push register1, "que", 0.0
+InitArray
+SetMember
+Push register1, "obj", 0.0
+InitObject
+SetMember
+Push register1, "working", false
+SetMember
+Push register1, "current_obj", 0.0
+SetMember
+Push register1, "movie_array", 0.0
+InitArray
+SetMember
+}
+StoreRegister 1
+SetMember
+Push register1, "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2, "queItem"
+DefineFunction2 "", 1, 3, false, false, true, false, true, false, false, true, false, 2, "que_obj" {
+Push register2, 1, register1, "que"
+GetMember
+Push "push"
+CallMethod
+Pop
+Push register1, "working"
+GetMember
+Push false
+Equals2
+Not
+If loc0256
+Push register1, "working", true
+SetMember
+Push 0.0, register1, "doLoad"
+CallMethod
+Pop
+}
+loc0256:SetMember
+Push register2, "onDone"
+DefineFunction "", 0 {
+}
+SetMember
+Push register2, "doLoad"
+DefineFunction2 "", 0, 4, false, false, true, false, true, false, false, true, false {
+Push "home", register1
+DefineLocal
+Push 0.0
+InitObject
+StoreRegister 2
+Pop
+Push register2, "mc", register1, "que"
+GetMember
+Push register1, "current_obj"
+GetMember
+GetMember
+Push "mc"
+GetMember
+SetMember
+Push register2, "url", register1, "que"
+GetMember
+Push register1, "current_obj"
+GetMember
+GetMember
+Push "url"
+GetMember
+SetMember
+Push register2, "bThick", register1, "que"
+GetMember
+Push register1, "current_obj"
+GetMember
+GetMember
+Push "bThick"
+GetMember
+SetMember
+Push register2, "bColor", register1, "que"
+GetMember
+Push register1, "current_obj"
+GetMember
+GetMember
+Push "bColor"
+GetMember
+SetMember
+Push register2, "bPad", register1, "que"
+GetMember
+Push register1, "current_obj"
+GetMember
+GetMember
+Push "bPad"
+GetMember
+SetMember
+Push register2, "fColor", register1, "que"
+GetMember
+Push register1, "current_obj"
+GetMember
+GetMember
+Push "fColor"
+GetMember
+SetMember
+Push register2, "fPad", register1, "que"
+GetMember
+Push register1, "current_obj"
+GetMember
+GetMember
+Push "fPad"
+GetMember
+SetMember
+Push register2, "onDone"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "worked" {
+Push register1, 1, "home"
+GetVariable
+Push "que"
+GetMember
+Push "home"
+GetVariable
+Push "current_obj"
+GetMember
+GetMember
+Push "onDone"
+CallMethod
+Pop
+Push 0.0, "home"
+GetVariable
+Push "check_next"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "onProgress"
+DefineFunction2 "", 2, 3, false, false, true, false, true, false, true, false, false, 1, "per", 2, "tot" {
+Push register2, register1, 2, "home"
+GetVariable
+Push "que"
+GetMember
+Push "home"
+GetVariable
+Push "current_obj"
+GetMember
+GetMember
+Push "onProgress"
+CallMethod
+Pop
+}
+SetMember
+Push register2, 1, "lib"
+GetVariable
+Push "LoadQue"
+GetMember
+Push "LoadMovie"
+NewMethod
+StoreRegister 3
+Pop
+}
+SetMember
+Push register2, "check_next"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "current_obj", register1, "current_obj"
+GetMember
+Increment
+SetMember
+Push register1, "current_obj"
+GetMember
+Push register1, "que"
+GetMember
+Push "length"
+GetMember
+Equals2
+Not
+If loc0481
+Push 1, 1, register1, "doneObj"
+GetMember
+Push "onDone"
+CallMethod
+Pop
+Push 0.0, register1, "clearQue"
+CallMethod
+Pop
+Jump loc0493
+loc0481:Push 0.0, register1, "doLoad"
+CallMethod
+Pop
+}
+loc0493:SetMember
+Push register2, "clearQue"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "que"
+GetMember
+Push "length", 0.0
+SetMember
+Push register1, "working", false
+SetMember
+Push register1, "current_obj", 0.0
+SetMember
+}
+SetMember
+Push 1, null, "lib"
+GetVariable
+Push "LoadQue"
+GetMember
+Push "LoadQue"
+GetMember
+Push "prototype"
+GetMember
+Push 3, "ASSetPropFlags"
+CallFunction
+loc0502:Pop

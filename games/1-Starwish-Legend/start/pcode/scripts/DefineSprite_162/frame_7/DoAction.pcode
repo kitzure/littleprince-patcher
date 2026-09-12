@@ -1,0 +1,9 @@
+ConstantPool "_parent", "adjustPopupText"
+Push 25, 1, "_parent"
+GetVariable
+Push "_parent"
+GetMember
+Push "adjustPopupText"
+CallMethod
+Pop
+Stop

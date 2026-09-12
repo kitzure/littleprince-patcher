@@ -1,0 +1,39 @@
+ConstantPool "_parent", "user", "firstHint"
+Push "_parent"
+GetVariable
+Push "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "user"
+GetMember
+Push "firstHint"
+GetMember
+Push true
+Equals2
+Not
+If loc0070
+Push "_parent"
+GetVariable
+Push "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "user"
+GetMember
+Push "firstHint", false
+SetMember
+GotoFrame 1
+Jump loc0095
+loc0070:Push "_parent"
+GetVariable
+Push "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "user"
+GetMember
+Push "firstHint", true
+SetMember
+GotoFrame 0
+loc0095:

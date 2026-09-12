@@ -1,0 +1,52 @@
+ConstantPool "btn_start", "setBtn", "btn_print", "onRelease", "printasbitmap:", "Prince3", "PrinceSystem", "loadOpening", "txtUsername", "text", "Username", "txtPhone", "Phone", "txtEmail", "Email", "txtSerial", "Serial"
+Push "btn_start"
+GetVariable
+Push 1, "setBtn"
+CallFunction
+Pop
+Push "btn_print"
+GetVariable
+Push 1, "setBtn"
+CallFunction
+Pop
+Push "btn_print"
+GetVariable
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, true, true, false, true, false, true, false, false {
+Push "printasbitmap:", register1
+GetURL2 false, false, 0
+}
+SetMember
+Push "btn_start"
+GetVariable
+Push "onRelease"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "loadOpening"
+CallMethod
+Pop
+}
+SetMember
+Push "txtUsername"
+GetVariable
+Push "text", "Username"
+GetVariable
+SetMember
+Push "txtPhone"
+GetVariable
+Push "text", "Phone"
+GetVariable
+SetMember
+Push "txtEmail"
+GetVariable
+Push "text", "Email"
+GetVariable
+SetMember
+Push "txtSerial"
+GetVariable
+Push "text", "Serial"
+GetVariable
+SetMember

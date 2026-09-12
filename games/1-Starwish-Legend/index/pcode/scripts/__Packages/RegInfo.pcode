@@ -1,0 +1,90 @@
+ConstantPool "_global", "RegInfo", "prototype", "getHD", "c", "getKeyACS", "|=_=|", "SIEdutainment", "getKeyAPath", "http://www.sunnyinteractive.com/littleprince/reg/validate.php", "getMode", "", "noKeyS", "noKeyA", "fullcd", "activated", "noks", "noka", "fcd", "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "RegInfo"
+GetMember
+Not
+Not
+If loc022d
+Push "_global"
+GetVariable
+Push "RegInfo"
+DefineFunction "", 0 {
+}
+StoreRegister 1
+SetMember
+Push register1, "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2, "getHD"
+DefineFunction "", 0 {
+Push "c"
+Return
+}
+SetMember
+Push register2, "getKeyACS"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, true, false, false {
+Push "|=_=|", "SIEdutainment", 2
+InitArray
+StoreRegister 1
+Pop
+Push register1
+Return
+}
+SetMember
+Push register2, "getKeyAPath"
+DefineFunction "", 0 {
+Push "http://www.sunnyinteractive.com/littleprince/reg/validate.php"
+Return
+}
+SetMember
+Push register2, "getMode"
+DefineFunction2 "", 1, 3, false, false, true, false, true, false, true, false, false, 2, "agMode" {
+Push ""
+StoreRegister 1
+Pop
+Push register2
+StoreRegister 0
+Push "noKeyS"
+StrictEquals
+If loc01c7
+Push register0, "noKeyA"
+StrictEquals
+If loc01d6
+Push register0, "fullcd"
+StrictEquals
+If loc01e5
+Push register0, "activated"
+StrictEquals
+If loc01f4
+Jump loc0203
+loc01c7:Push "noks"
+StoreRegister 1
+Pop
+Jump loc0203
+loc01d6:Push "noka"
+StoreRegister 1
+Pop
+Jump loc0203
+loc01e5:Push "fcd"
+StoreRegister 1
+Pop
+Jump loc0203
+loc01f4:Push "activated"
+StoreRegister 1
+Pop
+Jump loc0203
+loc0203:Push register1
+Return
+}
+SetMember
+Push 1, null, "_global"
+GetVariable
+Push "RegInfo"
+GetMember
+Push "prototype"
+GetMember
+Push 3, "ASSetPropFlags"
+CallFunction
+loc022d:Pop

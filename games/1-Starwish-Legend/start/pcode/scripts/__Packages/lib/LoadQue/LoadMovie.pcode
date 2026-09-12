@@ -1,0 +1,421 @@
+ConstantPool "_global", "lib", "Object", "LoadQue", "LoadMovie", "imgObj", "home", "mc", "calc_mc", "createEmptyMovieClip", "obj", "checkTot", "onEnterFrame", "calc", "img_mc", "url", "loadMovie", "onBorderCall", "fPad", "fColor", "bPad", "bColor", "bThick", "createBorder", "prototype", "getBytesLoaded", "getBytesTotal", "Math", "round", "onProgress", "_width", "callBorder", "onDone", "border_mc", "removeMovieClip", "b_mc", "_height", "lineStyle", "moveTo", "lineTo", "f_mc", "fill_mc", "debug_txt", "text", "pad :: ", "beginFill", "endFill", "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "lib"
+GetMember
+Not
+Not
+If loc01c8
+Push "_global"
+GetVariable
+Push "lib", 0.0, "Object"
+NewObject
+SetMember
+loc01c8:Pop
+Push "_global"
+GetVariable
+Push "lib"
+GetMember
+Push "LoadQue"
+GetMember
+Not
+Not
+If loc0200
+Push "_global"
+GetVariable
+Push "lib"
+GetMember
+Push "LoadQue", 0.0, "Object"
+NewObject
+SetMember
+loc0200:Pop
+Push "_global"
+GetVariable
+Push "lib"
+GetMember
+Push "LoadQue"
+GetMember
+Push "LoadMovie"
+GetMember
+Not
+Not
+If loc0885
+Push "lib"
+GetVariable
+Push "LoadQue"
+GetMember
+Push "LoadMovie"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, false, true, false, 0, "imgObj" {
+Push "imgObj"
+GetVariable
+Push "home", register1
+SetMember
+Push register1, "mc", "imgObj"
+GetVariable
+Push "mc"
+GetMember
+SetMember
+Push register1, "calc_mc", 1, "calc_mc", 2, register1, "mc"
+GetMember
+Push "createEmptyMovieClip"
+CallMethod
+SetMember
+Push register1, "calc_mc"
+GetMember
+Push "obj", "imgObj"
+GetVariable
+SetMember
+Push register1, "calc_mc"
+GetMember
+Push "checkTot", 0.0
+SetMember
+Push register1, "calc_mc"
+GetMember
+Push "onEnterFrame", register1, "calc"
+GetMember
+SetMember
+Push register1, "img_mc", 2, "img_mc", 2, register1, "mc"
+GetMember
+Push "createEmptyMovieClip"
+CallMethod
+SetMember
+Push "imgObj"
+GetVariable
+Push "url"
+GetMember
+Push 1, register1, "img_mc"
+GetMember
+Push "loadMovie"
+CallMethod
+Pop
+Push "imgObj"
+GetVariable
+Push "onBorderCall"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "imgObj"
+GetVariable
+Push "fPad"
+GetMember
+Push "imgObj"
+GetVariable
+Push "fColor"
+GetMember
+Push "imgObj"
+GetVariable
+Push "bPad"
+GetMember
+Push "imgObj"
+GetVariable
+Push "bColor"
+GetMember
+Push "imgObj"
+GetVariable
+Push "bThick"
+GetMember
+Push 5, register1, "home"
+GetMember
+Push "createBorder"
+CallMethod
+Pop
+}
+SetMember
+}
+StoreRegister 1
+SetMember
+Push register1, "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2, "calc"
+DefineFunction2 "", 0, 6, false, false, true, false, true, false, false, true, false {
+Push register1, "obj"
+GetMember
+Push "mc"
+GetMember
+Push "img_mc"
+GetMember
+StoreRegister 4
+Pop
+Push 0.0, register4, "getBytesLoaded"
+CallMethod
+StoreRegister 2
+Pop
+Push 0.0, register4, "getBytesTotal"
+CallMethod
+StoreRegister 3
+Pop
+Push register2, register3
+Divide
+Push 100
+Multiply
+Push 1, "Math"
+GetVariable
+Push "round"
+CallMethod
+StoreRegister 5
+Pop
+Push register2, 0.0
+Equals2
+Push register3, -1
+Equals2
+And
+Not
+If loc044c
+Push register1, "obj"
+GetMember
+Push "mc"
+GetMember
+Push "calc_mc"
+GetMember
+Push "checkTot", register1, "obj"
+GetMember
+Push "mc"
+GetMember
+Push "calc_mc"
+GetMember
+Push "checkTot"
+GetMember
+Push register3
+ToNumber
+Add2
+SetMember
+loc044c:Push register2, -1
+Greater
+PushDuplicate
+Not
+If loc046e
+Pop
+Push register5, 0.0
+Greater
+loc046e:Not
+If loc048c
+Push register3, register2, 2, register1, "obj"
+GetMember
+Push "onProgress"
+CallMethod
+Pop
+loc048c:Push register5, 100
+Equals2
+PushDuplicate
+Not
+If loc04b4
+Pop
+Push register4, "_width"
+GetMember
+Push 0.0
+Greater
+loc04b4:PushDuplicate
+If loc04c3
+Pop
+Push register2, register3
+Equals2
+loc04c3:Not
+If loc054c
+Push 1, 1, register1, "obj"
+GetMember
+Push "onBorderCall"
+CallMethod
+Pop
+Push 0.0, register1, "obj"
+GetMember
+Push "callBorder"
+CallMethod
+Pop
+Push register1, "obj"
+GetMember
+Push "home"
+GetMember
+Push 1, register1, "obj"
+GetMember
+Push "onDone"
+CallMethod
+Pop
+Push register1, "obj"
+GetMember
+Push "mc"
+GetMember
+Push "calc_mc"
+GetMember
+Push "onEnterFrame", null
+SetMember
+Push register1, "obj"
+GetMember
+Push "mc"
+GetMember
+Push "calc_mc"
+Delete
+Pop
+}
+loc054c:SetMember
+Push register2, "createBorder"
+DefineFunction2 "", 5, 11, false, true, true, false, true, false, false, true, false, 8, "b_Thick", 10, "b_Color", 9, "b_Pad", 7, "f_Color", 6, "f_Pad" {
+Push 0.0, register1, "mc"
+GetMember
+Push "border_mc"
+GetMember
+Push "removeMovieClip"
+CallMethod
+Pop
+Push register1, "b_mc", 3, "border_mc", 2, register1, "mc"
+GetMember
+Push "createEmptyMovieClip"
+CallMethod
+SetMember
+Push register1, "img_mc"
+GetMember
+Push "_width"
+GetMember
+StoreRegister 5
+Pop
+Push register1, "img_mc"
+GetMember
+Push "_height"
+GetMember
+StoreRegister 4
+Pop
+Push register8, 2
+Divide
+Push register9
+Add2
+StoreRegister 3
+Pop
+Push register10, register8, 2, register1, "b_mc"
+GetMember
+Push "lineStyle"
+CallMethod
+Pop
+Push 0.0, register3
+Subtract
+Push 0.0, register3
+Subtract
+Push 2, register1, "b_mc"
+GetMember
+Push "moveTo"
+CallMethod
+Pop
+Push 0.0, register3
+Subtract
+Push register5, register3
+Add2
+Push 2, register1, "b_mc"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push register4, register3
+Add2
+Push register5, register3
+Add2
+Push 2, register1, "b_mc"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push register4, register3
+Add2
+Push 0.0, register3
+Subtract
+Push 2, register1, "b_mc"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 0.0, register3
+Subtract
+Push 0.0, register3
+Subtract
+Push 2, register1, "b_mc"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push register7, null
+Equals2
+Not
+Not
+If loc085b
+Push register1, "f_mc", -1, "fill_mc", 2, register1, "mc"
+GetMember
+Push "createEmptyMovieClip"
+CallMethod
+SetMember
+Push register6
+Not
+If loc073c
+Push register3, register6
+Add2
+StoreRegister 3
+Pop
+loc073c:Push register2, "debug_txt"
+GetMember
+Push "text", "pad :: ", register3
+Add2
+SetMember
+Push register7, 1, register1, "f_mc"
+GetMember
+Push "beginFill"
+CallMethod
+Pop
+Push 0.0, register3
+Subtract
+Push 0.0, register3
+Subtract
+Push 2, register1, "f_mc"
+GetMember
+Push "moveTo"
+CallMethod
+Pop
+Push 0.0, register3
+Subtract
+Push register5, register3
+Add2
+Push 2, register1, "f_mc"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push register4, register3
+Add2
+Push register5, register3
+Add2
+Push 2, register1, "f_mc"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push register4, register3
+Add2
+Push 0.0, register3
+Subtract
+Push 2, register1, "f_mc"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 0.0, register3
+Subtract
+Push 0.0, register3
+Subtract
+Push 2, register1, "f_mc"
+GetMember
+Push "lineTo"
+CallMethod
+Pop
+Push 0.0, register1, "f_mc"
+GetMember
+Push "endFill"
+CallMethod
+Pop
+}
+loc085b:SetMember
+Push 1, null, "lib"
+GetVariable
+Push "LoadQue"
+GetMember
+Push "LoadMovie"
+GetMember
+Push "prototype"
+GetMember
+Push 3, "ASSetPropFlags"
+CallFunction
+loc0885:Pop

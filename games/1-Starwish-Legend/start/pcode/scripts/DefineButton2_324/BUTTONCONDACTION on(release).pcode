@@ -1,0 +1,40 @@
+ConstantPool "_parent", "user", "extra"
+Push "_parent"
+GetVariable
+Push "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "user"
+GetMember
+Push "extra", "_parent"
+GetVariable
+Push "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "user"
+GetMember
+Push "extra"
+GetMember
+Push 8
+BitXor
+SetMember
+Push "_parent"
+GetVariable
+Push "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "user"
+GetMember
+Push "extra"
+GetMember
+Push 8
+BitAnd
+Not
+If loc0091
+GotoFrame 1
+Jump loc0096
+loc0091:GotoFrame 0
+loc0096:

@@ -1,0 +1,15 @@
+ConstantPool "_parent", "mapEngine_Current", "C"
+Push "_parent"
+GetVariable
+Push "_parent"
+GetMember
+Push "mapEngine_Current"
+GetMember
+Push "C"
+Equals2
+Not
+If loc0045
+NextFrame
+Jump loc0046
+loc0045:Stop
+loc0046:

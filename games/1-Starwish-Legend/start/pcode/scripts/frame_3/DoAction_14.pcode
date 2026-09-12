@@ -1,0 +1,36 @@
+ConstantPool "saveScore(", ", ", ")", "user", "report", "setScore", "score", "saveUserData"
+DefineFunction2 "saveScore", 4, 5, false, false, true, false, true, false, true, false, false, 1, "agGameID", 2, "agLevel", 4, "agGameScore", 3, "agFinalScore" {
+Push "saveScore(", register1
+Add2
+Push ", "
+Add2
+Push register2
+Add2
+Push ", "
+Add2
+Push register4
+Add2
+Push ", "
+Add2
+Push register3
+Add2
+Push ")"
+Add2
+Trace
+Push register4, register2, register1, 3, "user"
+GetVariable
+Push "report"
+GetMember
+Push "setScore"
+CallMethod
+Pop
+Push "user"
+GetVariable
+Push "score", register3
+SetMember
+Push "user"
+GetVariable
+Push 1, "saveUserData"
+CallFunction
+Pop
+}

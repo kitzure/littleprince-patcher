@@ -1,0 +1,1641 @@
+ConstantPool "gameSpec", "Object", "hiddenGemArray", "Array", "i", "game", "dat", "push", "game1", "timeType", "none", "playQ", "wrongScore", "score", "fullScore", "getGem", "gemType", "no", "item", "污染物", "字母/數字", "中文單字", "中文詞語", "短句", "game2", "heart", "光圈大、障礙少", "光圈中、障礙中", "光圈小、障礙多", "game3", "timer", "avaTime", "頭像", "數字", "字母", "成語", "game4", "圖形及顏色", "game5", "5字句子-單字", "5字句子-詞語 ", "5字句子-2個單字", "5字句子-2個詞語 ", "7字句子-2個單字", "7字句子-2個詞語 ", "7字句子-3個詞語", "game6", "重組三塊", "重組四塊", "重組五塊", "重組六塊", "重組七塊", "game7", "2選1(排2句)", "2選1(排3句)", "2選1(排4句)", "3選1(排2句)", "3選1(排3句)", "3選1(排4句)", "game8", "上下、左右", "半包圍", "上中下、左中右", "左右下、左上下", "混合", "game9", "6條柱,圖形", "6條柱,數字", "6條柱,英文字母", "5條柱,常用序列", "5條柱,分類", "部首/部件/字形尺", "4條柱,詞類", "game10", "象形文字-最易", "象形文字-易", "象形文字-中", "象形文字-難", "象形文字-最難", "game11", "速度慢", "速度中", "速度中快", "速度快", "game12", "star", "左右(左)", "左右(右)", "上下(上)", "上下(下)", "半包圍(1)", "半包圍(2)", "game13", "2種字形尺", "3種字形尺", "4種字形尺", "5種字形尺", "6種字形尺", "7種字形尺", "game14", "2x2格", "2x3格", "3x3格", "3x4格", "game15", "二至四劃", "五至七劃", "八至十劃", "十一至十三劃", "game16", "4個同音字-20塊", "2個同音字-20塊", "4個同音字-30塊", "2個同音字-30塊", "4個同音字-40塊", "2個同音字-40塊", "game17", "4張砌圖", "4張砌圖 ", "6張砌圖", "game18", "難度低", "難度中", "難度中高", "難度高", "game19", "字長度短", "字長度中", "字長度長", "字長度最長", "game20", "兩個整數", "兩個小數", "兩個分數", "三個整數", "三個小數", "三個分數"
+DefineFunction2 "initGameSpec", 0, 10, false, false, true, false, true, false, true, false, false {
+Push "gameSpec", 0.0, "Object"
+NewObject
+SetVariable
+Push "hiddenGemArray", 0.0, "Array"
+NewObject
+SetVariable
+Push "i", 1
+SetVariable
+loc06c8:Push "i"
+GetVariable
+Push 20
+Greater
+Not
+Not
+If loc0746
+Push "gameSpec"
+GetVariable
+Push "game", "i"
+GetVariable
+Add2
+Push 0.0, "Object"
+NewObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game", "i"
+GetVariable
+Add2
+GetMember
+Push "dat", 0.0, "Array"
+NewObject
+SetMember
+Push "i"
+GetVariable
+Push 1, "hiddenGemArray"
+GetVariable
+Push "push"
+CallMethod
+Pop
+Push "i", "i"
+GetVariable
+Increment
+SetVariable
+Jump loc06c8
+loc0746:Push "gameSpec"
+GetVariable
+Push "game1"
+GetMember
+Push "timeType", "none"
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game1"
+GetMember
+Push "dat"
+GetMember
+Push 0.0, "playQ", 10, "wrongScore", -5, "score", 10, "fullScore", 100, "getGem", "gemType", 2, "no", 1, 2
+InitObject
+Push 1
+InitArray
+Push "item", "污染物", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game1"
+GetMember
+Push "dat"
+GetMember
+Push 1, "playQ", 10, "wrongScore", -7, "score", 15, "fullScore", 150, "getGem", "gemType", 2, "no", 2, 2
+InitObject
+Push 1
+InitArray
+Push "item", "字母/數字", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game1"
+GetMember
+Push "dat"
+GetMember
+Push 2, "playQ", 10, "wrongScore", -10, "score", 20, "fullScore", 200, "getGem", "gemType", 2, "no", 3, 2
+InitObject
+Push 1
+InitArray
+Push "item", "中文單字", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game1"
+GetMember
+Push "dat"
+GetMember
+Push 3, "playQ", 10, "wrongScore", -12, "score", 25, "fullScore", 250, "getGem", "gemType", 3, "no", 1, 2
+InitObject
+Push "gemType", 2, "no", 4, 2
+InitObject
+Push 2
+InitArray
+Push "item", "中文詞語", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game1"
+GetMember
+Push "dat"
+GetMember
+Push 4, "playQ", 10, "wrongScore", -15, "score", 30, "fullScore", 300, "getGem", "gemType", 3, "no", 2, 2
+InitObject
+Push "gemType", 2, "no", 5, 2
+InitObject
+Push 2
+InitArray
+Push "item", "短句", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game2"
+GetMember
+Push "timeType", "heart"
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game2"
+GetMember
+Push "dat"
+GetMember
+Push 0.0, "playQ", 5, "wrongScore", -10, "score", 20, "fullScore", 100, "getGem", "gemType", 2, "no", 1, 2
+InitObject
+Push 1
+InitArray
+Push "item", "光圈大、障礙少", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game2"
+GetMember
+Push "dat"
+GetMember
+Push 1, "playQ", 5, "wrongScore", -15, "score", 30, "fullScore", 150, "getGem", "gemType", 2, "no", 2, 2
+InitObject
+Push 1
+InitArray
+Push "item", "光圈大、障礙少", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game2"
+GetMember
+Push "dat"
+GetMember
+Push 2, "playQ", 5, "wrongScore", -20, "score", 40, "fullScore", 200, "getGem", "gemType", 2, "no", 3, 2
+InitObject
+Push 1
+InitArray
+Push "item", "光圈中、障礙中", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game2"
+GetMember
+Push "dat"
+GetMember
+Push 3, "playQ", 5, "wrongScore", -25, "score", 50, "fullScore", 250, "getGem", "gemType", 2, "no", 4, 2
+InitObject
+Push 1
+InitArray
+Push "item", "光圈中、障礙中", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game2"
+GetMember
+Push "dat"
+GetMember
+Push 4, "playQ", 5, "wrongScore", -30, "score", 60, "fullScore", 300, "getGem", "gemType", 2, "no", 5, 2
+InitObject
+Push 1
+InitArray
+Push "item", "光圈中、障礙中", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game2"
+GetMember
+Push "dat"
+GetMember
+Push 5, "playQ", 5, "wrongScore", -35, "score", 70, "fullScore", 350, "getGem", "gemType", 1, "no", 1, 2
+InitObject
+Push "gemType", 2, "no", 5, 2
+InitObject
+Push 2
+InitArray
+Push "item", "光圈小、障礙多", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game2"
+GetMember
+Push "dat"
+GetMember
+Push 6, "playQ", 5, "wrongScore", -40, "score", 80, "fullScore", 400, "getGem", "gemType", 1, "no", 2, 2
+InitObject
+Push "gemType", 2, "no", 5, 2
+InitObject
+Push 2
+InitArray
+Push "item", "光圈小、障礙多", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game3"
+GetMember
+Push "timeType", "timer"
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game3"
+GetMember
+Push "dat"
+GetMember
+Push 0.0, "playQ", 10, "wrongScore", -5, "score", 10, "fullScore", 100, "getGem", "gemType", 2, "no", 1, 2
+InitObject
+Push 1
+InitArray
+Push "avaTime", 10, "item", "頭像", 7
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game3"
+GetMember
+Push "dat"
+GetMember
+Push 1, "playQ", 10, "wrongScore", -7, "score", 15, "fullScore", 150, "getGem", "gemType", 2, "no", 2, 2
+InitObject
+Push 1
+InitArray
+Push "avaTime", 10, "item", "數字", 7
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game3"
+GetMember
+Push "dat"
+GetMember
+Push 2, "playQ", 10, "wrongScore", -10, "score", 20, "fullScore", 200, "getGem", "gemType", 2, "no", 3, 2
+InitObject
+Push 1
+InitArray
+Push "avaTime", 10, "item", "字母", 7
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game3"
+GetMember
+Push "dat"
+GetMember
+Push 3, "playQ", 10, "wrongScore", -12, "score", 25, "fullScore", 250, "getGem", "gemType", 2, "no", 4, 2
+InitObject
+Push 1
+InitArray
+Push "avaTime", 10, "item", "中文單字", 7
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game3"
+GetMember
+Push "dat"
+GetMember
+Push 4, "playQ", 10, "wrongScore", -15, "score", 30, "fullScore", 300, "getGem", "gemType", 1, "no", 1, 2
+InitObject
+Push "gemType", 2, "no", 5, 2
+InitObject
+Push 2
+InitArray
+Push "avaTime", 10, "item", "中文詞語", 7
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game3"
+GetMember
+Push "dat"
+GetMember
+Push 5, "playQ", 10, "wrongScore", -20, "score", 40, "fullScore", 400, "getGem", "gemType", 3, "no", 2, 2
+InitObject
+Push "gemType", 2, "no", 5, 2
+InitObject
+Push 2
+InitArray
+Push "avaTime", 10, "item", "成語", 7
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game4"
+GetMember
+Push "timeType", "heart"
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game4"
+GetMember
+Push "dat"
+GetMember
+Push 0.0, "playQ", 20, "wrongScore", -2, "score", 5, "fullScore", 100, "getGem", "gemType", 2, "no", 1, 2
+InitObject
+Push 1
+InitArray
+Push "item", "字母", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game4"
+GetMember
+Push "dat"
+GetMember
+Push 1, "playQ", 20, "wrongScore", -5, "score", 10, "fullScore", 200, "getGem", "gemType", 2, "no", 2, 2
+InitObject
+Push 1
+InitArray
+Push "item", "數字", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game4"
+GetMember
+Push "dat"
+GetMember
+Push 2, "playQ", 20, "wrongScore", -7, "score", 15, "fullScore", 300, "getGem", "gemType", 2, "no", 3, 2
+InitObject
+Push 1
+InitArray
+Push "item", "中文單字", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game4"
+GetMember
+Push "dat"
+GetMember
+Push 3, "playQ", 20, "wrongScore", -10, "score", 20, "fullScore", 400, "getGem", "gemType", 5, "no", 2, 2
+InitObject
+Push "gemType", 2, "no", 4, 2
+InitObject
+Push 2
+InitArray
+Push "item", "中文詞語", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game4"
+GetMember
+Push "dat"
+GetMember
+Push 4, "playQ", 20, "wrongScore", -12, "score", 25, "fullScore", 500, "getGem", "gemType", 4, "no", 3, 2
+InitObject
+Push "gemType", 2, "no", 5, 2
+InitObject
+Push 2
+InitArray
+Push "item", "圖形及顏色", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game5"
+GetMember
+Push "timeType", "heart"
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game5"
+GetMember
+Push "dat"
+GetMember
+Push 0.0, "playQ", 10, "wrongScore", -2, "score", 10, "fullScore", 100, "getGem", "gemType", 2, "no", 1, 2
+InitObject
+Push 1
+InitArray
+Push "item", "5字句子-單字", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game5"
+GetMember
+Push "dat"
+GetMember
+Push 1, "playQ", 10, "wrongScore", -3, "score", 15, "fullScore", 150, "getGem", "gemType", 2, "no", 2, 2
+InitObject
+Push 1
+InitArray
+Push "item", "5字句子-詞語 ", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game5"
+GetMember
+Push "dat"
+GetMember
+Push 2, "playQ", 10, "wrongScore", -1, "score", 10, "fullScore", 200, "getGem", "gemType", 2, "no", 4, 2
+InitObject
+Push 1
+InitArray
+Push "item", "5字句子-2個單字", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game5"
+GetMember
+Push "dat"
+GetMember
+Push 3, "playQ", 10, "wrongScore", -2, "score", 12, "fullScore", 240, "getGem", "gemType", 2, "no", 5, 2
+InitObject
+Push 1
+InitArray
+Push "item", "5字句子-2個詞語 ", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game5"
+GetMember
+Push "dat"
+GetMember
+Push 4, "playQ", 10, "wrongScore", -3, "score", 15, "fullScore", 300, "getGem", "gemType", 1, "no", 1, 2
+InitObject
+Push "gemType", 2, "no", 5, 2
+InitObject
+Push 2
+InitArray
+Push "item", "7字句子-2個單字", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game5"
+GetMember
+Push "dat"
+GetMember
+Push 5, "playQ", 10, "wrongScore", -4, "score", 17, "fullScore", 340, "getGem", "gemType", 1, "no", 2, 2
+InitObject
+Push "gemType", 2, "no", 5, 2
+InitObject
+Push 2
+InitArray
+Push "item", "7字句子-2個詞語 ", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game5"
+GetMember
+Push "dat"
+GetMember
+Push 6, "playQ", 10, "wrongScore", -5, "score", 20, "fullScore", 600, "getGem", "gemType", 1, "no", 3, 2
+InitObject
+Push "gemType", 2, "no", 5, 2
+InitObject
+Push 2
+InitArray
+Push "item", "7字句子-3個詞語", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game6"
+GetMember
+Push "timeType", "none"
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game6"
+GetMember
+Push "dat"
+GetMember
+Push 0.0, "playQ", 5, "wrongScore", -10, "score", 20, "fullScore", 100, "getGem", "gemType", 2, "no", 1, 2
+InitObject
+Push 1
+InitArray
+Push "item", "重組三塊", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game6"
+GetMember
+Push "dat"
+GetMember
+Push 1, "playQ", 5, "wrongScore", -15, "score", 30, "fullScore", 150, "getGem", "gemType", 2, "no", 2, 2
+InitObject
+Push 1
+InitArray
+Push "item", "重組四塊", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game6"
+GetMember
+Push "dat"
+GetMember
+Push 2, "playQ", 5, "wrongScore", -20, "score", 40, "fullScore", 200, "getGem", "gemType", 2, "no", 3, 2
+InitObject
+Push 1
+InitArray
+Push "item", "重組五塊", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game6"
+GetMember
+Push "dat"
+GetMember
+Push 3, "playQ", 5, "wrongScore", -25, "score", 50, "fullScore", 250, "getGem", "gemType", 4, "no", 2, 2
+InitObject
+Push "gemType", 2, "no", 3, 2
+InitObject
+Push 2
+InitArray
+Push "item", "重組六塊", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game6"
+GetMember
+Push "dat"
+GetMember
+Push 4, "playQ", 5, "wrongScore", -30, "score", 60, "fullScore", 300, "getGem", "gemType", 5, "no", 4, 2
+InitObject
+Push "gemType", 2, "no", 4, 2
+InitObject
+Push 2
+InitArray
+Push "item", "重組七塊", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game7"
+GetMember
+Push "timeType", "none"
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game7"
+GetMember
+Push "dat"
+GetMember
+Push 0.0, "playQ", 5, "wrongScore", -5, "score", 10, "fullScore", 100, "getGem", "gemType", 4, "no", 1, 2
+InitObject
+Push 1
+InitArray
+Push "item", "2選1(排2句)", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game7"
+GetMember
+Push "dat"
+GetMember
+Push 1, "playQ", 5, "wrongScore", -7, "score", 15, "fullScore", 150, "getGem", "gemType", 4, "no", 2, 2
+InitObject
+Push 1
+InitArray
+Push "item", "2選1(排3句)", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game7"
+GetMember
+Push "dat"
+GetMember
+Push 2, "playQ", 5, "wrongScore", -10, "score", 20, "fullScore", 200, "getGem", "gemType", 4, "no", 3, 2
+InitObject
+Push 1
+InitArray
+Push "item", "2選1(排4句)", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game7"
+GetMember
+Push "dat"
+GetMember
+Push 3, "playQ", 5, "wrongScore", -12, "score", 25, "fullScore", 250, "getGem", "gemType", 4, "no", 4, 2
+InitObject
+Push 1
+InitArray
+Push "item", "3選1(排2句)", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game7"
+GetMember
+Push "dat"
+GetMember
+Push 4, "playQ", 5, "wrongScore", -15, "score", 30, "fullScore", 300, "getGem", "gemType", 4, "no", 5, 2
+InitObject
+Push 1
+InitArray
+Push "item", "3選1(排3句)", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game7"
+GetMember
+Push "dat"
+GetMember
+Push 5, "playQ", 5, "wrongScore", -17, "score", 35, "fullScore", 350, "getGem", "gemType", 4, "no", 7, 2
+InitObject
+Push 1
+InitArray
+Push "item", "3選1(排4句)", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game8"
+GetMember
+Push "timeType", "none"
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game8"
+GetMember
+Push "dat"
+GetMember
+Push 0.0, "playQ", 10, "wrongScore", -5, "score", 10, "fullScore", 100, "getGem", "gemType", 4, "no", 1, 2
+InitObject
+Push 1
+InitArray
+Push "item", "上下、左右", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game8"
+GetMember
+Push "dat"
+GetMember
+Push 1, "playQ", 10, "wrongScore", -10, "score", 20, "fullScore", 200, "getGem", "gemType", 4, "no", 2, 2
+InitObject
+Push 1
+InitArray
+Push "item", "半包圍", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game8"
+GetMember
+Push "dat"
+GetMember
+Push 2, "playQ", 10, "wrongScore", -15, "score", 30, "fullScore", 300, "getGem", "gemType", 1, "no", 1, 2
+InitObject
+Push "gemType", 4, "no", 3, 2
+InitObject
+Push 2
+InitArray
+Push "item", "上中下、左中右", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game8"
+GetMember
+Push "dat"
+GetMember
+Push 3, "playQ", 10, "wrongScore", -20, "score", 40, "fullScore", 400, "getGem", "gemType", 3, "no", 2, 2
+InitObject
+Push "gemType", 4, "no", 4, 2
+InitObject
+Push 2
+InitArray
+Push "item", "左右下、左上下", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game8"
+GetMember
+Push "dat"
+GetMember
+Push 4, "playQ", 10, "wrongScore", -25, "score", 50, "fullScore", 500, "getGem", "gemType", 1, "no", 3, 2
+InitObject
+Push "gemType", 4, "no", 5, 2
+InitObject
+Push 2
+InitArray
+Push "item", "混合", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game9"
+GetMember
+Push "timeType", "none"
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game9"
+GetMember
+Push "dat"
+GetMember
+Push 0.0, "playQ", 10, "wrongScore", -5, "score", 10, "fullScore", 100, "getGem", "gemType", 4, "no", 1, 2
+InitObject
+Push 1
+InitArray
+Push "item", "6條柱,圖形", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game9"
+GetMember
+Push "dat"
+GetMember
+Push 1, "playQ", 10, "wrongScore", -7, "score", 15, "fullScore", 150, "getGem", "gemType", 4, "no", 2, 2
+InitObject
+Push 1
+InitArray
+Push "item", "6條柱,數字", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game9"
+GetMember
+Push "dat"
+GetMember
+Push 2, "playQ", 10, "wrongScore", -10, "score", 20, "fullScore", 200, "getGem", "gemType", 4, "no", 3, 2
+InitObject
+Push 1
+InitArray
+Push "item", "6條柱,英文字母", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game9"
+GetMember
+Push "dat"
+GetMember
+Push 3, "playQ", 10, "wrongScore", -12, "score", 25, "fullScore", 250, "getGem", "gemType", 1, "no", 1, 2
+InitObject
+Push "gemType", 4, "no", 4, 2
+InitObject
+Push 2
+InitArray
+Push "item", "5條柱,常用序列", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game9"
+GetMember
+Push "dat"
+GetMember
+Push 4, "playQ", 10, "wrongScore", -15, "score", 30, "fullScore", 300, "getGem", "gemType", 1, "no", 2, 2
+InitObject
+Push "gemType", 4, "no", 5, 2
+InitObject
+Push 2
+InitArray
+Push "item", "5條柱,分類", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game9"
+GetMember
+Push "dat"
+GetMember
+Push 5, "playQ", 10, "wrongScore", -17, "score", 35, "fullScore", 350, "getGem", "gemType", 3, "no", 2, 2
+InitObject
+Push "gemType", 4, "no", 6, 2
+InitObject
+Push 2
+InitArray
+Push "item", "部首/部件/字形尺", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game9"
+GetMember
+Push "dat"
+GetMember
+Push 6, "playQ", 10, "wrongScore", -20, "score", 40, "fullScore", 400, "getGem", "gemType", 3, "no", 3, 2
+InitObject
+Push "gemType", 4, "no", 7, 2
+InitObject
+Push 2
+InitArray
+Push "item", "4條柱,詞類", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game10"
+GetMember
+Push "timeType", "none"
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game10"
+GetMember
+Push "dat"
+GetMember
+Push 0.0, "playQ", 10, "wrongScore", -5, "score", 10, "fullScore", 100, "getGem", "gemType", 5, "no", 1, 2
+InitObject
+Push 1
+InitArray
+Push "item", "象形文字-最易", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game10"
+GetMember
+Push "dat"
+GetMember
+Push 1, "playQ", 10, "wrongScore", -10, "score", 20, "fullScore", 200, "getGem", "gemType", 5, "no", 2, 2
+InitObject
+Push 1
+InitArray
+Push "item", "象形文字-易", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game10"
+GetMember
+Push "dat"
+GetMember
+Push 2, "playQ", 10, "wrongScore", -15, "score", 30, "fullScore", 300, "getGem", "gemType", 5, "no", 3, 2
+InitObject
+Push 1
+InitArray
+Push "item", "象形文字-中", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game10"
+GetMember
+Push "dat"
+GetMember
+Push 3, "playQ", 10, "wrongScore", -20, "score", 40, "fullScore", 400, "getGem", "gemType", 1, "no", 1, 2
+InitObject
+Push "gemType", 5, "no", 4, 2
+InitObject
+Push 2
+InitArray
+Push "item", "象形文字-難", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game10"
+GetMember
+Push "dat"
+GetMember
+Push 4, "playQ", 10, "wrongScore", -20, "score", 50, "fullScore", 500, "getGem", "gemType", 1, "no", 2, 2
+InitObject
+Push "gemType", 5, "no", 5, 2
+InitObject
+Push 2
+InitArray
+Push "item", "象形文字-最難", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game11"
+GetMember
+Push "timeType", "none"
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game11"
+GetMember
+Push "dat"
+GetMember
+Push 0.0, "playQ", 30, "wrongScore", 0.0, "score", 5, "fullScore", 150, "getGem", "gemType", 5, "no", 1, 2
+InitObject
+Push 1
+InitArray
+Push "item", "速度慢", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game11"
+GetMember
+Push "dat"
+GetMember
+Push 1, "playQ", 30, "wrongScore", 0.0, "score", 9, "fullScore", 270, "getGem", "gemType", 5, "no", 2, 2
+InitObject
+Push 1
+InitArray
+Push "item", "速度中", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game11"
+GetMember
+Push "dat"
+GetMember
+Push 2, "playQ", 30, "wrongScore", 0.0, "score", 13, "fullScore", 390, "getGem", "gemType", 4, "no", 2, 2
+InitObject
+Push "gemType", 5, "no", 3, 2
+InitObject
+Push 2
+InitArray
+Push "item", "速度中快", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game11"
+GetMember
+Push "dat"
+GetMember
+Push 3, "playQ", 30, "wrongScore", 0.0, "score", 17, "fullScore", 510, "getGem", "gemType", 4, "no", 3, 2
+InitObject
+Push "gemType", 5, "no", 4, 2
+InitObject
+Push 2
+InitArray
+Push "item", "速度快", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game12"
+GetMember
+Push "timeType", "star"
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game12"
+GetMember
+Push "dat"
+GetMember
+Push 0.0, "playQ", 5, "wrongScore", -2, "score", 20, "fullScore", 100, "getGem", "gemType", 5, "no", 1, 2
+InitObject
+Push 1
+InitArray
+Push "item", "左右(左)", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game12"
+GetMember
+Push "dat"
+GetMember
+Push 1, "playQ", 5, "wrongScore", -3, "score", 30, "fullScore", 150, "getGem", "gemType", 5, "no", 2, 2
+InitObject
+Push 1
+InitArray
+Push "item", "左右(右)", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game12"
+GetMember
+Push "dat"
+GetMember
+Push 2, "playQ", 5, "wrongScore", -4, "score", 40, "fullScore", 200, "getGem", "gemType", 5, "no", 3, 2
+InitObject
+Push 1
+InitArray
+Push "item", "上下(上)", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game12"
+GetMember
+Push "dat"
+GetMember
+Push 3, "playQ", 5, "wrongScore", -5, "score", 50, "fullScore", 250, "getGem", "gemType", 5, "no", 4, 2
+InitObject
+Push 1
+InitArray
+Push "item", "上下(下)", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game12"
+GetMember
+Push "dat"
+GetMember
+Push 4, "playQ", 5, "wrongScore", -6, "score", 60, "fullScore", 300, "getGem", "gemType", 3, "no", 1, 2
+InitObject
+Push "gemType", 5, "no", 5, 2
+InitObject
+Push 2
+InitArray
+Push "item", "半包圍(1)", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game12"
+GetMember
+Push "dat"
+GetMember
+Push 5, "playQ", 5, "wrongScore", -7, "score", 70, "fullScore", 350, "getGem", "gemType", 3, "no", 2, 2
+InitObject
+Push "gemType", 5, "no", 5, 2
+InitObject
+Push 2
+InitArray
+Push "item", "半包圍(2)", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game13"
+GetMember
+Push "timeType", "heart"
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game13"
+GetMember
+Push "dat"
+GetMember
+Push 0.0, "playQ", 20, "wrongScore", -2, "score", 5, "fullScore", 100, "getGem", "gemType", 5, "no", 1, 2
+InitObject
+Push 1
+InitArray
+Push "item", "2種字形尺", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game13"
+GetMember
+Push "dat"
+GetMember
+Push 1, "playQ", 20, "wrongScore", -5, "score", 10, "fullScore", 200, "getGem", "gemType", 5, "no", 2, 2
+InitObject
+Push 1
+InitArray
+Push "item", "3種字形尺", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game13"
+GetMember
+Push "dat"
+GetMember
+Push 2, "playQ", 30, "wrongScore", -4, "score", 8, "fullScore", 240, "getGem", "gemType", 5, "no", 3, 2
+InitObject
+Push 1
+InitArray
+Push "item", "4種字形尺", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game13"
+GetMember
+Push "dat"
+GetMember
+Push 3, "playQ", 30, "wrongScore", -4, "score", 9, "fullScore", 270, "getGem", "gemType", 2, "no", 1, 2
+InitObject
+Push "gemType", 5, "no", 4, 2
+InitObject
+Push 2
+InitArray
+Push "item", "5種字形尺", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game13"
+GetMember
+Push "dat"
+GetMember
+Push 4, "playQ", 40, "wrongScore", -4, "score", 8, "fullScore", 320, "getGem", "gemType", 1, "no", 1, 2
+InitObject
+Push "gemType", 5, "no", 5, 2
+InitObject
+Push 2
+InitArray
+Push "item", "6種字形尺", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game13"
+GetMember
+Push "dat"
+GetMember
+Push 5, "playQ", 40, "wrongScore", -5, "score", 10, "fullScore", 400, "getGem", "gemType", 1, "no", 2, 2
+InitObject
+Push "gemType", 5, "no", 5, 2
+InitObject
+Push 2
+InitArray
+Push "item", "7種字形尺", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game14"
+GetMember
+Push "timeType", "star"
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game14"
+GetMember
+Push "dat"
+GetMember
+Push 0.0, "playQ", 3, "wrongScore", -15, "score", 50, "fullScore", 150, "getGem", "gemType", 5, "no", 1, 2
+InitObject
+Push 1
+InitArray
+Push "item", "2x2格", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game14"
+GetMember
+Push "dat"
+GetMember
+Push 1, "playQ", 3, "wrongScore", -25, "score", 100, "fullScore", 300, "getGem", "gemType", 5, "no", 2, 2
+InitObject
+Push 1
+InitArray
+Push "item", "2x3格", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game14"
+GetMember
+Push "dat"
+GetMember
+Push 2, "playQ", 3, "wrongScore", -40, "score", 150, "fullScore", 450, "getGem", "gemType", 3, "no", 3, 2
+InitObject
+Push "gemType", 5, "no", 3, 2
+InitObject
+Push 2
+InitArray
+Push "item", "3x3格", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game14"
+GetMember
+Push "dat"
+GetMember
+Push 3, "playQ", 3, "wrongScore", -50, "score", 200, "fullScore", 600, "getGem", "gemType", 1, "no", 5, 2
+InitObject
+Push "gemType", 5, "no", 4, 2
+InitObject
+Push 2
+InitArray
+Push "item", "3x4格", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game15"
+GetMember
+Push "timeType", "star"
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game15"
+GetMember
+Push "dat"
+GetMember
+Push 0.0, "playQ", 10, "wrongScore", -5, "score", 10, "fullScore", 100, "getGem", "gemType", 5, "no", 3, 2
+InitObject
+Push 1
+InitArray
+Push "item", "二至四劃", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game15"
+GetMember
+Push "dat"
+GetMember
+Push 1, "playQ", 10, "wrongScore", -12, "score", 25, "fullScore", 250, "getGem", "gemType", 1, "no", 3, 2
+InitObject
+Push "gemType", 5, "no", 4, 2
+InitObject
+Push 2
+InitArray
+Push "item", "五至七劃", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game15"
+GetMember
+Push "dat"
+GetMember
+Push 2, "playQ", 10, "wrongScore", -20, "score", 40, "fullScore", 400, "getGem", "gemType", 3, "no", 4, 2
+InitObject
+Push "gemType", 5, "no", 5, 2
+InitObject
+Push 2
+InitArray
+Push "item", "八至十劃", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game15"
+GetMember
+Push "dat"
+GetMember
+Push 3, "playQ", 10, "wrongScore", -30, "score", 60, "fullScore", 600, "getGem", "gemType", 3, "no", 5, 2
+InitObject
+Push "gemType", 5, "no", 5, 2
+InitObject
+Push 2
+InitArray
+Push "item", "十一至十三劃", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game16"
+GetMember
+Push "timeType", "timer"
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game16"
+GetMember
+Push "dat"
+GetMember
+Push 0.0, "playQ", 5, "wrongScore", 0.0, "score", 20, "fullScore", 100, "getGem", "gemType", 5, "no", 1, 2
+InitObject
+Push 1
+InitArray
+Push "avaTime", 60, "item", "4個同音字-20塊", 7
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game16"
+GetMember
+Push "dat"
+GetMember
+Push 1, "playQ", 5, "wrongScore", 0.0, "score", 30, "fullScore", 150, "getGem", "gemType", 5, "no", 2, 2
+InitObject
+Push 1
+InitArray
+Push "avaTime", 75, "item", "2個同音字-20塊", 7
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game16"
+GetMember
+Push "dat"
+GetMember
+Push 2, "playQ", 5, "wrongScore", 0.0, "score", 40, "fullScore", 200, "getGem", "gemType", 5, "no", 3, 2
+InitObject
+Push 1
+InitArray
+Push "avaTime", 90, "item", "4個同音字-30塊", 7
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game16"
+GetMember
+Push "dat"
+GetMember
+Push 3, "playQ", 5, "wrongScore", 0.0, "score", 50, "fullScore", 250, "getGem", "gemType", 5, "no", 4, 2
+InitObject
+Push 1
+InitArray
+Push "avaTime", 120, "item", "2個同音字-30塊", 7
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game16"
+GetMember
+Push "dat"
+GetMember
+Push 4, "playQ", 5, "wrongScore", 0.0, "score", 60, "fullScore", 300, "getGem", "gemType", 4, "no", 1, 2
+InitObject
+Push "gemType", 5, "no", 5, 2
+InitObject
+Push 2
+InitArray
+Push "avaTime", 150, "item", "4個同音字-40塊", 7
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game16"
+GetMember
+Push "dat"
+GetMember
+Push 5, "playQ", 5, "wrongScore", 0.0, "score", 70, "fullScore", 350, "getGem", "gemType", 4, "no", 2, 2
+InitObject
+Push "gemType", 5, "no", 6, 2
+InitObject
+Push 2
+InitArray
+Push "avaTime", 180, "item", "2個同音字-40塊", 7
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game17"
+GetMember
+Push "timeType", "none"
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game17"
+GetMember
+Push "dat"
+GetMember
+Push 0.0, "playQ", 5, "wrongScore", -5, "score", 10, "fullScore", 100, "getGem", "gemType", 5, "no", 1, 2
+InitObject
+Push 1
+InitArray
+Push "avaTime", 60, "item", "4張砌圖", 7
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game17"
+GetMember
+Push "dat"
+GetMember
+Push 1, "playQ", 5, "wrongScore", -10, "score", 20, "fullScore", 200, "getGem", "gemType", 1, "no", 1, 2
+InitObject
+Push "gemType", 5, "no", 2, 2
+InitObject
+Push 2
+InitArray
+Push "avaTime", 60, "item", "4張砌圖 ", 7
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game17"
+GetMember
+Push "dat"
+GetMember
+Push 2, "playQ", 5, "wrongScore", -15, "score", 30, "fullScore", 300, "getGem", "gemType", 3, "no", 2, 2
+InitObject
+Push "gemType", 5, "no", 3, 2
+InitObject
+Push 2
+InitArray
+Push "avaTime", 60, "item", "6張砌圖", 7
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game17"
+GetMember
+Push "dat"
+GetMember
+Push 3, "playQ", 5, "wrongScore", -20, "score", 40, "fullScore", 400, "getGem", "gemType", 1, "no", 3, 2
+InitObject
+Push "gemType", 5, "no", 4, 2
+InitObject
+Push 2
+InitArray
+Push "avaTime", 60, "item", "6張砌圖", 7
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game18"
+GetMember
+Push "timeType", "heart"
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game18"
+GetMember
+Push "dat"
+GetMember
+Push 0.0, "playQ", 8, "wrongScore", -10, "score", 20, "fullScore", 160, "getGem", "gemType", 3, "no", 2, 2
+InitObject
+Push 1
+InitArray
+Push "item", "難度低", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game18"
+GetMember
+Push "dat"
+GetMember
+Push 1, "playQ", 8, "wrongScore", -15, "score", 30, "fullScore", 240, "getGem", "gemType", 1, "no", 1, 2
+InitObject
+Push "gemType", 3, "no", 3, 2
+InitObject
+Push 2
+InitArray
+Push "item", "難度中", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game18"
+GetMember
+Push "dat"
+GetMember
+Push 2, "playQ", 8, "wrongScore", -20, "score", 40, "fullScore", 320, "getGem", "gemType", 7, "no", 2, 2
+InitObject
+Push "gemType", 3, "no", 4, 2
+InitObject
+Push 2
+InitArray
+Push "item", "難度中高", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game18"
+GetMember
+Push "dat"
+GetMember
+Push 3, "playQ", 8, "wrongScore", -25, "score", 50, "fullScore", 400, "getGem", "gemType", 8, "no", 2, 2
+InitObject
+Push "gemType", 3, "no", 5, 2
+InitObject
+Push 2
+InitArray
+Push "item", "難度高", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game19"
+GetMember
+Push "timeType", "heart"
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game19"
+GetMember
+Push "dat"
+GetMember
+Push 0.0, "playQ", 10, "wrongScore", -5, "score", 15, "fullScore", 150, "getGem", "gemType", 1, "no", 2, 2
+InitObject
+Push 1
+InitArray
+Push "item", "字長度短", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game19"
+GetMember
+Push "dat"
+GetMember
+Push 1, "playQ", 10, "wrongScore", -15, "score", 35, "fullScore", 350, "getGem", "gemType", 3, "no", 1, 2
+InitObject
+Push "gemType", 1, "no", 3, 2
+InitObject
+Push 2
+InitArray
+Push "item", "字長度中", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game19"
+GetMember
+Push "dat"
+GetMember
+Push 2, "playQ", 10, "wrongScore", -20, "score", 40, "fullScore", 400, "getGem", "gemType", 6, "no", 2, 2
+InitObject
+Push "gemType", 1, "no", 4, 2
+InitObject
+Push 2
+InitArray
+Push "item", "字長度長", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game19"
+GetMember
+Push "dat"
+GetMember
+Push 3, "playQ", 10, "wrongScore", -30, "score", 60, "fullScore", 600, "getGem", "gemType", 9, "no", 2, 2
+InitObject
+Push "gemType", 1, "no", 5, 2
+InitObject
+Push 2
+InitArray
+Push "item", "字長度最長", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game20"
+GetMember
+Push "timeType", "none"
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game20"
+GetMember
+Push "dat"
+GetMember
+Push 0.0, "playQ", 20, "wrongScore", -5, "score", 5, "fullScore", 100, "getGem", "gemType", 1, "no", 1, 2
+InitObject
+Push 1
+InitArray
+Push "item", "兩個整數", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game20"
+GetMember
+Push "dat"
+GetMember
+Push 1, "playQ", 20, "wrongScore", -10, "score", 10, "fullScore", 200, "getGem", "gemType", 3, "no", 2, 2
+InitObject
+Push 1
+InitArray
+Push "item", "兩個小數", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game20"
+GetMember
+Push "dat"
+GetMember
+Push 2, "playQ", 20, "wrongScore", -15, "score", 15, "fullScore", 300, "getGem", "gemType", 1, "no", 3, 2
+InitObject
+Push 1
+InitArray
+Push "item", "兩個分數", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game20"
+GetMember
+Push "dat"
+GetMember
+Push 3, "playQ", 20, "wrongScore", -20, "score", 20, "fullScore", 400, "getGem", "gemType", 10, "no", 1, 2
+InitObject
+Push "gemType", 3, "no", 4, 2
+InitObject
+Push 2
+InitArray
+Push "item", "三個整數", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game20"
+GetMember
+Push "dat"
+GetMember
+Push 4, "playQ", 20, "wrongScore", -25, "score", 25, "fullScore", 500, "getGem", "gemType", 10, "no", 2, 2
+InitObject
+Push "gemType", 1, "no", 4, 2
+InitObject
+Push 2
+InitArray
+Push "item", "三個小數", 6
+InitObject
+SetMember
+Push "gameSpec"
+GetVariable
+Push "game20"
+GetMember
+Push "dat"
+GetMember
+Push 5, "playQ", 20, "wrongScore", -30, "score", 30, "fullScore", 600, "getGem", "gemType", 10, "no", 3, 2
+InitObject
+Push "gemType", 3, "no", 4, 2
+InitObject
+Push 2
+InitArray
+Push "item", "三個分數", 6
+InitObject
+SetMember
+}

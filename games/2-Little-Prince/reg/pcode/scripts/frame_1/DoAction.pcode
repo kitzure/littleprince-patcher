@@ -1,0 +1,72 @@
+ConstantPool "_level0", "activationSuccess", "saveActivation", "e000", "getHDKey", "P1-ABCD-EFGH-IJKL-MNOP", "a@b.com", "12345678", "yoke", "this", "onEnterFrame", "getBytesLoaded", "getBytesTotal", "checkActivation", "AAAA-AAA3"
+Push "_level0"
+GetVariable
+Not
+If loc0148
+Push "_level0"
+GetVariable
+Push "activationSuccess"
+DefineFunction2 "", 3, 4, false, false, true, false, true, false, true, false, false, 1, "sn", 2, "hdkey", 3, "akey" {
+Push true
+Return
+}
+SetMember
+Push "_level0"
+GetVariable
+Push "getHDKey"
+DefineFunction2 "", 0, 3, false, true, true, false, true, false, false, true, false {
+Push "AAAA-AAA3"
+Return
+}
+SetMember
+Push "_level0"
+GetVariable
+Push "saveActivation"
+GetMember
+Not
+If loc0167
+Push "e000"
+Push 0
+Push "_level0"
+GetVariable
+Push "getHDKey"
+CallMethod
+Push "P1-ABCD-EFGH-IJKL-MNOP"
+Push "a@b.com"
+Push "12345678"
+Jump loc014d
+loc0148:Jump loc01cb
+loc014d:Push "yoke"
+Push 6
+Push "_level0"
+GetVariable
+Push "saveActivation"
+CallMethod
+Pop
+loc0167:Push "this"
+GetVariable
+Push "onEnterFrame"
+DefineFunction2 "", 0, 3, false, true, true, false, true, false, false, true, false {
+Push 0
+Push register1
+Push "getBytesLoaded"
+CallMethod
+Push 0
+Push register1
+Push "getBytesTotal"
+CallMethod
+Equals2
+Not
+If loc01ca
+Push 0
+Push register2
+Push "checkActivation"
+CallMethod
+Pop
+Push register1
+Push "onEnterFrame"
+Delete
+Pop
+}
+loc01ca:SetMember
+loc01cb:

@@ -1,0 +1,9 @@
+Push "_parent"
+GetVariable
+Push "mapEngine_Current"
+GetMember
+Push 1, "sha"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop

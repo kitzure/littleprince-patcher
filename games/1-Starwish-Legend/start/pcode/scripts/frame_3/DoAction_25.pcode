@@ -1,0 +1,156 @@
+ConstantPool "which", "reuse", "currentCursor", "Mouse", "show", "cursor", "gotoAndStop", "hide", "bossStatus", "question", "onMouseMove", "_x", "", "_y", "_ymouse", "_xmouse", "header", "hitTest", "gameBar"
+DefineFunction2 "showCursor", 1, 2, false, true, true, false, true, false, true, false, false, 0, "which" {
+Push "which"
+GetVariable
+Push "reuse"
+Equals2
+Not
+If loc0132
+Push "currentCursor"
+GetVariable
+Push undefined
+Equals2
+Not
+If loc00ea
+Push 0.0, "Mouse"
+GetVariable
+Push "show"
+CallMethod
+Pop
+Jump loc012d
+loc00ea:Push "currentCursor"
+GetVariable
+Push 1, "cursor"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, 1, "cursor"
+GetVariable
+StartDrag
+Push 0.0, "Mouse"
+GetVariable
+Push "hide"
+CallMethod
+Pop
+loc012d:Jump loc017e
+loc0132:Push "which"
+GetVariable
+Push 1, "cursor"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, 1, "cursor"
+GetVariable
+StartDrag
+Push "currentCursor", "which"
+GetVariable
+SetVariable
+Push 0.0, "Mouse"
+GetVariable
+Push "hide"
+CallMethod
+Pop
+loc017e:Push "bossStatus"
+GetVariable
+Push "question"
+Equals2
+Not
+Push "currentCursor"
+GetVariable
+Push undefined
+Equals2
+Not
+And
+Not
+If loc0286
+Push "onMouseMove"
+DefineFunction2 "", 0, 2, false, true, true, false, true, false, true, false, false {
+Push "cursor"
+GetVariable
+Push "_x", "", 20
+GetProperty
+SetMember
+Push "cursor"
+GetVariable
+Push "_y", "", 21
+GetProperty
+SetMember
+Push true, register1, "_ymouse"
+GetMember
+Push register1, "_xmouse"
+GetMember
+Push 3, "header"
+GetVariable
+Push "hitTest"
+CallMethod
+Not
+Push true, register1, "_ymouse"
+GetMember
+Push register1, "_xmouse"
+GetMember
+Push 3, "gameBar"
+GetVariable
+Push "hitTest"
+CallMethod
+Not
+And
+Not
+If loc0258
+Push "which"
+GetVariable
+Push 1, "cursor"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, "Mouse"
+GetVariable
+Push "hide"
+CallMethod
+Pop
+Jump loc0285
+loc0258:Push 1, 1, "cursor"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, "Mouse"
+GetVariable
+Push "show"
+CallMethod
+Pop
+}
+loc0285:SetVariable
+}
+loc0286:DefineFunction2 "hideCursor", 1, 2, false, false, true, false, true, false, true, false, false, 1, "remain" {
+Push 1, 1, "cursor"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
+Push "cursor"
+GetVariable
+Push "_x", -100
+SetMember
+Push "cursor"
+GetVariable
+Push "_y", -100
+SetMember
+Push "onMouseMove"
+Delete2
+Pop
+Push register1
+Not
+Not
+If loc02f6
+Push "currentCursor"
+Delete2
+Pop
+loc02f6:Push 0.0, "Mouse"
+GetVariable
+Push "show"
+CallMethod
+Pop
+}

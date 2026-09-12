@@ -1,0 +1,88 @@
+ConstantPool "edCityRestrict", "ver", "webdemo", "cddemo", "webdemoedcity", "gameSpec", "game", "restrictLevel", "cdtest", "dat", "length"
+DefineFunction2 "initRestrictLevel", 0, 2, false, false, true, false, true, false, true, false, false {
+Push "edCityRestrict", 6, 3, 4, 3, 4, 2, 2, 3, 4, 3, 2, 5, 2, 2, 3, 5, 5, 4, 4, 3, 20
+InitArray
+SetVariable
+Push 1
+StoreRegister 1
+Pop
+loc00fc:Push register1, 20
+Greater
+Not
+Not
+If loc01f0
+Push "ver"
+GetVariable
+Push "webdemo"
+Equals2
+PushDuplicate
+If loc012d
+Pop
+Push "ver"
+GetVariable
+Push "cddemo"
+Equals2
+loc012d:PushDuplicate
+If loc0140
+Pop
+Push "ver"
+GetVariable
+Push "webdemoedcity"
+Equals2
+loc0140:Not
+If loc0165
+Push "gameSpec"
+GetVariable
+Push "game", register1
+Add2
+GetMember
+Push "restrictLevel", 1
+SetMember
+Jump loc01e0
+loc0165:Push "ver"
+GetVariable
+Push "webdemoedcity"
+Equals2
+PushDuplicate
+If loc0184
+Pop
+Push "ver"
+GetVariable
+Push "cdtest"
+Equals2
+loc0184:Not
+If loc01b3
+Push "gameSpec"
+GetVariable
+Push "game", register1
+Add2
+GetMember
+Push "restrictLevel", "edCityRestrict"
+GetVariable
+Push register1, 1
+Subtract
+GetMember
+SetMember
+Jump loc01e0
+loc01b3:Push "gameSpec"
+GetVariable
+Push "game", register1
+Add2
+GetMember
+Push "restrictLevel", "gameSpec"
+GetVariable
+Push "game", register1
+Add2
+GetMember
+Push "dat"
+GetMember
+Push "length"
+GetMember
+SetMember
+loc01e0:Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc00fc
+}
+loc01f0:

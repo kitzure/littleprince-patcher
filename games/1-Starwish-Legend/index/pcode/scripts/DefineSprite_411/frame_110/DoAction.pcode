@@ -1,0 +1,10 @@
+Push "_parent"
+GetVariable
+Push "map"
+GetMember
+Push "core"
+GetMember
+Push "player"
+GetMember
+Push "_visible", true
+SetMember

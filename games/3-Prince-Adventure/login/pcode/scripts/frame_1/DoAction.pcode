@@ -1,0 +1,32 @@
+ConstantPool "_level0", "activationSuccess", "verNumber", "_root", "this", "_visible"
+Push "_level0"
+GetVariable
+Not
+If loc0077
+Push "_level0"
+GetVariable
+Push "activationSuccess"
+DefineFunction2 "", 3, 4, false, false, true, false, true, false, true, false, false, 1, "sn", 2, "hdkey", 3, "akey" {
+Push true
+Return
+}
+SetMember
+loc0077:Push "verNumber"
+Push "_root"
+GetVariable
+Push "verNumber"
+GetMember
+SetVariable
+Push "_root"
+GetVariable
+Push "this"
+GetVariable
+Equals2
+Not
+If loc00ad
+Push "this"
+GetVariable
+Push "_visible"
+Push false
+SetMember
+loc00ad:Stop

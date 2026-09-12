@@ -1,0 +1,695 @@
+ConstantPool "preloadFile(", "fileArray", "toString", ")", "traceOut", "verShort:", "verShort", "loadParam", "we", "loading", "popup", "Array", "filrArray Length:", "length", "i", "file", "push", "display", "loc", "ver", "substr", "cd", "totalSize.php?path=", "_level0", "totalSize:", "onDone", "tmpLoader", "unloadMovie", "showComplete", "lib", "LoadQue", "loadedSize", "totalFileSize", "root", "mc", "insertHere_", "createEmptyMovieClip", "_visible", "url", "isShown", "mcLoc", "id", "onError", "showLoadingError", "onProgress", ",", "fileSizeArr", "indexOf", "tot: ", "totalSizeArr", "split", "showProgress", "_visble", "queItem", "loadedfile", "getNextHighestDepth", "holder", "_y", "holderProgress", "loadMovie", "myID", "myFile", "onEnterFrame", "_parent", "gotoAndStop", "getBytesLoaded", "getBytesTotal", "loadCounter", "finish calling loading", "popedLoading", "prepareLoadingPopup", "showLoading", "removeMovieClip", "showNow", "killPopup", "completeAction", "System", "onStatus", "The file (", ") has error."
+DefineFunction2 "preloadFile", 1, 12, false, false, true, false, true, false, false, true, false, 0, "fileArray" {
+Push "preloadFile(", 0.0, "fileArray"
+GetVariable
+Push "toString"
+CallMethod
+Add2
+Push ")"
+Add2
+Push 1, "traceOut"
+CallFunction
+Pop
+Push "verShort:", "verShort"
+GetVariable
+Add2
+Push 1, "traceOut"
+CallFunction
+Pop
+Push "loadParam", "fileArray"
+GetVariable
+SetVariable
+Push "verShort"
+GetVariable
+Push "we"
+Equals2
+Not
+If loc094e
+Push "loading", 1, "popup"
+CallFunction
+Pop
+Push 0.0, "Array"
+NewObject
+StoreRegister 5
+Pop
+Push 0.0, "Array"
+NewObject
+StoreRegister 7
+Pop
+Push 0.0, "Array"
+NewObject
+StoreRegister 6
+Pop
+Push "filrArray Length:", "fileArray"
+GetVariable
+Push "length"
+GetMember
+Add2
+Push 1, "traceOut"
+CallFunction
+Pop
+Push "i", 0.0
+DefineLocal
+loc03f4:Push "i"
+GetVariable
+Push "fileArray"
+GetVariable
+Push "length"
+GetMember
+Less2
+Not
+If loc047f
+Push "fileArray"
+GetVariable
+Push "i"
+GetVariable
+GetMember
+Push "file"
+GetMember
+Push 1, register5, "push"
+CallMethod
+Pop
+Push "fileArray"
+GetVariable
+Push "i"
+GetVariable
+GetMember
+Push "display"
+GetMember
+Push 1, register7, "push"
+CallMethod
+Pop
+Push "fileArray"
+GetVariable
+Push "i"
+GetVariable
+GetMember
+Push "loc"
+GetMember
+Push 1, register6, "push"
+CallMethod
+Pop
+Push "i", "i"
+GetVariable
+Increment
+SetVariable
+Jump loc03f4
+loc047f:Push 0.0, "Array"
+NewObject
+StoreRegister 11
+Pop
+Push 0.0
+StoreRegister 10
+Pop
+Push 2, 0.0, 2, "ver"
+GetVariable
+Push "substr"
+CallMethod
+Push "cd"
+Equals2
+Not
+Not
+If loc04ed
+Push "totalSize.php?path=", 0.0, register5, "toString"
+CallMethod
+Add2
+Push "_level0"
+GetURL2 true, false, 0
+loc04ed:Push "totalSize:", register10
+Add2
+Push 1, "traceOut"
+CallFunction
+Pop
+Push 0.0
+InitObject
+StoreRegister 9
+Pop
+Push register9, "onDone"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 0.0, register1, "tmpLoader"
+GetMember
+Push "unloadMovie"
+CallMethod
+Pop
+Push 0.0, "showComplete"
+CallFunction
+Pop
+}
+SetMember
+Push register9, 1, "lib"
+GetVariable
+Push "LoadQue"
+GetMember
+Push "LoadQue"
+NewMethod
+StoreRegister 8
+Pop
+Push "loadedSize", 0.0, "Array"
+NewObject
+DefineLocal
+Push "totalFileSize", 0.0, "Array"
+NewObject
+DefineLocal
+Push 0.0
+StoreRegister 2
+Pop
+loc05a1:Push register2, register5, "length"
+GetMember
+Less2
+Not
+If loc05f8
+Push 0.0, 1, "loadedSize"
+GetVariable
+Push "push"
+CallMethod
+Pop
+Push 0.0, 1, "totalFileSize"
+GetVariable
+Push "push"
+CallMethod
+Pop
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc05a1
+loc05f8:Push "i", 0.0
+DefineLocal
+loc0607:Push "i"
+GetVariable
+Push register5, "length"
+GetMember
+Less2
+Not
+If loc0949
+Push "root", register1
+DefineLocal
+Push 0.0
+InitObject
+StoreRegister 3
+Pop
+Push register3, "mc", "i"
+GetVariable
+Push "insertHere_", "i"
+GetVariable
+Add2
+Push 2, register1, "tmpLoader"
+GetMember
+Push "createEmptyMovieClip"
+CallMethod
+SetMember
+Push register3, "mc"
+GetMember
+Push "_visible", false
+SetMember
+Push register3, "url", register5, "i"
+GetVariable
+GetMember
+SetMember
+Push register3, "isShown", register7, "i"
+GetVariable
+GetMember
+SetMember
+Push register3, "mcLoc", register6, "i"
+GetVariable
+GetMember
+SetMember
+Push register3, "mc"
+GetMember
+Push "id", "i"
+GetVariable
+SetMember
+Push register3, "onError"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "errLink" {
+Push register1, 1, "showLoadingError"
+CallFunction
+Pop
+}
+SetMember
+Push register3, "onProgress"
+DefineFunction2 "", 2, 7, false, false, true, false, true, false, false, true, false, 6, "per", 5, "tot" {
+Push register6, -10
+Equals2
+PushDuplicate
+Not
+If loc070c
+Pop
+Push register5, -10
+Equals2
+loc070c:Not
+If loc0728
+Push register1, "url"
+GetMember
+Push 1, register1, "onError"
+CallMethod
+Pop
+loc0728:Push ",", 1, "root"
+GetVariable
+Push "fileSizeArr"
+GetMember
+Push "indexOf"
+CallMethod
+Push 0.0
+Less2
+Not
+Not
+If loc078b
+Push "tot: ", register5
+Add2
+Push 1, "traceOut"
+CallFunction
+Pop
+Push "root"
+GetVariable
+Push "totalSizeArr", ",", 1, "root"
+GetVariable
+Push "fileSizeArr"
+GetMember
+Push "split"
+CallMethod
+SetMember
+loc078b:Push "loadedSize"
+GetVariable
+Push register1, "mc"
+GetMember
+Push "id"
+GetMember
+Push register6
+SetMember
+Push "totalFileSize"
+GetVariable
+Push register1, "mc"
+GetMember
+Push "id"
+GetMember
+Push register5
+SetMember
+Push 0.0
+StoreRegister 4
+Pop
+Push 0.0
+StoreRegister 3
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc07f2:Push register2, "fileArray"
+GetVariable
+Push "length"
+GetMember
+Less2
+Not
+If loc08b3
+Push register4, "loadedSize"
+GetVariable
+Push register2
+GetMember
+Add2
+StoreRegister 4
+Pop
+Push "totalFileSize"
+GetVariable
+Push register2
+GetMember
+ToNumber
+Push 0.0
+Equals2
+Not
+PushDuplicate
+If loc0868
+Pop
+Push 2, 0.0, 2, "root"
+GetVariable
+Push "ver"
+GetMember
+Push "substr"
+CallMethod
+Push "cd"
+Equals2
+loc0868:Not
+If loc0888
+Push register3, "totalFileSize"
+GetVariable
+Push register2
+GetMember
+ToNumber
+Add2
+StoreRegister 3
+Pop
+Jump loc08a3
+loc0888:Push register3, "root"
+GetVariable
+Push "totalSizeArr"
+GetMember
+Push register2
+GetMember
+ToNumber
+Add2
+StoreRegister 3
+Pop
+loc08a3:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc07f2
+loc08b3:Push register6, -10
+Equals2
+PushDuplicate
+Not
+If loc08d1
+Pop
+Push register5, -10
+Equals2
+loc08d1:Not
+Not
+If loc08ee
+Push register3, register4, 2, "root"
+GetVariable
+Push "showProgress"
+CallMethod
+Pop
+}
+loc08ee:SetMember
+Push register3, "onDone"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "mc"
+GetMember
+Push "_visble", false
+SetMember
+Push 0.0, register1, "mc"
+GetMember
+Push "unloadMovie"
+CallMethod
+Pop
+}
+SetMember
+Push register3, 1, register8, "queItem"
+CallMethod
+Pop
+Push "i", "i"
+GetVariable
+Increment
+SetVariable
+Jump loc0607
+loc0949:Jump loc0b9b
+loc094e:Push "loadedfile", 0.0
+SetVariable
+Push "i", 0.0
+DefineLocal
+loc096c:Push "i"
+GetVariable
+Push "fileArray"
+GetVariable
+Push "length"
+GetMember
+Push 1
+Subtract
+Greater
+Not
+Not
+If loc0b31
+Push 0.0, register1, "getNextHighestDepth"
+CallMethod
+Push "holder", "i"
+GetVariable
+Add2
+Push 2, register1, "createEmptyMovieClip"
+CallMethod
+Pop
+Push register1, "holder", "i"
+GetVariable
+Add2
+GetMember
+Push "_visible", false
+SetMember
+Push register1, "holder", "i"
+GetVariable
+Add2
+GetMember
+Push "_y", 3000
+SetMember
+Push 0.0, register1, "getNextHighestDepth"
+CallMethod
+Push "holderProgress", "i"
+GetVariable
+Add2
+Push 2, register1, "createEmptyMovieClip"
+CallMethod
+Pop
+Push "fileArray"
+GetVariable
+Push "i"
+GetVariable
+GetMember
+Push "file"
+GetMember
+Push 1, register1, "holder", "i"
+GetVariable
+Add2
+GetMember
+Push "loadMovie"
+CallMethod
+Pop
+Push register1, "holderProgress", "i"
+GetVariable
+Add2
+GetMember
+Push "myID", "i"
+GetVariable
+SetMember
+Push register1, "holderProgress", "i"
+GetVariable
+Add2
+GetMember
+Push "myFile", "fileArray"
+GetVariable
+Push "i"
+GetVariable
+GetMember
+Push "file"
+GetMember
+SetMember
+Push register1, "holderProgress", "i"
+GetVariable
+Add2
+GetMember
+Push "onEnterFrame"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 1, 1, register1, "_parent"
+GetMember
+Push "holder", register1, "myID"
+GetMember
+Add2
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1, "holder", "i"
+GetVariable
+Add2
+GetMember
+Push "_visible", false
+SetMember
+Push 0.0, register1, "_parent"
+GetMember
+Push "holder", register1, "myID"
+GetMember
+Add2
+GetMember
+Push "getBytesLoaded"
+CallMethod
+Push 0.0, register1, "_parent"
+GetMember
+Push "holder", register1, "myID"
+GetMember
+Add2
+GetMember
+Push "getBytesTotal"
+CallMethod
+Equals2
+Not
+If loc0b21
+Push "loadedfile", "loadedfile"
+GetVariable
+Increment
+SetVariable
+Push register1, "onEnterFrame"
+Delete
+Pop
+}
+loc0b21:SetMember
+Push "i", "i"
+GetVariable
+Increment
+SetVariable
+Jump loc096c
+loc0b31:Push 0.0, register1, "getNextHighestDepth"
+CallMethod
+Push "loadCounter", 2, register1, "createEmptyMovieClip"
+CallMethod
+Pop
+Push "loadCounter"
+GetVariable
+Push "onEnterFrame"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "loadedfile"
+GetVariable
+Push "loadParam"
+GetVariable
+Push "length"
+GetMember
+Equals2
+Not
+If loc0b9a
+Push 0.0, "showComplete"
+CallFunction
+Pop
+Push register1, "onEnterFrame"
+Delete
+Pop
+}
+loc0b9a:SetMember
+loc0b9b:Push "finish calling loading", 1, "traceOut"
+CallFunction
+Pop
+}
+DefineFunction2 "showProgress", 2, 3, false, false, true, false, true, false, true, false, false, 1, "loadedBytes", 2, "totalBytes" {
+Push "popedLoading"
+GetVariable
+Not
+Not
+If loc0bf6
+Push 0.0, "prepareLoadingPopup"
+CallFunction
+Pop
+loc0bf6:Push register2
+ToNumber
+Push register1
+ToNumber
+Push 2
+InitArray
+Push 1, "showLoading"
+CallFunction
+Pop
+}
+DefineFunction2 "showComplete", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 0.0, "loadCounter"
+GetVariable
+Push "removeMovieClip"
+CallMethod
+Pop
+Push "i", 0.0
+SetVariable
+loc0c53:Push "i"
+GetVariable
+Push "loadParam"
+GetVariable
+Push "length"
+GetMember
+Less2
+Not
+If loc0d01
+Push 0.0, register1, "holder", "i"
+GetVariable
+Add2
+GetMember
+Push "removeMovieClip"
+CallMethod
+Pop
+Push 0.0, register1, "holderProgress", "i"
+GetVariable
+Add2
+GetMember
+Push "removeMovieClip"
+CallMethod
+Pop
+Push "loadParam"
+GetVariable
+Push "i"
+GetVariable
+GetMember
+Push "showNow"
+GetMember
+Not
+If loc0cf2
+Push "loadParam"
+GetVariable
+Push "i"
+GetVariable
+GetMember
+Push "file"
+GetMember
+Push 1, register1, "loadParam"
+GetVariable
+Push "i"
+GetVariable
+GetMember
+Push "loc"
+GetMember
+GetMember
+Push "loadMovie"
+CallMethod
+Pop
+loc0cf2:Push "i", "i"
+GetVariable
+Increment
+SetVariable
+Jump loc0c53
+loc0d01:Push 0.0, "killPopup"
+CallFunction
+Pop
+Push "completeAction"
+GetVariable
+Push undefined
+Equals2
+Not
+Not
+If loc0d3a
+Push 0.0, "completeAction"
+CallFunction
+Pop
+Push "completeAction"
+Delete2
+Pop
+loc0d3a:Push "System"
+GetVariable
+Push "onStatus"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "infoObject" {
+Push register1
+Trace
+}
+SetMember
+}
+DefineFunction2 "unloadFile", 1, 3, false, false, true, false, true, false, false, true, false, 2, "clips" {
+Push "i", 0.0
+SetVariable
+loc0d8e:Push "i"
+GetVariable
+Push register2, "length"
+GetMember
+Less2
+Not
+If loc0dce
+Push 0.0, register1, register2, "i"
+GetVariable
+GetMember
+GetMember
+Push "unloadMovie"
+CallMethod
+Pop
+Push "i", "i"
+GetVariable
+Increment
+SetVariable
+Jump loc0d8e
+}
+loc0dce:DefineFunction2 "showLoadingError", 1, 2, false, false, true, false, true, false, true, false, false, 1, "errLink" {
+Push "The file (", register1
+Add2
+Push ") has error."
+Add2
+Trace
+Push 0.0, "killPopup"
+CallFunction
+Pop
+}

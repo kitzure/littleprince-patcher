@@ -1,0 +1,37 @@
+ConstantPool "_parent", "bossStatus", "question", "bossQ", "startAni", "start", "startBossBattle", "resumeMapFromBoss"
+Push "_parent"
+GetVariable
+Push "bossStatus"
+GetMember
+Push "question"
+Equals2
+Not
+If loc0091
+Push 0.0, "_parent"
+GetVariable
+Push "bossQ"
+GetMember
+Push "startAni"
+CallMethod
+Pop
+Jump loc00da
+loc0091:Push "_parent"
+GetVariable
+Push "bossStatus"
+GetMember
+Push "start"
+Equals2
+Not
+If loc00c4
+Push 0.0, "_parent"
+GetVariable
+Push "startBossBattle"
+CallMethod
+Pop
+Jump loc00da
+loc00c4:Push 0.0, "_parent"
+GetVariable
+Push "resumeMapFromBoss"
+CallMethod
+Pop
+loc00da:GotoFrame 0

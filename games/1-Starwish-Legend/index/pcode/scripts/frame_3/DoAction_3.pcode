@@ -1,0 +1,13 @@
+ConstantPool "user", "loadUserData", "musicvolume", "setUserMusicVolume"
+DefineFunction2 "initUser", 1, 2, false, false, true, false, true, false, true, false, false, 1, "agUsername" {
+Push "user", register1, 1, "loadUserData"
+CallFunction
+SetVariable
+Push "user"
+GetVariable
+Push "musicvolume"
+GetMember
+Push 1, "setUserMusicVolume"
+CallFunction
+Pop
+}

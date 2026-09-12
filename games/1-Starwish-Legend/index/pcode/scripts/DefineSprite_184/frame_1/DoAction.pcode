@@ -1,0 +1,20 @@
+ConstantPool "_parent", "verShort", "cd", "voProgress", "_visible", "voProgressBg"
+Push "_parent"
+GetVariable
+Push "_parent"
+GetMember
+Push "verShort"
+GetMember
+Push "cd"
+Equals2
+Not
+If loc0074
+Push "voProgress"
+GetVariable
+Push "_visible", false
+SetMember
+Push "voProgressBg"
+GetVariable
+Push "_visible", false
+SetMember
+loc0074:

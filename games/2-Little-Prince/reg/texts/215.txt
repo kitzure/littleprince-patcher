@@ -1,0 +1,3 @@
+請輸入啟動代號
+--- RECORDSEPARATOR ---
+:

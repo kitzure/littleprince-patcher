@@ -1,0 +1,7 @@
+Push "btnTerms"
+GetVariable
+Push "onRelease"
+DefineFunction "", 0 {
+GetURL "http://www.little-prince.com.hk/littleprince/products/lp2terms.html", ""
+}
+SetMember

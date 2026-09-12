@@ -1,0 +1,12 @@
+ConstantPool "btn_activate", "onRelease", "startInit"
+Push "btn_activate"
+GetVariable
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, true, true, false, true, false, true, false, false {
+Push 0
+Push register1
+Push "startInit"
+CallMethod
+Pop
+}
+SetMember

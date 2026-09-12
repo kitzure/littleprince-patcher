@@ -1,0 +1,3 @@
+語音設定
+--- RECORDSEPARATOR ---
+:

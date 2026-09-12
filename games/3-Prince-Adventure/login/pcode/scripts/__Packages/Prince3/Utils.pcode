@@ -1,0 +1,1078 @@
+ConstantPool "_global", "Prince3", "Object", "Utils", "prototype", "drawWedge", "moveTo", "Math", "abs", "ceil", "deg2Rad", "sin", "cos", "lineTo", "curveTo", "strRev", "", "split", "reverse", "join", "distance", "sqrt", "p2pAngle", "atan2", "rad2Deg", "posAngle", "randomQNumber", "PrinceSystem", "random", "nArray", "Array", "length", "push", "pop", "str2Date", " ", "-", ":", "Date", "date2Str", "getFullYear", "getMonth", "getDate", "getHours", "getMinutes", "getSeconds", "str2nArray", "nArray2Str", "object", "num2Str", "toString", "0", "numLimit", "createIntArray", "randomArray", "concat", "splice", "兩斜率交角中的銳角", "atan", "直線方程", "m", "c", "點線距", "角度差", "arrayRL", "arrayRR", "ASCII2KeyCode", "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "Prince3"
+GetMember
+Not
+Not
+If loc024b
+Push "_global"
+GetVariable
+Push "Prince3", 0.0, "Object"
+NewObject
+SetMember
+loc024b:Pop
+Push "_global"
+GetVariable
+Push "Prince3"
+GetMember
+Push "Utils"
+GetMember
+Not
+Not
+If loc14ff
+Push "Prince3"
+GetVariable
+Push "Utils"
+DefineFunction "", 0 {
+}
+StoreRegister 1
+SetMember
+Push register1, "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register1, "drawWedge"
+DefineFunction2 "", 7, 14, false, false, true, false, true, false, true, false, false, 11, "mc", 8, "x", 7, "y", 12, "startAngle", 1, "arc", 9, "xRadius", 6, "yRadius" {
+Push undefined
+StoreRegister 13
+Pop
+Push undefined
+StoreRegister 3
+Pop
+Push undefined
+StoreRegister 2
+Pop
+Push undefined
+StoreRegister 5
+Pop
+Push undefined
+StoreRegister 10
+Pop
+Push register7, register8, 2, register11, "moveTo"
+CallMethod
+Pop
+Push register6, undefined
+Equals2
+If loc031e
+Push register6
+Jump loc0323
+loc031e:Push register9
+loc0323:StoreRegister 6
+Pop
+loc0328:Push register1, -360
+Less2
+Not
+If loc034e
+Push register1, 360
+Add2
+StoreRegister 1
+Pop
+Jump loc0328
+loc034e:Push register1, 360
+Greater
+Not
+If loc0374
+Push register1, 360
+Subtract
+StoreRegister 1
+Pop
+Jump loc034e
+loc0374:Push register1, 1, "Math"
+GetVariable
+Push "abs"
+CallMethod
+Push 45
+Divide
+Push 1, "Math"
+GetVariable
+Push "ceil"
+CallMethod
+StoreRegister 10
+Pop
+Push register1, register10
+Divide
+StoreRegister 13
+Pop
+Push 0.0, register13
+Subtract
+Push 1, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "deg2Rad"
+CallMethod
+StoreRegister 3
+Pop
+Push 0.0, register12
+Subtract
+Push 1, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "deg2Rad"
+CallMethod
+StoreRegister 2
+Pop
+Push register10, 0.0
+Greater
+Not
+If loc05b2
+Push register7, 0.0, register12
+Subtract
+Push 1, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "deg2Rad"
+CallMethod
+Push 1, "Math"
+GetVariable
+Push "sin"
+CallMethod
+Push register6
+Multiply
+Add2
+Push register8, register12, 1, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "deg2Rad"
+CallMethod
+Push 1, "Math"
+GetVariable
+Push "cos"
+CallMethod
+Push register9
+Multiply
+Add2
+Push 2, register11, "lineTo"
+CallMethod
+Pop
+Push 0.0
+StoreRegister 4
+Pop
+loc04b0:Push register4, register10
+Less2
+Not
+If loc05a0
+Push register2, register3
+Add2
+StoreRegister 2
+Pop
+Push register2, register3, 2
+Divide
+Subtract
+StoreRegister 5
+Pop
+Push register7, register2, 1, "Math"
+GetVariable
+Push "sin"
+CallMethod
+Push register6
+Multiply
+Add2
+Push register8, register2, 1, "Math"
+GetVariable
+Push "cos"
+CallMethod
+Push register9
+Multiply
+Add2
+Push register7, register5, 1, "Math"
+GetVariable
+Push "sin"
+CallMethod
+Push register6, register3, 2
+Divide
+Push 1, "Math"
+GetVariable
+Push "cos"
+CallMethod
+Divide
+Multiply
+Add2
+Push register8, register5, 1, "Math"
+GetVariable
+Push "cos"
+CallMethod
+Push register9, register3, 2
+Divide
+Push 1, "Math"
+GetVariable
+Push "cos"
+CallMethod
+Divide
+Multiply
+Add2
+Push 4, register11, "curveTo"
+CallMethod
+Pop
+Push register4
+Increment
+StoreRegister 4
+Pop
+Jump loc04b0
+loc05a0:Push register7, register8, 2, register11, "lineTo"
+CallMethod
+Pop
+}
+loc05b2:SetMember
+Push register1, "strRev"
+DefineFunction2 "", 1, 3, false, false, true, false, true, false, true, false, false, 2, "str" {
+Push "", 1, register2, "split"
+CallMethod
+StoreRegister 1
+Pop
+Push 0.0, register1, "reverse"
+CallMethod
+Pop
+Push "", 1, register1, "join"
+CallMethod
+Return
+}
+SetMember
+Push register1, "distance"
+DefineFunction2 "", 4, 7, false, false, true, false, true, false, true, false, false, 6, "x1", 4, "y1", 5, "x2", 3, "y2" {
+Push register6, register5
+Subtract
+StoreRegister 1
+Pop
+Push register4, register3
+Subtract
+StoreRegister 2
+Pop
+Push register1, register1
+Multiply
+Push register2, register2
+Multiply
+Add2
+Push 1, "Math"
+GetVariable
+Push "sqrt"
+CallMethod
+Return
+}
+SetMember
+Push register1, "p2pAngle"
+DefineFunction2 "", 4, 5, false, false, true, false, true, false, true, false, false, 4, "cx", 2, "cy", 3, "dx", 1, "dy" {
+Push register2, register1
+Subtract
+Push register3, register4
+Subtract
+Push 2, "Math"
+GetVariable
+Push "atan2"
+CallMethod
+Push 1, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "rad2Deg"
+CallMethod
+Push 1, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "posAngle"
+CallMethod
+Return
+}
+SetMember
+Push register1, "posAngle"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "angle" {
+loc06ed:Push register1, 0.0
+Less2
+Not
+If loc0717
+Push register1, 360
+Add2
+StoreRegister 1
+Pop
+Jump loc06ed
+loc0717:Push register1, 360
+Greater
+Not
+If loc073d
+Push register1, 360
+Subtract
+StoreRegister 1
+Pop
+Jump loc0717
+loc073d:Push register1
+Return
+}
+SetMember
+Push register1, "deg2Rad"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "deg" {
+Push register1, 3.141592653589793
+Multiply
+Push 180
+Divide
+Return
+}
+SetMember
+Push register1, "rad2Deg"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "rad" {
+Push register1, 180
+Multiply
+Push 3.141592653589793
+Divide
+Return
+}
+SetMember
+Push register1, "randomQNumber"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "num" {
+Push register1, 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "random"
+CallMethod
+Push 2, 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "random"
+CallMethod
+If loc0804
+Push -1
+Jump loc080c
+loc0804:Push 1
+loc080c:Multiply
+Return
+}
+SetMember
+Push register1, "nArray"
+DefineFunction2 "", 0, 6, false, false, true, false, false, true, true, false, false {
+Push undefined
+StoreRegister 2
+Pop
+Push undefined
+StoreRegister 5
+Pop
+Push 0.0, "Array"
+NewObject
+StoreRegister 3
+Pop
+Push register1, "length"
+GetMember
+Not
+If loc0874
+Push register1, 0.0
+GetMember
+Push 1, "Array"
+NewObject
+StoreRegister 2
+Pop
+loc0874:Push register1, "length"
+GetMember
+Push 1
+Greater
+Not
+If loc09d7
+Push 0.0
+StoreRegister 4
+Pop
+loc089c:Push false
+If loc09d7
+Push register4, register2, "length"
+GetMember
+Less2
+Not
+If loc097c
+Push register3, "length"
+GetMember
+Push 2
+Divide
+Push 1
+Add2
+StoreRegister 5
+Pop
+Push register5, register1, "length"
+GetMember
+Less2
+Not
+If loc0942
+Push register2, 1, register3, "push"
+CallMethod
+Pop
+Push register4, 1, register3, "push"
+CallMethod
+Pop
+Push register2, register4, register1, register5
+GetMember
+Push 1, "Array"
+NewObject
+SetMember
+Push register2, register4
+GetMember
+StoreRegister 2
+Pop
+Push 0.0
+StoreRegister 4
+Pop
+Jump loc0977
+loc0942:Push 0.0, register3, "pop"
+CallMethod
+Push 1
+Add2
+StoreRegister 4
+Pop
+Push 0.0, register3, "pop"
+CallMethod
+StoreRegister 2
+Pop
+loc0977:Jump loc09d2
+loc097c:Push register3, "length"
+GetMember
+Push 0.0
+Equals2
+Not
+If loc099d
+Push register2
+Return
+loc099d:Push 0.0, register3, "pop"
+CallMethod
+Push 1
+Add2
+StoreRegister 4
+Pop
+Push 0.0, register3, "pop"
+CallMethod
+StoreRegister 2
+Pop
+loc09d2:Jump loc089c
+loc09d7:Push register2
+Return
+}
+SetMember
+Push register1, "str2Date"
+DefineFunction2 "", 1, 3, false, false, true, false, true, false, true, false, false, 2, "str" {
+Push register2, null
+Equals2
+PushDuplicate
+If loc0a14
+Pop
+Push register2, "length"
+GetMember
+Push 8
+Less2
+loc0a14:Not
+If loc0a1f
+Push null
+Return
+loc0a1f:Push " ", 1, register2, "split"
+CallMethod
+StoreRegister 1
+Pop
+Push register1, 0.0, "-", 1, register1, 0.0
+GetMember
+Push "split"
+CallMethod
+SetMember
+Push register1, 1, ":", 1, register1, 1
+GetMember
+Push "split"
+CallMethod
+SetMember
+Push 0.0, register1, 1
+GetMember
+Push 2
+GetMember
+ToInteger
+Push register1, 1
+GetMember
+Push 1
+GetMember
+ToInteger
+Push register1, 1
+GetMember
+Push 0.0
+GetMember
+ToInteger
+Push register1, 0.0
+GetMember
+Push 2
+GetMember
+ToInteger
+Push register1, 0.0
+GetMember
+Push 1
+GetMember
+ToInteger
+Push 1
+Subtract
+Push register1, 0.0
+GetMember
+Push 0.0
+GetMember
+ToInteger
+Push 7, "Date"
+NewObject
+Return
+}
+SetMember
+Push register1, "date2Str"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "d" {
+Push register1
+Not
+If loc0bdf
+Push 0.0, register1, "getFullYear"
+CallMethod
+Push "-"
+Add2
+Push 0.0, register1, "getMonth"
+CallMethod
+Push 1
+Add2
+Add2
+Push "-"
+Add2
+Push 0.0, register1, "getDate"
+CallMethod
+Add2
+Push " "
+Add2
+Push 0.0, register1, "getHours"
+CallMethod
+Add2
+Push ":"
+Add2
+Push 0.0, register1, "getMinutes"
+CallMethod
+Add2
+Push ":"
+Add2
+Push 0.0, register1, "getSeconds"
+CallMethod
+Add2
+Return
+loc0bdf:Push ""
+Return
+}
+SetMember
+Push register1, "str2nArray"
+DefineFunction2 "", 1, 7, false, false, true, false, false, true, true, false, false, 6, "str" {
+Push undefined
+StoreRegister 2
+Pop
+Push undefined
+StoreRegister 5
+Pop
+Push 0.0, "Array"
+NewObject
+StoreRegister 4
+Pop
+Push register1, "length"
+GetMember
+Push 1
+Greater
+Not
+If loc0c57
+Push register1, 1
+GetMember
+Push 1, register6, "split"
+CallMethod
+StoreRegister 2
+Pop
+loc0c57:Push register1, "length"
+GetMember
+Push 2
+Greater
+Not
+If loc0dc2
+Push 0.0
+StoreRegister 3
+Pop
+loc0c7f:Push false
+If loc0dc2
+Push register3, register2, "length"
+GetMember
+Less2
+Not
+If loc0d67
+Push register4, "length"
+GetMember
+Push 2
+Divide
+Push 2
+Add2
+StoreRegister 5
+Pop
+Push register5, register1, "length"
+GetMember
+Less2
+Not
+If loc0d2d
+Push register2, 1, register4, "push"
+CallMethod
+Pop
+Push register3, 1, register4, "push"
+CallMethod
+Pop
+Push register2, register3, register1, register5
+GetMember
+Push 1, register2, register3
+GetMember
+Push "split"
+CallMethod
+SetMember
+Push register2, register3
+GetMember
+StoreRegister 2
+Pop
+Push 0.0
+StoreRegister 3
+Pop
+Jump loc0d62
+loc0d2d:Push 0.0, register4, "pop"
+CallMethod
+Push 1
+Add2
+StoreRegister 3
+Pop
+Push 0.0, register4, "pop"
+CallMethod
+StoreRegister 2
+Pop
+loc0d62:Jump loc0dbd
+loc0d67:Push register4, "length"
+GetMember
+Push 0.0
+Equals2
+Not
+If loc0d88
+Push register2
+Return
+loc0d88:Push 0.0, register4, "pop"
+CallMethod
+Push 1
+Add2
+StoreRegister 3
+Pop
+Push 0.0, register4, "pop"
+CallMethod
+StoreRegister 2
+Pop
+loc0dbd:Jump loc0c7f
+loc0dc2:Push register2
+Return
+}
+SetMember
+Push register1, "nArray2Str"
+DefineFunction2 "", 1, 8, false, false, true, false, false, true, true, false, false, 3, "ary" {
+Push 1
+StoreRegister 6
+Pop
+Push 0.0, "Array"
+NewObject
+StoreRegister 5
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+Push ""
+StoreRegister 4
+Pop
+loc0e1c:Push false
+If loc0f9b
+Push register2, register3, "length"
+GetMember
+Less2
+Not
+If loc0efa
+Push register3, register2
+GetMember
+TypeOf
+Push "object"
+Equals2
+Not
+If loc0eb4
+Push register6
+Increment
+StoreRegister 6
+Pop
+Push register3, 1, register5, "push"
+CallMethod
+Pop
+Push register2, 1, register5, "push"
+CallMethod
+Pop
+Push register4, 1, register5, "push"
+CallMethod
+Pop
+Push register3, register2
+GetMember
+StoreRegister 3
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+Push ""
+StoreRegister 4
+Pop
+Jump loc0ef5
+loc0eb4:Push register2
+Not
+If loc0edd
+Push register4, register1, register6
+GetMember
+Push register3, register2
+GetMember
+Add2
+Add2
+StoreRegister 4
+Pop
+Jump loc0eea
+loc0edd:Push register3, register2
+GetMember
+StoreRegister 4
+Pop
+loc0eea:Push register2
+Increment
+StoreRegister 2
+Pop
+loc0ef5:Jump loc0f96
+loc0efa:Push register5, "length"
+GetMember
+Push 0.0
+Equals2
+Not
+If loc0f1b
+Push register4
+Return
+loc0f1b:Push register6
+Decrement
+StoreRegister 6
+Pop
+Push 0.0, register5, "pop"
+CallMethod
+StoreRegister 7
+Pop
+Push register7, ""
+Equals2
+Not
+Not
+If loc0f61
+Push register7, register1, register6
+GetMember
+Add2
+Push register4
+Add2
+StoreRegister 4
+Pop
+loc0f61:Push 0.0, register5, "pop"
+CallMethod
+Push 1
+Add2
+StoreRegister 2
+Pop
+Push 0.0, register5, "pop"
+CallMethod
+StoreRegister 3
+Pop
+loc0f96:Jump loc0e1c
+loc0f9b:Push null
+Return
+}
+SetMember
+Push register1, "num2Str"
+DefineFunction2 "", 3, 5, false, false, true, false, true, false, true, false, false, 3, "num", 4, "format", 2, "len" {
+Push register4, 1, register3, "toString"
+CallMethod
+StoreRegister 1
+Pop
+loc0fd9:Push register1, "length"
+GetMember
+Push register2
+Less2
+Not
+If loc0fff
+Push "0", register1
+Add2
+StoreRegister 1
+Pop
+Jump loc0fd9
+loc0fff:Push register1
+Return
+}
+SetMember
+Push register1, "numLimit"
+DefineFunction2 "", 3, 4, false, false, true, false, true, false, true, false, false, 1, "num", 3, "min", 2, "max" {
+Push register1, register3
+Less2
+If loc1055
+Push register1, register2
+Greater
+If loc104b
+Push register1
+Jump loc1050
+loc104b:Push register2
+loc1050:Jump loc105a
+loc1055:Push register3
+loc105a:Return
+}
+SetMember
+Push register1, "createIntArray"
+DefineFunction2 "", 1, 6, false, false, true, false, false, true, true, false, false, 5, "num" {
+Push register1, "length"
+GetMember
+Push 1
+Greater
+If loc109a
+Push 0.0
+Jump loc10a5
+loc109a:Push register1, 1
+GetMember
+loc10a5:StoreRegister 4
+Pop
+Push 0.0, "Array"
+NewObject
+StoreRegister 3
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc10cf:Push register2, register5
+Less2
+Not
+If loc1103
+Push register2, register4
+Add2
+Push 1, register3, "push"
+CallMethod
+Pop
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc10cf
+loc1103:Push register3
+Return
+}
+SetMember
+Push register1, "randomArray"
+DefineFunction2 "", 1, 4, false, false, true, false, true, false, true, false, false, 3, "in_ary" {
+Push 0.0, register3, "concat"
+CallMethod
+StoreRegister 1
+Pop
+Push 0.0, "Array"
+NewObject
+StoreRegister 2
+Pop
+loc114e:Push register1, "length"
+GetMember
+Not
+If loc11ad
+Push 1, register1, "length"
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "random"
+CallMethod
+Push 2, register1, "splice"
+CallMethod
+Push 0.0
+GetMember
+Push 1, register2, "push"
+CallMethod
+Pop
+Jump loc114e
+loc11ad:Push register2
+Return
+}
+SetMember
+Push register1, "兩斜率交角中的銳角"
+DefineFunction2 "", 2, 3, false, false, true, false, true, false, true, false, false, 2, "m1", 1, "m2" {
+Push register2, register1
+Subtract
+Push 1, register2, register1
+Multiply
+Add2
+Divide
+Push 1, "Math"
+GetVariable
+Push "abs"
+CallMethod
+Push 1, "Math"
+GetVariable
+Push "atan"
+CallMethod
+Push 1, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "rad2Deg"
+CallMethod
+Return
+}
+SetMember
+Push register1, "直線方程"
+DefineFunction2 "", 4, 7, false, false, true, false, true, false, true, false, false, 3, "x1", 2, "y1", 6, "x2", 5, "y2" {
+Push register3, register6
+Subtract
+Push register2, register5
+Subtract
+Divide
+StoreRegister 1
+Pop
+Push "m", register1, "c", 0.0, register3
+Subtract
+Push register2, register1
+Multiply
+Add2
+Push 2
+InitObject
+Return
+}
+SetMember
+Push register1, "點線距"
+DefineFunction2 "", 3, 5, false, false, true, false, true, false, true, false, false, 4, "x", 3, "y", 2, "in_直線方程" {
+Push register2, "m"
+GetMember
+StoreRegister 1
+Pop
+Push register4, register1, register3
+Multiply
+Add2
+Push register2, "c"
+GetMember
+Add2
+Push 1, register1, register1
+Multiply
+Add2
+Push 1, "Math"
+GetVariable
+Push "sqrt"
+CallMethod
+Divide
+Push 1, "Math"
+GetVariable
+Push "abs"
+CallMethod
+Return
+}
+SetMember
+Push register1, "角度差"
+DefineFunction2 "", 2, 4, false, false, true, false, true, false, true, false, false, 3, "ang1", 2, "ang2" {
+Push register2, register3
+Subtract
+StoreRegister 1
+Pop
+Push register1, 180
+Greater
+Not
+If loc1346
+Push register1, 360
+Subtract
+Return
+loc1346:Push register1, -180
+Less2
+Not
+If loc1363
+Push register1, 360
+Add2
+Return
+loc1363:Push register1
+Return
+}
+SetMember
+Push register1, "arrayRL"
+DefineFunction2 "", 2, 4, false, false, true, false, true, false, true, false, false, 3, "in_ary", 2, "turn" {
+Push 0.0, register3, "concat"
+CallMethod
+StoreRegister 1
+Pop
+Push register2, register1, "length"
+GetMember
+Modulo
+StoreRegister 2
+Pop
+Push register2, 0.0, 2, register1, "splice"
+CallMethod
+Push 1, register1, "concat"
+CallMethod
+Return
+}
+SetMember
+Push register1, "arrayRR"
+DefineFunction2 "", 2, 3, false, false, true, false, true, false, true, false, false, 1, "in_ary", 2, "turn" {
+Push register2, register1, "length"
+GetMember
+Modulo
+StoreRegister 2
+Pop
+Push register1, "length"
+GetMember
+Push register2
+Subtract
+Push register1, 2, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "arrayRL"
+CallMethod
+Return
+}
+SetMember
+Push register1, "ASCII2KeyCode"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "asciiCode" {
+Push 97, register1
+Greater
+Not
+PushDuplicate
+Not
+If loc146d
+Pop
+Push register1, 122
+Greater
+Not
+loc146d:Not
+If loc147f
+Push register1, 32
+Subtract
+Return
+loc147f:Push 65, register1
+Greater
+Not
+PushDuplicate
+Not
+If loc149f
+Pop
+Push register1, 90
+Greater
+Not
+loc149f:PushDuplicate
+If loc14c6
+Pop
+Push 48, register1
+Greater
+Not
+PushDuplicate
+Not
+If loc14c6
+Pop
+Push register1, 57
+Greater
+Not
+loc14c6:Not
+If loc14d2
+Push register1
+Return
+loc14d2:Push -1
+Return
+}
+SetMember
+Push 1, null, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "prototype"
+GetMember
+Push 3, "ASSetPropFlags"
+CallFunction
+loc14ff:Pop

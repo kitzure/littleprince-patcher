@@ -1,0 +1,1474 @@
+ConstantPool "_global", "Prince3", "Object", "SoundSystem", "prototype", "preloadByArray", "preloadlist", "length", "concat", "splice", "preloadByName", "loadCompleteFlag", "sound_mc", "getNextHighestDepth", "SoundSystemMC", "createEmptyMovieClip", "_visible", "onEnterFrame", "nameConvert", "MC_", "Sound", "onLoad", "loadComplete", ".mp3", "loadSound", "lastname", "/", "lastIndexOf", "_", "split", "join", "playVO", "vo", "stop", "playVO2", "onSoundComplete", "setVolume", "playSound", "bgm", "indexOf", "maxVal", "start", "loop", "stopVO", "stopSound", "allSoundsStop", "movieclip", "releaseGameSound", "MC_vo_game", "_name", "MC_pvo_game", "removeMovieClip", "vo_game", "pvo_game", "release", "releaseByArray", "releaseByName", "Array", "fadeInOut", "fadeInOutList", "name", "getVolume", "val", "tvol", "push", "fadeIn", "fadeOut", "vo/game", "pvo/game", "preLoadComplete", "__soundSystem", "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "Prince3"
+GetMember
+Not
+Not
+If loc02dd
+Push "_global"
+GetVariable
+Push "Prince3", 0.0, "Object"
+NewObject
+SetMember
+loc02dd:Pop
+Push "_global"
+GetVariable
+Push "Prince3"
+GetMember
+Push "SoundSystem"
+GetMember
+Not
+Not
+If loc1895
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+DefineFunction "", 0 {
+}
+StoreRegister 1
+SetMember
+Push register1, "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register1, "preloadByArray"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "filenames" {
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "preloadlist"
+GetMember
+Push "length"
+GetMember
+Not
+If loc038a
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "preloadlist", register1, 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "preloadlist"
+GetMember
+Push "concat"
+CallMethod
+SetMember
+Jump loc0408
+loc038a:Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "preloadlist", register1, 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "preloadlist"
+GetMember
+Push "concat"
+CallMethod
+SetMember
+Push 1, 0.0, 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "preloadlist"
+GetMember
+Push "splice"
+CallMethod
+Push 0.0
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "preloadByName"
+CallMethod
+Pop
+}
+loc0408:SetMember
+Push register1, "preloadByName"
+DefineFunction2 "", 1, 5, false, true, true, false, true, false, true, false, false, 4, "filename" {
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "loadCompleteFlag", false
+SetMember
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Not
+Not
+If loc04d7
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc", 0.0, register1, "getNextHighestDepth"
+CallMethod
+Push "SoundSystemMC", 2, register1, "createEmptyMovieClip"
+CallMethod
+SetMember
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push "_visible", false
+SetMember
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push "onEnterFrame"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "onEnterFrame"
+CallMethod
+Pop
+}
+SetMember
+loc04d7:Push register4, 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "nameConvert"
+CallMethod
+StoreRegister 2
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push "getNextHighestDepth"
+CallMethod
+Push "MC_", register2
+Add2
+Push 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push "createEmptyMovieClip"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push register2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push "MC_", register2
+Add2
+GetMember
+Push 1, "Sound"
+NewObject
+SetMember
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push register2
+GetMember
+StoreRegister 3
+Pop
+Push register3, "onLoad"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "loadComplete"
+CallMethod
+Pop
+}
+SetMember
+Push register4, ".mp3"
+Add2
+Push 1, register3, "loadSound"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "lastname", register4
+SetMember
+}
+SetMember
+Push register1, "loadComplete"
+DefineFunction "", 0 {
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "loadCompleteFlag", true
+SetMember
+}
+SetMember
+Push register1, "nameConvert"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "filename" {
+Push "/", 1, register1, "lastIndexOf"
+CallMethod
+Push -1
+Equals2
+Not
+Not
+If loc0667
+Push "_", 1, "/", 1, register1, "split"
+CallMethod
+Push "join"
+CallMethod
+Return
+loc0667:Push register1
+Return
+}
+SetMember
+Push register1, "playVO"
+DefineFunction2 "", 2, 3, false, false, true, false, true, false, true, false, false, 1, "filename", 2, "callback" {
+Push 0.0, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push "vo"
+GetMember
+Push "stop"
+CallMethod
+Pop
+Push register2, register1, 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "playVO2"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "playVO2"
+DefineFunction2 "", 2, 3, false, false, true, false, true, false, true, false, false, 1, "filename", 2, "callback" {
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push "vo", "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push 1, "Sound"
+NewObject
+SetMember
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push "vo"
+GetMember
+Push "onSoundComplete", register2
+SetMember
+Push true, register1, ".mp3"
+Add2
+Push 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push "vo"
+GetMember
+Push "loadSound"
+CallMethod
+Pop
+Push 100, 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push "vo"
+GetMember
+Push "setVolume"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "playSound"
+DefineFunction2 "", 2, 5, false, false, true, false, true, false, false, true, false, 4, "filename", 3, "callback" {
+Push register4, 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "nameConvert"
+CallMethod
+StoreRegister 2
+Pop
+Push "bgm", 1, register4, "indexOf"
+CallMethod
+Push 0.0
+Equals2
+Not
+If loc084a
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "maxVal"
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push register2
+GetMember
+Push "setVolume"
+CallMethod
+Pop
+Jump loc0873
+loc084a:Push 100, 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push register2
+GetMember
+Push "setVolume"
+CallMethod
+Pop
+loc0873:Push 0.0, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push register2
+GetMember
+Push "start"
+CallMethod
+Pop
+Push register3, "loop"
+Equals2
+Not
+If loc08e9
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push register2
+GetMember
+Push "onSoundComplete"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 0.0, register1, "start"
+CallMethod
+Pop
+}
+SetMember
+Jump loc093a
+loc08e9:Push register3, null
+Equals2
+Not
+If loc091a
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push register2
+GetMember
+Push "onSoundComplete", null
+SetMember
+Jump loc093a
+loc091a:Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push register2
+GetMember
+Push "onSoundComplete", register3
+SetMember
+}
+loc093a:SetMember
+Push register1, "stopVO"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push "vo"
+GetMember
+Push "stop"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "stopSound"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "filename" {
+Push 0.0, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push register1, 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "nameConvert"
+CallMethod
+GetMember
+Push "stop"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "allSoundsStop"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, true, false, false {
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Enumerate2
+loc09f1:StoreRegister 0
+Push null
+Equals2
+If loc0a36
+Push register0
+StoreRegister 1
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push register1
+GetMember
+Push "stop"
+CallMethod
+Pop
+Jump loc09f1
+}
+loc0a36:SetMember
+Push register1, "setVolume"
+DefineFunction2 "", 2, 5, false, false, true, false, true, false, true, false, false, 1, "vol", 4, "filename" {
+Push register4, 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "nameConvert"
+CallMethod
+StoreRegister 3
+Pop
+Push register1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "maxVal"
+GetMember
+Greater
+Not
+If loc0aa8
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "maxVal"
+GetMember
+StoreRegister 1
+Pop
+loc0aa8:Push register4, null
+Equals2
+Not
+If loc0b36
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Enumerate2
+loc0ac8:StoreRegister 0
+Push null
+Equals2
+If loc0b31
+Push register0
+StoreRegister 2
+Pop
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push register2
+GetMember
+TypeOf
+Push "movieclip"
+Equals2
+Not
+Not
+If loc0b2c
+Push register1, 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push register2
+GetMember
+Push "setVolume"
+CallMethod
+Pop
+loc0b2c:Jump loc0ac8
+loc0b31:Jump loc0b5c
+loc0b36:Push register1, 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push register3
+GetMember
+Push "setVolume"
+CallMethod
+Pop
+}
+loc0b5c:SetMember
+Push register1, "releaseGameSound"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, true, false, false {
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Enumerate2
+loc0b82:StoreRegister 0
+Push null
+Equals2
+If loc0cf4
+Push register0
+StoreRegister 1
+Pop
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push register1
+GetMember
+TypeOf
+Push "movieclip"
+Equals2
+Not
+If loc0c69
+Push "MC_vo_game", 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push register1
+GetMember
+Push "_name"
+GetMember
+Push "indexOf"
+CallMethod
+Push 0.0
+Equals2
+PushDuplicate
+If loc0c36
+Pop
+Push "MC_pvo_game", 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push register1
+GetMember
+Push "_name"
+GetMember
+Push "indexOf"
+CallMethod
+Push 0.0
+Equals2
+loc0c36:Not
+If loc0c64
+Push 0.0, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push register1
+GetMember
+Push "removeMovieClip"
+CallMethod
+Pop
+loc0c64:Jump loc0cef
+loc0c69:Push "vo_game", 1, register1, "indexOf"
+CallMethod
+Push 0.0
+Equals2
+PushDuplicate
+If loc0ca8
+Pop
+Push "pvo_game", 1, register1, "indexOf"
+CallMethod
+Push 0.0
+Equals2
+loc0ca8:Not
+If loc0cef
+Push 0.0, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push register1
+GetMember
+Push "stop"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push register1
+Delete
+Pop
+loc0cef:Jump loc0b82
+}
+loc0cf4:SetMember
+Push register1, "release"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, true, false, false {
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Enumerate2
+loc0d1a:StoreRegister 0
+Push null
+Equals2
+If loc0dca
+Push register0
+StoreRegister 1
+Pop
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push register1
+GetMember
+TypeOf
+Push "movieclip"
+Equals2
+Not
+If loc0d84
+Push 0.0, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push register1
+GetMember
+Push "removeMovieClip"
+CallMethod
+Pop
+Jump loc0dc5
+loc0d84:Push 0.0, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push register1
+GetMember
+Push "stop"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push register1
+Delete
+Pop
+loc0dc5:Jump loc0d1a
+}
+loc0dca:SetMember
+Push register1, "releaseByArray"
+DefineFunction2 "", 1, 3, false, false, true, false, true, false, true, false, false, 2, "filenames" {
+Push 0.0
+StoreRegister 1
+Pop
+loc0df9:Push register1, register2, "length"
+GetMember
+Less2
+Not
+If loc0e3a
+Push register2, register1
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "releaseByName"
+CallMethod
+Pop
+Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc0df9
+}
+loc0e3a:SetMember
+Push register1, "releaseByName"
+DefineFunction2 "", 1, 3, false, false, true, false, true, false, true, false, false, 2, "filename" {
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "preloadlist", 0.0, "Array"
+NewObject
+SetMember
+Push register2, 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "nameConvert"
+CallMethod
+StoreRegister 1
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push register1
+GetMember
+Push "stop"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push register1
+Delete
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push "MC_", register1
+Add2
+GetMember
+Push "removeMovieClip"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "fadeInOut"
+DefineFunction2 "", 3, 7, false, false, true, false, true, false, true, false, false, 6, "filename", 5, "step", 4, "tvol" {
+Push register6, 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "nameConvert"
+CallMethod
+StoreRegister 2
+Pop
+Push 0.0
+StoreRegister 1
+Pop
+loc0f57:Push register1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeInOutList"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc0fe2
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeInOutList"
+GetMember
+Push register1
+GetMember
+Push "name"
+GetMember
+Push register2
+Equals2
+Not
+If loc0fd2
+Push 1, register1, 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeInOutList"
+GetMember
+Push "splice"
+CallMethod
+Pop
+Push register1
+Decrement
+StoreRegister 1
+Pop
+loc0fd2:Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc0f57
+loc0fe2:Push 0.0, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push register2
+GetMember
+Push "getVolume"
+CallMethod
+Push register4
+Greater
+Not
+If loc106d
+Push "name", register2, "val", 0.0, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "maxVal"
+GetMember
+Push register5
+Divide
+Subtract
+Push "tvol", register4, 3
+InitObject
+Push 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeInOutList"
+GetMember
+Push "push"
+CallMethod
+Pop
+Jump loc10e9
+loc106d:Push 0.0, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push register2
+GetMember
+Push "getVolume"
+CallMethod
+Push register4
+Less2
+Not
+If loc10e9
+Push "name", register2, "val", "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "maxVal"
+GetMember
+Push register5
+Divide
+Push "tvol", register4, 3
+InitObject
+Push 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeInOutList"
+GetMember
+Push "push"
+CallMethod
+Pop
+}
+loc10e9:SetMember
+Push register1, "fadeIn"
+DefineFunction2 "", 2, 7, false, false, true, false, true, false, true, false, false, 2, "filename", 6, "step" {
+Push register2, 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "nameConvert"
+CallMethod
+StoreRegister 3
+Pop
+Push 0.0
+StoreRegister 1
+Pop
+loc113b:Push register1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeInOutList"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc11c6
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeInOutList"
+GetMember
+Push register1
+GetMember
+Push "name"
+GetMember
+Push register3
+Equals2
+Not
+If loc11b6
+Push 1, register1, 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeInOutList"
+GetMember
+Push "splice"
+CallMethod
+Pop
+Push register1
+Decrement
+StoreRegister 1
+Pop
+loc11b6:Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc113b
+loc11c6:Push "loop", register2, 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "playSound"
+CallMethod
+Pop
+Push register2, 0.0, 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "setVolume"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "maxVal"
+GetMember
+Push 0.0
+Equals2
+Not
+Not
+If loc129b
+Push "name", register2, 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "nameConvert"
+CallMethod
+Push "val", "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "maxVal"
+GetMember
+Push register6
+Divide
+Push "tvol", "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "maxVal"
+GetMember
+Push 3
+InitObject
+Push 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeInOutList"
+GetMember
+Push "push"
+CallMethod
+Pop
+}
+loc129b:SetMember
+Push register1, "fadeOut"
+DefineFunction2 "", 2, 7, false, false, true, false, true, false, true, false, false, 3, "filename", 6, "step" {
+Push register3, 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "nameConvert"
+CallMethod
+StoreRegister 2
+Pop
+Push 0.0
+StoreRegister 1
+Pop
+loc12ed:Push register1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeInOutList"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc1378
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeInOutList"
+GetMember
+Push register1
+GetMember
+Push "name"
+GetMember
+Push register2
+Equals2
+Not
+If loc1368
+Push 1, register1, 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeInOutList"
+GetMember
+Push "splice"
+CallMethod
+Pop
+Push register1
+Decrement
+StoreRegister 1
+Pop
+loc1368:Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc12ed
+loc1378:Push register3, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "maxVal"
+GetMember
+Push 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "setVolume"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "maxVal"
+GetMember
+Push 0.0
+Equals2
+Not
+Not
+If loc1429
+Push "name", register2, "val", 0.0, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "maxVal"
+GetMember
+Subtract
+Push register6
+Divide
+Push "tvol", 0.0, 3
+InitObject
+Push 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeInOutList"
+GetMember
+Push "push"
+CallMethod
+Pop
+Jump loc1451
+loc1429:Push 0.0, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push register2
+GetMember
+Push "stop"
+CallMethod
+Pop
+}
+loc1451:SetMember
+Push register1, "onEnterFrame"
+DefineFunction2 "", 0, 4, false, false, true, false, true, false, true, false, false {
+Push 0.0
+StoreRegister 1
+Pop
+loc1475:Push register1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeInOutList"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc16c1
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "sound_mc"
+GetMember
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeInOutList"
+GetMember
+Push register1
+GetMember
+Push "name"
+GetMember
+GetMember
+StoreRegister 2
+Pop
+Push 0.0, register2, "getVolume"
+CallMethod
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeInOutList"
+GetMember
+Push register1
+GetMember
+Push "val"
+GetMember
+Add2
+StoreRegister 3
+Pop
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeInOutList"
+GetMember
+Push register1
+GetMember
+Push "val"
+GetMember
+Push 0.0
+Greater
+Not
+If loc15d0
+Push register3, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeInOutList"
+GetMember
+Push register1
+GetMember
+Push "tvol"
+GetMember
+Less2
+Not
+Not
+If loc15bb
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeInOutList"
+GetMember
+Push register1
+GetMember
+Push "tvol"
+GetMember
+Push 1, register2, "setVolume"
+CallMethod
+Pop
+Push 1, register1, 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeInOutList"
+GetMember
+Push "splice"
+CallMethod
+Pop
+Push register1
+Decrement
+StoreRegister 1
+Pop
+Jump loc15cb
+loc15bb:Push register3, 1, register2, "setVolume"
+CallMethod
+Pop
+loc15cb:Jump loc16b1
+loc15d0:Push register3, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeInOutList"
+GetMember
+Push register1
+GetMember
+Push "tvol"
+GetMember
+Greater
+Not
+Not
+If loc16a1
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeInOutList"
+GetMember
+Push register1
+GetMember
+Push "tvol"
+GetMember
+Push 0.0
+Equals2
+Not
+If loc1640
+Push 0.0, register2, "stop"
+CallMethod
+Pop
+Jump loc166c
+loc1640:Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeInOutList"
+GetMember
+Push register1
+GetMember
+Push "tvol"
+GetMember
+Push 1, register2, "setVolume"
+CallMethod
+Pop
+loc166c:Push 1, register1, 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "fadeInOutList"
+GetMember
+Push "splice"
+CallMethod
+Pop
+Push register1
+Decrement
+StoreRegister 1
+Pop
+Jump loc16b1
+loc16a1:Push register3, 1, register2, "setVolume"
+CallMethod
+Pop
+loc16b1:Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc1475
+loc16c1:Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "loadCompleteFlag"
+GetMember
+Not
+If loc1818
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "loadCompleteFlag", false
+SetMember
+Push "vo/game", 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "lastname"
+GetMember
+Push "lastIndexOf"
+CallMethod
+Push 0.0
+Equals2
+PushDuplicate
+If loc174c
+Pop
+Push "pvo/game", 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "lastname"
+GetMember
+Push "lastIndexOf"
+CallMethod
+Push 0.0
+Equals2
+loc174c:Not
+If loc177c
+Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "lastname"
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "releaseByName"
+CallMethod
+Pop
+loc177c:Push "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "preloadlist"
+GetMember
+Push "length"
+GetMember
+Push 0.0
+Equals2
+Not
+If loc17c8
+Push 0.0, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "preLoadComplete"
+CallMethod
+Pop
+Jump loc1818
+loc17c8:Push 1, 0.0, 2, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "preloadlist"
+GetMember
+Push "splice"
+CallMethod
+Push 0.0
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "preloadByName"
+CallMethod
+Pop
+}
+loc1818:SetMember
+Push register1, "__soundSystem", 0.0, "Prince3"
+GetVariable
+Push "SoundSystem"
+NewMethod
+SetMember
+Push register1, "maxVal", 100
+SetMember
+Push register1, "preloadlist", 0.0, "Array"
+NewObject
+SetMember
+Push register1, "fadeInOutList", 0.0, "Array"
+NewObject
+SetMember
+Push register1, "loadCompleteFlag", false
+SetMember
+Push 1, null, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "prototype"
+GetMember
+Push 3, "ASSetPropFlags"
+CallFunction
+loc1895:Pop

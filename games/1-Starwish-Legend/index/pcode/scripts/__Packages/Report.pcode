@@ -1,0 +1,2654 @@
+ConstantPool "_global", "Report", "setSpec", "Array", "length", "push", "setGemBoard", "setItemBoard", "_gameSpec", "game", "dat", "setScoreBoard", "prototype", "_itemSpec", "getSpec", "trader1", "cost", "getHighestScore", "_scoreBoard", "highestDate", "highestScore", "getScore", "latestDate", "latestScore", "getInitScore", "initDate", "initScore", "setScore", "Date", "getCompletedLevel", "playQ", "score", "getNewLevel", "getTotalCompletedLevel", "id", "checkImprovement", "Object", "String2Date", "getScoreBoard", "getScoreBoardInArray", "getScoreBoardSummary", "Math", "round", "getScoreBoardDetail", "_gemBoard", "slice", "setGem", "getGem", "getTotalGem", "getTotalNormalGem", "getTotalSpecialGem", "reduceGem", "addGem", "getGemBoard", "_itemBoard", "-", "split", "name", "traderID", "itemID", "amount", "setItem", "addItem", "hung adding item/agItemID:", "/agAmount", "reduceItem", "concat", "getItemBoard", "getItemBoardInArray", "getItemAmount", "getTotalItemKind", "getTotalItemAmount", "getTotalItemCost", "trader", "indexOf", " ", "isNaN", ":", "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "Report"
+GetMember
+Not
+Not
+If loc2c04
+Push "_global"
+GetVariable
+Push "Report"
+DefineFunction2 "", 6, 11, false, false, true, false, true, false, false, true, false, 4, "agScoreBoard", 9, "agGameSpec", 5, "agGemBoard", 6, "agGemSpec", 8, "agItemBoard", 10, "agItemSpec" {
+Push register4, undefined
+Equals2
+PushDuplicate
+Not
+If loc03ca
+Pop
+Push register9, undefined
+Equals2
+loc03ca:PushDuplicate
+Not
+If loc03d9
+Pop
+Push register5, undefined
+Equals2
+loc03d9:PushDuplicate
+Not
+If loc03e8
+Pop
+Push register6, undefined
+Equals2
+loc03e8:PushDuplicate
+Not
+If loc03f7
+Pop
+Push register8, undefined
+Equals2
+loc03f7:PushDuplicate
+Not
+If loc0406
+Pop
+Push register10, undefined
+Equals2
+loc0406:Not
+Not
+If loc0630
+Push register10, register9, 2, register1, "setSpec"
+CallMethod
+Pop
+Push register5, undefined
+Equals2
+Not
+If loc0489
+Push 0.0, "Array"
+NewObject
+StoreRegister 5
+Pop
+Push 0.0
+StoreRegister 3
+Pop
+loc0451:Push register3, register6, "length"
+GetMember
+Less2
+Not
+If loc0489
+Push 0.0, 1, register5, "push"
+CallMethod
+Pop
+Push register3
+Increment
+StoreRegister 3
+Pop
+Jump loc0451
+loc0489:Push register5, 1, register1, "setGemBoard"
+CallMethod
+Pop
+Push register8, undefined
+Equals2
+Not
+If loc04ba
+Push 0.0, "Array"
+NewObject
+StoreRegister 8
+Pop
+loc04ba:Push register8, 1, register1, "setItemBoard"
+CallMethod
+Pop
+Push register4, undefined
+Equals2
+Not
+If loc04eb
+Push 0.0, "Array"
+NewObject
+StoreRegister 4
+Pop
+loc04eb:Push 0.0
+StoreRegister 2
+Pop
+Push register1, "_gameSpec"
+GetMember
+Enumerate2
+loc0505:StoreRegister 0
+Push null
+Equals2
+If loc052d
+Push register0
+StoreRegister 7
+Pop
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc0505
+loc052d:Push register4, "length"
+GetMember
+StoreRegister 3
+Pop
+loc053a:Push register3, register2
+Less2
+Not
+If loc0575
+Push 0.0, "Array"
+NewObject
+Push 1, register4, "push"
+CallMethod
+Pop
+Push register3
+Increment
+StoreRegister 3
+Pop
+Jump loc053a
+loc0575:Push register2
+Not
+If loc0620
+Push register4, register2, 1
+Subtract
+GetMember
+Push "length"
+GetMember
+StoreRegister 3
+Pop
+loc0599:Push register3, register1, "_gameSpec"
+GetMember
+Push "game", register2
+Add2
+GetMember
+Push "dat"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc0610
+Push null, 0.0, null, 0.0, null, 0.0, 6
+InitArray
+Push 1, register4, register2, 1
+Subtract
+GetMember
+Push "push"
+CallMethod
+Pop
+Push register3
+Increment
+StoreRegister 3
+Pop
+Jump loc0599
+loc0610:Push register2
+Decrement
+StoreRegister 2
+Pop
+Jump loc0575
+loc0620:Push register4, 1, register1, "setScoreBoard"
+CallMethod
+Pop
+}
+loc0630:StoreRegister 1
+SetMember
+Push register1, "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2, "setSpec"
+DefineFunction2 "", 2, 4, false, false, true, false, true, false, false, true, false, 2, "agGameSpec", 3, "agItemSpec" {
+Push register1, "_gameSpec", register2
+SetMember
+Push register1, "_itemSpec", register3
+SetMember
+}
+SetMember
+Push register2, "getSpec"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "_itemSpec"
+GetMember
+Push "trader1"
+GetMember
+Push "dat"
+GetMember
+Push 1
+GetMember
+Push "cost"
+GetMember
+Return
+}
+SetMember
+Push register2, "getHighestScore"
+DefineFunction2 "", 2, 4, false, false, true, false, true, false, false, true, false, 2, "agGameID", 3, "agLevel" {
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register2
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register3, 1
+Subtract
+GetMember
+Push "highestDate"
+GetMember
+Push null
+Equals2
+Not
+If loc0716
+Push null
+Return
+loc0716:Push register1, "_scoreBoard"
+GetMember
+Push "game", register2
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register3, 1
+Subtract
+GetMember
+Push "highestScore"
+GetMember
+Return
+}
+SetMember
+Push register2, "getScore"
+DefineFunction2 "", 2, 4, false, false, true, false, true, false, false, true, false, 2, "agGameID", 3, "agLevel" {
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register2
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register3, 1
+Subtract
+GetMember
+Push "latestDate"
+GetMember
+Push null
+Equals2
+Not
+If loc079f
+Push null
+Return
+loc079f:Push register1, "_scoreBoard"
+GetMember
+Push "game", register2
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register3, 1
+Subtract
+GetMember
+Push "latestScore"
+GetMember
+Return
+}
+SetMember
+Push register2, "getInitScore"
+DefineFunction2 "", 2, 4, false, false, true, false, true, false, false, true, false, 2, "agGameID", 3, "agLevel" {
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register2
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register3, 1
+Subtract
+GetMember
+Push "initDate"
+GetMember
+Push null
+Equals2
+Not
+If loc0828
+Push null
+Return
+loc0828:Push register1, "_scoreBoard"
+GetMember
+Push "game", register2
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register3, 1
+Subtract
+GetMember
+Push "initScore"
+GetMember
+Return
+}
+SetMember
+Push register2, "setScore"
+DefineFunction2 "", 3, 5, false, false, true, false, true, false, false, true, false, 2, "agGameID", 3, "agLevel", 4, "agScore" {
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register2
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register3, 1
+Subtract
+GetMember
+Push "initDate"
+GetMember
+Push null
+Equals2
+Not
+If loc097a
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register2
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register3, 1
+Subtract
+GetMember
+Push "initScore", register4
+SetMember
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register2
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register3, 1
+Subtract
+GetMember
+Push "initDate", 0.0, "Date"
+NewObject
+SetMember
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register2
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register3, 1
+Subtract
+GetMember
+Push "highestScore", register4
+SetMember
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register2
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register3, 1
+Subtract
+GetMember
+Push "highestDate", 0.0, "Date"
+NewObject
+SetMember
+Jump loc0a44
+loc097a:Push register1, "_scoreBoard"
+GetMember
+Push "game", register2
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register3, 1
+Subtract
+GetMember
+Push "initDate"
+GetMember
+Push null
+Equals2
+Not
+PushDuplicate
+Not
+If loc09de
+Pop
+Push register4, register1, "_scoreBoard"
+GetMember
+Push "game", register2
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register3, 1
+Subtract
+GetMember
+Push "highestScore"
+GetMember
+Less2
+Not
+loc09de:Not
+If loc0a44
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register2
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register3, 1
+Subtract
+GetMember
+Push "highestScore", register4
+SetMember
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register2
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register3, 1
+Subtract
+GetMember
+Push "highestDate", 0.0, "Date"
+NewObject
+SetMember
+loc0a44:Push register1, "_scoreBoard"
+GetMember
+Push "game", register2
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register3, 1
+Subtract
+GetMember
+Push "latestScore", register4
+SetMember
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register2
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register3, 1
+Subtract
+GetMember
+Push "latestDate", 0.0, "Date"
+NewObject
+SetMember
+}
+SetMember
+Push register2, "getCompletedLevel"
+DefineFunction2 "", 2, 6, false, false, true, false, true, false, false, true, false, 3, "agGameID", 4, "agPassMark" {
+Push 0.0
+StoreRegister 5
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc0aef:Push register2, register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc0cba
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "initDate"
+GetMember
+Push null
+Equals2
+Not
+PushDuplicate
+Not
+If loc0bb8
+Pop
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "highestScore"
+GetMember
+Push register1, "_gameSpec"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "playQ"
+GetMember
+Push register1, "_gameSpec"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "score"
+GetMember
+Multiply
+Divide
+Push register4
+Less2
+Not
+loc0bb8:Not
+If loc0bce
+Push register5
+Increment
+StoreRegister 5
+Pop
+Jump loc0caa
+loc0bce:Push register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "initDate"
+GetMember
+Push null
+Equals2
+PushDuplicate
+If loc0c9f
+Pop
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "initDate"
+GetMember
+Push null
+Equals2
+Not
+PushDuplicate
+Not
+If loc0c9f
+Pop
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "highestScore"
+GetMember
+Push register1, "_gameSpec"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "playQ"
+GetMember
+Push register1, "_gameSpec"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "score"
+GetMember
+Multiply
+Divide
+Push register4
+Less2
+loc0c9f:Not
+If loc0caa
+Jump loc0cba
+loc0caa:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc0aef
+loc0cba:Push register5
+Return
+}
+SetMember
+Push register2, "getNewLevel"
+DefineFunction2 "", 2, 6, false, false, true, false, true, false, false, true, false, 3, "agGameID", 5, "agPassMark" {
+Push 0.0
+StoreRegister 4
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc0d0b:Push register2, register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc0e42
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "initDate"
+GetMember
+Push null
+Equals2
+Not
+PushDuplicate
+Not
+If loc0dd3
+Pop
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "highestScore"
+GetMember
+Push register1, "_gameSpec"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "playQ"
+GetMember
+Push register1, "_gameSpec"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "score"
+GetMember
+Multiply
+Divide
+Push register5
+Less2
+loc0dd3:Not
+If loc0def
+Push 0.0
+StoreRegister 4
+Pop
+Jump loc0e42
+loc0def:Push register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "initDate"
+GetMember
+Push null
+Equals2
+Not
+If loc0e32
+Push register2, 1
+Add2
+StoreRegister 4
+Pop
+Jump loc0e42
+loc0e32:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc0d0b
+loc0e42:Push register4
+Return
+}
+SetMember
+Push register2, "getTotalCompletedLevel"
+DefineFunction2 "", 1, 5, false, false, true, false, true, false, false, true, false, 3, "agPassMark" {
+Push 0.0
+StoreRegister 2
+Pop
+Push register1, "_scoreBoard"
+GetMember
+Enumerate2
+loc0e81:StoreRegister 0
+Push null
+Equals2
+If loc0ec9
+Push register0
+StoreRegister 4
+Pop
+Push register2, register3, register1, "_scoreBoard"
+GetMember
+Push register4
+GetMember
+Push "id"
+GetMember
+Push 2, register1, "getCompletedLevel"
+CallMethod
+Add2
+StoreRegister 2
+Pop
+Jump loc0e81
+loc0ec9:Push register2
+Return
+}
+SetMember
+Push register2, "checkImprovement"
+DefineFunction2 "", 2, 8, false, false, true, false, true, false, false, true, false, 3, "agGameID", 6, "agLevel" {
+Push register3
+PushDuplicate
+Not
+If loc0f07
+Pop
+Push register6
+loc0f07:Not
+If loc1079
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register6, 1
+Subtract
+GetMember
+Push "initDate"
+GetMember
+Push null
+Equals2
+Not
+PushDuplicate
+Not
+If loc0f98
+Pop
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register6, 1
+Subtract
+GetMember
+Push "initScore"
+GetMember
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register6, 1
+Subtract
+GetMember
+Push "latestScore"
+GetMember
+Equals2
+Not
+loc0f98:Not
+If loc1067
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register6, 1
+Subtract
+GetMember
+Push "initScore"
+GetMember
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register6, 1
+Subtract
+GetMember
+Push "latestScore"
+GetMember
+Greater
+Not
+If loc1000
+Push -1
+Return
+loc1000:Push register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register6, 1
+Subtract
+GetMember
+Push "initScore"
+GetMember
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register6, 1
+Subtract
+GetMember
+Push "latestScore"
+GetMember
+Less2
+Not
+If loc1062
+Push 1
+Return
+loc1062:Jump loc1074
+loc1067:Push 0.0
+Return
+loc1074:Jump loc11c9
+loc1079:Push register3
+Not
+If loc11c9
+Push 0.0
+StoreRegister 7
+Pop
+Push 0.0
+StoreRegister 4
+Pop
+Push 0.0
+StoreRegister 5
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc10c8:Push register2, register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc118e
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "initDate"
+GetMember
+Push null
+Equals2
+Not
+Not
+If loc117e
+Push register7
+Increment
+StoreRegister 7
+Pop
+Push register4, register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "latestScore"
+GetMember
+Add2
+StoreRegister 4
+Pop
+Push register5, register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "initScore"
+GetMember
+Add2
+StoreRegister 5
+Pop
+loc117e:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc10c8
+loc118e:Push register5, register4
+Greater
+Not
+If loc11a5
+Push -1
+Return
+loc11a5:Push register5, register4
+Less2
+Not
+If loc11bc
+Push 1
+Return
+loc11bc:Push 0.0
+Return
+}
+loc11c9:SetMember
+Push register2, "setScoreBoard"
+DefineFunction2 "", 1, 17, false, false, true, false, true, false, false, true, false, 4, "agScoreBoard" {
+Push register1, "_scoreBoard", 0.0, "Object"
+NewObject
+SetMember
+Push 0.0
+StoreRegister 2
+Pop
+loc120f:Push register2, register4, "length"
+GetMember
+Less2
+Not
+If loc1553
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register2, 1
+Add2
+Add2
+Push 0.0, "Object"
+NewObject
+SetMember
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register2, 1
+Add2
+Add2
+GetMember
+Push "id", register2, 1
+Add2
+SetMember
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register2, 1
+Add2
+Add2
+GetMember
+Push "dat", 0.0, "Array"
+NewObject
+SetMember
+Push 0.0
+StoreRegister 3
+Pop
+loc12a5:Push register3, register4, register2
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc1543
+Push undefined
+StoreRegister 9
+Pop
+Push undefined
+StoreRegister 10
+Pop
+Push undefined
+StoreRegister 7
+Pop
+Push undefined
+StoreRegister 8
+Pop
+Push undefined
+StoreRegister 5
+Pop
+Push undefined
+StoreRegister 6
+Pop
+Push register4, register2
+GetMember
+Push register3
+GetMember
+Push 0.0
+GetMember
+Not
+Not
+If loc132a
+Push 0.0
+StoreRegister 9
+Pop
+Jump loc134a
+loc132a:Push register4, register2
+GetMember
+Push register3
+GetMember
+Push 0.0
+GetMember
+StoreRegister 9
+Pop
+loc134a:Push register4, register2
+GetMember
+Push register3
+GetMember
+Push 2
+GetMember
+Not
+Not
+If loc137e
+Push 0.0
+StoreRegister 7
+Pop
+Jump loc139a
+loc137e:Push register4, register2
+GetMember
+Push register3
+GetMember
+Push 2
+GetMember
+StoreRegister 7
+Pop
+loc139a:Push register4, register2
+GetMember
+Push register3
+GetMember
+Push 4
+GetMember
+Not
+Not
+If loc13ce
+Push 0.0
+StoreRegister 5
+Pop
+Jump loc13ea
+loc13ce:Push register4, register2
+GetMember
+Push register3
+GetMember
+Push 4
+GetMember
+StoreRegister 5
+Pop
+loc13ea:Push register4, register2
+GetMember
+Push register3
+GetMember
+Push 1
+GetMember
+Not
+Not
+If loc1416
+Push null
+StoreRegister 10
+Pop
+Jump loc143f
+loc1416:Push register4, register2
+GetMember
+Push register3
+GetMember
+Push 1
+GetMember
+Push 1, register1, "String2Date"
+CallMethod
+StoreRegister 10
+Pop
+loc143f:Push register4, register2
+GetMember
+Push register3
+GetMember
+Push 3
+GetMember
+Not
+Not
+If loc146b
+Push null
+StoreRegister 8
+Pop
+Jump loc1494
+loc146b:Push register4, register2
+GetMember
+Push register3
+GetMember
+Push 3
+GetMember
+Push 1, register1, "String2Date"
+CallMethod
+StoreRegister 8
+Pop
+loc1494:Push register4, register2
+GetMember
+Push register3
+GetMember
+Push 5
+GetMember
+Not
+Not
+If loc14c0
+Push null
+StoreRegister 6
+Pop
+Jump loc14e9
+loc14c0:Push register4, register2
+GetMember
+Push register3
+GetMember
+Push 5
+GetMember
+Push 1, register1, "String2Date"
+CallMethod
+StoreRegister 6
+Pop
+loc14e9:Push "initScore", register9, "initDate", register10, "highestScore", register7, "highestDate", register8, "latestScore", register5, "latestDate", register6, 6
+InitObject
+Push 1, register1, "_scoreBoard"
+GetMember
+Push "game", register2, 1
+Add2
+Add2
+GetMember
+Push "dat"
+GetMember
+Push "push"
+CallMethod
+Pop
+Push register3
+Increment
+StoreRegister 3
+Pop
+Jump loc12a5
+loc1543:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc120f
+}
+loc1553:SetMember
+Push register2, "getScoreBoard"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "_scoreBoard"
+GetMember
+Return
+}
+SetMember
+Push register2, "getScoreBoardInArray"
+DefineFunction2 "", 0, 6, false, false, true, false, true, false, false, true, false {
+Push 0.0, "Array"
+NewObject
+StoreRegister 4
+Pop
+Push 1
+StoreRegister 3
+Pop
+Push register1, "_gameSpec"
+GetMember
+Enumerate2
+loc15ac:StoreRegister 0
+Push null
+Equals2
+If loc17ea
+Push register0
+StoreRegister 5
+Pop
+Push 0.0, "Array"
+NewObject
+Push 1, register4, "push"
+CallMethod
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc15f2:Push register2, register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc17da
+Push register4, register3, 1
+Subtract
+GetMember
+Push register2, 0.0, "Array"
+NewObject
+SetMember
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "initScore"
+GetMember
+Push 1, register4, register3, 1
+Subtract
+GetMember
+Push register2
+GetMember
+Push "push"
+CallMethod
+Pop
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "initDate"
+GetMember
+Push 1, register4, register3, 1
+Subtract
+GetMember
+Push register2
+GetMember
+Push "push"
+CallMethod
+Pop
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "highestScore"
+GetMember
+Push 1, register4, register3, 1
+Subtract
+GetMember
+Push register2
+GetMember
+Push "push"
+CallMethod
+Pop
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "highestDate"
+GetMember
+Push 1, register4, register3, 1
+Subtract
+GetMember
+Push register2
+GetMember
+Push "push"
+CallMethod
+Pop
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "latestScore"
+GetMember
+Push 1, register4, register3, 1
+Subtract
+GetMember
+Push register2
+GetMember
+Push "push"
+CallMethod
+Pop
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "latestDate"
+GetMember
+Push 1, register4, register3, 1
+Subtract
+GetMember
+Push register2
+GetMember
+Push "push"
+CallMethod
+Pop
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc15f2
+loc17da:Push register3
+Increment
+StoreRegister 3
+Pop
+Jump loc15ac
+loc17ea:Push register4
+Return
+}
+SetMember
+Push register2, "getScoreBoardSummary"
+DefineFunction2 "", 0, 10, false, false, true, false, true, false, false, true, false {
+Push 0.0, "Array"
+NewObject
+StoreRegister 8
+Pop
+Push 1
+StoreRegister 3
+Pop
+Push register1, "_gameSpec"
+GetMember
+Enumerate2
+loc182d:StoreRegister 0
+Push null
+Equals2
+If loc1a83
+Push register0
+StoreRegister 9
+Pop
+Push 0.0
+StoreRegister 4
+Pop
+Push 0.0
+StoreRegister 5
+Pop
+Push 0.0
+StoreRegister 6
+Pop
+Push 0.0
+StoreRegister 7
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc189a:Push register2, register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc198b
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "initDate"
+GetMember
+Push null
+Equals2
+Not
+Not
+If loc197b
+Push register4
+Increment
+StoreRegister 4
+Pop
+Push register5, register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "latestScore"
+GetMember
+Add2
+StoreRegister 5
+Pop
+Push register6, register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "initScore"
+GetMember
+Add2
+StoreRegister 6
+Pop
+Push register7, register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "highestScore"
+GetMember
+Add2
+StoreRegister 7
+Pop
+loc197b:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc189a
+loc198b:Push register4, 0.0
+Greater
+Not
+If loc1a33
+Push register3, 1, register1, "checkImprovement"
+CallMethod
+Push register5, register4
+Divide
+Push 1, "Math"
+GetVariable
+Push "round"
+CallMethod
+Push register6, register4
+Divide
+Push 1, "Math"
+GetVariable
+Push "round"
+CallMethod
+Push register7, register4
+Divide
+Push 1, "Math"
+GetVariable
+Push "round"
+CallMethod
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push "length"
+GetMember
+Push 5
+InitArray
+Push 1, register8, "push"
+CallMethod
+Pop
+Jump loc1a73
+loc1a33:Push 0.0, null, null, null, register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push "length"
+GetMember
+Push 5
+InitArray
+Push 1, register8, "push"
+CallMethod
+Pop
+loc1a73:Push register3
+Increment
+StoreRegister 3
+Pop
+Jump loc182d
+loc1a83:Push register8
+Return
+}
+SetMember
+Push register2, "getScoreBoardDetail"
+DefineFunction2 "", 1, 5, false, false, true, false, true, false, false, true, false, 3, "agGameID" {
+Push 0.0, "Array"
+NewObject
+StoreRegister 4
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc1acb:Push register2, register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc1bf2
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "initDate"
+GetMember
+Push null
+Equals2
+Not
+Not
+If loc1bbf
+Push register2, 1
+Add2
+Push register3, 2, register1, "checkImprovement"
+CallMethod
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "latestScore"
+GetMember
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "initScore"
+GetMember
+Push register1, "_scoreBoard"
+GetMember
+Push "game", register3
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register2
+GetMember
+Push "highestScore"
+GetMember
+Push 4
+InitArray
+Push 1, register4, "push"
+CallMethod
+Pop
+Jump loc1be2
+loc1bbf:Push 0.0, null, null, null, 4
+InitArray
+Push 1, register4, "push"
+CallMethod
+Pop
+loc1be2:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc1acb
+loc1bf2:Push register4
+Return
+}
+SetMember
+Push register2, "setGemBoard"
+DefineFunction2 "", 1, 3, false, false, true, false, true, false, false, true, false, 2, "agGemBoard" {
+Push register1, "_gemBoard", 0.0, 1, register2, "slice"
+CallMethod
+SetMember
+}
+SetMember
+Push register2, "setGem"
+DefineFunction2 "", 2, 4, false, false, true, false, true, false, false, true, false, 2, "agGemID", 3, "agAmount" {
+Push register1, "_gemBoard"
+GetMember
+Push register2, 1
+Subtract
+Push register3
+SetMember
+}
+SetMember
+Push register2, "getGem"
+DefineFunction2 "", 1, 3, false, false, true, false, true, false, false, true, false, 2, "agGemID" {
+Push register1, "_gemBoard"
+GetMember
+Push register2, 1
+Subtract
+GetMember
+Return
+}
+SetMember
+Push register2, "getTotalGem"
+DefineFunction2 "", 0, 4, false, false, true, false, true, false, false, true, false {
+Push 0.0
+StoreRegister 3
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc1cd7:Push register2, register1, "_gemBoard"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc1d14
+Push register3, register1, "_gemBoard"
+GetMember
+Push register2
+GetMember
+Add2
+StoreRegister 3
+Pop
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc1cd7
+loc1d14:Push register3
+Return
+}
+SetMember
+Push register2, "getTotalNormalGem"
+DefineFunction2 "", 0, 4, false, false, true, false, true, false, false, true, false {
+Push 0.0
+StoreRegister 3
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc1d4f:Push register2, 5
+Less2
+Not
+If loc1d86
+Push register3, register1, "_gemBoard"
+GetMember
+Push register2
+GetMember
+Add2
+StoreRegister 3
+Pop
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc1d4f
+loc1d86:Push register3
+Return
+}
+SetMember
+Push register2, "getTotalSpecialGem"
+DefineFunction2 "", 0, 4, false, false, true, false, true, false, false, true, false {
+Push 0.0
+StoreRegister 3
+Pop
+Push 5
+StoreRegister 2
+Pop
+loc1dbd:Push register2, register1, "_gemBoard"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc1dfa
+Push register3, register1, "_gemBoard"
+GetMember
+Push register2
+GetMember
+Add2
+StoreRegister 3
+Pop
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc1dbd
+loc1dfa:Push register3
+Return
+}
+SetMember
+Push register2, "reduceGem"
+DefineFunction2 "", 2, 4, false, false, true, false, true, false, false, true, false, 2, "agGemID", 3, "agAmount" {
+Push register1, "_gemBoard"
+GetMember
+Push register2, 1
+Subtract
+Push register1, "_gemBoard"
+GetMember
+Push register2, 1
+Subtract
+GetMember
+Push register3
+Subtract
+SetMember
+}
+SetMember
+Push register2, "addGem"
+DefineFunction2 "", 2, 4, false, false, true, false, true, false, false, true, false, 2, "agGemID", 3, "agAmount" {
+Push register1, "_gemBoard"
+GetMember
+Push register2, 1
+Subtract
+Push register1, "_gemBoard"
+GetMember
+Push register2, 1
+Subtract
+GetMember
+Push register3
+Add2
+SetMember
+}
+SetMember
+Push register2, "getGemBoard"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "_gemBoard"
+GetMember
+Return
+}
+SetMember
+Push register2, "setItemBoard"
+DefineFunction2 "", 1, 9, false, false, true, false, true, false, false, true, false, 3, "agItemBoard" {
+Push register1, "_itemBoard", 0.0, "Array"
+NewObject
+SetMember
+Push register3, "length"
+GetMember
+Push 0.0
+Greater
+Not
+If loc1fd1
+Push 0.0
+StoreRegister 2
+Pop
+loc1f24:Push register2, register3, "length"
+GetMember
+Less2
+Not
+If loc1fd1
+Push "-", 1, register3, register2
+GetMember
+Push 0.0
+GetMember
+Push "split"
+CallMethod
+StoreRegister 4
+Pop
+Push "name", register3, register2
+GetMember
+Push 0.0
+GetMember
+Push "traderID", register4, 0.0
+GetMember
+Push "itemID", register4, 1
+GetMember
+Push "amount", register3, register2
+GetMember
+Push 1
+GetMember
+Push 4
+InitObject
+Push 1, register1, "_itemBoard"
+GetMember
+Push "push"
+CallMethod
+Pop
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc1f24
+}
+loc1fd1:SetMember
+Push register2, "setItem"
+DefineFunction2 "", 2, 11, false, false, true, false, true, false, false, true, false, 4, "agItemID", 5, "agAmount" {
+Push false
+StoreRegister 3
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc2013:Push register2, register1, "_itemBoard"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc207f
+Push register1, "_itemBoard"
+GetMember
+Push register2
+GetMember
+Push "name"
+GetMember
+Push register4
+Equals2
+Not
+If loc206f
+Push register1, "_itemBoard"
+GetMember
+Push register2
+GetMember
+Push "amount", register5
+SetMember
+Push true
+StoreRegister 3
+Pop
+Jump loc207f
+loc206f:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc2013
+loc207f:Push register3
+Not
+Not
+If loc20e2
+Push "-", 1, register4, "split"
+CallMethod
+StoreRegister 6
+Pop
+Push "name", register4, "traderID", register6, 0.0
+GetMember
+Push "itemID", register6, 1
+GetMember
+Push "amount", register5, 4
+InitObject
+Push 1, register1, "_itemBoard"
+GetMember
+Push "push"
+CallMethod
+Pop
+}
+loc20e2:SetMember
+Push register2, "addItem"
+DefineFunction2 "", 2, 11, false, false, true, false, true, false, false, true, false, 3, "agItemID", 5, "agAmount" {
+Push "hung adding item/agItemID:", register3
+Add2
+Push "/agAmount"
+Add2
+Push register5
+Add2
+Trace
+Push false
+StoreRegister 4
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc2139:Push register2, register1, "_itemBoard"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc21ba
+Push register1, "_itemBoard"
+GetMember
+Push register2
+GetMember
+Push "name"
+GetMember
+Push register3
+Equals2
+Not
+If loc21aa
+Push register1, "_itemBoard"
+GetMember
+Push register2
+GetMember
+Push "amount", register1, "_itemBoard"
+GetMember
+Push register2
+GetMember
+Push "amount"
+GetMember
+Push register5
+Add2
+SetMember
+Push true
+StoreRegister 4
+Pop
+Jump loc21ba
+loc21aa:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc2139
+loc21ba:Push register4
+Not
+Not
+If loc221d
+Push "-", 1, register3, "split"
+CallMethod
+StoreRegister 6
+Pop
+Push "name", register3, "traderID", register6, 0.0
+GetMember
+Push "itemID", register6, 1
+GetMember
+Push "amount", register5, 4
+InitObject
+Push 1, register1, "_itemBoard"
+GetMember
+Push "push"
+CallMethod
+Pop
+}
+loc221d:SetMember
+Push register2, "reduceItem"
+DefineFunction2 "", 2, 7, false, false, true, false, true, false, false, true, false, 6, "agItemID", 5, "agAmount" {
+Push 0.0
+StoreRegister 2
+Pop
+loc2255:Push register2, register1, "_itemBoard"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc2359
+Push register1, "_itemBoard"
+GetMember
+Push register2
+GetMember
+Push "name"
+GetMember
+Push register6
+Equals2
+Not
+If loc2349
+Push register1, "_itemBoard"
+GetMember
+Push register2
+GetMember
+Push "amount"
+GetMember
+Push register5
+Greater
+Not
+If loc22dc
+Push register1, "_itemBoard"
+GetMember
+Push register2
+GetMember
+Push "amount", register1, "_itemBoard"
+GetMember
+Push register2
+GetMember
+Push "amount"
+GetMember
+Push register5
+Subtract
+SetMember
+Jump loc2344
+loc22dc:Push register2, 0.0, 2, register1, "_itemBoard"
+GetMember
+Push "slice"
+CallMethod
+StoreRegister 3
+Pop
+Push register1, "_itemBoard"
+GetMember
+Push "length"
+GetMember
+Push register2, 1
+Add2
+Push 2, register1, "_itemBoard"
+GetMember
+Push "slice"
+CallMethod
+StoreRegister 4
+Pop
+Push register1, "_itemBoard", register4, 1, register3, "concat"
+CallMethod
+SetMember
+loc2344:Jump loc2359
+loc2349:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc2255
+}
+loc2359:SetMember
+Push register2, "getItemBoard"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "_itemBoard"
+GetMember
+Return
+}
+SetMember
+Push register2, "getItemBoardInArray"
+DefineFunction2 "", 0, 4, false, false, true, false, true, false, false, true, false {
+Push 0.0, "Array"
+NewObject
+StoreRegister 3
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc23ad:Push register2, register1, "_itemBoard"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc2413
+Push register1, "_itemBoard"
+GetMember
+Push register2
+GetMember
+Push "amount"
+GetMember
+Push register1, "_itemBoard"
+GetMember
+Push register2
+GetMember
+Push "name"
+GetMember
+Push 2
+InitArray
+Push 1, register3, "push"
+CallMethod
+Pop
+Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc23ad
+loc2413:Push register3
+Return
+}
+SetMember
+Push register2, "getItemAmount"
+DefineFunction2 "", 1, 5, false, false, true, false, true, false, false, true, false, 4, "agItemID" {
+Push false
+StoreRegister 3
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc2451:Push register2, register1, "_itemBoard"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc24ad
+Push register1, "_itemBoard"
+GetMember
+Push register2
+GetMember
+Push "name"
+GetMember
+Push register4
+Equals2
+Not
+If loc249d
+Push register1, "_itemBoard"
+GetMember
+Push register2
+GetMember
+Push "amount"
+GetMember
+Return
+loc249d:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc2451
+loc24ad:Push register3
+Not
+Not
+If loc24c6
+Push 0.0
+Return
+}
+loc24c6:SetMember
+Push register2, "getTotalItemKind"
+DefineFunction2 "", 1, 5, false, false, true, false, true, false, false, true, false, 4, "agTraderID" {
+Push 0.0
+StoreRegister 3
+Pop
+Push register4, undefined
+Equals2
+Not
+If loc251b
+Push register1, "_itemBoard"
+GetMember
+Push "length"
+GetMember
+StoreRegister 3
+Pop
+Jump loc2583
+loc251b:Push 0.0
+StoreRegister 2
+Pop
+loc252c:Push register2, register1, "_itemBoard"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc2583
+Push register1, "_itemBoard"
+GetMember
+Push register2
+GetMember
+Push "traderID"
+GetMember
+Push register4
+Equals2
+Not
+If loc2573
+Push register3, 1
+Add2
+StoreRegister 3
+Pop
+loc2573:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc252c
+loc2583:Push register3
+Return
+}
+SetMember
+Push register2, "getTotalItemAmount"
+DefineFunction2 "", 1, 5, false, false, true, false, true, false, false, true, false, 3, "agTraderID" {
+Push 0.0
+StoreRegister 4
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc25ca:Push register2, register1, "_itemBoard"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc263b
+Push register3, undefined
+Equals2
+PushDuplicate
+If loc2609
+Pop
+Push register1, "_itemBoard"
+GetMember
+Push register2
+GetMember
+Push "traderID"
+GetMember
+Push register3
+Equals2
+loc2609:Not
+If loc262b
+Push register4, register1, "_itemBoard"
+GetMember
+Push register2
+GetMember
+Push "amount"
+GetMember
+Add2
+StoreRegister 4
+Pop
+loc262b:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc25ca
+loc263b:Push register4
+Return
+}
+SetMember
+Push register2, "getTotalItemCost"
+DefineFunction2 "", 1, 7, false, false, true, false, true, false, false, true, false, 6, "agTraderID" {
+Push 0.0
+StoreRegister 5
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc2682:Push register2, register1, "_itemBoard"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc27c7
+Push register6, undefined
+Equals2
+PushDuplicate
+If loc26c1
+Pop
+Push register1, "_itemBoard"
+GetMember
+Push register2
+GetMember
+Push "traderID"
+GetMember
+Push register6
+Equals2
+loc26c1:Not
+If loc27b7
+Push register1, "_itemSpec"
+GetMember
+Push "trader", register1, "_itemBoard"
+GetMember
+Push register2
+GetMember
+Push "traderID"
+GetMember
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register1, "_itemBoard"
+GetMember
+Push register2
+GetMember
+Push "itemID"
+GetMember
+GetMember
+Push "cost"
+GetMember
+StoreRegister 3
+Pop
+Push register1, "_itemSpec"
+GetMember
+Push "trader", register1, "_itemBoard"
+GetMember
+Push register2
+GetMember
+Push "traderID"
+GetMember
+Add2
+GetMember
+Push "dat"
+GetMember
+Push register1, "_itemBoard"
+GetMember
+Push register2
+GetMember
+Push "itemID"
+GetMember
+GetMember
+Push "amount"
+GetMember
+StoreRegister 4
+Pop
+Push register4, 0.0
+Greater
+Not
+If loc2795
+Push register5, register1, "_itemBoard"
+GetMember
+Push register2
+GetMember
+Push "amount"
+GetMember
+Push register3
+Multiply
+Push register4
+Divide
+Add2
+StoreRegister 5
+Pop
+Jump loc27b7
+loc2795:Push register5, register1, "_itemBoard"
+GetMember
+Push register2
+GetMember
+Push "amount"
+GetMember
+Push register3
+Multiply
+Add2
+StoreRegister 5
+Pop
+loc27b7:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc2682
+loc27c7:Push register5
+Return
+}
+SetMember
+Push register2, "String2Date"
+DefineFunction2 "", 1, 7, false, false, true, false, true, false, true, false, false, 5, "agDateString" {
+Push undefined
+StoreRegister 6
+Pop
+Push undefined
+StoreRegister 2
+Pop
+Push undefined
+StoreRegister 3
+Pop
+Push undefined
+StoreRegister 4
+Pop
+Push "-", 1, register5, "indexOf"
+CallMethod
+Push 0.0
+Less2
+Not
+PushDuplicate
+Not
+If loc2855
+Pop
+Push "-", 1, register5, "split"
+CallMethod
+Push "length"
+GetMember
+Push 3
+Equals2
+loc2855:Not
+If loc2bd0
+Push " ", 1, register5, "split"
+CallMethod
+StoreRegister 6
+Pop
+Push "-", 1, register6, 0.0
+GetMember
+Push "split"
+CallMethod
+StoreRegister 2
+Pop
+Push 0.0
+StoreRegister 1
+Pop
+loc28a1:Push register1, register2, "length"
+GetMember
+Less2
+Not
+If loc299c
+Push register2, register1
+GetMember
+Push 1, "isNaN"
+CallFunction
+Not
+If loc28db
+Push 0.0, "Date"
+NewObject
+Return
+loc28db:Push register1, 1
+Equals2
+Not
+If loc2936
+Push register2, register1
+GetMember
+ToNumber
+Push 1
+Less2
+Not
+PushDuplicate
+Not
+If loc291a
+Pop
+Push register2, register1
+GetMember
+ToNumber
+Push 12
+Greater
+Not
+loc291a:Not
+Not
+If loc2931
+Push 0.0, "Date"
+NewObject
+Return
+loc2931:Jump loc298c
+loc2936:Push register1, 2
+Equals2
+Not
+If loc298c
+Push register2, register1
+GetMember
+ToNumber
+Push 1
+Less2
+Not
+PushDuplicate
+Not
+If loc2975
+Pop
+Push register2, register1
+GetMember
+ToNumber
+Push 31
+Greater
+Not
+loc2975:Not
+Not
+If loc298c
+Push 0.0, "Date"
+NewObject
+Return
+loc298c:Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc28a1
+loc299c:Push " ", 1, register5, "indexOf"
+CallMethod
+Push 0.0
+Less2
+Not
+Not
+If loc2b89
+Push ":", 1, 0.0, 1, register6, 1
+GetMember
+Push "slice"
+CallMethod
+Push "split"
+CallMethod
+StoreRegister 3
+Pop
+Push 0.0
+StoreRegister 1
+Pop
+loc2a01:Push register1, register3, "length"
+GetMember
+Less2
+Not
+If loc2b1a
+Push register3, register1
+GetMember
+Push 1, "isNaN"
+CallFunction
+Not
+If loc2a3b
+Push 0.0, "Date"
+NewObject
+Return
+loc2a3b:Push register1, 0.0
+Equals2
+Not
+If loc2a9e
+Push register3, register1
+GetMember
+ToNumber
+Push 0.0
+Less2
+Not
+PushDuplicate
+Not
+If loc2a82
+Pop
+Push register3, register1
+GetMember
+ToNumber
+Push 23
+Greater
+Not
+loc2a82:Not
+Not
+If loc2a99
+Push 0.0, "Date"
+NewObject
+Return
+loc2a99:Jump loc2b0a
+loc2a9e:Push register1, 1
+Equals2
+PushDuplicate
+If loc2abb
+Pop
+Push register1, 2
+Equals2
+loc2abb:Not
+If loc2b0a
+Push register2, register1
+GetMember
+ToNumber
+Push 0.0
+Less2
+Not
+PushDuplicate
+Not
+If loc2af3
+Pop
+Push register2, register1
+GetMember
+ToNumber
+Push 59
+Greater
+Not
+loc2af3:Not
+Not
+If loc2b0a
+Push 0.0, "Date"
+NewObject
+Return
+loc2b0a:Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc2a01
+loc2b1a:Push register3, 2
+GetMember
+ToNumber
+Push register3, 1
+GetMember
+ToNumber
+Push register3, 0.0
+GetMember
+ToNumber
+Push register2, 2
+GetMember
+ToNumber
+Push register2, 1
+GetMember
+Push 1
+Subtract
+ToNumber
+Push register2, 0.0
+GetMember
+ToNumber
+Push 6, "Date"
+NewObject
+StoreRegister 4
+Pop
+Push register4
+Return
+loc2b89:Push register2, 2
+GetMember
+ToNumber
+Push register2, 1
+GetMember
+Push 1
+Subtract
+ToNumber
+Push register2, 0.0
+GetMember
+ToNumber
+Push 3, "Date"
+NewObject
+StoreRegister 4
+Pop
+Push register4
+Return
+loc2bd0:Push 0.0, "Date"
+NewObject
+Return
+}
+SetMember
+Push 1, null, "_global"
+GetVariable
+Push "Report"
+GetMember
+Push "prototype"
+GetMember
+Push 3, "ASSetPropFlags"
+CallFunction
+loc2c04:Pop

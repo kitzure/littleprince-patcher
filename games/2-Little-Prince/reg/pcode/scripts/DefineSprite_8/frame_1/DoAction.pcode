@@ -1,0 +1,8 @@
+Push "this"
+GetVariable
+Push "_totalframes"
+GetMember
+RandomNumber
+Push 1
+Add2
+GotoFrame2 false, true

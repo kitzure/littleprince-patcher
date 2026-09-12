@@ -1,0 +1,5 @@
+Push "fall", 1, "_parent"
+GetVariable
+Push "playFx"
+CallMethod
+Pop

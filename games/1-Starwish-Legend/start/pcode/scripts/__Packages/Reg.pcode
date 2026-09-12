@@ -1,0 +1,1739 @@
+ConstantPool "_global", "Reg", "prototype", "init", "_firstcall", "loadingSWF", "lv_net", "LoadVars", "onHTTPStatus", "updateNetwork", "intervalID", "checkNetworkTimeout", "setInterval", "http://www.little-prince.com.hk/littleprince/amfservice/gateway.php", "load", "clearInterval", "_network", "SaveLoadSystem", "root", "loadRegSWF", "onLoadInit", "reg", "target", "play", "_licence", "loadLicence", "checkActivation", "activationKey", "", "getHDKey", "hdkey", "sn", "activationSuccess", "haveNetwork", "Username", "name", "Phone", "phone", "Email", "email", "Serial", "type", "rkey", "requestKey", "serviceRequest", "loadFullVersion", "initTimeOutCount", "btn_activate", "loading", "popup", "activated", "gotoAndStop", "clearActivation", "e060", "e090", "mc_popup", "error", "090", "form", "checkVersion", "_root", "verNumber", "checkVersionResponse", "connectActivationServer", "-", "indexOf", "e010", "e020", "activation", "e030", "activationResponse", "clearTimeOutCount", "e040", "e050", "e080", "alert_act", "a2", "gotoAndPlay", "killPopup", "saveActivation", "success", "reactivation", "reactivationResponse", "result: ", "a055", "last", "mc_al_phone", "a3", "mc_al_email", "checkActivationResponse", "e091", "091", "e070", ",", "split", "e000", "saveLicence", "Object", "onResult", "serviceResponse", "princeService_nc", "NetConnection", "connect", "Prince2_v2_2.serviceRequest", "call", "response", "checkVersionResult", "message", "activationResult", "reactivationResult", "checkActivationResult", "timeoutID", "timeOutAppear", "hdkey2Nums", "join", "pL]51?m;iFvZ<.SsrR$^}H!a+eGyjf[gOC`b-lYE&)w=:dN306hqkA|PD9{>(%nK#4*xtBuWMQV~7Tz2\'8@J_,XIUco", "44", "62", "70", "49", "17", "76", "79", "65", "64", "42", "66", "86", "95", "06", "58", "88", "71", "55", "96", "02", "90", "13", "32", "53", "56", "04", "08", "75", "09", "33", "43", "31", "03", "67", "15", "21", "35", "36", "82", "69", "12", "78", "59", "07", "84", "73", "46", "34", "60", "26", "61", "77", "52", "30", "24", "05", "10", "27", "22", "87", "37", "47", "38", "94", "74", "80", "50", "83", "29", "98", "92", "20", "25", "16", "28", "40", "89", "51", "23", "57", "45", "54", "11", "63", "19", "81", "85", "99", "48", "68", "18", "01", "72", "93", "41", "00", "14", "91", "39", "97", "length", "substr", "nums2hdkey", "serial2Nums", "shift", "F9E5K3P4JMAXV6R82C17YTQ0S", "str2Int", "checksum", "encrypt", "2965130847", "decrypt", "P2-", "|=_=|", "SIEdutainment", "mdm", "Encryption", "encryptString", "decryptString", "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "Reg"
+GetMember
+Not
+Not
+If loc24ea
+Push "_global"
+GetVariable
+Push "Reg"
+DefineFunction "", 0 {
+}
+StoreRegister 1
+SetMember
+Push register1, "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register1, "init"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "obj" {
+Push "Reg"
+GetVariable
+Push "_firstcall", true
+SetMember
+Push "Reg"
+GetVariable
+Push "loadingSWF", register1
+SetMember
+Push "Reg"
+GetVariable
+Push "lv_net", 0.0, "LoadVars"
+NewObject
+SetMember
+Push "Reg"
+GetVariable
+Push "lv_net"
+GetMember
+Push "onHTTPStatus", "Reg"
+GetVariable
+Push "onHTTPStatus"
+GetMember
+SetMember
+Push 0.0, "Reg"
+GetVariable
+Push "updateNetwork"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "updateNetwork"
+DefineFunction "", 0 {
+Push "Reg"
+GetVariable
+Push "intervalID", 5000, "Reg"
+GetVariable
+Push "checkNetworkTimeout"
+GetMember
+Push 2, "setInterval"
+CallFunction
+SetMember
+Push "http://www.little-prince.com.hk/littleprince/amfservice/gateway.php", 1, "Reg"
+GetVariable
+Push "lv_net"
+GetMember
+Push "load"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "checkNetworkTimeout"
+DefineFunction "", 0 {
+Push 0.0, 1, "Reg"
+GetVariable
+Push "onHTTPStatus"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "onHTTPStatus"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "httpStatus" {
+Push "Reg"
+GetVariable
+Push "intervalID"
+GetMember
+Push 1, "clearInterval"
+CallFunction
+Pop
+Push "Reg"
+GetVariable
+Push "intervalID", null
+SetMember
+Push "Reg"
+GetVariable
+Push "_network", register1, 200
+Equals2
+SetMember
+Push "Reg"
+GetVariable
+Push "_firstcall"
+GetMember
+Push true
+Equals2
+Not
+If loc08cb
+Push "Reg"
+GetVariable
+Push "_firstcall", false
+SetMember
+Push 0.0, "SaveLoadSystem"
+GetVariable
+Push "root"
+GetMember
+Push "loadRegSWF"
+CallMethod
+Pop
+}
+loc08cb:SetMember
+Push register1, "onLoadInit"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 0, "target_mc" {
+Push "SaveLoadSystem"
+GetVariable
+Push "root"
+GetMember
+Push "reg"
+GetMember
+StoreRegister 1
+Pop
+Push 0.0, "Reg"
+GetVariable
+Push "loadingSWF"
+GetMember
+Push "target"
+GetMember
+Push "play"
+CallMethod
+Pop
+Push "Reg"
+GetVariable
+Push "_licence", 0.0, "SaveLoadSystem"
+GetVariable
+Push "loadLicence"
+CallMethod
+SetMember
+Push 0.0, "Reg"
+GetVariable
+Push "checkActivation"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "checkActivation"
+DefineFunction2 "", 0, 7, false, false, true, false, true, false, true, false, false {
+Push "SaveLoadSystem"
+GetVariable
+Push "root"
+GetMember
+Push "reg"
+GetMember
+StoreRegister 1
+Pop
+Push "Reg"
+GetVariable
+Push "_licence"
+GetMember
+Push "activationKey"
+GetMember
+Push ""
+Equals2
+Not
+Not
+If loc0c58
+Push 0.0, "Reg"
+GetVariable
+Push "getHDKey"
+CallMethod
+Push "Reg"
+GetVariable
+Push "_licence"
+GetMember
+Push "hdkey"
+GetMember
+Equals2
+Not
+If loc0bfc
+Push "Reg"
+GetVariable
+Push "_licence"
+GetMember
+Push "activationKey"
+GetMember
+Push "Reg"
+GetVariable
+Push "_licence"
+GetMember
+Push "hdkey"
+GetMember
+Push "Reg"
+GetVariable
+Push "_licence"
+GetMember
+Push "sn"
+GetMember
+Push 3, "Reg"
+GetVariable
+Push "activationSuccess"
+CallMethod
+Not
+If loc0bb0
+Push 0.0, "Reg"
+GetVariable
+Push "haveNetwork"
+CallMethod
+Not
+If loc0b8f
+Push register1, "Username", "Reg"
+GetVariable
+Push "_licence"
+GetMember
+Push "name"
+GetMember
+SetMember
+Push register1, "Phone", "Reg"
+GetVariable
+Push "_licence"
+GetMember
+Push "phone"
+GetMember
+SetMember
+Push register1, "Email", "Reg"
+GetVariable
+Push "_licence"
+GetMember
+Push "email"
+GetMember
+SetMember
+Push register1, "Serial", "Reg"
+GetVariable
+Push "_licence"
+GetMember
+Push "sn"
+GetMember
+SetMember
+Push "type", "checkActivation", "name", "Reg"
+GetVariable
+Push "_licence"
+GetMember
+Push "name"
+GetMember
+Push "phone", "Reg"
+GetVariable
+Push "_licence"
+GetMember
+Push "phone"
+GetMember
+Push "email", "Reg"
+GetVariable
+Push "_licence"
+GetMember
+Push "email"
+GetMember
+Push "rkey", "Reg"
+GetVariable
+Push "_licence"
+GetMember
+Push "hdkey"
+GetMember
+Push "Reg"
+GetVariable
+Push "_licence"
+GetMember
+Push "sn"
+GetMember
+Push 2, "Reg"
+GetVariable
+Push "requestKey"
+CallMethod
+Push 5
+InitObject
+Push 1
+InitArray
+Push 1, "Reg"
+GetVariable
+Push "serviceRequest"
+CallMethod
+Not
+Not
+If loc0b53
+Push 0.0, "SaveLoadSystem"
+GetVariable
+Push "root"
+GetMember
+Push "loadFullVersion"
+CallMethod
+Pop
+Jump loc0b8a
+loc0b53:Push 0.0, "Reg"
+GetVariable
+Push "initTimeOutCount"
+CallMethod
+Pop
+Push register1, "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "loading", 2, register1, "popup"
+CallMethod
+Pop
+loc0b8a:Jump loc0bab
+loc0b8f:Push 0.0, "SaveLoadSystem"
+GetVariable
+Push "root"
+GetMember
+Push "loadFullVersion"
+CallMethod
+Pop
+loc0bab:Jump loc0bf7
+loc0bb0:Push "activated", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, "Reg"
+GetVariable
+Push "clearActivation"
+CallMethod
+Pop
+Push register1, "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e060", 2, register1, "popup"
+CallMethod
+Pop
+loc0bf7:Jump loc0c53
+loc0bfc:Push "activated", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, "Reg"
+GetVariable
+Push "clearActivation"
+CallMethod
+Pop
+Push register1, "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e090", 2, register1, "popup"
+CallMethod
+Pop
+Push register1, "mc_popup"
+GetMember
+Push "error", "090"
+SetMember
+loc0c53:Jump loc0cf3
+loc0c58:Push "form", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+Push register1, "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "loading", 2, register1, "popup"
+CallMethod
+Pop
+Push "type", "checkVersion", 1
+InitObject
+Push 1
+InitArray
+Push 1, "Reg"
+GetVariable
+Push "serviceRequest"
+CallMethod
+Not
+Not
+If loc0cdd
+Push register1, "_root"
+GetMember
+Push "verNumber"
+GetMember
+ToNumber
+Push 1, "Reg"
+GetVariable
+Push "checkVersionResponse"
+CallMethod
+Pop
+Jump loc0cf3
+loc0cdd:Push 0.0, "Reg"
+GetVariable
+Push "initTimeOutCount"
+CallMethod
+Pop
+}
+loc0cf3:SetMember
+Push register1, "connectActivationServer"
+DefineFunction2 "", 0, 9, false, false, true, false, true, false, true, false, false {
+Push "SaveLoadSystem"
+GetVariable
+Push "root"
+GetMember
+Push "reg"
+GetMember
+StoreRegister 1
+Pop
+Push register1, "Username"
+GetMember
+StoreRegister 4
+Pop
+Push register1, "Phone"
+GetMember
+StoreRegister 5
+Pop
+Push register1, "Email"
+GetMember
+StoreRegister 6
+Pop
+Push register1, "Serial"
+GetMember
+StoreRegister 3
+Pop
+Push 0.0, "Reg"
+GetVariable
+Push "getHDKey"
+CallMethod
+StoreRegister 2
+Pop
+Push "-", 1, register2, "indexOf"
+CallMethod
+Push 4
+Equals2
+Not
+Not
+If loc0db0
+Push register1, "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e010", 2, register1, "popup"
+CallMethod
+Pop
+Jump loc0ea0
+loc0db0:Push 0.0, "Reg"
+GetVariable
+Push "haveNetwork"
+CallMethod
+Not
+Not
+If loc0df2
+Push register1, "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e020", 2, register1, "popup"
+CallMethod
+Pop
+Jump loc0ea0
+loc0df2:Push "type", "activation", "name", register4, "phone", register5, "email", register6, "rkey", register2, register3, 2, "Reg"
+GetVariable
+Push "requestKey"
+CallMethod
+Push 5
+InitObject
+Push 1
+InitArray
+Push 1, "Reg"
+GetVariable
+Push "serviceRequest"
+CallMethod
+Not
+Not
+If loc0e69
+Push register1, "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e030", 2, register1, "popup"
+CallMethod
+Pop
+Jump loc0ea0
+loc0e69:Push 0.0, "Reg"
+GetVariable
+Push "initTimeOutCount"
+CallMethod
+Pop
+Push register1, "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "loading", 2, register1, "popup"
+CallMethod
+Pop
+}
+loc0ea0:SetMember
+Push register1, "activationResponse"
+DefineFunction2 "", 1, 4, false, false, true, false, true, false, true, false, false, 2, "result" {
+Push "SaveLoadSystem"
+GetVariable
+Push "root"
+GetMember
+Push "reg"
+GetMember
+StoreRegister 1
+Pop
+Push 0.0, "Reg"
+GetVariable
+Push "clearTimeOutCount"
+CallMethod
+Pop
+Push 0.0, "Reg"
+GetVariable
+Push "getHDKey"
+CallMethod
+StoreRegister 3
+Pop
+Push register2, "e040"
+Equals2
+Not
+If loc0f36
+Push register1, "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e040", 2, register1, "popup"
+CallMethod
+Pop
+Jump loc109f
+loc0f36:Push register2, "e050"
+Equals2
+Not
+If loc0f6a
+Push register1, "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e050", 2, register1, "popup"
+CallMethod
+Pop
+Jump loc109f
+loc0f6a:Push register2, "e080"
+Equals2
+Not
+If loc0fae
+Push "activated", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+Push register1, "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e080", 2, register1, "popup"
+CallMethod
+Pop
+Jump loc109f
+loc0fae:Push register2, register3, register1, "Serial"
+GetMember
+Push 3, "Reg"
+GetVariable
+Push "activationSuccess"
+CallMethod
+Not
+Not
+If loc1047
+Push register1, "alert_act"
+GetMember
+Not
+If loc0ffb
+Push "a2", 1, register1, "alert_act"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Jump loc1042
+loc0ffb:Push "activated", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, "Reg"
+GetVariable
+Push "clearActivation"
+CallMethod
+Pop
+Push register1, "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e090", 2, register1, "popup"
+CallMethod
+Pop
+loc1042:Jump loc109f
+loc1047:Push 0.0, register1, "killPopup"
+CallMethod
+Pop
+Push register2, register3, register1, "Serial"
+GetMember
+Push register1, "Email"
+GetMember
+Push register1, "Phone"
+GetMember
+Push register1, "Username"
+GetMember
+Push 6, "Reg"
+GetVariable
+Push "saveActivation"
+CallMethod
+Pop
+Push "success", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+loc109f:SetMember
+Push register1, "reactivation"
+DefineFunction2 "", 0, 9, false, false, true, false, true, false, true, false, false {
+Push "SaveLoadSystem"
+GetVariable
+Push "root"
+GetMember
+Push "reg"
+GetMember
+StoreRegister 1
+Pop
+Push register1, "Username"
+GetMember
+StoreRegister 4
+Pop
+Push register1, "Phone"
+GetMember
+StoreRegister 5
+Pop
+Push register1, "Email"
+GetMember
+StoreRegister 6
+Pop
+Push register1, "Serial"
+GetMember
+StoreRegister 2
+Pop
+Push 0.0, "Reg"
+GetVariable
+Push "getHDKey"
+CallMethod
+StoreRegister 3
+Pop
+Push "type", "reactivation", "name", register4, "phone", register5, "email", register6, "rkey", register3, register2, 2, "Reg"
+GetVariable
+Push "requestKey"
+CallMethod
+Push 5
+InitObject
+Push 1
+InitArray
+Push 1, "Reg"
+GetVariable
+Push "serviceRequest"
+CallMethod
+Pop
+Push 0.0, "Reg"
+GetVariable
+Push "initTimeOutCount"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "reactivationResponse"
+DefineFunction2 "", 1, 4, false, false, true, false, true, false, true, false, false, 2, "result" {
+Push "SaveLoadSystem"
+GetVariable
+Push "root"
+GetMember
+Push "reg"
+GetMember
+StoreRegister 1
+Pop
+Push 0.0, "Reg"
+GetVariable
+Push "clearTimeOutCount"
+CallMethod
+Pop
+Push "result: ", register2
+Add2
+Trace
+Push 0.0, "Reg"
+GetVariable
+Push "getHDKey"
+CallMethod
+StoreRegister 3
+Pop
+Push register2, "a055"
+Equals2
+Not
+If loc1250
+Push register1, "mc_popup"
+GetMember
+Push "last"
+GetMember
+Push 1, register1, "mc_popup"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push "a2", 1, register1, "mc_popup"
+GetMember
+Push "mc_al_phone"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push "a3", 1, register1, "mc_popup"
+GetMember
+Push "mc_al_email"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Jump loc12ec
+loc1250:Push register2, "e080"
+Equals2
+Not
+If loc1294
+Push "activated", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+Push register1, "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e080", 2, register1, "popup"
+CallMethod
+Pop
+Jump loc12ec
+loc1294:Push 0.0, register1, "killPopup"
+CallMethod
+Pop
+Push register2, register3, register1, "Serial"
+GetMember
+Push register1, "Email"
+GetMember
+Push register1, "Phone"
+GetMember
+Push register1, "Username"
+GetMember
+Push 6, "Reg"
+GetVariable
+Push "saveActivation"
+CallMethod
+Pop
+Push "success", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+loc12ec:SetMember
+Push register1, "checkActivationResponse"
+DefineFunction2 "", 1, 3, false, false, true, false, true, false, true, false, false, 2, "result" {
+Push "SaveLoadSystem"
+GetVariable
+Push "root"
+GetMember
+Push "reg"
+GetMember
+StoreRegister 1
+Pop
+Push 0.0, "Reg"
+GetVariable
+Push "clearTimeOutCount"
+CallMethod
+Pop
+Push "result: ", register2
+Add2
+Trace
+Push register2, "e091"
+Equals2
+Not
+If loc13a7
+Push "activated", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, "Reg"
+GetVariable
+Push "clearActivation"
+CallMethod
+Pop
+Push register1, "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e090", 2, register1, "popup"
+CallMethod
+Pop
+Push register1, "mc_popup"
+GetMember
+Push "error", "091"
+SetMember
+Jump loc145d
+loc13a7:Push register2, "e070"
+Equals2
+Not
+If loc13eb
+Push "activated", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+Push register1, "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e070", 2, register1, "popup"
+CallMethod
+Pop
+Jump loc145d
+loc13eb:Push register2, "e080"
+Equals2
+Not
+If loc142f
+Push "activated", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+Push register1, "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e080", 2, register1, "popup"
+CallMethod
+Pop
+Jump loc145d
+loc142f:Push 0.0, register1, "killPopup"
+CallMethod
+Pop
+Push 0.0, "SaveLoadSystem"
+GetVariable
+Push "root"
+GetMember
+Push "loadFullVersion"
+CallMethod
+Pop
+}
+loc145d:SetMember
+Push register1, "checkVersionResponse"
+DefineFunction2 "", 1, 3, false, false, true, false, true, false, true, false, false, 2, "ver" {
+Push "SaveLoadSystem"
+GetVariable
+Push "root"
+GetMember
+Push "reg"
+GetMember
+StoreRegister 1
+Pop
+Push 0.0, "Reg"
+GetVariable
+Push "clearTimeOutCount"
+CallMethod
+Pop
+Push register2
+ToString
+StoreRegister 2
+Pop
+Push ",", 1, register2, "split"
+CallMethod
+Push 0.0
+GetMember
+StoreRegister 2
+Pop
+Push register2
+ToNumber
+Push register1, "_root"
+GetMember
+Push "verNumber"
+GetMember
+ToNumber
+Greater
+Not
+If loc1510
+Push register1, "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e000", 2, register1, "popup"
+CallMethod
+Pop
+Jump loc1522
+loc1510:Push 0.0, register1, "killPopup"
+CallMethod
+Pop
+}
+loc1522:SetMember
+Push register1, "haveNetwork"
+DefineFunction "", 0 {
+Push "Reg"
+GetVariable
+Push "_network"
+GetMember
+Not
+Not
+If loc154b
+Push false
+Return
+loc154b:Push 0.0, "SaveLoadSystem"
+GetVariable
+Push "root"
+GetMember
+Push "haveNetwork"
+CallMethod
+Return
+}
+SetMember
+Push register1, "getHDKey"
+DefineFunction "", 0 {
+Push 0.0, "SaveLoadSystem"
+GetVariable
+Push "root"
+GetMember
+Push "getHDKey"
+CallMethod
+Return
+}
+SetMember
+Push register1, "clearActivation"
+DefineFunction "", 0 {
+Push "Reg"
+GetVariable
+Push "_licence"
+GetMember
+Push "name", ""
+SetMember
+Push "Reg"
+GetVariable
+Push "_licence"
+GetMember
+Push "phone", ""
+SetMember
+Push "Reg"
+GetVariable
+Push "_licence"
+GetMember
+Push "email", ""
+SetMember
+Push "Reg"
+GetVariable
+Push "_licence"
+GetMember
+Push "sn", ""
+SetMember
+Push "Reg"
+GetVariable
+Push "_licence"
+GetMember
+Push "hdkey", ""
+SetMember
+Push "Reg"
+GetVariable
+Push "_licence"
+GetMember
+Push "activationKey", ""
+SetMember
+Push "Reg"
+GetVariable
+Push "_licence"
+GetMember
+Push 1, "SaveLoadSystem"
+GetVariable
+Push "saveLicence"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "saveActivation"
+DefineFunction2 "", 6, 7, false, false, true, false, true, false, true, false, false, 1, "name", 4, "phone", 5, "email", 2, "sn", 3, "hdkey", 6, "akey" {
+Push "Reg"
+GetVariable
+Push "_licence"
+GetMember
+Push "name", register1
+SetMember
+Push "Reg"
+GetVariable
+Push "_licence"
+GetMember
+Push "phone", register4
+SetMember
+Push "Reg"
+GetVariable
+Push "_licence"
+GetMember
+Push "email", register5
+SetMember
+Push "Reg"
+GetVariable
+Push "_licence"
+GetMember
+Push "sn", register2
+SetMember
+Push "Reg"
+GetVariable
+Push "_licence"
+GetMember
+Push "hdkey", register3
+SetMember
+Push "Reg"
+GetVariable
+Push "_licence"
+GetMember
+Push "activationKey", register6
+SetMember
+Push "Reg"
+GetVariable
+Push "_licence"
+GetMember
+Push 1, "SaveLoadSystem"
+GetVariable
+Push "saveLicence"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "serviceRequest"
+DefineFunction2 "", 1, 3, false, false, true, false, true, false, true, false, false, 2, "data" {
+Push 0.0, "Object"
+NewObject
+StoreRegister 1
+Pop
+Push register1, "onResult", "Reg"
+GetVariable
+Push "serviceResponse"
+GetMember
+SetMember
+Push "Reg"
+GetVariable
+Push "princeService_nc", 0.0, "NetConnection"
+NewObject
+SetMember
+Push 0.0, "Reg"
+GetVariable
+Push "haveNetwork"
+CallMethod
+Not
+If loc17b6
+Push "http://www.little-prince.com.hk/littleprince/amfservice/gateway.php", 1, "Reg"
+GetVariable
+Push "princeService_nc"
+GetMember
+Push "connect"
+CallMethod
+Pop
+Push register2, register1, "Prince2_v2_2.serviceRequest", 3, "Reg"
+GetVariable
+Push "princeService_nc"
+GetMember
+Push "call"
+CallMethod
+Pop
+Push true
+Return
+loc17b6:Push false
+Return
+}
+SetMember
+Push register1, "serviceResponse"
+DefineFunction2 "", 1, 2, false, false, true, false, true, false, true, false, false, 1, "val" {
+Push register1
+Not
+If loc18a6
+Push register1, "response"
+GetMember
+Push "checkVersionResult"
+Equals2
+Not
+If loc1812
+Push register1, "message"
+GetMember
+Push 1, "Reg"
+GetVariable
+Push "checkVersionResponse"
+CallMethod
+Pop
+Jump loc18a6
+loc1812:Push register1, "response"
+GetMember
+Push "activationResult"
+Equals2
+Not
+If loc1845
+Push register1, "message"
+GetMember
+Push 1, "Reg"
+GetVariable
+Push "activationResponse"
+CallMethod
+Pop
+Jump loc18a6
+loc1845:Push register1, "response"
+GetMember
+Push "reactivationResult"
+Equals2
+Not
+If loc1878
+Push register1, "message"
+GetMember
+Push 1, "Reg"
+GetVariable
+Push "reactivationResponse"
+CallMethod
+Pop
+Jump loc18a6
+loc1878:Push register1, "response"
+GetMember
+Push "checkActivationResult"
+Equals2
+Not
+If loc18a6
+Push register1, "message"
+GetMember
+Push 1, "Reg"
+GetVariable
+Push "checkActivationResponse"
+CallMethod
+Pop
+}
+loc18a6:SetMember
+Push register1, "initTimeOutCount"
+DefineFunction "", 0 {
+Push "Reg"
+GetVariable
+Push "timeoutID", 5000, "Reg"
+GetVariable
+Push "timeOutAppear"
+GetMember
+Push 2, "setInterval"
+CallFunction
+SetMember
+}
+SetMember
+Push register1, "timeOutAppear"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, true, false, false {
+Push "SaveLoadSystem"
+GetVariable
+Push "root"
+GetMember
+Push "reg"
+GetMember
+StoreRegister 1
+Pop
+Push register1, "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e020", 2, register1, "popup"
+CallMethod
+Pop
+Push 0.0, "Reg"
+GetVariable
+Push "clearTimeOutCount"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "clearTimeOutCount"
+DefineFunction "", 0 {
+Push "Reg"
+GetVariable
+Push "timeoutID"
+GetMember
+Push 1, "clearInterval"
+CallFunction
+Pop
+Push "Reg"
+GetVariable
+Push "timeoutID", null
+SetMember
+}
+SetMember
+Push register1, "hdkey2Nums"
+DefineFunction2 "", 1, 7, false, false, true, false, true, false, true, false, false, 4, "str" {
+Push "", 1, "-", 1, register4, "split"
+CallMethod
+Push "join"
+CallMethod
+StoreRegister 4
+Pop
+Push "", 1, "pL]51?m;iFvZ<.SsrR$^}H!a+eGyjf[gOC`b-lYE&)w=:dN306hqkA|PD9{>(%nK#4*xtBuWMQV~7Tz2\'8@J_,XIUco", "split"
+CallMethod
+StoreRegister 3
+Pop
+Push "44", "62", "70", "49", "17", "76", "79", "65", "64", "42", "66", "86", "95", "06", "58", "88", "71", "55", "96", "02", "90", "13", "32", "53", "56", "04", "08", "75", "09", "33", "43", "31", "03", "67", "15", "21", "35", "36", "82", "69", "12", "78", "59", "07", "84", "73", "46", "34", "60", "26", "61", "77", "52", "30", "24", "05", "10", "27", "22", "87", "37", "47", "38", "94", "74", "80", "50", "83", "29", "98", "92", "20", "25", "16", "28", "40", "89", "51", "23", "57", "45", "54", "11", "63", "19", "81", "85", "99", "48", "68", "18", "01", "72", "93", "41", "00", "14", "91", "39", "97", 100
+InitArray
+StoreRegister 6
+Pop
+Push ""
+StoreRegister 5
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc1aaf:Push register2, register4, "length"
+GetMember
+Less2
+Not
+If loc1b3a
+Push 0.0
+StoreRegister 1
+Pop
+loc1ad1:Push register1, register3, "length"
+GetMember
+Less2
+Not
+If loc1b2a
+Push 1, register2, 2, register4, "substr"
+CallMethod
+Push register3, register1
+GetMember
+Equals2
+Not
+If loc1b1a
+Push register5, register6, register1
+GetMember
+Add2
+StoreRegister 5
+Pop
+Jump loc1b2a
+loc1b1a:Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc1ad1
+loc1b2a:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc1aaf
+loc1b3a:Push register5
+Return
+}
+SetMember
+Push register1, "nums2hdkey"
+DefineFunction2 "", 1, 7, false, false, true, false, true, false, true, false, false, 4, "str" {
+Push "", 1, "-", 1, register4, "split"
+CallMethod
+Push "join"
+CallMethod
+StoreRegister 4
+Pop
+Push "", 1, "pL]51?m;iFvZ<.SsrR$^}H!a+eGyjf[gOC`b-lYE&)w=:dN306hqkA|PD9{>(%nK#4*xtBuWMQV~7Tz2\'8@J_,XIUco", "split"
+CallMethod
+StoreRegister 6
+Pop
+Push "44", "62", "70", "49", "17", "76", "79", "65", "64", "42", "66", "86", "95", "06", "58", "88", "71", "55", "96", "02", "90", "13", "32", "53", "56", "04", "08", "75", "09", "33", "43", "31", "03", "67", "15", "21", "35", "36", "82", "69", "12", "78", "59", "07", "84", "73", "46", "34", "60", "26", "61", "77", "52", "30", "24", "05", "10", "27", "22", "87", "37", "47", "38", "94", "74", "80", "50", "83", "29", "98", "92", "20", "25", "16", "28", "40", "89", "51", "23", "57", "45", "54", "11", "63", "19", "81", "85", "99", "48", "68", "18", "01", "72", "93", "41", "00", "14", "91", "39", "97", 100
+InitArray
+StoreRegister 3
+Pop
+Push ""
+StoreRegister 5
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc1c7e:Push register2, register4, "length"
+GetMember
+Less2
+Not
+If loc1d0e
+Push 0.0
+StoreRegister 1
+Pop
+loc1ca0:Push register1, register3, "length"
+GetMember
+Less2
+Not
+If loc1cf9
+Push 2, register2, 2, register4, "substr"
+CallMethod
+Push register3, register1
+GetMember
+Equals2
+Not
+If loc1ce9
+Push register5, register6, register1
+GetMember
+Add2
+StoreRegister 5
+Pop
+Jump loc1cf9
+loc1ce9:Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc1ca0
+loc1cf9:Push register2, 2
+Add2
+StoreRegister 2
+Pop
+Jump loc1c7e
+loc1d0e:Push 4, 0.0, 2, register5, "substr"
+CallMethod
+Push "-"
+Add2
+Push 4, 4, 2, register5, "substr"
+CallMethod
+Add2
+Return
+}
+SetMember
+Push register1, "serial2Nums"
+DefineFunction2 "", 1, 8, false, false, true, false, true, false, true, false, false, 5, "str" {
+Push "-", 1, register5, "split"
+CallMethod
+StoreRegister 5
+Pop
+Push 0.0, register5, "shift"
+CallMethod
+Pop
+Push "", 1, register5, "join"
+CallMethod
+StoreRegister 5
+Pop
+Push "", 1, "F9E5K3P4JMAXV6R82C17YTQ0S", "split"
+CallMethod
+StoreRegister 7
+Pop
+Push ""
+StoreRegister 6
+Pop
+Push 0.0
+StoreRegister 1
+Pop
+Push 0.0
+StoreRegister 3
+Pop
+loc1dda:Push register3, register5, "length"
+GetMember
+Less2
+Not
+If loc1ee0
+Push 1, register3, 2, register5, "substr"
+CallMethod
+StoreRegister 4
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc1e15:Push register2, 25
+Less2
+Not
+If loc1e91
+Push register7, register1
+GetMember
+Push register4
+Equals2
+Not
+If loc1e4c
+Push register6, register2
+Add2
+StoreRegister 6
+Pop
+Jump loc1e91
+loc1e4c:Push register1
+Decrement
+StoreRegister 1
+Pop
+loc1e57:Push register1, 0.0
+Less2
+Not
+If loc1e81
+Push register1, 25
+Add2
+StoreRegister 1
+Pop
+Jump loc1e57
+loc1e81:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc1e15
+loc1e91:Push register1, 11
+Subtract
+StoreRegister 1
+Pop
+loc1ea1:Push register1, 0.0
+Less2
+Not
+If loc1ecb
+Push register1, 25
+Add2
+StoreRegister 1
+Pop
+Jump loc1ea1
+loc1ecb:Push register3, 1
+Add2
+StoreRegister 3
+Pop
+Jump loc1dda
+loc1ee0:Push register6
+Return
+}
+SetMember
+Push register1, "str2Int"
+DefineFunction2 "", 1, 4, false, false, true, false, true, false, true, false, false, 3, "str" {
+Push 0.0
+StoreRegister 2
+Pop
+Push 0.0
+StoreRegister 1
+Pop
+loc1f20:Push register1, register3, "length"
+GetMember
+Less2
+Not
+If loc1f67
+Push register2, 10
+Multiply
+Push 1, register1, 2, register3, "substr"
+CallMethod
+ToInteger
+Add2
+StoreRegister 2
+Pop
+Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc1f20
+loc1f67:Push register2
+Return
+}
+SetMember
+Push register1, "checksum"
+DefineFunction2 "", 1, 4, false, false, true, false, true, false, true, false, false, 2, "str" {
+Push 0.0
+StoreRegister 3
+Pop
+Push 0.0
+StoreRegister 1
+Pop
+loc1fa7:Push register1, register2, "length"
+GetMember
+Less2
+Not
+If loc1ffa
+Push register3, 4, register1, 2, register2, "substr"
+CallMethod
+Push 1, "Reg"
+GetVariable
+Push "str2Int"
+CallMethod
+Add2
+StoreRegister 3
+Pop
+Push register1, 4
+Add2
+StoreRegister 1
+Pop
+Jump loc1fa7
+loc1ffa:Push register3, 10
+Modulo
+ToString
+Return
+}
+SetMember
+Push register1, "encrypt"
+DefineFunction2 "", 1, 8, false, false, true, false, true, false, true, false, false, 7, "str" {
+Push "2965130847"
+StoreRegister 6
+Pop
+Push ""
+StoreRegister 5
+Pop
+Push 0.0
+StoreRegister 1
+Pop
+Push 0.0
+StoreRegister 3
+Pop
+loc2055:Push register3, register7, "length"
+GetMember
+Less2
+Not
+If loc2174
+Push 1, register3, 2, register7, "substr"
+CallMethod
+StoreRegister 4
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc2090:Push register2, 10
+Less2
+Not
+If loc2118
+Push 1, register1, 2, register6, "substr"
+CallMethod
+Push register4
+Equals2
+Not
+If loc20d3
+Push register5, register2
+Add2
+StoreRegister 5
+Pop
+Jump loc2118
+loc20d3:Push register1
+Decrement
+StoreRegister 1
+Pop
+loc20de:Push register1, 0.0
+Less2
+Not
+If loc2108
+Push register1, 10
+Add2
+StoreRegister 1
+Pop
+Jump loc20de
+loc2108:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc2090
+loc2118:Push register1, register2
+Subtract
+StoreRegister 1
+Pop
+Push register1, 3
+Subtract
+StoreRegister 1
+Pop
+loc2135:Push register1, 0.0
+Less2
+Not
+If loc215f
+Push register1, 10
+Add2
+StoreRegister 1
+Pop
+Jump loc2135
+loc215f:Push register3, 1
+Add2
+StoreRegister 3
+Pop
+Jump loc2055
+loc2174:Push register5
+Return
+}
+SetMember
+Push register1, "decrypt"
+DefineFunction2 "", 1, 6, false, false, true, false, true, false, true, false, false, 3, "str" {
+Push "2965130847"
+StoreRegister 5
+Pop
+Push ""
+StoreRegister 4
+Pop
+Push 0.0
+StoreRegister 1
+Pop
+Push 0.0
+StoreRegister 2
+Pop
+loc21c8:Push register2, register3, "length"
+GetMember
+Less2
+Not
+If loc22a3
+Push register1, 1, register2, 2, register3, "substr"
+CallMethod
+Subtract
+StoreRegister 1
+Pop
+loc21f5:Push register1, 0.0
+Less2
+Not
+If loc221f
+Push register1, 10
+Add2
+StoreRegister 1
+Pop
+Jump loc21f5
+loc221f:Push register4, 1, register1, 2, register5, "substr"
+CallMethod
+Add2
+StoreRegister 4
+Pop
+Push register1, 1, register2, 2, register3, "substr"
+CallMethod
+ToInteger
+Subtract
+StoreRegister 1
+Pop
+Push register1, 3
+Subtract
+StoreRegister 1
+Pop
+loc2268:Push register1, 9
+Greater
+Not
+If loc228e
+Push register1, 10
+Subtract
+StoreRegister 1
+Pop
+Jump loc2268
+loc228e:Push register2, 1
+Add2
+StoreRegister 2
+Pop
+Jump loc21c8
+loc22a3:Push register4
+Return
+}
+SetMember
+Push register1, "requestKey"
+DefineFunction2 "", 2, 4, false, false, true, false, true, false, true, false, false, 1, "sn", 3, "hdkey" {
+Push "P2-", 1, register1, "indexOf"
+CallMethod
+Push 0.0
+Equals2
+Not
+If loc2343
+Push register1, 1, "Reg"
+GetVariable
+Push "serial2Nums"
+CallMethod
+Push register3, 1, "Reg"
+GetVariable
+Push "hdkey2Nums"
+CallMethod
+Add2
+StoreRegister 2
+Pop
+Push "P2-", register2, 1, "Reg"
+GetVariable
+Push "checksum"
+CallMethod
+Push register2
+Add2
+Push 1, "Reg"
+GetVariable
+Push "encrypt"
+CallMethod
+Add2
+Return
+loc2343:Push register1, ","
+Add2
+Push register3
+Add2
+Push ","
+Add2
+Push "|=_=|", register3
+Add2
+Push "|=_=|"
+Add2
+Push register1
+Add2
+Push "SIEdutainment", 2, "SaveLoadSystem"
+GetVariable
+Push "root"
+GetMember
+Push "mdm"
+GetMember
+Push "Encryption"
+GetMember
+Push "encryptString"
+CallMethod
+Add2
+Return
+}
+SetMember
+Push register1, "activationSuccess"
+DefineFunction2 "", 3, 5, false, false, true, false, true, false, true, false, false, 3, "sn", 4, "hdkey", 1, "akey" {
+Push register1, "length"
+GetMember
+Push 16
+Equals2
+Not
+If loc2468
+Push register3, 1, "Reg"
+GetVariable
+Push "serial2Nums"
+CallMethod
+StoreRegister 2
+Pop
+Push register2, "length"
+GetMember
+Push 16
+Equals2
+Not
+Not
+If loc2403
+Push false
+Return
+loc2403:Push register4, 16, 1, 2, register2, 1, "Reg"
+GetVariable
+Push "checksum"
+CallMethod
+Push 1, "Reg"
+GetVariable
+Push "encrypt"
+CallMethod
+Push register1
+Add2
+Push 1, "Reg"
+GetVariable
+Push "decrypt"
+CallMethod
+Push "substr"
+CallMethod
+Push 1, "Reg"
+GetVariable
+Push "nums2hdkey"
+CallMethod
+Equals2
+Return
+loc2468:Push "|=_=|", 1, register1, "SIEdutainment", 2, "SaveLoadSystem"
+GetVariable
+Push "root"
+GetMember
+Push "mdm"
+GetMember
+Push "Encryption"
+GetMember
+Push "decryptString"
+CallMethod
+Push "split"
+CallMethod
+StoreRegister 1
+Pop
+Push register4, register1, 1
+GetMember
+Equals2
+PushDuplicate
+Not
+If loc24c5
+Pop
+Push register3, register1, 2
+GetMember
+Equals2
+loc24c5:Return
+}
+SetMember
+Push 1, null, "_global"
+GetVariable
+Push "Reg"
+GetMember
+Push "prototype"
+GetMember
+Push 3, "ASSetPropFlags"
+CallFunction
+loc24ea:Pop

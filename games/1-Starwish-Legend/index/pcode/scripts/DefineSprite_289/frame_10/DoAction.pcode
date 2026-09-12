@@ -1,0 +1,9 @@
+ConstantPool "_parent", "resumeFirstHint"
+Push 0.0, "_parent"
+GetVariable
+Push "_parent"
+GetMember
+Push "resumeFirstHint"
+CallMethod
+Pop
+GotoFrame 0

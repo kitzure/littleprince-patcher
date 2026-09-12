@@ -1,0 +1,6 @@
+Push 0.0, "_parent"
+GetVariable
+Push "resumePrince"
+CallMethod
+Pop
+Stop

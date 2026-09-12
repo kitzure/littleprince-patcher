@@ -1,0 +1,6 @@
+DefineFunction "buyNow", 0 {
+Push "bob", 1, "playFx"
+CallFunction
+Pop
+GetURL "http://www.little-prince.com.hk", ""
+}

@@ -1,0 +1,125 @@
+ConstantPool "popupStatus", "quit", "application", "resumeMap", "確定要離開嗎?", "question", "popup", "logout", "確定要登出嗎?", "restartSys", "mdm", "Forms", "MainForm", "visible", "getCurrentResolution", "user", "oriResX", "oriResY", "currentResX", "currentResY", "System", "setResolution", "Application", "exit", "verShort", "we"
+DefineFunction2 "prepareQuit", 1, 2, false, false, true, false, true, false, true, false, false, 1, "type" {
+Push "popupStatus"
+GetVariable
+Push "quit"
+Equals2
+Not
+Not
+If loc01aa
+Push "popupStatus", "quit"
+SetVariable
+Push register1, "application"
+Equals2
+Not
+If loc0175
+Push true, "resumeMap"
+GetVariable
+Push "quit"
+GetVariable
+Push "確定要離開嗎?", 3
+InitArray
+Push "question", 3, "popup"
+CallFunction
+Pop
+Jump loc01aa
+loc0175:Push register1, "logout"
+Equals2
+Not
+If loc01aa
+Push true, "resumeMap"
+GetVariable
+Push "logout"
+GetVariable
+Push "確定要登出嗎?", 3
+InitArray
+Push "question", 3, "popup"
+CallFunction
+Pop
+}
+loc01aa:DefineFunction "logout", 0 {
+Push 0.0, "restartSys"
+CallFunction
+Pop
+}
+DefineFunction2 "quit", 0, 2, false, false, true, false, true, false, true, false, false {
+Push "mdm"
+GetVariable
+Push "Forms"
+GetMember
+Push "MainForm"
+GetMember
+Push "visible", false
+SetMember
+Push 0.0, "getCurrentResolution"
+CallFunction
+Pop
+Push "user"
+GetVariable
+Push "oriResX"
+GetMember
+Push 800
+Equals2
+Not
+Push "user"
+GetVariable
+Push "oriResY"
+GetMember
+Push 600
+Equals2
+Not
+And
+Not
+If loc0297
+Push "currentResX"
+GetVariable
+Push "user"
+GetVariable
+Push "oriResX"
+GetMember
+Equals2
+Not
+Push "currentResY"
+GetVariable
+Push "user"
+GetVariable
+Push "oriResY"
+GetMember
+Equals2
+Not
+And
+Not
+If loc0297
+Push "user"
+GetVariable
+Push "oriResY"
+GetMember
+Push "user"
+GetVariable
+Push "oriResX"
+GetMember
+Push 2, "mdm"
+GetVariable
+Push "System"
+GetMember
+Push "setResolution"
+CallMethod
+StoreRegister 1
+Pop
+loc0297:Push 0.0, "mdm"
+GetVariable
+Push "Application"
+GetMember
+Push "exit"
+CallMethod
+Pop
+GetURL "FSCommand:quit", ""
+Push "verShort"
+GetVariable
+Push "we"
+Equals2
+Not
+If loc02f7
+GetURL "javascript:window.close();", ""
+}
+loc02f7:

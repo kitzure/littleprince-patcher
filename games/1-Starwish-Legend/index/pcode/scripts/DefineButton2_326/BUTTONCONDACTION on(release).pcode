@@ -1,0 +1,9 @@
+ConstantPool "_parent", "resumeLangHint"
+Push 0.0, "_parent"
+GetVariable
+Push "_parent"
+GetMember
+Push "resumeLangHint"
+CallMethod
+Pop
+GotoFrame 0

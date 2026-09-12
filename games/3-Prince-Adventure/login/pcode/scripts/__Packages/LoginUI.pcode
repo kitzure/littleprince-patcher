@@ -1,0 +1,1520 @@
+ConstantPool "_global", "LoginUI", "sel", "MovieClip", "prototype", "checkVersionResponse", ",", "split", "mc_update", "loadMovie", "mc_news", "onLoad", "mc_trial", "_visible", "trial", "gotoAndStop", "btn_trial", "onPress", "onRelease", "sfx/ding", "Prince3", "SoundSystem", "playSound", "PrinceSystem", "login", "onRollOver", "_parent", "mc_hint_trial", "gotoAndPlay", "onRollOut", "onReleaseOutside", "btn_buy", "http://www.little-prince.com.hk/littleprince/order.htm", "getURL", "mc_hint_buy", "start", "btn_start", "loginPageInit", "type", "checkVersion", "version", "verNumber", "serviceRequest", "btnOnRollOut", "normal", "btnOnRollOver", "over", "btnOnPress", "down", "getUserNameList", "length", "mc_slot", "id", "enabled", "actionCapture", "selAccount", "mc_sel", "_currentframe", "txt", "text", "getUser", "score", "classlevel", "classLv", "gem", "gems", "Utils", "numLimit", "num2Str", "gameResult", "finishPercentOfResult", "%", "percent", "dmask", "star", "setMask", "_y", "bg", "btn_del", "delAccount", "btn_edit", "editAccount", "btn_login", "mc_popup", "play", "userName", "mc_lv", "lv", "_name", "substr", "updateUserInfo", "btn_cancel", "", "mc_lv1", "btn_ok", "none", "addUser", "Selection", "setFocus", "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "LoginUI"
+GetMember
+Not
+Not
+If loc1bb5
+Push "_global"
+GetVariable
+Push "LoginUI"
+DefineFunction2 "", 0, 3, false, false, false, true, true, false, false, true, false {
+Push 0.0, register2, undefined
+CallMethod
+Pop
+Push "LoginUI"
+Trace
+Push register1, "sel", null
+SetMember
+}
+StoreRegister 1
+SetMember
+Push "_global"
+GetVariable
+Push "LoginUI"
+GetMember
+Push "MovieClip"
+GetVariable
+Extends
+Push register1, "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2, "checkVersionResponse"
+DefineFunction2 "", 1, 3, false, false, true, false, true, false, false, true, false, 2, "ver" {
+Push "checkVersionResponse"
+Trace
+Push ",", 1, register2, "split"
+CallMethod
+StoreRegister 2
+Pop
+Push register2, 1
+GetMember
+Push 1, register1, "mc_update"
+GetMember
+Push "loadMovie"
+CallMethod
+Pop
+Push register2, 2
+GetMember
+Push 1, register1, "mc_news"
+GetMember
+Push "loadMovie"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "onLoad"
+DefineFunction2 "", 0, 5, false, true, true, false, true, false, false, true, false {
+Push register2, "mc_trial"
+GetMember
+Push "_visible"
+GetMember
+Not
+If loc06e5
+Push "trial", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+Push register1, "btn_trial"
+GetMember
+Push "onPress"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 3, 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "btn_trial"
+GetMember
+Push "onRelease"
+DefineFunction "", 0 {
+Push "sfx/ding", 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "playSound"
+CallMethod
+Pop
+Push 0.0, 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "login"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "btn_trial"
+GetMember
+Push "onRollOver"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 2, 1, register1, "gotoAndStop"
+CallMethod
+Pop
+Push 2, 1, register1, "_parent"
+GetMember
+Push "mc_hint_trial"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "btn_trial"
+GetMember
+Push "onRollOut", register1, "btn_trial"
+GetMember
+Push "onReleaseOutside"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 1, 1, register1, "gotoAndStop"
+CallMethod
+Pop
+Push 1, 1, register1, "_parent"
+GetMember
+Push "mc_hint_trial"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+}
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register1, "btn_buy"
+GetMember
+Push "onPress"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 3, 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "btn_buy"
+GetMember
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "http://www.little-prince.com.hk/littleprince/order.htm", 1, register1, "getURL"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "btn_buy"
+GetMember
+Push "onRollOver"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 2, 1, register1, "gotoAndStop"
+CallMethod
+Pop
+Push 2, 1, register1, "_parent"
+GetMember
+Push "mc_hint_buy"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "btn_buy"
+GetMember
+Push "onRollOut", register1, "btn_buy"
+GetMember
+Push "onReleaseOutside"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 1, 1, register1, "gotoAndStop"
+CallMethod
+Pop
+Push 1, 1, register1, "_parent"
+GetMember
+Push "mc_hint_buy"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+}
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Jump loc0740
+loc06e5:Push "start", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+Push register1, "btn_start"
+GetMember
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "sfx/ding", 1, "Prince3"
+GetVariable
+Push "SoundSystem"
+GetMember
+Push "playSound"
+CallMethod
+Pop
+Push 0.0, register1, "_parent"
+GetMember
+Push "loginPageInit"
+CallMethod
+Pop
+}
+SetMember
+loc0740:Push "type", "checkVersion", "version", register1, "_parent"
+GetMember
+Push "verNumber"
+GetMember
+Push 2
+InitObject
+Push 1
+InitArray
+Push 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "serviceRequest"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "btnOnRollOut"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "normal", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "btnOnRollOver"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "over", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "btnOnPress"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "down", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "loginPageInit"
+DefineFunction2 "", 0, 8, false, false, true, false, true, false, false, true, false {
+Push "login", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "getUserNameList"
+CallMethod
+StoreRegister 7
+Pop
+Push 0.0
+StoreRegister 4
+Pop
+loc083b:Push register4, register7, "length"
+GetMember
+Less2
+Not
+If loc0bb4
+Push register1, "mc_slot", register4
+Add2
+GetMember
+StoreRegister 2
+Pop
+Push 3, 1, register2, "gotoAndStop"
+CallMethod
+Pop
+Push register2, "id", register4
+SetMember
+Push register2, "enabled", true
+SetMember
+Push register2, "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "onRelease", register1, 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "actionCapture"
+CallMethod
+Pop
+Push register1, "id"
+GetMember
+Push 1, register1, "_parent"
+GetMember
+Push "selAccount"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "onRollOver"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "mc_sel"
+GetMember
+Push "_visible"
+GetMember
+Not
+Not
+If loc091e
+Push register1, "mc_sel"
+GetMember
+Push "_visible", true
+SetMember
+Push 1, 1, register1, "mc_sel"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+}
+loc091e:SetMember
+Push register2, "onRollOut"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "mc_sel"
+GetMember
+Push "_visible"
+GetMember
+PushDuplicate
+Not
+If loc095e
+Pop
+Push register1, "mc_sel"
+GetMember
+Push "_currentframe"
+GetMember
+Push 1
+Equals2
+loc095e:Not
+If loc098d
+Push register1, "mc_sel"
+GetMember
+Push "_visible", false
+SetMember
+Push 1, 1, register1, "mc_sel"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+}
+loc098d:SetMember
+Push register7, register4
+GetMember
+Not
+If loc0b39
+Push 3, 1, register2, "gotoAndStop"
+CallMethod
+Pop
+Push register2, "txt"
+GetMember
+Push "text", register7, register4
+GetMember
+SetMember
+Push register4, 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "getUser"
+CallMethod
+StoreRegister 5
+Pop
+Push register2, "score", register5, "score"
+GetMember
+SetMember
+Push register2, "classlevel", register5, "classLv"
+GetMember
+SetMember
+Push 0.0
+StoreRegister 3
+Pop
+loc0a0b:Push register3, 8
+Less2
+Not
+If loc0a8f
+Push register2, "gem", register3
+Add2
+Push 0.0, 10, 999, 0.0, register5, "gems"
+GetMember
+Push register3
+GetMember
+Push 3, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "numLimit"
+CallMethod
+Push 3, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "num2Str"
+CallMethod
+SetMember
+Push register3
+Increment
+StoreRegister 3
+Pop
+Jump loc0a0b
+loc0a8f:Push register5, "gameResult"
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "finishPercentOfResult"
+CallMethod
+StoreRegister 6
+Pop
+Push register6, "%"
+Add2
+Trace
+Push register2, "percent"
+GetMember
+Push "dmask"
+GetMember
+Push 1, register2, "percent"
+GetMember
+Push "star"
+GetMember
+Push "setMask"
+CallMethod
+Pop
+Push register2, "percent"
+GetMember
+Push "dmask"
+GetMember
+Push "_y", 52, 32, register6
+Multiply
+Push 100
+Divide
+Subtract
+SetMember
+Push register2, "percent"
+GetMember
+Push "bg"
+GetMember
+Push "_y", register2, "percent"
+GetMember
+Push "dmask"
+GetMember
+Push "_y"
+GetMember
+SetMember
+Jump loc0b4c
+loc0b39:Push 1, 1, register2, "gotoAndStop"
+CallMethod
+Pop
+loc0b4c:Push register1, "sel"
+GetMember
+Push register4
+Equals2
+Not
+If loc0b7b
+Push register1, "sel"
+GetMember
+Push 1, register1, "selAccount"
+CallMethod
+Pop
+Jump loc0ba4
+loc0b7b:Push register2, "mc_sel"
+GetMember
+Push "_visible", false
+SetMember
+Push 1, 1, register2, "mc_sel"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+loc0ba4:Push register4
+Increment
+StoreRegister 4
+Pop
+Jump loc083b
+loc0bb4:Push register1, "btn_del"
+GetMember
+Push "onRollOut", register1, "btn_del"
+GetMember
+Push "onReleaseOutside", register1, "btnOnRollOut"
+GetMember
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register1, "btn_del"
+GetMember
+Push "onRollOver", register1, "btnOnRollOver"
+GetMember
+SetMember
+Push register1, "btn_del"
+GetMember
+Push "onPress", register1, "btnOnPress"
+GetMember
+SetMember
+Push register1, "btn_del"
+GetMember
+Push "enabled", true
+SetMember
+Push register1, "btn_del"
+GetMember
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 0.0, register1, "_parent"
+GetMember
+Push "delAccount"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "btn_edit"
+GetMember
+Push "onRollOut", register1, "btn_edit"
+GetMember
+Push "onReleaseOutside", register1, "btnOnRollOut"
+GetMember
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register1, "btn_edit"
+GetMember
+Push "onRollOver", register1, "btnOnRollOver"
+GetMember
+SetMember
+Push register1, "btn_edit"
+GetMember
+Push "onPress", register1, "btnOnPress"
+GetMember
+SetMember
+Push register1, "btn_edit"
+GetMember
+Push "enabled", true
+SetMember
+Push register1, "btn_edit"
+GetMember
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 0.0, register1, "_parent"
+GetMember
+Push "editAccount"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "btn_login"
+GetMember
+Push "onRollOut", register1, "btn_login"
+GetMember
+Push "onReleaseOutside", register1, "btnOnRollOut"
+GetMember
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register1, "btn_login"
+GetMember
+Push "onRollOver", register1, "btnOnRollOver"
+GetMember
+SetMember
+Push register1, "btn_login"
+GetMember
+Push "onPress", register1, "btnOnPress"
+GetMember
+SetMember
+Push register1, "btn_login"
+GetMember
+Push "enabled", true
+SetMember
+Push register1, "btn_login"
+GetMember
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "_parent"
+GetMember
+Push "sel"
+GetMember
+Push null
+Equals2
+Not
+PushDuplicate
+Not
+If loc0d8a
+Pop
+Push register1, "_parent"
+GetMember
+Push "mc_slot", register1, "_parent"
+GetMember
+Push "sel"
+GetMember
+Add2
+GetMember
+Push "_currentframe"
+GetMember
+Push 3
+Equals2
+loc0d8a:Not
+If loc0db6
+Push register1, "_parent"
+GetMember
+Push "sel"
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "login"
+CallMethod
+Pop
+}
+loc0db6:SetMember
+Push register1, "sel"
+GetMember
+Push null
+Equals2
+Not
+PushDuplicate
+Not
+If loc0dea
+Pop
+Push register1, "mc_slot", register1, "sel"
+GetMember
+Add2
+GetMember
+Push "_currentframe"
+GetMember
+Push 3
+Equals2
+loc0dea:Not
+If loc0e25
+Push register1, "btn_del"
+GetMember
+Push "_visible", true
+SetMember
+Push register1, "btn_edit"
+GetMember
+Push "_visible", true
+SetMember
+Push register1, "btn_login"
+GetMember
+Push "_visible", true
+SetMember
+Jump loc0e55
+loc0e25:Push register1, "btn_del"
+GetMember
+Push "_visible", false
+SetMember
+Push register1, "btn_edit"
+GetMember
+Push "_visible", false
+SetMember
+Push register1, "btn_login"
+GetMember
+Push "_visible", false
+SetMember
+}
+loc0e55:SetMember
+Push register2, "delAccount"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "sel"
+GetMember
+Push null
+Equals2
+Not
+Not
+If loc0e94
+Push 0.0, register1, "mc_popup"
+GetMember
+Push "play"
+CallMethod
+Pop
+}
+loc0e94:SetMember
+Push register2, "editAccount"
+DefineFunction2 "", 0, 10, false, false, true, false, true, false, false, true, false {
+Push register1, "sel"
+GetMember
+Push null
+Equals2
+Not
+Not
+If loc13e8
+Push register1, "sel"
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "getUser"
+CallMethod
+StoreRegister 8
+Pop
+Push register1, "mc_slot", register1, "sel"
+GetMember
+Add2
+GetMember
+StoreRegister 6
+Pop
+Push 4, 1, register6, "gotoAndStop"
+CallMethod
+Pop
+Push register6, "txt"
+GetMember
+Push "text", register8, "userName"
+GetMember
+SetMember
+Push register8, "gameResult"
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "finishPercentOfResult"
+CallMethod
+StoreRegister 9
+Pop
+Push register6, "percent"
+GetMember
+Push "dmask"
+GetMember
+Push 1, register6, "percent"
+GetMember
+Push "star"
+GetMember
+Push "setMask"
+CallMethod
+Pop
+Push register6, "percent"
+GetMember
+Push "dmask"
+GetMember
+Push "_y", 52, 32, register9
+Multiply
+Push 100
+Divide
+Subtract
+SetMember
+Push register6, "percent"
+GetMember
+Push "bg"
+GetMember
+Push "_y", register6, "percent"
+GetMember
+Push "dmask"
+GetMember
+Push "_y"
+GetMember
+SetMember
+Push 1
+StoreRegister 5
+Pop
+loc0fc1:Push register5, 6
+Greater
+Not
+Not
+If loc11c1
+Push register6, "mc_lv", register5
+Add2
+GetMember
+StoreRegister 4
+Pop
+Push register4, "id", register5
+SetMember
+Push 1, 1, register4, "gotoAndStop"
+CallMethod
+Pop
+Push register4, "sel", false
+SetMember
+Push register4, "onRollOver"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "sel"
+GetMember
+Not
+Not
+If loc105a
+Push "onRollOver", register1, 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "actionCapture"
+CallMethod
+Pop
+Push 2, 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+loc105a:SetMember
+Push register4, "onRollOut", register4, "onReleaseOutside"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "sel"
+GetMember
+Not
+Not
+If loc10af
+Push "onReleaseOutside", register1, 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "actionCapture"
+CallMethod
+Pop
+Push 1, 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+loc10af:StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register4, "onRelease"
+DefineFunction2 "", 0, 4, false, false, true, false, true, false, false, true, false {
+Push 1
+StoreRegister 2
+Pop
+loc10d9:Push register2, 6
+Greater
+Not
+Not
+If loc1158
+Push register1, "_parent"
+GetMember
+Push "mc_lv", register2
+Add2
+GetMember
+StoreRegister 3
+Pop
+Push register3, "sel"
+GetMember
+PushDuplicate
+Not
+If loc1120
+Pop
+Push register1, "id"
+GetMember
+Push register2
+Equals2
+Not
+loc1120:Not
+If loc1148
+Push register3, "sel", false
+SetMember
+Push 1, 1, register3, "gotoAndStop"
+CallMethod
+Pop
+Jump loc1158
+loc1148:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc10d9
+loc1158:Push register1, "sel"
+GetMember
+Not
+Not
+If loc11b0
+Push register1, "sel", true
+SetMember
+Push register1, "_parent"
+GetMember
+Push "lv", 5, 1, register1, "_name"
+GetMember
+Push "substr"
+CallMethod
+SetMember
+Push "onRelease", register1, 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "actionCapture"
+CallMethod
+Pop
+}
+loc11b0:SetMember
+Push register5
+Increment
+StoreRegister 5
+Pop
+Jump loc0fc1
+loc11c1:Push register6, "lv", register8, "classLv"
+GetMember
+SetMember
+Push register6, "mc_lv", register6, "lv"
+GetMember
+Add2
+GetMember
+Push "sel", true
+SetMember
+Push 2, 1, register6, "mc_lv", register6, "lv"
+GetMember
+Add2
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register6, "btn_edit"
+GetMember
+Push "onRollOut", register6, "btn_edit"
+GetMember
+Push "onReleaseOutside", register1, "btnOnRollOut"
+GetMember
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register6, "btn_edit"
+GetMember
+Push "onRollOver", register1, "btnOnRollOver"
+GetMember
+SetMember
+Push register6, "btn_edit"
+GetMember
+Push "onPress", register1, "btnOnPress"
+GetMember
+SetMember
+Push register6, "btn_edit"
+GetMember
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "_parent"
+GetMember
+Push "txt"
+GetMember
+Push "text"
+GetMember
+Not
+If loc12ee
+Push register1, "_parent"
+GetMember
+Push "lv"
+GetMember
+Push register1, "_parent"
+GetMember
+Push "txt"
+GetMember
+Push "text"
+GetMember
+Push register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "sel"
+GetMember
+Push 3, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "updateUserInfo"
+CallMethod
+Pop
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "loginPageInit"
+CallMethod
+Pop
+}
+loc12ee:SetMember
+Push register6, "btn_cancel"
+GetMember
+Push "onRollOut", register6, "btn_cancel"
+GetMember
+Push "onReleaseOutside", register1, "btnOnRollOut"
+GetMember
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register6, "btn_cancel"
+GetMember
+Push "onRollOver", register1, "btnOnRollOver"
+GetMember
+SetMember
+Push register6, "btn_cancel"
+GetMember
+Push "onPress", register1, "btnOnPress"
+GetMember
+SetMember
+Push register6, "btn_cancel"
+GetMember
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "loginPageInit"
+CallMethod
+Pop
+}
+SetMember
+Push register1, "btn_del"
+GetMember
+Push "_visible", false
+SetMember
+Push register1, "btn_edit"
+GetMember
+Push "_visible", false
+SetMember
+Push register1, "btn_login"
+GetMember
+Push "_visible", false
+SetMember
+Push 0.0
+StoreRegister 7
+Pop
+loc13b4:Push register7, 6
+Less2
+Not
+If loc13e8
+Push register1, "mc_slot", register7
+Add2
+GetMember
+Push "enabled", false
+SetMember
+Push register7
+Increment
+StoreRegister 7
+Pop
+Jump loc13b4
+}
+loc13e8:SetMember
+Push register2, "selAccount"
+DefineFunction2 "", 1, 8, false, false, true, false, true, false, false, true, false, 0, "id" {
+Push register1, "sel"
+GetMember
+Push null
+Equals2
+Not
+Not
+If loc1699
+Push register1, "mc_slot", register1, "sel"
+GetMember
+Add2
+GetMember
+StoreRegister 6
+Pop
+Push register6, "_currentframe"
+GetMember
+Push 2
+Equals2
+Not
+If loc1455
+Push 1, 1, register6, "gotoAndStop"
+CallMethod
+Pop
+Jump loc1565
+loc1455:Push register6, "_currentframe"
+GetMember
+Push 4
+Equals2
+Not
+If loc1565
+Push 3, 1, register6, "gotoAndStop"
+CallMethod
+Pop
+Push register1, "sel"
+GetMember
+Push 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "getUser"
+CallMethod
+StoreRegister 7
+Pop
+Push register6, "txt"
+GetMember
+Push "text", register7, "userName"
+GetMember
+SetMember
+Push register6, "score", register7, "score"
+GetMember
+SetMember
+Push register6, "classlevel", register7, "classLv"
+GetMember
+SetMember
+Push 0.0
+StoreRegister 5
+Pop
+loc14e1:Push register5, 5
+Less2
+Not
+If loc1565
+Push register6, "gem", register5
+Add2
+Push 0.0, 10, 99, 0.0, register7, "gems"
+GetMember
+Push register5
+GetMember
+Push 3, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "numLimit"
+CallMethod
+Push 3, "Prince3"
+GetVariable
+Push "Utils"
+GetMember
+Push "num2Str"
+CallMethod
+SetMember
+Push register5
+Increment
+StoreRegister 5
+Pop
+Jump loc14e1
+loc1565:Push register6, "mc_sel"
+GetMember
+Push "_visible", false
+SetMember
+Push 1, 1, register6, "mc_sel"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register6, "onPress"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push "onRelease", register1, 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "actionCapture"
+CallMethod
+Pop
+Push register1, "id"
+GetMember
+Push 1, register1, "_parent"
+GetMember
+Push "selAccount"
+CallMethod
+Pop
+}
+SetMember
+Push register6, "onRollOver"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "mc_sel"
+GetMember
+Push "_visible"
+GetMember
+Not
+Not
+If loc1629
+Push register1, "mc_sel"
+GetMember
+Push "_visible", true
+SetMember
+Push 1, 1, register1, "mc_sel"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+}
+loc1629:SetMember
+Push register6, "onRollOut"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "mc_sel"
+GetMember
+Push "_visible"
+GetMember
+PushDuplicate
+Not
+If loc1669
+Pop
+Push register1, "mc_sel"
+GetMember
+Push "_currentframe"
+GetMember
+Push 1
+Equals2
+loc1669:Not
+If loc1698
+Push register1, "mc_sel"
+GetMember
+Push "_visible", false
+SetMember
+Push 1, 1, register1, "mc_sel"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+}
+loc1698:SetMember
+loc1699:Push register1, "btn_del"
+GetMember
+Push "_visible", false
+SetMember
+Push register1, "btn_edit"
+GetMember
+Push "_visible", false
+SetMember
+Push register1, "btn_login"
+GetMember
+Push "_visible", false
+SetMember
+Push register1, "sel", "id"
+GetVariable
+SetMember
+Push register1, "mc_slot", "id"
+GetVariable
+Add2
+GetMember
+StoreRegister 6
+Pop
+Push register6, "mc_sel"
+GetMember
+Push "_visible", true
+SetMember
+Push 2, 1, register6, "mc_sel"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register6, "onRelease"
+Delete
+Pop
+Push register6, "onRollOver"
+Delete
+Pop
+Push register6, "onRollOut"
+Delete
+Pop
+Push register6, "onPress"
+Delete
+Pop
+Push register6, "_currentframe"
+GetMember
+Push 1
+Equals2
+Not
+If loc1b61
+Push 2, 1, register6, "gotoAndStop"
+CallMethod
+Pop
+Push register6, "txt"
+GetMember
+Push "text", ""
+SetMember
+Push 1
+StoreRegister 5
+Pop
+loc1779:Push register5, 6
+Greater
+Not
+Not
+If loc1979
+Push register6, "mc_lv", register5
+Add2
+GetMember
+StoreRegister 4
+Pop
+Push register4, "id", register5
+SetMember
+Push 1, 1, register4, "gotoAndStop"
+CallMethod
+Pop
+Push register4, "sel", false
+SetMember
+Push register4, "onRollOver"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "sel"
+GetMember
+Not
+Not
+If loc1812
+Push "onRollOver", register1, 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "actionCapture"
+CallMethod
+Pop
+Push 2, 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+loc1812:SetMember
+Push register4, "onRollOut", register4, "onReleaseOutside"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "sel"
+GetMember
+Not
+Not
+If loc1867
+Push "onReleaseOutside", register1, 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "actionCapture"
+CallMethod
+Pop
+Push 1, 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+loc1867:StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register4, "onRelease"
+DefineFunction2 "", 0, 4, false, false, true, false, true, false, false, true, false {
+Push 1
+StoreRegister 2
+Pop
+loc1891:Push register2, 6
+Greater
+Not
+Not
+If loc1910
+Push register1, "_parent"
+GetMember
+Push "mc_lv", register2
+Add2
+GetMember
+StoreRegister 3
+Pop
+Push register3, "sel"
+GetMember
+PushDuplicate
+Not
+If loc18d8
+Pop
+Push register1, "id"
+GetMember
+Push register2
+Equals2
+Not
+loc18d8:Not
+If loc1900
+Push register3, "sel", false
+SetMember
+Push 1, 1, register3, "gotoAndStop"
+CallMethod
+Pop
+Jump loc1910
+loc1900:Push register2
+Increment
+StoreRegister 2
+Pop
+Jump loc1891
+loc1910:Push register1, "sel"
+GetMember
+Not
+Not
+If loc1968
+Push register1, "sel", true
+SetMember
+Push register1, "_parent"
+GetMember
+Push "lv", 5, 1, register1, "_name"
+GetMember
+Push "substr"
+CallMethod
+SetMember
+Push "onRelease", register1, 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "actionCapture"
+CallMethod
+Pop
+}
+loc1968:SetMember
+Push register5
+Increment
+StoreRegister 5
+Pop
+Jump loc1779
+loc1979:Push register6, "lv", 1
+SetMember
+Push register6, "mc_lv1"
+GetMember
+Push "sel", true
+SetMember
+Push 2, 1, register6, "mc_lv1"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register6, "btn_ok"
+GetMember
+Push "onRollOut", register6, "btn_ok"
+GetMember
+Push "onReleaseOutside", register1, "btnOnRollOut"
+GetMember
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register6, "btn_ok"
+GetMember
+Push "onRollOver", register1, "btnOnRollOver"
+GetMember
+SetMember
+Push register6, "btn_ok"
+GetMember
+Push "onPress", register1, "btnOnPress"
+GetMember
+SetMember
+Push register6, "btn_ok"
+GetMember
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "_parent"
+GetMember
+Push "txt"
+GetMember
+Push "text"
+GetMember
+Not
+If loc1aa8
+Push "none", register1, "_parent"
+GetMember
+Push "lv"
+GetMember
+Push 1, "none", 1, register1, "_parent"
+GetMember
+Push "txt"
+GetMember
+Push "text"
+GetMember
+Push register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "sel"
+GetMember
+Push 7, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "addUser"
+CallMethod
+Pop
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "loginPageInit"
+CallMethod
+Pop
+}
+loc1aa8:SetMember
+Push register6, "btn_cancel"
+GetMember
+Push "onRollOut", register6, "btn_cancel"
+GetMember
+Push "onReleaseOutside", register1, "btnOnRollOut"
+GetMember
+StoreRegister 0
+SetMember
+Push register0
+SetMember
+Push register6, "btn_cancel"
+GetMember
+Push "onRollOver", register1, "btnOnRollOver"
+GetMember
+SetMember
+Push register6, "btn_cancel"
+GetMember
+Push "onPress", register1, "btnOnPress"
+GetMember
+SetMember
+Push register6, "btn_cancel"
+GetMember
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "sel", null
+SetMember
+Push 0.0, register1, "_parent"
+GetMember
+Push "_parent"
+GetMember
+Push "loginPageInit"
+CallMethod
+Pop
+}
+SetMember
+Push register6, "txt"
+GetMember
+Push 1, "Selection"
+GetVariable
+Push "setFocus"
+CallMethod
+Pop
+Jump loc1b91
+loc1b61:Push register1, "btn_del"
+GetMember
+Push "_visible", true
+SetMember
+Push register1, "btn_edit"
+GetMember
+Push "_visible", true
+SetMember
+Push register1, "btn_login"
+GetMember
+Push "_visible", true
+SetMember
+}
+loc1b91:SetMember
+Push 1, null, "_global"
+GetVariable
+Push "LoginUI"
+GetMember
+Push "prototype"
+GetMember
+Push 3, "ASSetPropFlags"
+CallFunction
+loc1bb5:Pop

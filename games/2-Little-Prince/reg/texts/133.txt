@@ -1,0 +1,9 @@
+未能連線上網。若你的電腦能夠連線上網，
+--- RECORDSEPARATOR ---
+現在
+--- RECORDSEPARATOR ---
+請先連線
+--- RECORDSEPARATOR ---
+。連線後請按「重試」再次啟動。若你
+--- RECORDSEPARATOR ---
+的電腦不能連線上網，請按「代號啟動」。

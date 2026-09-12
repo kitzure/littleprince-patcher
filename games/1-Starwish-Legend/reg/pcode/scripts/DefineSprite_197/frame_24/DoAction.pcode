@@ -1,0 +1,36 @@
+ConstantPool "btn_retry", "_parent", "setBtn", "btn_code", "onRelease", "killPopup", "code", "gotoAndStop"
+Push "btn_retry"
+GetVariable
+Push 1, "_parent"
+GetVariable
+Push "setBtn"
+CallMethod
+Pop
+Push "btn_code"
+GetVariable
+Push 1, "_parent"
+GetVariable
+Push "setBtn"
+CallMethod
+Pop
+Push "btn_retry"
+GetVariable
+Push "onRelease"
+DefineFunction2 "", 0, 2, true, false, true, false, true, false, true, false, false {
+Push 0.0, register1, "killPopup"
+CallMethod
+Pop
+}
+SetMember
+Push "btn_code"
+GetVariable
+Push "onRelease"
+DefineFunction2 "", 0, 2, true, false, true, false, true, false, true, false, false {
+Push 0.0, register1, "killPopup"
+CallMethod
+Pop
+Push "code", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember

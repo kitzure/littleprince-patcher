@@ -1,0 +1,20 @@
+Push "initMisc"
+GetVariable
+Push 0.0
+InitArray
+Push "file", "opening.swf", "showNow", true, "loc", "animation", 3
+InitObject
+Push 1
+InitArray
+Push 3, "switchFile"
+CallFunction
+Pop
+Push "now frame", "this"
+GetVariable
+Push "_currentframe"
+GetMember
+Add2
+Push 1, "traceOut"
+CallFunction
+Pop
+Stop

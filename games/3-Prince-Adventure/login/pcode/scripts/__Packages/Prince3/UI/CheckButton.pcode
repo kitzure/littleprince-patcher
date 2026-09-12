@@ -1,0 +1,183 @@
+ConstantPool "_global", "Prince3", "Object", "UI", "CheckButton", "onReleaseOutside", "onRollOut", "MovieClip", "prototype", "onLoad", "checked", "normal", "gotoAndStop", "onPress", "PrinceSystem", "actionCapture", "press", "onRelease", "isCheckButton", "onSelect", "onRollOver", "over", "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "Prince3"
+GetMember
+Not
+Not
+If loc0110
+Push "_global"
+GetVariable
+Push "Prince3", 0.0, "Object"
+NewObject
+SetMember
+loc0110:Pop
+Push "_global"
+GetVariable
+Push "Prince3"
+GetMember
+Push "UI"
+GetMember
+Not
+Not
+If loc0148
+Push "_global"
+GetVariable
+Push "Prince3"
+GetMember
+Push "UI", 0.0, "Object"
+NewObject
+SetMember
+loc0148:Pop
+Push "_global"
+GetVariable
+Push "Prince3"
+GetMember
+Push "UI"
+GetMember
+Push "CheckButton"
+GetMember
+Not
+Not
+If loc03aa
+Push "Prince3"
+GetVariable
+Push "UI"
+GetMember
+Push "CheckButton"
+DefineFunction2 "", 0, 3, false, false, false, true, true, false, false, true, false {
+Push 0.0, register2, undefined
+CallMethod
+Pop
+Push register1, "onReleaseOutside", register1, "onRollOut"
+GetMember
+SetMember
+}
+StoreRegister 1
+SetMember
+Push "Prince3"
+GetVariable
+Push "UI"
+GetMember
+Push "CheckButton"
+GetMember
+Push "MovieClip"
+GetVariable
+Extends
+Push register1, "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2, "onLoad"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "checked"
+GetMember
+If loc01f6
+Push "normal"
+Jump loc01fb
+loc01f6:Push "checked"
+loc01fb:Push 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "onPress"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "checked"
+GetMember
+Not
+Not
+If loc0257
+Push "onPress", register1, 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "actionCapture"
+CallMethod
+Pop
+Push "press", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+loc0257:SetMember
+Push register2, "onRelease"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "checked"
+GetMember
+Not
+Not
+If loc02e4
+Push "onRelease", register1, 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "actionCapture"
+CallMethod
+Pop
+Push register1, "isCheckButton"
+GetMember
+Not
+If loc02c2
+Push register1, "checked", true
+SetMember
+Push "checked", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+Jump loc02d2
+loc02c2:Push "normal", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+loc02d2:Push 0.0, register1, "onSelect"
+CallMethod
+Pop
+}
+loc02e4:SetMember
+Push register2, "onRollOver"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "checked"
+GetMember
+Not
+Not
+If loc0332
+Push "onRollOver", register1, 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "actionCapture"
+CallMethod
+Pop
+Push "over", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+loc0332:SetMember
+Push register2, "onRollOut"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "checked"
+GetMember
+Not
+Not
+If loc0380
+Push "onRollOut", register1, 2, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "actionCapture"
+CallMethod
+Pop
+Push "normal", 1, register1, "gotoAndStop"
+CallMethod
+Pop
+}
+loc0380:SetMember
+Push 1, null, "Prince3"
+GetVariable
+Push "UI"
+GetMember
+Push "CheckButton"
+GetMember
+Push "prototype"
+GetMember
+Push 3, "ASSetPropFlags"
+CallFunction
+loc03aa:Pop

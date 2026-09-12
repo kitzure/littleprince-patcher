@@ -1,0 +1,47 @@
+ConstantPool "user", "setDefeatedBoss", "saveUserData", "setBossQue", "length", "report", "reduceItem"
+DefineFunction2 "updateBoss", 1, 2, false, false, true, false, true, false, true, false, false, 1, "agBossID" {
+Push register1, 1, "user"
+GetVariable
+Push "setDefeatedBoss"
+CallMethod
+Pop
+Push "user"
+GetVariable
+Push 1, "saveUserData"
+CallFunction
+Pop
+}
+DefineFunction2 "updateBossQue", 3, 5, false, false, true, false, true, false, true, false, false, 4, "agBossID", 3, "agQueID", 2, "agItemArr" {
+Push register3, register4, 2, "user"
+GetVariable
+Push "setBossQue"
+CallMethod
+Pop
+Push 0.0
+StoreRegister 1
+Pop
+loc00ed:Push register1, register2, "length"
+GetMember
+Less2
+Not
+If loc0133
+Push 1, register2, register1
+GetMember
+Push 2, "user"
+GetVariable
+Push "report"
+GetMember
+Push "reduceItem"
+CallMethod
+Pop
+Push register1
+Increment
+StoreRegister 1
+Pop
+Jump loc00ed
+loc0133:Push "user"
+GetVariable
+Push 1, "saveUserData"
+CallFunction
+Pop
+}

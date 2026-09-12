@@ -1,0 +1,23 @@
+ConstantPool "btn_ok", "_parent", "setBtn", "onRelease", "Prince3", "PrinceSystem", "application", "checkActivation"
+Push "btn_ok"
+GetVariable
+Push 1, "_parent"
+GetVariable
+Push "setBtn"
+CallMethod
+Pop
+Push "btn_ok"
+GetVariable
+Push "onRelease"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application"
+GetMember
+Push "checkActivation"
+CallMethod
+Pop
+}
+SetMember

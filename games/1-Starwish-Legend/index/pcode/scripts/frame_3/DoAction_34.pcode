@@ -1,0 +1,88 @@
+ConstantPool "reg", "unloadMovie", "cdsingle", "initSystem", "verNumber", "2.1", "lvar", "LoadVars", "onData", "version.txt", "load", "regInfo", "RegInfo", "checkRegInfo", "_root", "_level0", "prince", "admin", "validateLogin", "loadSystem", "gameid", "callGame"
+DefineFunction "loadTrialVersion", 0 {
+Push 0
+Push "reg"
+GetVariable
+Push "unloadMovie"
+CallMethod
+Pop
+Push "cdsingle"
+Push 1
+Push "initSystem"
+CallFunction
+Pop
+}
+DefineFunction "loadFullVersion", 0 {
+Push 0
+Push "reg"
+GetVariable
+Push "unloadMovie"
+CallMethod
+Pop
+Push "cdsingle"
+Push 1
+Push "initSystem"
+CallFunction
+Pop
+}
+Push "verNumber"
+Push "2.1"
+DefineLocal
+Push "lvar"
+Push 0
+Push "LoadVars"
+NewObject
+DefineLocal
+Push "lvar"
+GetVariable
+Push "onData"
+DefineFunction2 "", 1, 3, false, true, true, false, true, false, true, false, false, 2, "src" {
+Push register1
+Push "verNumber"
+Push register2
+SetMember
+}
+SetMember
+Push "version.txt"
+Push 1
+Push "lvar"
+GetVariable
+Push "load"
+CallMethod
+Pop
+Push "regInfo"
+Push 0
+Push "RegInfo"
+NewObject
+SetVariable
+Push 0
+Push "checkRegInfo"
+CallFunction
+Pop
+Push "_root"
+GetVariable
+Push "_level0"
+GetVariable
+Equals2
+Not
+Not
+If loc021e
+Push "prince"
+Push "admin"
+Push 2
+Push "validateLogin"
+CallFunction
+Pop
+Push 0
+Push "loadSystem"
+CallFunction
+Pop
+Push "_level0"
+GetVariable
+Push "gameid"
+GetMember
+Push 1
+Push "callGame"
+CallFunction
+Pop
+loc021e:Stop

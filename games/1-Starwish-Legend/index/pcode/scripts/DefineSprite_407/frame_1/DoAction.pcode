@@ -1,0 +1,12 @@
+ConstantPool "_parent", "mapEngine_Current", "sha", "gotoAndStop"
+Push "_parent"
+GetVariable
+Push "_parent"
+GetMember
+Push "mapEngine_Current"
+GetMember
+Push 1, "sha"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop

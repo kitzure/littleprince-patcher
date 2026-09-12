@@ -1,0 +1,489 @@
+ConstantPool "fx", "Object", "fxArray", "ding", "drop", "drag", "scoreminus", "score", "fall", "transin", "walk", "togame", "stone", "slide", "bob", "mapout", "mapin", "sel8", "sel7", "sel6", "sel5", "sel4", "sel3", "sel2", "sel1", "i", "length", "Sound", "fx/", ".mp3", "loadSound", "start", "stop", "channel1", "channel2", "none", "readyChannel", "channel", "music/", "music", "verShort", "cd", "musicChecker", "onEnterFrame", "getBytesLoaded", "getBytesTotal", "user", "musicvolume", "setUserMusicVolume", "loop", "usedChannel", "onLoad", "fading music:", "/channel1:", "/channel2:", "outChannel", "divVolume", "Math", "ceil", "getVolume", "setVolume", "_parent", "bossStatus", "preBoss", "map", "mapEngine_Current", "fadeOutMusic", "question", "leaveQuestion", "boss", "quit", "end", "success", "fail", "A", "B", "C", "E", "shadow", "final", "playMusic", "_global", "music1", "music2"
+DefineFunction2 "initFx", 0, 2, false, false, true, false, true, false, true, false, true {
+Push register1, "fx", 0.0, "Object"
+NewObject
+SetMember
+Push "fxArray", "ding", "drop", "drag", "scoreminus", "score", "fall", "transin", "walk", "togame", "stone", "slide", "bob", "mapout", "mapin", "sel8", "sel7", "sel6", "sel5", "sel4", "sel3", "sel2", "sel1", 22
+InitArray
+SetVariable
+Push "i", 0.0
+SetVariable
+loc02e2:Push "i"
+GetVariable
+Push "fxArray"
+GetVariable
+Push "length"
+GetMember
+Push 1
+Subtract
+Greater
+Not
+Not
+If loc0371
+Push register1, "fx"
+GetMember
+Push "fxArray"
+GetVariable
+Push "i"
+GetVariable
+GetMember
+Push 0.0, "Sound"
+NewObject
+SetMember
+Push "fx/", "fxArray"
+GetVariable
+Push "i"
+GetVariable
+GetMember
+Add2
+Push ".mp3"
+Add2
+Push 1, register1, "fx"
+GetMember
+Push "fxArray"
+GetVariable
+Push "i"
+GetVariable
+GetMember
+GetMember
+Push "loadSound"
+CallMethod
+Pop
+Push "i", "i"
+GetVariable
+Increment
+SetVariable
+Jump loc02e2
+}
+loc0371:DefineFunction2 "createFx", 1, 3, false, false, true, false, true, false, true, false, true, 2, "which" {
+Push register1, "fx"
+GetMember
+Push register2
+GetMember
+Push undefined
+Equals2
+Not
+If loc03e6
+Push register1, "fx"
+GetMember
+Push register2, 0.0, "Sound"
+NewObject
+SetMember
+Push "fx/", register2
+Add2
+Push ".mp3"
+Add2
+Push 1, register1, "fx"
+GetMember
+Push register2
+GetMember
+Push "loadSound"
+CallMethod
+Pop
+}
+loc03e6:DefineFunction2 "playFx", 1, 3, false, false, true, false, true, false, true, false, true, 2, "which" {
+Push 0.0, register1, "fx"
+GetMember
+Push register2
+GetMember
+Push "start"
+CallMethod
+Pop
+}
+DefineFunction2 "stopFx", 1, 3, false, false, true, false, true, false, true, false, true, 2, "which" {
+Push 0.0, register1, "fx"
+GetMember
+Push register2
+GetMember
+Push "stop"
+CallMethod
+Pop
+}
+DefineFunction2 "playMusic", 2, 4, false, false, true, false, true, false, false, true, true, 3, "file", 0, "loop" {
+Push "channel1"
+GetVariable
+Push register3
+Equals2
+Not
+Push "channel2"
+GetVariable
+Push register3
+Equals2
+Not
+And
+Not
+If loc062e
+Push "channel1"
+GetVariable
+Push "none"
+Equals2
+Not
+If loc04b5
+Push "readyChannel", 1
+SetVariable
+Jump loc04c0
+loc04b5:Push "readyChannel", 2
+SetVariable
+loc04c0:Push register1, "channel", "readyChannel"
+GetVariable
+Add2
+Push register3
+SetMember
+Push false, "music/", register3
+Add2
+Push ".mp3"
+Add2
+Push 2, register2, "music", "readyChannel"
+GetVariable
+Add2
+GetMember
+Push "loadSound"
+CallMethod
+Pop
+Push "verShort"
+GetVariable
+Push "cd"
+Equals2
+Not
+If loc05c2
+Push register1, "musicChecker", "readyChannel"
+GetVariable
+Add2
+GetMember
+Push "onEnterFrame"
+DefineFunction2 "", 0, 3, false, false, true, false, true, false, false, true, true {
+Push 0.0, register2, "music", "readyChannel"
+GetVariable
+Add2
+GetMember
+Push "getBytesLoaded"
+CallMethod
+Push 0.0, register2, "music", "readyChannel"
+GetVariable
+Add2
+GetMember
+Push "getBytesTotal"
+CallMethod
+Equals2
+Not
+If loc05bc
+Push register1, "onEnterFrame"
+Delete
+Pop
+Push "user"
+GetVariable
+Push "musicvolume"
+GetMember
+Push 1, "setUserMusicVolume"
+CallFunction
+Pop
+Push "loop"
+GetVariable
+Push 0.0, 2, register2, "music", "readyChannel"
+GetVariable
+Add2
+GetMember
+Push "start"
+CallMethod
+Pop
+Push "usedChannel", "readyChannel"
+GetVariable
+SetVariable
+Push "readyChannel"
+Delete2
+Pop
+}
+loc05bc:SetMember
+Jump loc062e
+loc05c2:Push register2, "music", "readyChannel"
+GetVariable
+Add2
+GetMember
+Push "onLoad"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, true, false, true {
+Push "user"
+GetVariable
+Push "musicvolume"
+GetMember
+Push 1, "setUserMusicVolume"
+CallFunction
+Pop
+Push "loop"
+GetVariable
+Push 0.0, 2, register1, "music", "readyChannel"
+GetVariable
+Add2
+GetMember
+Push "start"
+CallMethod
+Pop
+Push "usedChannel", "readyChannel"
+GetVariable
+SetVariable
+Push "readyChannel"
+Delete2
+Pop
+}
+SetMember
+}
+loc062e:DefineFunction2 "fadeOutMusic", 2, 5, false, false, true, false, true, false, false, true, true, 3, "channel", 4, "duration" {
+Push "fading music:", register3
+Add2
+Push "/channel1:"
+Add2
+Push "channel1"
+GetVariable
+Add2
+Push "/channel2:"
+Add2
+Push "channel2"
+GetVariable
+Add2
+Trace
+Push "channel1"
+GetVariable
+Push register3
+Equals2
+Not
+If loc069d
+Push "outChannel", 1
+SetVariable
+Jump loc06ba
+loc069d:Push "channel2"
+GetVariable
+Push register3
+Equals2
+Not
+If loc06ba
+Push "outChannel", 2
+SetVariable
+loc06ba:Push "divVolume", 100, register4
+Divide
+Push 1, "Math"
+GetVariable
+Push "ceil"
+CallMethod
+SetVariable
+Push register1, "musicChecker", "outChannel"
+GetVariable
+Add2
+GetMember
+Push "onEnterFrame"
+DefineFunction2 "", 0, 3, false, false, true, false, true, false, false, true, true {
+Push 0.0, register2, "music", "outChannel"
+GetVariable
+Add2
+GetMember
+Push "getVolume"
+CallMethod
+Push "divVolume"
+GetVariable
+Subtract
+Push 0.0
+Greater
+Not
+Not
+If loc0790
+Push 0.0, register2, "music", "outChannel"
+GetVariable
+Add2
+GetMember
+Push "stop"
+CallMethod
+Pop
+Push "user"
+GetVariable
+Push "musicvolume"
+GetMember
+Push 1, register2, "music", "outChannel"
+GetVariable
+Add2
+GetMember
+Push "setVolume"
+CallMethod
+Pop
+Push register1, "_parent"
+GetMember
+Push "channel", "outChannel"
+GetVariable
+Add2
+Push "none"
+SetMember
+Push register1, "onEnterFrame"
+Delete
+Pop
+Jump loc07ca
+loc0790:Push 0.0, register2, "music", "outChannel"
+GetVariable
+Add2
+GetMember
+Push "getVolume"
+CallMethod
+Push "divVolume"
+GetVariable
+Subtract
+Push 1, register2, "music", "outChannel"
+GetVariable
+Add2
+GetMember
+Push "setVolume"
+CallMethod
+Pop
+}
+loc07ca:SetMember
+}
+DefineFunction "fadeOutBossMusic", 0 {
+Push "bossStatus"
+GetVariable
+Push "preBoss"
+Equals2
+Not
+If loc0814
+Push 15, "map", "mapEngine_Current"
+GetVariable
+Add2
+Push 2, "fadeOutMusic"
+CallFunction
+Pop
+Jump loc092f
+loc0814:Push "bossStatus"
+GetVariable
+Push "question"
+Equals2
+Push "bossStatus"
+GetVariable
+Push "leaveQuestion"
+Equals2
+Or
+Not
+If loc084b
+Push 15, "question", 2, "fadeOutMusic"
+CallFunction
+Pop
+Jump loc092f
+loc084b:Push "bossStatus"
+GetVariable
+Push "start"
+Equals2
+Not
+If loc0875
+Push 15, "boss", 2, "fadeOutMusic"
+CallFunction
+Pop
+Jump loc092f
+loc0875:Push "bossStatus"
+GetVariable
+Push "quit"
+Equals2
+Push "bossStatus"
+GetVariable
+Push "end"
+Equals2
+Or
+Push "bossStatus"
+GetVariable
+Push "success"
+Equals2
+Or
+Push "bossStatus"
+GetVariable
+Push "fail"
+Equals2
+Or
+Not
+If loc092f
+Push "mapEngine_Current"
+GetVariable
+Push "A"
+Equals2
+Push "mapEngine_Current"
+GetVariable
+Push "B"
+Equals2
+Or
+Push "mapEngine_Current"
+GetVariable
+Push "C"
+Equals2
+Or
+Not
+If loc08f2
+Push 15, "boss", 2, "fadeOutMusic"
+CallFunction
+Pop
+Jump loc092f
+loc08f2:Push "mapEngine_Current"
+GetVariable
+Push "E"
+Equals2
+Not
+If loc091c
+Push 15, "shadow", 2, "fadeOutMusic"
+CallFunction
+Pop
+Jump loc092f
+loc091c:Push 15, "final", 2, "fadeOutMusic"
+CallFunction
+Pop
+}
+loc092f:DefineFunction "playBossMusic", 0 {
+Push "bossStatus"
+GetVariable
+Push "question"
+Equals2
+Not
+If loc096e
+Push 10000, "question", 2, "playMusic"
+CallFunction
+Pop
+Jump loc0a01
+loc096e:Push "bossStatus"
+GetVariable
+Push "start"
+Equals2
+Not
+If loc0a01
+Push "mapEngine_Current"
+GetVariable
+Push "A"
+Equals2
+Push "mapEngine_Current"
+GetVariable
+Push "B"
+Equals2
+Or
+Push "mapEngine_Current"
+GetVariable
+Push "C"
+Equals2
+Or
+Not
+If loc09c4
+Push 10000, "boss", 2, "playMusic"
+CallFunction
+Pop
+Jump loc0a01
+loc09c4:Push "mapEngine_Current"
+GetVariable
+Push "E"
+Equals2
+Not
+If loc09ee
+Push 10000, "shadow", 2, "playMusic"
+CallFunction
+Pop
+Jump loc0a01
+loc09ee:Push 10000, "final", 2, "playMusic"
+CallFunction
+Pop
+}
+loc0a01:Push "_global"
+GetVariable
+Push "music1", 0.0, "Sound"
+NewObject
+SetMember
+Push "_global"
+GetVariable
+Push "music2", 0.0, "Sound"
+NewObject
+SetMember

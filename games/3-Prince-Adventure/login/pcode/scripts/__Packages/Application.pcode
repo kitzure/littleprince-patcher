@@ -1,0 +1,1023 @@
+ConstantPool "_global", "Application", "timeout", "Prince3", "PrinceSystem", "application", "MovieClip", "prototype", "onLoad", "in", "mc_blur", "_visible", "bmp", "flash", "display", "BitmapData", "attachBitmap", "_firstcall", "_network", "lv_net", "LoadVars", "onHTTPStatus", "mx", "utils", "Delegate", "create", "updateNetwork", ">>>>>>>", "intervalID", "clearInterval", "loadReg", "checkNetworkTimeout", "setInterval", "http://www.little-prince.com.hk/littleprince/amfservice/gateway.php", "load", "onEnterFrame", "content", "btn_activate", "e020", "popup", "keyUpdate", "initTimeOutCount", "checkActivation", "loadSO", "data", "activationKey", "getHDKey", "hdkey", "sn", "activationSuccess", "haveNetwork", "loading", "Username", "name", "Phone", "phone", "Email", "email", "Serial", "type", "rkey", "requestKey", "serviceRequest", "loadOpening", "activated", "gotoAndStop", "clearActivation", "e060", "e090", "mc_popup", "error", "090", "form", "checkVersion", "verNumber", "checkVersionResponse", "connectActivationServer", "-", "indexOf", "e010", "activation", "e030", "activationResponse", "result: ", "e040", "e050", "e080", "alert_act", "a2", "gotoAndPlay", "killPopup", "saveActivation", "success", "reactivation", "reactivationResponse", "a055", "last", "mc_al_phone", "a3", "mc_al_email", "checkActivationResponse", "e091", "091", "e070", ",", "split", "version: ", "e000", "trial", "mc_trial", "users", "Array", "none", "DEMO", "addUser", "onMouseDown", "onMouseUp", "onMouseMove", "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "Application"
+GetMember
+Not
+Not
+If loc15ae
+Push "_global"
+GetVariable
+Push "Application"
+DefineFunction2 "", 0, 3, false, false, false, true, true, false, false, true, false {
+Push 0.0, register2, undefined
+CallMethod
+Pop
+Push register1, "timeout", 0.0
+SetMember
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "application", register1
+SetMember
+}
+StoreRegister 1
+SetMember
+Push "_global"
+GetVariable
+Push "Application"
+GetMember
+Push "MovieClip"
+GetVariable
+Extends
+Push register1, "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2, "onLoad"
+DefineFunction2 "", 0, 3, false, true, true, false, true, false, false, true, false {
+Push "in"
+Trace
+Push register1, "mc_blur"
+GetMember
+Push "_visible", false
+SetMember
+Push register1, "bmp", 255, false, 600, 800, 4, "flash"
+GetVariable
+Push "display"
+GetMember
+Push "BitmapData"
+NewMethod
+SetMember
+Push 1, register1, "bmp"
+GetMember
+Push 2, register1, "mc_blur"
+GetMember
+Push "attachBitmap"
+CallMethod
+Pop
+Push register2, "_firstcall", true
+SetMember
+Push register2, "_network", false
+SetMember
+Push register1, "lv_net", 0.0, "LoadVars"
+NewObject
+SetMember
+Push register1, "lv_net"
+GetMember
+Push "onHTTPStatus", register1, "onHTTPStatus"
+GetMember
+Push register1, 2, "mx"
+GetVariable
+Push "utils"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+SetMember
+Push register2, "updateNetwork", register1, "updateNetwork"
+GetMember
+SetMember
+Push 0.0, register1, "updateNetwork"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "onHTTPStatus"
+DefineFunction2 "", 1, 4, false, true, true, false, true, false, false, true, false, 3, "httpStatus" {
+Push ">>>>>>>"
+Trace
+Push register1, "intervalID"
+GetMember
+Push 1, "clearInterval"
+CallFunction
+Pop
+Push register1, "intervalID", null
+SetMember
+Push register3, 200
+Equals2
+Not
+If loc0653
+Push register2, "_network", true
+SetMember
+Jump loc065d
+loc0653:Push register2, "_network", false
+SetMember
+loc065d:Push register2, "_firstcall"
+GetMember
+Push true
+Equals2
+Not
+If loc0697
+Push register2, "_firstcall", false
+SetMember
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "loadReg"
+CallMethod
+Pop
+}
+loc0697:SetMember
+Push register2, "updateNetwork"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "intervalID", 5000, register1, "checkNetworkTimeout"
+GetMember
+Push register1, 2, "mx"
+GetVariable
+Push "utils"
+GetMember
+Push "Delegate"
+GetMember
+Push "create"
+CallMethod
+Push 2, "setInterval"
+CallFunction
+SetMember
+Push "http://www.little-prince.com.hk/littleprince/amfservice/gateway.php", 1, register1, "lv_net"
+GetMember
+Push "load"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "checkNetworkTimeout"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push 0.0, 1, register1, "onHTTPStatus"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "onEnterFrame"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "timeout"
+GetMember
+Not
+If loc079d
+Push register1, "timeout", register1, "timeout"
+GetMember
+Decrement
+SetMember
+Push register1, "timeout"
+GetMember
+Push 0.0
+Equals2
+Not
+If loc079d
+Push register1, "content"
+GetMember
+Push "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e020", 2, register1, "content"
+GetMember
+Push "popup"
+CallMethod
+Pop
+loc079d:Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "keyUpdate"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "initTimeOutCount"
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, "timeout", 240
+SetMember
+}
+SetMember
+Push register2, "checkActivation"
+DefineFunction2 "", 0, 9, false, true, true, false, true, false, false, true, false {
+Push 0.0, register2, "loadSO"
+CallMethod
+StoreRegister 3
+Pop
+Push register3, "data"
+GetMember
+Push "activationKey"
+GetMember
+Not
+If loc0ae3
+Push 0.0, register2, "getHDKey"
+CallMethod
+Push register3, "data"
+GetMember
+Push "hdkey"
+GetMember
+Equals2
+Not
+If loc0a73
+Push register3, "data"
+GetMember
+Push "activationKey"
+GetMember
+Push register3, "data"
+GetMember
+Push "hdkey"
+GetMember
+Push register3, "data"
+GetMember
+Push "sn"
+GetMember
+Push 3, register2, "activationSuccess"
+CallMethod
+Not
+If loc0a19
+Push 0.0, register2, "haveNetwork"
+CallMethod
+Not
+If loc09f8
+Push register1, "loading"
+GetMember
+Push "_visible", true
+SetMember
+Push register1, "content"
+GetMember
+Push "Username", register3, "data"
+GetMember
+Push "name"
+GetMember
+SetMember
+Push register1, "content"
+GetMember
+Push "Phone", register3, "data"
+GetMember
+Push "phone"
+GetMember
+SetMember
+Push register1, "content"
+GetMember
+Push "Email", register3, "data"
+GetMember
+Push "email"
+GetMember
+SetMember
+Push register1, "content"
+GetMember
+Push "Serial", register3, "data"
+GetMember
+Push "sn"
+GetMember
+SetMember
+Push "type", "checkActivation", "name", register3, "data"
+GetMember
+Push "name"
+GetMember
+Push "phone", register3, "data"
+GetMember
+Push "phone"
+GetMember
+Push "email", register3, "data"
+GetMember
+Push "email"
+GetMember
+Push "rkey", register3, "data"
+GetMember
+Push "hdkey"
+GetMember
+Push register3, "data"
+GetMember
+Push "sn"
+GetMember
+Push 2, register2, "requestKey"
+CallMethod
+Push 5
+InitObject
+Push 1
+InitArray
+Push 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "serviceRequest"
+CallMethod
+Not
+Not
+If loc09b4
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "loadOpening"
+CallMethod
+Pop
+Jump loc09f3
+loc09b4:Push 0.0, register1, "initTimeOutCount"
+CallMethod
+Pop
+Push register1, "content"
+GetMember
+Push "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "loading", 2, register1, "content"
+GetMember
+Push "popup"
+CallMethod
+Pop
+loc09f3:Jump loc0a14
+loc09f8:Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "loadOpening"
+CallMethod
+Pop
+loc0a14:Jump loc0a6e
+loc0a19:Push "activated", 1, register1, "content"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, register2, "clearActivation"
+CallMethod
+Pop
+Push register1, "content"
+GetMember
+Push "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e060", 2, register1, "content"
+GetMember
+Push "popup"
+CallMethod
+Pop
+loc0a6e:Jump loc0ade
+loc0a73:Push "activated", 1, register1, "content"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, register2, "clearActivation"
+CallMethod
+Pop
+Push register1, "content"
+GetMember
+Push "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e090", 2, register1, "content"
+GetMember
+Push "popup"
+CallMethod
+Pop
+Push register1, "content"
+GetMember
+Push "mc_popup"
+GetMember
+Push "error", "090"
+SetMember
+loc0ade:Jump loc0b88
+loc0ae3:Push "form", 1, register1, "content"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1, "content"
+GetMember
+Push "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "loading", 2, register1, "content"
+GetMember
+Push "popup"
+CallMethod
+Pop
+Push "type", "checkVersion", 1
+InitObject
+Push 1
+InitArray
+Push 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "serviceRequest"
+CallMethod
+Not
+Not
+If loc0b76
+Push register2, "verNumber"
+GetMember
+ToNumber
+Push 1, register1, "checkVersionResponse"
+CallMethod
+Pop
+Jump loc0b88
+loc0b76:Push 0.0, register1, "initTimeOutCount"
+CallMethod
+Pop
+}
+loc0b88:SetMember
+Push register2, "connectActivationServer"
+DefineFunction2 "", 0, 10, false, true, true, false, true, false, false, true, false {
+Push register1, "content"
+GetMember
+Push "Username"
+GetMember
+StoreRegister 5
+Pop
+Push register1, "content"
+GetMember
+Push "Phone"
+GetMember
+StoreRegister 6
+Pop
+Push register1, "content"
+GetMember
+Push "Email"
+GetMember
+StoreRegister 7
+Pop
+Push register1, "content"
+GetMember
+Push "Serial"
+GetMember
+StoreRegister 4
+Pop
+Push 0.0, register2, "getHDKey"
+CallMethod
+StoreRegister 3
+Pop
+Push "-", 1, register3, "indexOf"
+CallMethod
+Push 4
+Equals2
+Not
+Not
+If loc0c4e
+Push register1, "content"
+GetMember
+Push "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e010", 2, register1, "content"
+GetMember
+Push "popup"
+CallMethod
+Pop
+Jump loc0d5c
+loc0c4e:Push 0.0, register2, "haveNetwork"
+CallMethod
+Not
+Not
+If loc0c98
+Push register1, "content"
+GetMember
+Push "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e020", 2, register1, "content"
+GetMember
+Push "popup"
+CallMethod
+Pop
+Jump loc0d5c
+loc0c98:Push "type", "activation", "name", register5, "phone", register6, "email", register7, "rkey", register3, register4, 2, register2, "requestKey"
+CallMethod
+Push 5
+InitObject
+Push 1
+InitArray
+Push 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "serviceRequest"
+CallMethod
+Not
+Not
+If loc0d1d
+Push register1, "content"
+GetMember
+Push "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e030", 2, register1, "content"
+GetMember
+Push "popup"
+CallMethod
+Pop
+Jump loc0d5c
+loc0d1d:Push 0.0, register1, "initTimeOutCount"
+CallMethod
+Pop
+Push register1, "content"
+GetMember
+Push "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "loading", 2, register1, "content"
+GetMember
+Push "popup"
+CallMethod
+Pop
+}
+loc0d5c:SetMember
+Push register2, "activationResponse"
+DefineFunction2 "", 1, 5, false, true, true, false, true, false, false, true, false, 3, "result" {
+Push register1, "timeout", 0.0
+SetMember
+Push "result: ", register3
+Add2
+Trace
+Push 0.0, register2, "getHDKey"
+CallMethod
+StoreRegister 4
+Pop
+Push register3, "e040"
+Equals2
+Not
+If loc0de7
+Push register1, "content"
+GetMember
+Push "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e040", 2, register1, "content"
+GetMember
+Push "popup"
+CallMethod
+Pop
+Jump loc0faa
+loc0de7:Push register3, "e050"
+Equals2
+Not
+If loc0e27
+Push register1, "content"
+GetMember
+Push "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e050", 2, register1, "content"
+GetMember
+Push "popup"
+CallMethod
+Pop
+Jump loc0faa
+loc0e27:Push register3, "e080"
+Equals2
+Not
+If loc0e7d
+Push "activated", 1, register1, "content"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1, "content"
+GetMember
+Push "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e080", 2, register1, "content"
+GetMember
+Push "popup"
+CallMethod
+Pop
+Jump loc0faa
+loc0e7d:Push register3, register4, register1, "content"
+GetMember
+Push "Serial"
+GetMember
+Push 3, register2, "activationSuccess"
+CallMethod
+Not
+Not
+If loc0f32
+Push register1, "content"
+GetMember
+Push "alert_act"
+GetMember
+Not
+If loc0ed8
+Push "a2", 1, register1, "content"
+GetMember
+Push "alert_act"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Jump loc0f2d
+loc0ed8:Push "activated", 1, register1, "content"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, register2, "clearActivation"
+CallMethod
+Pop
+Push register1, "content"
+GetMember
+Push "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e090", 2, register1, "content"
+GetMember
+Push "popup"
+CallMethod
+Pop
+loc0f2d:Jump loc0faa
+loc0f32:Push 0.0, register1, "content"
+GetMember
+Push "killPopup"
+CallMethod
+Pop
+Push register3, register4, register1, "content"
+GetMember
+Push "Serial"
+GetMember
+Push register1, "content"
+GetMember
+Push "Email"
+GetMember
+Push register1, "content"
+GetMember
+Push "Phone"
+GetMember
+Push register1, "content"
+GetMember
+Push "Username"
+GetMember
+Push 6, register2, "saveActivation"
+CallMethod
+Pop
+Push "success", 1, register1, "content"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+}
+loc0faa:SetMember
+Push register2, "reactivation"
+DefineFunction2 "", 0, 10, false, true, true, false, true, false, false, true, false {
+Push register1, "content"
+GetMember
+Push "Username"
+GetMember
+StoreRegister 5
+Pop
+Push register1, "content"
+GetMember
+Push "Phone"
+GetMember
+StoreRegister 6
+Pop
+Push register1, "content"
+GetMember
+Push "Email"
+GetMember
+StoreRegister 7
+Pop
+Push register1, "content"
+GetMember
+Push "Serial"
+GetMember
+StoreRegister 3
+Pop
+Push 0.0, register2, "getHDKey"
+CallMethod
+StoreRegister 4
+Pop
+Push "type", "reactivation", "name", register5, "phone", register6, "email", register7, "rkey", register4, register3, 2, register2, "requestKey"
+CallMethod
+Push 5
+InitObject
+Push 1
+InitArray
+Push 1, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "serviceRequest"
+CallMethod
+Pop
+Push 0.0, register1, "initTimeOutCount"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "reactivationResponse"
+DefineFunction2 "", 1, 5, false, true, true, false, true, false, false, true, false, 3, "result" {
+Push register1, "timeout", 0.0
+SetMember
+Push "result: ", register3
+Add2
+Trace
+Push 0.0, register2, "getHDKey"
+CallMethod
+StoreRegister 4
+Pop
+Push register3, "a055"
+Equals2
+Not
+If loc114e
+Push register1, "content"
+GetMember
+Push "mc_popup"
+GetMember
+Push "last"
+GetMember
+Push 1, register1, "content"
+GetMember
+Push "mc_popup"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push "a2", 1, register1, "content"
+GetMember
+Push "mc_popup"
+GetMember
+Push "mc_al_phone"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Push "a3", 1, register1, "content"
+GetMember
+Push "mc_popup"
+GetMember
+Push "mc_al_email"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Jump loc121c
+loc114e:Push register3, "e080"
+Equals2
+Not
+If loc11a4
+Push "activated", 1, register1, "content"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1, "content"
+GetMember
+Push "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e080", 2, register1, "content"
+GetMember
+Push "popup"
+CallMethod
+Pop
+Jump loc121c
+loc11a4:Push 0.0, register1, "content"
+GetMember
+Push "killPopup"
+CallMethod
+Pop
+Push register3, register4, register1, "content"
+GetMember
+Push "Serial"
+GetMember
+Push register1, "content"
+GetMember
+Push "Email"
+GetMember
+Push register1, "content"
+GetMember
+Push "Phone"
+GetMember
+Push register1, "content"
+GetMember
+Push "Username"
+GetMember
+Push 6, register2, "saveActivation"
+CallMethod
+Pop
+Push "success", 1, register1, "content"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+}
+loc121c:SetMember
+Push register2, "checkActivationResponse"
+DefineFunction2 "", 1, 4, false, true, true, false, true, false, false, true, false, 3, "result" {
+Push register1, "timeout", 0.0
+SetMember
+Push "result: ", register3
+Add2
+Trace
+Push register1, "loading"
+GetMember
+Push "_visible", false
+SetMember
+Push register3, "e091"
+Equals2
+Not
+If loc12df
+Push "activated", 1, register1, "content"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push 0.0, register2, "clearActivation"
+CallMethod
+Pop
+Push register1, "content"
+GetMember
+Push "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e090", 2, register1, "content"
+GetMember
+Push "popup"
+CallMethod
+Pop
+Push register1, "content"
+GetMember
+Push "mc_popup"
+GetMember
+Push "error", "091"
+SetMember
+Jump loc13bf
+loc12df:Push register3, "e070"
+Equals2
+Not
+If loc1335
+Push "activated", 1, register1, "content"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1, "content"
+GetMember
+Push "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e070", 2, register1, "content"
+GetMember
+Push "popup"
+CallMethod
+Pop
+Jump loc13bf
+loc1335:Push register3, "e080"
+Equals2
+Not
+If loc138b
+Push "activated", 1, register1, "content"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1, "content"
+GetMember
+Push "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e080", 2, register1, "content"
+GetMember
+Push "popup"
+CallMethod
+Pop
+Jump loc13bf
+loc138b:Push 0.0, register1, "content"
+GetMember
+Push "killPopup"
+CallMethod
+Pop
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "loadOpening"
+CallMethod
+Pop
+}
+loc13bf:SetMember
+Push register2, "checkVersionResponse"
+DefineFunction2 "", 1, 4, false, true, true, false, true, false, false, true, false, 3, "ver" {
+Push register1, "timeout", 0.0
+SetMember
+Push ",", 1, register3, "split"
+CallMethod
+Push 0.0
+GetMember
+StoreRegister 3
+Pop
+Push "version: ", register3
+Add2
+Trace
+Push register3
+ToNumber
+Push register2, "verNumber"
+GetMember
+ToNumber
+Greater
+Not
+If loc145a
+Push register1, "content"
+GetMember
+Push "btn_activate"
+GetMember
+Push 1
+InitArray
+Push "e000", 2, register1, "content"
+GetMember
+Push "popup"
+CallMethod
+Pop
+Jump loc1472
+loc145a:Push 0.0, register1, "content"
+GetMember
+Push "killPopup"
+CallMethod
+Pop
+}
+loc1472:SetMember
+Push register2, "trial"
+DefineFunction2 "", 0, 2, false, true, true, false, true, false, true, false, false {
+Push register1, "mc_trial"
+GetMember
+Push "_visible", true
+SetMember
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "loadOpening"
+CallMethod
+Pop
+Push "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "users", 6, 1, "Array"
+NewObject
+SetMember
+Push "none", 1, 1, "DEMO", 1, "DEMO", 0.0, 7, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "addUser"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "onMouseDown"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "onMouseDown"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "onMouseUp"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "onMouseUp"
+CallMethod
+Pop
+}
+SetMember
+Push register2, "onMouseMove"
+DefineFunction "", 0 {
+Push 0.0, "Prince3"
+GetVariable
+Push "PrinceSystem"
+GetMember
+Push "onMouseMove"
+CallMethod
+Pop
+}
+SetMember
+Push 1, null, "_global"
+GetVariable
+Push "Application"
+GetMember
+Push "prototype"
+GetMember
+Push 3, "ASSetPropFlags"
+CallFunction
+loc15ae:Pop

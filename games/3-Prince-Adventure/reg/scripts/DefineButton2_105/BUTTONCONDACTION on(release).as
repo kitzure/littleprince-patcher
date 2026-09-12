@@ -1,0 +1,3 @@
+on(release){
+   getURL("http://www.little-prince.com.hk/littleprince/products/lp3terms.html");
+}
