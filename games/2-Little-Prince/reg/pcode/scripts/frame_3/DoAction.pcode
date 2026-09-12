@@ -1,4 +1,27 @@
-ConstantPool "btn_activate", "onRelease", "startInit"
+ConstantPool "btnQuit", "onRelease", "applicationClose", "btn_activate", "setBtn", "btn_try", "startInit", "txtUsername", "restrict", "A-Z a-z", "txtPhone", "0-9 \\-", "txtSerial", "A-Z0-9\\-", "Username", "text", "Phone", "Email", "txtEmail", "Serial", "tabIndex"
+Push "btnQuit"
+GetVariable
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, true, true, false, true, false, true, false, false {
+Push 0
+Push register1
+Push "applicationClose"
+CallMethod
+Pop
+}
+SetMember
+Push "btn_activate"
+GetVariable
+Push 1
+Push "setBtn"
+CallFunction
+Pop
+Push "btn_try"
+GetVariable
+Push 1
+Push "setBtn"
+CallFunction
+Pop
 Push "btn_activate"
 GetVariable
 Push "onRelease"
@@ -10,3 +33,90 @@ CallMethod
 Pop
 }
 SetMember
+Push "btn_try"
+GetVariable
+Push "onRelease"
+DefineFunction2 "", 0, 2, false, true, true, false, true, false, true, false, false {
+Push 0
+Push register1
+Push "startInit"
+CallMethod
+Pop
+}
+SetMember
+Push "txtUsername"
+GetVariable
+Push "restrict"
+Push "A-Z a-z"
+SetMember
+Push "txtPhone"
+GetVariable
+Push "restrict"
+Push "0-9 \\-"
+SetMember
+Push "txtSerial"
+GetVariable
+Push "restrict"
+Push "A-Z0-9\\-"
+SetMember
+Push "Username"
+GetVariable
+Not
+If loc01bd
+Push "txtUsername"
+GetVariable
+Push "text"
+Push "Username"
+GetVariable
+SetMember
+loc01bd:Push "Phone"
+GetVariable
+Not
+If loc01db
+Push "txtPhone"
+GetVariable
+Push "text"
+Push "Phone"
+GetVariable
+SetMember
+loc01db:Push "Email"
+GetVariable
+Not
+If loc01f9
+Push "txtEmail"
+GetVariable
+Push "text"
+Push "Email"
+GetVariable
+SetMember
+loc01f9:Push "Serial"
+GetVariable
+Not
+If loc0217
+Push "txtSerial"
+GetVariable
+Push "text"
+Push "Serial"
+GetVariable
+SetMember
+loc0217:Push "txtUsername"
+GetVariable
+Push "tabIndex"
+Push 1
+SetMember
+Push "txtPhone"
+GetVariable
+Push "tabIndex"
+Push 2
+SetMember
+Push "txtEmail"
+GetVariable
+Push "tabIndex"
+Push 3
+SetMember
+Push "txtSerial"
+GetVariable
+Push "tabIndex"
+Push 4
+SetMember
+Stop

@@ -60,8 +60,8 @@
     },
     {
       "source": "games/2-Little-Prince/reg.swf",
-      "sha256": "e12ee36933cb77b5cadbc699f4e382ee0c5699b5b13f56cb736cc980c39ee4a2",
-      "size_bytes": 243000,
+      "sha256": "2ec87373db3ea2b6e4e66e1e813a5dd66458c098ebd5a357ec64f2b09937b120",
+      "size_bytes": 243250,
       "signature": "CWS",
       "swf_version": 98,
       "output": "2-Little-Prince/reg",

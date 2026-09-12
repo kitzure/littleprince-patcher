@@ -10,7 +10,7 @@ if(_level0)
    };
    if(_level0.saveActivation)
    {
-      _level0.saveActivation("yoke","12345678","a@b.com","P1-ABCD-EFGH-IJKL-MNOP",_level0.getHDKey(),"e000");
+      _level0.saveActivation("Player","00000000","player@example.com","P1-ABCD-EFGH-IJKL-MNOP",_level0.getHDKey(),"e000");
    }
    this.onEnterFrame = function()
    {

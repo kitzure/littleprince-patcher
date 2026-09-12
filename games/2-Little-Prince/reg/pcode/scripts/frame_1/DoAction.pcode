@@ -1,8 +1,8 @@
-ConstantPool "_level0", "activationSuccess", "saveActivation", "e000", "getHDKey", "P1-ABCD-EFGH-IJKL-MNOP", "a@b.com", "12345678", "yoke", "this", "onEnterFrame", "getBytesLoaded", "getBytesTotal", "checkActivation", "AAAA-AAA3"
+ConstantPool "_level0", "activationSuccess", "getHDKey", "AAAA-AAA3", "saveActivation", "e000", "P1-ABCD-EFGH-IJKL-MNOP", "player@example.com", "00000000", "Player", "this", "onEnterFrame", "getBytesLoaded", "getBytesTotal", "checkActivation"
 Push "_level0"
 GetVariable
 Not
-If loc0148
+If loc01cb
 Push "_level0"
 GetVariable
 Push "activationSuccess"
@@ -14,7 +14,7 @@ SetMember
 Push "_level0"
 GetVariable
 Push "getHDKey"
-DefineFunction2 "", 0, 3, false, true, true, false, true, false, false, true, false {
+DefineFunction "", 0 {
 Push "AAAA-AAA3"
 Return
 }
@@ -32,11 +32,9 @@ GetVariable
 Push "getHDKey"
 CallMethod
 Push "P1-ABCD-EFGH-IJKL-MNOP"
-Push "a@b.com"
-Push "12345678"
-Jump loc014d
-loc0148:Jump loc01cb
-loc014d:Push "yoke"
+Push "player@example.com"
+Push "00000000"
+Push "Player"
 Push 6
 Push "_level0"
 GetVariable

@@ -18,6 +18,11 @@ A patcher that patches the game to playable version
 5. Run the game
 6. Done
 
+## Patching notes
+
+Which script holds each licence check, the exact edit made, and how to verify a
+rebuild before shipping it are documented in **[PATCHING.md](PATCHING.md)**.
+
 ## Disclaimer
 
 This project is for educational and preservation purposes only. These are long-discontinued Flash games still answers with an error, and this package exists so that people who already own a copy can keep playing it on their own machine.
