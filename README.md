@@ -9,7 +9,7 @@ A patcher that patches the game to playable version
 - Little Prince
 - Prince Adventure
 
-## How to install/user
+## How to install/use
 
 1. Download the game from offical website (find it yourself)
 2. Download the patcher from release, then unzip it
@@ -23,7 +23,7 @@ A patcher that patches the game to playable version
 This project is for educational and preservation purposes only. These are long-discontinued Flash games still answers with an error, and this package exists so that people who already own a copy can keep playing it on their own machine.
 
 * Please respect the company. All games, artwork, music, characters and code belong to their developers and publishers. Nothing here claims any right over them.
-* Do not sell or bundle this package commercially, and do not use it for piracy \u2014 no serial keys, licences or game downloads are provided here.
+* Do not sell or bundle this package commercially, and do not use it for piracy. There are no serial keys, licences or game downloads are provided here.
 * Own the game first. Apply the patches only to a copy you legally own, and keep a backup of the original files.
 * Support the official release if the company ever makes these games available again.
 * If a rights holder asks, this repository should be removed.
