@@ -1,17 +1,13 @@
-# Prince 3-in-1 fix
+![ai gen banner lol](banner.jpeg)
+<p align="center">ignore that ai gen banner</p>
 
-Full-version unlock for three Flash CD games that share one activation server:
+# littleprince-patcher
 
-- Starwish Legend (Kingdom CD)
+A patcher that patches the game to playable version 
+
+- Starwish Legend
 - Little Prince
 - Prince Adventure
-
-All three post to `http://www.little-prince.com.hk/littleprince/amfservice/gateway.php`.
-That server is still online and answers `checkActivation` with `e091`, and the
-game reacts by showing the "activation data incorrect" **error 091** dialog,
-deleting its activation data and closing. The fix is patched SWFs plus a local
-server that answers `e000` instead, while the hosts file points the official
-domains at `127.0.0.1`.
 
 ## Windows
 
@@ -43,7 +39,20 @@ cd /path/to/game && wine start.exe
   (`kill -9`, `taskkill /F`, power cut) leaves them behind - then run
   `Revert_Hosts.bat`, or on Linux:
   `sudo sed -i '/little-prince\|sunnyinteractive/d' /etc/hosts`
+
+  
 * Server options: `python fake_server.py [port] [--no-hosts]`
 * Tested on Linux/Wine: the Little Prince patch boots the full version (no trial
   banner, no activation form) and writes `lic.dat` to
   `C:\Users\Public\Documents\Little Prince\Little Prince\`.
+
+## Disclaimer
+
+This project is for educational and preservation purposes only. These are long-discontinued Flash games still answers with an error, and this package exists so that people who already own a copy can keep playing it on their own machine.
+
+* Please respect the company. All games, artwork, music, characters and code belong to their developers and publishers. Nothing here claims any right over them.
+* Do not sell or bundle this package commercially, and do not use it for piracy \u2014 no serial keys, licences or game downloads are provided here.
+* Own the game first. Apply the patches only to a copy you legally own, and keep a backup of the original files.
+* Support the official release if the company ever makes these games available again.
+* If a rights holder asks, this repository should be removed.
+
