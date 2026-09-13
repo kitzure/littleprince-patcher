@@ -14,7 +14,7 @@ A patcher that patches the game to playable version
 1. Download the game from offical website (find it yourself)
 2. Download the patcher from release, then unzip it
 3. Put the patcher game folder (/games/) into the game folder that you installed
-4. Start the Run_server.bat
+4. Start the Start_Server.bat
 5. Run the game
 6. Done
 
