@@ -7,7 +7,7 @@ A patcher that patches the game to playable version
 
 - Little Prince 星願小王子
 - Starwish Legend 星願外傳
-- Prince Adventure 星願歷奇
+- Prince Adventure 星願歷奇 (Version 1.4)
 
 ## How to install/use
 
